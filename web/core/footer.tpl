@@ -1,3 +1,17 @@
+</div>
+</main>
+</div>
+</div>
+
+<script>
+{$query}
+</script>
+
+</body>
+</html>
+
+
+<!--
 	</div></div></div>
 	<div id="footer">
 		<div id="mainwrapper" style="text-align: center;">
@@ -35,3 +49,4 @@ window.addEvent('domready', function(){
 </script>
 </body>
 </html>
+-->
