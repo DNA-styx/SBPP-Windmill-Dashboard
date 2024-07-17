@@ -1,3 +1,5 @@
+<!-- Start footer.tpl -->
+
 </div>
 </main>
 </div>
@@ -50,3 +52,4 @@ window.addEvent('domready', function(){
 </body>
 </html>
 -->
+<!-- End footer.tpl -->

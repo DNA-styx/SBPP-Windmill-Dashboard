@@ -1,3 +1,5 @@
+<!-- Start page_bans.tpl -->
+
 {if $comment}
     <h3>{$commenttype} Comment</h3>
     <table width="90%" align="center" border="0" style="border-collapse:collapse;" id="group.details" cellpadding="3">
@@ -52,9 +54,13 @@
         {/foreach}
     </table>
 {else}
-    <h3 align="left">Banlist Overview - <i>Total Bans: {$total_bans}</i></h3>
-    <br />
+
+
+<!--
     {load_template file='admin.bans.search'}
+-->
+ 
+<!--
     <br />
     <div id="banlist-nav"><a href="index.php?p=banlist&hideinactive={if $hidetext == 'Hide'}true{else}false{/if}{$searchlink|smarty_htmlspecialchars}" title="{$hidetext} inactive">{$hidetext} inactive</a> | <i>Total Bans: {$total_bans}</i></div>
     <div id="banlist">
@@ -71,8 +77,49 @@
                 {/if}
                 <td width="10%" height="16" class="listtable_top" align="center"><b>Length</b></td>
             </tr>
+-->
+
+            <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+              <div class="w-full overflow-x-auto">
+              <div
+              class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100 bg-purple-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
+              >
+                <div class="flex items-center">
+                    Banlist Overview - <i>Total Bans: {$total_bans}</i>
+                </div>
+              <span><a href="index.php?p=banlist&hideinactive={if $hidetext == 'Hide'}true{else}false{/if}{$searchlink|smarty_htmlspecialchars}" title="{$hidetext} inactive">{$hidetext} inactive</a> | <i>Total Bans: {$total_bans}</i></span>
+            </div>
+
+
+                    
+                    
+
+                  <table class="w-full whitespace-no-wrap">
+                  <thead>
+                    <tr
+                      class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
+                      >
+                      {if $view_bans}
+                        <th class="px-4 py-3"><div class="ok" style="height:16px;width:16px;cursor:pointer;" title="Select All" name="tickswitch" id="tickswitch" onclick="TickSelectAll()"></div></th>
+                      {/if}
+                      <th class="px-4 py-3">MOD/Country</th>
+                      <th class="px-4 py-3">Date</th>
+                      <th class="px-4 py-3">Player</th>
+                      {if !$hideadminname}
+                        <th class="px-4 py-3">Admin</th>
+                      {/if}
+                      <th class="px-4 py-3">Length</th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800"
+                  >
+<!-- End Table Header -->
+
+
+<!-- Start Table Body -->
             {foreach from=$ban_list item=ban name=banlist}
-                <tr class="opener tbl_out" onmouseout="this.className='tbl_out'" onmouseover="this.className='tbl_hover'"
+                <tr class="opener tbl_out"
                         {if $ban.server_id != 0}
                             onclick="xajax_ServerHostPlayers({$ban.server_id}, 'id', 'host_{$ban.ban_id}');"
                         {/if}
@@ -355,10 +402,26 @@
                 </tr>
                 <!-- ###############[ End Sliding Panel ]################## -->
             {/foreach}
+ 
         </table>
+        </div>
+        <div
+          class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800"
+        >
+          <span class="flex items-center col-span-3">
+          ...  
+          </span>
+          <span class="col-span-2"></span>
+
+        </div>
+      </div>
+ 
+ <!--
         <div id="banlist-nav">
             {$ban_nav}
         </div>
+-->
+
         {if $general_unban || $can_delete}
             &nbsp;&nbsp;L&nbsp;&nbsp;<a href="#" onclick="TickSelectAll();return false;" title="Select All" name="tickswitchlink" id="tickswitchlink">Select All</a>&nbsp;&nbsp;|&nbsp;
             <select name="bulk_action" id="bulk_action" onchange="BulkEdit(this,'{$admin_postkey}');">
@@ -372,6 +435,10 @@
             </select>
             <hr>
         {/if}
+
+
+
+
         {if $can_export }
             <a href="./exportbans.php?type=steam" title="Export Permanent SteamID Bans">Export Permanent SteamID Bans</a>&nbsp;&nbsp;|&nbsp;
             <a href="./exportbans.php?type=ip" title="Export Permanent IP Bans">Export Permanent IP Bans</a>
@@ -389,3 +456,4 @@
     </script>
 {/literal}
 {/if}
+<!-- End page_bans.tpl -->

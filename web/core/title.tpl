@@ -1,3 +1,4 @@
+<!-- Start title.tpl -->
 <div class="flex flex-col flex-1 w-full">
 <header class="z-10 py-4 bg-white shadow-md dark:bg-gray-800">
   <div
@@ -267,9 +268,6 @@
   </h2>
 
 
-
-
-
 <!--
 <div id="breadcrumb">
     {foreach from=$breadcrumb item=crumb}
@@ -278,3 +276,5 @@
 </div>
 <div id="content">
 -->
+
+<!-- End title.tpl -->
