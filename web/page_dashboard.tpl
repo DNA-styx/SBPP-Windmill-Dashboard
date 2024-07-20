@@ -177,7 +177,7 @@ class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercas
 
 
 
-    <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Latest Players Blocked</h4>
+  <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Latest Players Blocked</h4>
 	<div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
 		<div class="w-full overflow-x-auto">
 		  <table class="w-full whitespace-no-wrap" >
