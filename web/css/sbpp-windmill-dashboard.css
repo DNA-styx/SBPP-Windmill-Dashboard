@@ -119,3 +119,144 @@ div.dialog-control{
 }
 
 .clearfix {display: inline-block;}
+
+
+
+
+/** ======= Context Menu Styles ======= **/
+
+div.contextmenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: Verdana, Arial, Tahoma, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+    background-color: #eaeaea;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #dddddd;
+}
+div.contextmenu a {
+    display: block;
+    text-decoration: none;
+    cursor: default;
+    outline: none;
+    font-size: 11px;
+}
+div.contextmenu .separator {
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.contextmenu {
+    width: 12em;
+    /*background: #F4F5EB;*/
+    border-top: 1px solid #ddd;
+    /*border-left: 1px solid #ddd;*/
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+    padding: 2px 0;
+}
+.contextmenu a {
+    color: #555;
+    padding: 4px 15px;
+    margin: 0 2px;
+}
+.contextmenu a:hover {
+    background-color: #F4F5EB;
+}
+.contextmenu a.disabled {
+    color: #bbb;
+}
+.contextmenu a.disabled:hover {
+    background: #F4F5EB;
+    color: #bbb;
+}
+.contextmenu .separator {
+    border-bottom: 1px solid #fff;
+    background: #999;
+    margin: 4px 4px;
+}
+.contextmenu .head {
+    font-size: 12px;
+    background-color: #DFE3E9;
+    padding-top: 4px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    color: #fff;
+}
+
+.select {
+    background: #fff;
+    font-size: 13px;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.textbox {
+    background: #fff;
+    font-size: 13px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.file {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.user {
+    color: #eee;
+    float: right;
+    margin-top: 18px;
+    margin-right: 10px;
+}
+
+.user a:visited, .user a:link, .user a:hover {
+    color: #bd754b;
+}
+
+.front-module-header {
+    margin-bottom: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#breadcrumb > a:last-child {
+    font-weight: 600;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+#admin-page-menu > a {
+    display: block;
+    height: 20px;
+    text-decoration : none;
+    padding: 9px 0px 3px 8px;
+    background-color: #4f463e;
+    color: #fff;
+    cursor: pointer;
+}
+
+#admin-page-menu > a:hover {
+    color : #fff;
+    background-color: #3d3631;
+}
+
+#admin-page-menu > .active {
+    font-weight: bold;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent:first-of-type {
+    display: block;
+}
