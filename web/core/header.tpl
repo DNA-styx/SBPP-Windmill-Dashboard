@@ -5,8 +5,10 @@
         <title>{$title}</title>
         <link rel="Shortcut Icon" href="themes/{$theme}/images/favicon.ico">
 
-        <script type="text/javascript" src="./scripts/fontawesome-all.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+
 <!--
+        <script type="text/javascript" src="./scripts/fontawesome-all.min.js"></script>
         <script src="https://kit.fontawesome.com/7800559182.js" crossorigin="anonymous"></script>
 -->
         <script type="text/javascript" src="./scripts/sourcebans.js"></script>

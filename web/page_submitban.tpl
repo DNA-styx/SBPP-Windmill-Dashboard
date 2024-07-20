@@ -16,79 +16,123 @@
 
     <form action="index.php?p=submit" method="post" enctype="multipart/form-data">
         <input type="hidden" name="subban" value="1">
-        <table cellspacing='10' width='100%' align='center'>
+        <table>
             <tr>
-                <td colspan="3">
-                    Ban Details:	</td>
-            </tr>
-            <tr>
-                <td width="20%">
+                <td>
                 <span class="text-gray-700 dark:text-gray-400">Players SteamID:</span></td>
                 <td>
-                    <input type="text" name="SteamID" size="40" maxlength="64" value="{$STEAMID}" class="textbox" style="width: 250px;" />
+                    <input
+                        class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                        maxlength="64" name="SteamID" value="{$STEAMID}"
+                        />
                 </td>
             </tr>
             <tr>
-                <td width="20%">
+                <td>
                 <span class="text-gray-700 dark:text-gray-400">Players IP:</span></td>
                 <td>
-                    <input type="text" name="BanIP" size="40" maxlength="64" value="{$ban_ip}" class="textbox" style="width: 250px;" />
+                <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    maxlength="64" name="BanIP" value="{$ban_ip}"
+                    />
                 </td>
             </tr>
             <tr>
-                <td width="20%">
+                <td>
                 <span class="text-gray-700 dark:text-gray-400">Players Nickname *</span></td>
                 <td>
-                    <input type="text" size="40" maxlength="70" name="PlayerName" value="{$player_name}" class="textbox" style="width: 250px;" /></td>
+                <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    maxlength="70" name="PlayerName" value="{$player_name}"
+                    />
             </tr>
             <tr>
-                <td width="20%" valign="top">
+                <td valign="top">
                     <span class="text-gray-700 dark:text-gray-400">
                         Comments *<br />
-                        <small>(Please write down a descriptive comment. So NO comments like: "hacking")</small>	
+                        <small>(Please write down a descriptive comment.<br>So NO comments like: "hacking")</small>	
                     </span>
                 </td>
-                <td><textarea name="BanReason" cols="30" rows="5" class="textbox" style="width: 250px;">{$ban_reason}</textarea></td>
+                <td>
+<!--
+                <textarea name="BanReason" cols="30" rows="5" class="textbox" style="width: 250px;">{$ban_reason}</textarea>
+-->
+
+                <textarea
+                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                  rows="3"
+                  name="BanReason"
+                >{$ban_reason}</textarea>
+
+
+
+
+                </td>
             </tr>
             <tr>
-                <td width="20%">
+                <td>
                 <span class="text-gray-700 dark:text-gray-400">Your Name:</span></td>
                 <td>
-                    <input type="text" size="40" maxlength="70" name="SubmitName" value="{$subplayer_name}" class="textbox" style="width: 250px;" />	</td>
+                <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    maxlength="70" name="SubmitName" value="{$subplayer_name}"
+                    />
             </tr>
 
             <tr>
-                <td width="20%">
+                <td>
                 <span class="text-gray-700 dark:text-gray-400">Your Email *:</span></td>
                 <td>
-                    <input type="text" size="40" maxlength="70" name="EmailAddr" value="{$player_email}" class="textbox" style="width: 250px;" />	</td>
+                <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    maxlength="70" name="EmailAddr" value="{$player_email}"
+                    />
             </tr>
             <tr>
-                <td width="20%">
+                <td>
                 <span class="text-gray-700 dark:text-gray-400">Server *:</span></td>
                 <td colspan="2">
-                    <select id="server" name="server" class="select" style="width: 277px;">
+<!--                    
+                <select id="server" name="server" class="select" style="width: 277px;">
                         <option value="-1">-- Select Server --</option>
                         {foreach from=$server_list item="server"}
                             <option value="{$server.sid}" {if $server_selected == $server.sid}selected{/if}>{$server.hostname}</option>
                         {/foreach}
 			<option value="0">Other server / Not listed here</option>
-		</select> 
+		</select>
+-->        
+        
+        <select
+        class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+            id="server" 
+            name="server"
+            >
+            <option value="-1">-- Select Server --</option>
+            {foreach from=$server_list item="server"}
+                <option value="{$server.sid}" {if $server_selected == $server.sid}selected{/if}>{$server.hostname}</option>
+            {/foreach}
+            <option value="0">Other server / Not listed here</option>
+      </select>
+
+
+
+
+
     </td>
     </tr>
 <tr>
-	<td width="20%">
+	<td>
     <span class="text-gray-700 dark:text-gray-400">Upload demo:</span></td>
 	<td>
-		<input name="demo_file" type="file" size="25" class="file" style="width: 268px;" /><br />
+		<input name="demo_file" type="file" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" style="width: 268px;" /><br>
 		<p class="text-sm text-gray-600 dark:text-gray-400">
             Note: Only DEM, <a href="http://www.winzip.com" target="_blank">ZIP</a>, <a href="http://www.rarlab.com" target="_blank">RAR</a>, <a href="http://www.7-zip.org" target="_blank">7Z</a>, <a href="http://www.bzip.org" target="_blank">BZ2</a> or <a href="http://www.gzip.org" target="_blank">GZ</a> allowed.	</td>
         </p>                    
     </tr>
 <tr>
-	<td width="20%"><span class="text-gray-700 dark:text-gray-400">* = Mandatory Field</span></td>
+	<td><span class="text-gray-700 dark:text-gray-400">* = Mandatory Field</span></td>
 	<td>
-		{sb_button text=Submit onclick="" class=ok id=save submit=true}
+		{sb_button text=Submit onclick="" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id=save submit=true}
 	</td>
     <td>&nbsp;</td>
 </tr>
