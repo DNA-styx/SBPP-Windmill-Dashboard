@@ -23,7 +23,7 @@
               <!-- Card -->
               <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                 <div class="p-3 mr-4 text-green-500 bg-green-100 rounded-full dark:text-green-100 dark:bg-green-500">
-                    &nbsp;<i class="fa-solid fa-server"></i>&nbsp;
+                    &nbsp;<i class="fas fa-server"></i>&nbsp;
                 </div>
                 <div>
                   <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
@@ -68,7 +68,7 @@
               <!-- Card -->
               <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                 <div class="p-3 mr-4 text-teal-500 bg-teal-100 rounded-full dark:text-teal-100 dark:bg-teal-500">
-                    &nbsp;<i class="fa-regular fa-hand"></i>&nbsp;
+                    &nbsp;<i class="fas fa-hand-paper"></i>&nbsp;
                 </div>
                 <div>
                   <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
@@ -195,7 +195,7 @@ class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercas
 			>
             {foreach from=$players_blocked item=player}
 			  <tr class="text-gray-700 dark:text-gray-400" style="cursor: pointer;" onclick="{$player.link_url}" id="{$player.server}" title="Querying Server Data...">
-				  <td class="px-4 py-3 "><i class="fas fa-ban fa-lg"></i></td>
+				  <td class="px-4 py-3 "><i class="fas fa-hand-paper"></i></td>
 				  <td class="px-4 py-3 text-sm">{$player.date}</td>
 				  <td class="px-4 py-3 text-sm">{$player.short_name|escape:'html'}</td>
 			  </tr>
