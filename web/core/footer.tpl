@@ -1,55 +1,61 @@
 <!-- Start footer.tpl -->
 
+
+<!-- CTA -->
+<div
+    class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800"
+>
+    <div class="flex items-center text-gray-600 dark:text-gray-400">
+        <span>
+            <a class="font-semibold" href="https://sbpp.github.io/" target="_blank">SourceBans++</a> {$version}{$git}
+            Powered by <a class="font-semibold" href="https://www.sourcemod.net" target="_blank">SourceMod</a>
+        </span>
+    </div>
+    <div class="flex items-center text-gray-600 dark:text-gray-400">
+    <span>
+        Theme based on <a class="font-semibold" href="https://github.com/estevanmaito/windmill-dashboard" target="_blank">Windmill Dashboard</a> and code from <a class="font-semibold" href="https://sbpp.github.io/" target="_blank">SourceBans++</a> & <a class="font-semibold" href="https://github.com/Rushaway/sourcebans-web-theme-fluent" target="_blank">Rushaway</a>
+    </span>
+    </div>
+
+    </div>
+
+
+
+
 </div>
 </main>
 </div>
 </div>
 
-<script>
-{$query}
-</script>
-
-</body>
-</html>
-
-
-<!--
-	</div></div></div>
-	<div id="footer">
-		<div id="mainwrapper" style="text-align: center;">
-			<a href="https://sbpp.github.io/" target="_blank"><img src="images/logos/sb.png" alt="SourceBans" border="0" /></a><br/>
-			<div id="footqversion" style="line-height: 20px;"><a style="color: #C1C1C1" href="https://sbpp.github.io/" target="_blank">SourceBans++</a> {$version}{$git}</div>
-		    <span style="line-height: 20px;">Powered by <a href="https://www.sourcemod.net" target="_blank" style="color: #C1C1C1">SourceMod</a></span><br />
-		</div>
-	</div>
-</div>
+</div> 
 <script>
 
 {$query}
 
 {literal}
-window.addEvent('domready', function(){
-
-	ProcessAdminTabs();
-
-    var Tips2 = new Tips($('.tip'), {
-        initialize:function(){
-            this.fx = new Fx.Style(this.toolTip, 'opacity', {duration: 300, wait: false}).set(0);
-        },
-        onShow: function(toolTip) {
-            this.fx.start(1);
-        },
-        onHide: function(toolTip) {
-            this.fx.start(0);
-        }
+    window.addEvent('domready', function(){
+    
+        ProcessAdminTabs();
+    
+        var Tips2 = new Tips($('.tip'), {
+            initialize:function(){
+                this.fx = new Fx.Style(this.toolTip, 'opacity', {duration: 300, wait: false}).set(0);
+            },
+            onShow: function(toolTip) {
+                this.fx.start(1);
+            },
+            onHide: function(toolTip) {
+                this.fx.start(0);
+            }
+        });
+        var Tips4 = new Tips($('.perm'), {
+            className: 'perm'
+        });
     });
-    var Tips4 = new Tips($('.perm'), {
-        className: 'perm'
-    });
-});
-{/literal}
+    {/literal}
+
 </script>
 </body>
 </html>
--->
+
 <!-- End footer.tpl -->

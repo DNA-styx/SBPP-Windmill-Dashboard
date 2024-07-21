@@ -5,14 +5,11 @@
         <title>{$title}</title>
         <link rel="Shortcut Icon" href="themes/{$theme}/images/favicon.ico">
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
-
-<!--
         <script type="text/javascript" src="./scripts/fontawesome-all.min.js"></script>
-        <script src="https://kit.fontawesome.com/7800559182.js" crossorigin="anonymous"></script>
--->
+
         <script type="text/javascript" src="./scripts/sourcebans.js"></script>
-<!--
+
+<!--        
         <link href="themes/{$theme}/css/main.css" rel="stylesheet" type="text/css">
 -->
         <!-- .css taken from main.css --> 
@@ -29,7 +26,9 @@
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
+
         <link rel="stylesheet" href="themes/{$theme}/assets/css/tailwind.output.css">
+
         <script
           src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
           defer
