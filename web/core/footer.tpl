@@ -1,7 +1,7 @@
 <!-- Start footer.tpl -->
 
 
-<!-- CTA -->
+<!-- Start footer bar -->
 <div
     class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800"
 >
@@ -13,11 +13,11 @@
     </div>
     <div class="flex items-center text-gray-600 dark:text-gray-400">
     <span>
-        Theme based on <a class="font-semibold" href="https://github.com/estevanmaito/windmill-dashboard" target="_blank">Windmill Dashboard</a> and code from <a class="font-semibold" href="https://sbpp.github.io/" target="_blank">SourceBans++</a> & <a class="font-semibold" href="https://github.com/Rushaway/sourcebans-web-theme-fluent" target="_blank">Rushaway</a>
+        Theme based on <a class="font-semibold" href="https://github.com/estevanmaito/windmill-dashboard" target="_blank">Windmill</a> with code from <a class="font-semibold" href="https://sbpp.github.io/" target="_blank">SourceBans++</a> & <a class="font-semibold" href="https://github.com/Rushaway/sourcebans-web-theme-fluent" target="_blank">Rushaway</a>
     </span>
     </div>
-
-    </div>
+</div>
+<!-- end footer bar -->
 
 
 

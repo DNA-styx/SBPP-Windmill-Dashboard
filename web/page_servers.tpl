@@ -17,7 +17,6 @@
                       <th class="px-4 py-3">OS</th>
                       <th class="px-4 py-3">VAC</th>
                       <th class="px-4 py-3">Hostname</th>
-                      <th class="px-4 py-3">IP Address</th>
                       <th class="px-4 py-3">Players</th>
                       <th class="px-4 py-3">Map</th>
                       <th class="px-4 py-3">Connect</th>
@@ -33,7 +32,6 @@
                         <td class="px-4 py-3 text-sm" id="os_{$server.sid}"></td>
                         <td class="px-4 py-3 text-sm" id="vac_{$server.sid}"></td>
                         <td class="px-4 py-3 text-sm" id="host_{$server.sid}"><i>Querying Server Data...</i></td>
-                        <td class="px-4 py-3 text-sm">{$server.ip}:{$server.port}</td>
                         <td class="px-4 py-3 text-sm" id="players_{$server.sid}">N/A</td>
                         <td class="px-4 py-3 text-sm" id="map_{$server.sid}">N/A</td>
                         <td class="px-4 py-3 text-sm">
@@ -66,6 +64,7 @@
                                                 </td>
                                                 <td width="355px" class="" valign="" style="padding-right: 0px; padding-left: 13px; padding-top: 12px;">
                                                     <img id="mapimg_{$server.sid}" style="border-radius: 6px; padding-left: 1px;" width='340' src='images/maps/nomap.jpg'>
+                                                    <br><br>{$server.ip}:{$server.port}<br>
                                                 </td>
                                             </tr>
                                         </table>
