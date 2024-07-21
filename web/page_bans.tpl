@@ -108,7 +108,7 @@
                     {if $view_bans}
                         <td class="px-4 py-3"><input type="checkbox" name="chkb_{$smarty.foreach.banlist.index}" id="chkb_{$smarty.foreach.banlist.index}" value="{$ban.ban_id}"></td>
                     {/if}
-                    <td class="px-4 py-3">{$ban.mod_icon}</td>
+                    <td class="flex px-4 py-3 items-center">{$ban.mod_icon}</td>
                     <td class="px-4 py-3">{$ban.ban_date}</td>
                     <td class="px-4 py-3">
                         <div style="float:left;">
