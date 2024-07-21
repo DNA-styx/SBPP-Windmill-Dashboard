@@ -19,7 +19,7 @@
                       <th class="px-4 py-3">Hostname</th>
                       <th class="px-4 py-3">Players</th>
                       <th class="px-4 py-3">Map</th>
-                      <th class="px-4 py-3">Connect</th>
+                      <th class="px-4 py-3">&nbsp;</th>
                     </tr>
                   </thead>
                   <tbody
