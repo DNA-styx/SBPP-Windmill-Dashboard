@@ -1,4 +1,10 @@
             <!-- Start server.tpl -->
+
+<!-- Added to enable default accordion -->
+<div id="mainwrapper">
+
+
+
             <!-- With avatar -->
             <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
               <div class="w-full overflow-x-auto">
@@ -22,7 +28,7 @@
                   >
 
                   {foreach from=$server_list item=server}
-                    <tr class="text-gray-700 dark:text-gray-400" id="opener_{$server.sid}" style="cursor:pointer;"{if !$IN_SERVERS_PAGE} onclick="{$server.evOnClick}"{/if}>
+                    <tr class="text-gray-700 dark:text-gray-400 opener" id="opener_{$server.sid}" style="cursor:pointer;"{if !$IN_SERVERS_PAGE} onclick="{$server.evOnClick}"{/if}>
                         <td class="px-4 py-3"><img height="26px" width="26px" src="images/games/{$server.icon}"></td>
                         <td class="px-4 py-3 text-sm" id="os_{$server.sid}"></td>
                         <td class="px-4 py-3 text-sm" id="vac_{$server.sid}"></td>
@@ -43,8 +49,8 @@
                     <tr
                     class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
                     >
-                      <td colspan="8" align="center">
-    
+                      <td colspan="8">
+                      <div class="opener">    
                             <div
                             class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
                             >
@@ -72,9 +78,13 @@
                             </p>
                             </div>
 
+                        <!-- Close opener div -->
+                        </div> 
+
                         </td>
                         </tr>
-                        {/if}
+   
+                    {/if}
 
                 {/foreach}
 
@@ -84,7 +94,19 @@
                 </div>
             </div>
 
+<!-- end mainwrapper div -->
+</div>
 
-
+{literal}
+    <script type="text/javascript">window.addEvent('domready', function(){
+            InitAccordion('tr.opener', 'div.opener', 'mainwrapper');
+            {/literal}
+            {if $view_bans}
+            $('tickswitch').value=0;
+            {/if}
+            {literal}
+        });
+    </script>
+{/literal}
 
             <!-- End server.tpl -->
