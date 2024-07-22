@@ -64,12 +64,12 @@
     <br>
 
  
-        <div
+    <div
         class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800"
-    >
+        >
         <div class="flex items-center text-gray-600 dark:text-gray-400">
             <span>
-                &nbsp;
+                {$ban_nav}
             </span>
         </div>
         <div class="flex items-center text-gray-600 dark:text-gray-400">
@@ -98,7 +98,7 @@
                 <td class="px-4 py-3"><b>Length</b></td>
             </tr>
             </thead>
-            <tbody  class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
+            <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
             {foreach from=$ban_list item=ban name=banlist}
                 <tr class="opener text-gray-700 dark:text-gray-400"
                         {if $ban.server_id != 0}
@@ -130,7 +130,7 @@
                         {/if}
                     </td>
                     {if !$hideadminname}
-                        <td  class="px-4 py-3">
+                        <td class="px-4 py-3">
                             {if !empty($ban.admin)}
                                 {$ban.admin|escape:'html'}
                             {else}
@@ -151,8 +151,8 @@
                                     </td>
                                 </tr>
                                 <tr align="left">
-                                    <td class="px-4 py-1">Player</td>
-                                    <td class="px-4 py-1">
+                                    <td class="px-4">Player</td>
+                                    <td class="px-4">
                                         {if empty($ban.player)}
                                             <i><font color="#677882">no nickname present</font></i>
                                         {else}
@@ -280,7 +280,7 @@
                                 {if !$hideplayerips}
                                     <tr align="left">
                                         <td class="px-4">IP address</td>
-                                        <td class="px-4">
+                                        <td class="flex px-4 items-center">
                                             {if $ban.ip == "none"}
                                                 <i><font color="#677882">no IP address present</font></i>
                                             {else}
@@ -430,13 +430,6 @@
         </tbody>
         </table>
 
-
-
-      <div
-      class="px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800"
-      >
-      {$ban_nav}
-      </div>
 
         {if $general_unban || $can_delete}
             &nbsp;&nbsp;L&nbsp;&nbsp;<a href="#" onclick="TickSelectAll();return false;" title="Select All" name="tickswitchlink" id="tickswitchlink">Select All</a>&nbsp;&nbsp;|&nbsp;

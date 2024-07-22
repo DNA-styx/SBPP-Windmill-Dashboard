@@ -1,3 +1,6 @@
+<!-- Added to enable default accordion -->
+<div id="mainwrapper">
+
 {if $comment}
     <h3>{$commenttype} Comment</h3>
     <table width="90%" align="center" border="0" style="border-collapse:collapse;" id="group.details" cellpadding="3">
@@ -52,34 +55,54 @@
         {/foreach}
     </table>
 {else}
-    <h3 align="left">Communications Blocklist Overview - <i>Total Blocks: {$total_bans}</i></h3>
-    <br />
+
+    <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+    <div class="w-full overflow-x-auto">
+
+    <br>
     {load_template file='admin.comms.search'}
-    <br />
-    <div id="banlist-nav">
-        {$ban_nav}
-    </div>
-    <a href="index.php?p=commslist&hideinactive={if $hidetext == 'Hide'}true{else}false{/if}{$searchlink|smarty_htmlspecialchars}" title="{$hidetext} inactive">{$hidetext} inactive</a>
+    <br>
+ 
+    
+        <div
+        class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800"
+        >
+        <div class="flex items-center text-gray-600 dark:text-gray-400">
+            <span>
+                {$ban_nav}
+            </span>
+        </div>
+        <div class="flex items-center text-gray-600 dark:text-gray-400">
+            <span>
+                <a href="index.php?p=commslist&hideinactive={if $hidetext == 'Hide'}true{else}false{/if}{$searchlink|smarty_htmlspecialchars}" title="{$hidetext} inactive">{$hidetext} inactive</a> | <i>Total Blocks: {$total_bans}</i>
+            </span>
+            </div>
+        </div>
+
+
     <div id="banlist">
-        <table width="100%" cellspacing="0" cellpadding="0" align="center" class="listtable">
-            <tr>
-                <td width="8%" height="16" class="listtable_top" align="center"><b>MOD/Type</b></td>
-                <td width="14%" height="16" class="listtable_top" align="center"><b>Date</b></td>
-                <td height="16" class="listtable_top"><b>Player</b></td>
+        <table class="w-full whitespace-no-wrap">
+        <thead>
+            <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                <td class="px-4 py-3"><b>MOD/Type</b></td>
+                <td class="px-4 py-3"><b>Date</b></td>
+                <td class="px-4 py-3"><b>Player</b></td>
                 {if !$hideadminname}
-                    <td width="12%" height="16" class="listtable_top"><b>Admin</b></td>
+                    <td class="px-4 py-3"><b>Admin</b></td>
                 {/if}
-                <td width="16%" height="16" class="listtable_top" align="center"><b>Length</b></td>
+                <td class="px-4 py-3"><b>Length</b></td>
             </tr>
+            </thead>
+            <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
             {foreach from=$ban_list item=ban name=banlist}
-                <tr class="opener tbl_out" onmouseout="this.className='tbl_out'" onmouseover="this.className='tbl_hover'"
+                <tr class="opener text-gray-700 dark:text-gray-400"
                         {if $ban.server_id != 0}
                             onclick="xajax_ServerHostPlayers({$ban.server_id}, 'id', 'host_{$ban.ban_id}');"
                         {/if}
                 >
-                    <td height="16" align="center" class="listtable_1">{$ban.mod_icon}</td>
-                    <td height="16" align="center" class="listtable_1">{$ban.ban_date}</td>
-                    <td height="16" class="listtable_1">
+                    <td class="flex px-4 py-3 items-center">{$ban.mod_icon}</td>
+                    <td class="px-4 py-3">{$ban.ban_date}</td>
+                    <td class="px-4 py-3">
                         <div style="float:left;">
                             {if empty($ban.player)}
                                 <i><font color="#677882">no nickname present</font></i>
@@ -97,7 +120,7 @@
                         </div>
                     </td>
                     {if !$hideadminname}
-                        <td height="16" class="listtable_1">
+                        <td class="px-4 py-3">
                             {if !empty($ban.admin)}
                                 {$ban.admin|escape:'html'}
                             {else}
@@ -105,25 +128,25 @@
                             {/if}
                         </td>
                     {/if}
-                    <td height="16" align="center" class="{$ban.class}">{$ban.banlength}</td>
+                    <td class="px-4 py-3 {$ban.class}">{$ban.banlength}</td>
                 </tr>
                 <!-- ###############[ Start Sliding Panel ]################## -->
-                <tr>
-                    <td colspan="7" align="center">
+                <tr class="text-gray-700 dark:text-gray-400">
+                    <td colspan="7">
                         <div class="opener">
-                            <table width="100%" cellspacing="0" cellpadding="0" class="listtable">
+                            <table>
                                 <tr>
                                     {if $view_bans}
-                                    <td height="16" align="left" class="listtable_top" colspan="3">
+                                    <td class="px-4 py-3" colspan="3">
                                         {else}
-                                    <td height="16" align="left" class="listtable_top" colspan="2">
+                                    <td class="px-4 py-3" colspan="2">
                                         {/if}
                                         <b>Block Details</b>
                                     </td>
                                 </tr>
                                 <tr align="left">
-                                    <td width="20%" height="16" class="listtable_1">Player</td>
-                                    <td height="16" class="listtable_1">
+                                    <td class="px-4">Player</td>
+                                    <td class="px-4">
                                         {if empty($ban.player)}
                                             <i><font color="#677882">no nickname present</font></i>
                                         {else}
@@ -136,18 +159,48 @@
                                             <div class="ban-edit">
                                                 <ul>
                                                     {if isset($ban.unbanned) && $ban.reban_link != false}
-                                                        <li>{$ban.reban_link}</li>
+                                                        <li>
+                                                        <button
+                                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                                                        >
+                                                        {$ban.reban_link}
+                                                        </button>
+                                                        </li>
                                                     {/if}
-                                                    <li>{$ban.addcomment}</li>
+                                                    <li>
+                                                        <button
+                                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                                                        >
+                                                        {$ban.addcomment}
+                                                        </button>
+                                                    </li>
                                                     {if ($ban.view_edit && (!isset($ban.unbanned) || !$ban.unbanned))}
-                                                        <li>{$ban.edit_link}</li>
+                                                        <li>
+                                                        <button
+                                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                                                        >
+                                                        {$ban.edit_link}
+                                                        </button>
+                                                        </li>
                                                     {/if}
                                                     {if isset($ban.unbanned) && ($ban.unbanned == false && $ban.view_unban)}
-                                                        <li>{$ban.unban_link}</li>
+                                                        <li>
+                                                        <button
+                                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                                                        >
+                                                        {$ban.unban_link}
+                                                        </button>
+                                                        </li>
                                                     {/if}
                                                     {if $ban.view_delete}
-                                                        <li>{$ban.delete_link}</li>
-                                                    {/if}
+                                                        <li>
+                                                        <button
+                                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                                                        >
+                                                        {$ban.delete_link}
+                                                        </button>
+                                                        </li>
+                                               {/if}
                                                 </ul>
                                             </div>
                                         </td>
@@ -155,8 +208,8 @@
                                     <!-- ###############[ End Admin Controls ]##################### -->
                                 </tr>
                                 <tr align="left">
-                                    <td width="20%" height="16" class="listtable_1">Steam ID</td>
-                                    <td height="16" class="listtable_1">
+                                    <td class="px-4">Steam ID</td>
+                                    <td class="px-4"">
                                         {if empty($ban.steamid)}
                                             <i><font color="#677882">No Steam ID present</font></i>
                                         {else}
@@ -165,8 +218,8 @@
                                     </td>
                                 </tr>
                                 <tr align="left">
-                                    <td width="20%" height="16" class="listtable_1">Steam3 ID</td>
-                                    <td height="16" class="listtable_1">
+                                    <td class="px-4">Steam3 ID</td>
+                                    <td class="px-4">
                                         {if empty($ban.steamid)}
                                             <i><font color="#677882">No Steam3 ID present</font></i>
                                         {else}
@@ -175,8 +228,8 @@
                                     </td>
                                 </tr>
                                 <tr align="left">
-                                    <td width="20%" height="16" class="listtable_1">Steam Community</td>
-                                    <td height="16" class="listtable_1">
+                                    <td class="px-4">Steam Community</td>
+                                    <td class="px-4">
                                         {if empty($ban.steamid)}
                                             <i><font color="#677882">No Steam Community ID present</font></i>
                                         {else}
@@ -185,17 +238,17 @@
                                     </td>
                                 </tr>
                                 <tr align="left">
-                                    <td width="20%" height="16" class="listtable_1">Invoked on</td>
-                                    <td height="16" class="listtable_1">{$ban.ban_date}</td>
+                                    <td class="px-4">Invoked on</td>
+                                    <td class="px-4">{$ban.ban_date}</td>
                                 </tr>
                                 <tr align="left">
-                                    <td width="20%" height="16" class="listtable_1">Block length</td>
-                                    <td height="16" class="listtable_1">{$ban.banlength}</td>
+                                    <td class="px-4">Block length</td>
+                                    <td class="px-4">{$ban.banlength}</td>
                                 </tr>
                                 {if isset($ban.unbanned)}
                                     <tr align="left">
-                                        <td width="20%" height="16" class="listtable_1">Unblock reason</td>
-                                        <td height="16" class="listtable_1">
+                                        <td class="px-4">Unblock reason</td>
+                                        <td class="px-4">
                                             {if !isset($ban.ureason) || $ban.ureason == ""}
                                                 <i><font color="#677882">no reason present</font></i>
                                             {else}
@@ -204,8 +257,8 @@
                                         </td>
                                     </tr>
                                     <tr align="left">
-                                        <td width="20%" height="16" class="listtable_1">Unblocked by Admin</td>
-                                        <td height="16" class="listtable_1">
+                                        <td class="px-4">Unblocked by Admin</td>
+                                        <td class="px-4">
                                             {if !empty($ban.removedby)}
                                                 {$ban.removedby|escape:'html'}
                                             {else}
@@ -215,8 +268,8 @@
                                     </tr>
                                 {/if}
                                 <tr align="left">
-                                    <td width="20%" height="16" class="listtable_1">Expires on</td>
-                                    <td height="16" class="listtable_1">
+                                    <td class="px-4">Expires on</td>
+                                    <td class="px-4">
                                         {if $ban.expires == "never"}
                                             <i><font color="#677882">Not applicable.</font></i>
                                         {else}
@@ -225,13 +278,13 @@
                                     </td>
                                 </tr>
                                 <tr align="left">
-                                    <td width="20%" height="16" class="listtable_1">Reason</td>
-                                    <td height="16" class="listtable_1">{$ban.reason|escape:'html'}</td>
+                                    <td class="px-4">Reason</td>
+                                    <td class="px-4">{$ban.reason|escape:'html'}</td>
                                 </tr>
                                 {if !$hideadminname}
                                     <tr align="left">
-                                        <td width="20%" height="16" class="listtable_1">Blocked by Admin</td>
-                                        <td height="16" class="listtable_1">
+                                        <td class="px-4">Blocked by Admin</td>
+                                        <td class="px-4">
                                             {if !empty($ban.admin)}
                                                 {$ban.admin|escape:'html'}
                                             {else}
@@ -241,8 +294,8 @@
                                     </tr>
                                 {/if}
                                 <tr align="left">
-                                    <td width="20%" height="16" class="listtable_1">Blocked from</td>
-                                    <td height="16" class="listtable_1" {if $ban.server_id != 0}id="host_{$ban.ban_id}"{/if}>
+                                    <td class="px-4">Blocked from</td>
+                                    <td class="px-4" {if $ban.server_id != 0}id="host_{$ban.ban_id}"{/if}>
                                         {if $ban.server_id == 0}
                                             Web Ban
                                         {else}
@@ -251,13 +304,13 @@
                                     </td>
                                 </tr>
                                 <tr align="left">
-                                    <td width="20%" height="16" class="listtable_1">Total Blocks</td>
-                                    <td height="16" class="listtable_1">{$ban.prevoff_link}</td>
+                                    <td class="px-4">Total Blocks</td>
+                                    <td class="px-4">{$ban.prevoff_link}</td>
                                 </tr>
                                 {if $view_comments}
-                                    <tr align="left">
-                                        <td width="20%" height="16" class="listtable_1">Comments</td>
-                                        <td height="60" class="listtable_1" colspan="2">
+                                    <tr>
+                                        <td class="px-4">Comments</td>
+                                        <td class="px-4" colspan="2">
                                             {if $ban.commentdata != "None"}
                                                 <table width="100%" border="0">
                                                     {foreach from=$ban.commentdata item=commenta}
@@ -312,8 +365,31 @@
                 </tr>
                 <!-- ###############[ End Sliding Panel ]################## -->
             {/foreach}
-        </table><div align="right" style="margin-top: 3px; font-size:7pt">SourceComms plugin &#038;	integration to SourceBans made by <a href="https://github.com/ppalex7" target="_blank">Alex</a></div>
+        </tbody>
+        </table><div align="right" style="margin-top: 3px; font-size:7pt"></div>
     </div>
+
+
+    <div
+    class="flex items-center justify-between p-4 mb-8 text-xs px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800"
+    >
+    <div class="flex items-center text-gray-600 dark:text-gray-400">
+        <span>
+            &nbsp;
+        </span>
+    </div>
+    <div class="flex items-center text-gray-600 dark:text-gray-400">
+        <span>
+        SourceComms plugin &#038;	integration to SourceBans made by <a href="https://github.com/ppalex7" target="_blank">Alex</a>
+        </span>
+        </div>
+    </div>
+
+
+
+<!-- end wrapper --> 
+</div>
+
 {literal}
     <script type="text/javascript">window.addEvent('domready', function(){
             InitAccordion('tr.opener', 'div.opener', 'mainwrapper');
