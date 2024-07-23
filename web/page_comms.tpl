@@ -380,7 +380,7 @@
     </div>
     <div class="flex items-center text-gray-600 dark:text-gray-400">
         <span>
-        SourceComms plugin &#038;	integration to SourceBans made by <a href="https://github.com/ppalex7" target="_blank">Alex</a>
+        SourceComms plugin &#038; integration to SourceBans made by <a class="font-semibold" href="https://github.com/ppalex7" target="_blank">Alex</a>
         </span>
         </div>
     </div>

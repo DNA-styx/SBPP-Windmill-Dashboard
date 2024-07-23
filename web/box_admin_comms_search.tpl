@@ -1,49 +1,55 @@
-<div align="center">
+<div
+class="flex items-center justify-center p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800"
+>
+
+
+
     <table width="50%" cellpadding="0" class="listtable" cellspacing="0">
         <tr class="sea_open">
-            <td width="2%" height="16" class="listtable_top" colspan="3" style="text-align: center;"><b>Advanced Search</b> (Click)</td>
+            <td width="2%" height="16" class="font-semibold text-center text-gray-700 dark:text-gray-400" colspan="3">Advanced Search (Click)</td>
         </tr>
         <tr>
             <td>
                 <div class="panel">
                     <table width="100%" cellpadding="0" class="listtable" cellspacing="0">
                         <tr>
-                            <td class="listtable_1" width="8%" align="center"><input id="name" name="search_type" type="radio" value="name"></td>
-                            <td class="listtable_1" width="26%">Nickname</td>
-                            <td class="listtable_1" width="66%"><input class="textbox" type="text" id="nick" value="" onmouseup="$('name').checked = true" style="width: 87%;"></td>
+                            <td class="listtable_1" width="8%" align="center"><input id="name" name="search_type" type="radio" value="name" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+                            <td class="text-gray-700 dark:text-gray-400" width="26%">Nickname</td>
+                            <td width="66%"><input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" type="text" id="nick" value="" onmouseup="$('name').checked = true"></td>
                         </tr>
                         <tr>
-                            <td align="center" class="listtable_1" ><input id="steam_" type="radio" name="search_type" value="radiobutton"></td>
-                            <td class="listtable_1" >Steam ID</td>
-                            <td class="listtable_1" >
-                                <input class="textbox" type="text" id="steamid" value="" onmouseup="$('steam_').checked = true" style="width: 50%; margin-right: 12px;"><select class="select" id="steam_match" onmouseup="$('steam_').checked = true" style="width: 33%;">
+                            <td align="center" class="listtable_1" ><input id="steam_" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+                            <td class="text-gray-700 dark:text-gray-400">Steam ID</td>
+                            <td class="flex items-center">
+                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" type="text" id="steamid" value="" onmouseup="$('steam_').checked = true">
+                                <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" id="steam_match" onmouseup="$('steam_').checked = true">
                                     <option value="0" selected>Exact Match</option>
                                     <option value="1">Partial Match</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" class="listtable_1" ><input id="reason_" type="radio" name="search_type" value="radiobutton"></td>
-                            <td class="listtable_1" >Reason</td>
-                            <td class="listtable_1" ><input class="textbox" type="text" id="ban_reason" value="" onmouseup="$('reason_').checked = true" style="width: 87%;"></td>
+                            <td align="center" class="listtable_1" ><input id="reason_" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+                            <td class="text-gray-700 dark:text-gray-400" >Reason</td>
+                            <td class="listtable_1" ><input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" type="text" id="ban_reason" value="" onmouseup="$('reason_').checked = true"></td>
                         </tr>
                         <tr>
-                            <td align="center" class="listtable_1" ><input id="date" type="radio" name="search_type" value="radiobutton"></td>
-                            <td class="listtable_1" >Date</td>
-                            <td class="listtable_1" >
-                                <input class="textbox" type="text" id="day" value="DD" onmouseup="$('date').checked = true" maxlength="2" style="width: 22%;">
-                                <input class="textbox" type="text" id="month" value="MM" onmouseup="$('date').checked = true" maxlength="2" style="width: 22%;">
-                                <input class="textbox" type="text" id="year" value="YY" onmouseup="$('date').checked = true" maxlength="4" style="width: 24%;">
+                            <td align="center" class="listtable_1" ><input id="date" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+                            <td class="text-gray-700 dark:text-gray-400" >Date</td>
+                            <td  class="flex items-center">
+                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" type="text" id="day" value="DD" onmouseup="$('date').checked = true" maxlength="2" style="width: 22%;">
+                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" type="text" id="month" value="MM" onmouseup="$('date').checked = true" maxlength="2" style="width: 22%;">
+                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" type="text" id="year" value="YY" onmouseup="$('date').checked = true" maxlength="4" style="width: 24%;">
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" class="listtable_1" ><input id="length_" type="radio" name="search_type" value="radiobutton"></td>
-                            <td class="listtable_1" >Length</td>
+                            <td align="center" class="listtable_1" ><input id="length_" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+                            <td class="text-gray-700 dark:text-gray-400" >Length</td>
                             <td class="listtable_1" >
                                 <table border="0" cellpadding="0" cellspacing="0">
                                     <tr>
                                         <td>
-                                            <select class="select" id="length_type" onmouseup="$('length_').checked = true" style="width: 60px; margin-right: 12px;">
+                                            <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" id="length_type" onmouseup="$('length_').checked = true">
                                                 <option value="e" title="equal to">=</option>
                                                 <option value="h" title="greater">&gt;</option>
                                                 <option value="l" title="smaller">&lt;</option>
@@ -52,10 +58,10 @@
                                             </select>
                                         </td>
                                         <td>
-                                            <input type="text" id="other_length" name="other_length" onmouseup="$('length_').checked = true" style="border: 1px solid #000000; font-size: 12px; background-color: rgb(215, 215, 215);width: 190px;display:none;">
+                                            <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" type="text" id="other_length" name="other_length" onmouseup="$('length_').checked = true" style="display:none;">
                                         </td>
                                         <td>
-                                            <select class="select" id="length" onmouseup="$('length_').checked = true" onchange="switch_length(this);" onmouseover="if(this.options[this.selectedIndex].value=='other')$('length').setStyle('width', '210px');if(this.options[this.selectedIndex].value=='other')this.focus();" onblur="if(this.options[this.selectedIndex].value=='other')$('length').setStyle('width', '20px');" style="width: 127%;">
+                                            <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" id="length" onmouseup="$('length_').checked = true" onchange="switch_length(this);" onmouseover="if(this.options[this.selectedIndex].value=='other')$('length').setStyle('width', '210px');if(this.options[this.selectedIndex].value=='other')this.focus();" onblur="if(this.options[this.selectedIndex].value=='other')$('length').setStyle('width', '20px');">
                                                 <option value="0">Permanent</option>
                                                 <optgroup label="minutes">
                                                     <option value="1">1 minute</option>
@@ -101,10 +107,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" class="listtable_1" ><input id="ban_type_" type="radio" name="search_type" value="radiobutton"></td>
-                            <td class="listtable_1" >Type</td>
+                            <td align="center" class="listtable_1" ><input id="ban_type_" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+                            <td class="text-gray-700 dark:text-gray-400" >Type</td>
                             <td class="listtable_1" >
-                                <select class="select" id="ban_type" onmouseup="$('ban_type_').checked = true" style="width: 95%;">
+                                <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" id="ban_type" onmouseup="$('ban_type_').checked = true">
                                     <option value="1" selected>Mute</option>
                                     <option value="2">Gag</option>
                                 </select>
@@ -112,22 +118,22 @@
                         </tr>
                         {if !$hideadminname}
                         <tr>
-                            <td class="listtable_1"  align="center"><input id="admin" name="search_type" type="radio" value="radiobutton"></td>
-                            <td class="listtable_1" >Admin</td>
+                            <td class="listtable_1"  align="center"><input id="admin" name="search_type" type="radio" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+                            <td class="text-gray-700 dark:text-gray-400" >Admin</td>
                             <td class="listtable_1" >
-                                <select class="select" id="ban_admin" onmouseup="$('admin').checked = true" style="width: 95%;">
-                {foreach from=$admin_list item="admin"}
-								    <option label="{$admin.user}" value="{$admin.aid}">{$admin.user}</option>
-							  {/foreach}
-						</select>           
-					</td> 
-				</tr>
+                                <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" id="ban_admin" onmouseup="$('admin').checked = true">
+                                    {foreach from=$admin_list item="admin"}
+								        <option label="{$admin.user}" value="{$admin.aid}">{$admin.user}</option>
+							        {/foreach}
+						        </select>           
+					        </td> 
+				        </tr>
                 {/if}
 			    <tr>
-			    	<td class="listtable_1"  align="center"><input id="where_banned" name="search_type" type="radio" value="radiobutton"></td>
-					<td class="listtable_1" >Server</td>
+			    	<td class="listtable_1"  align="center"><input id="where_banned" name="search_type" type="radio" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+					<td class="text-gray-700 dark:text-gray-400" >Server</td>
 			        <td class="listtable_1" >
-						<select class="select" id="server" onmouseup="$('where_banned').checked = true" style="width: 95%;">
+						<select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" id="server" onmouseup="$('where_banned').checked = true">
 						<option label="Web Ban" value="0">Web Ban</option>
 							{foreach from=$server_list item="server"}
 								<option value="{$server.sid}" id="ss{$server.sid}">Retrieving Hostname... ({$server.ip}:{$server.port})</option>
@@ -137,13 +143,13 @@
 			    </tr>
 				{if $is_admin}
 				<tr>
-			        <td align="center" class="listtable_1" ><input id="comment_" type="radio" name="search_type" value="radiobutton"></td>
-			        <td class="listtable_1" >Comment</td>
-			        <td class="listtable_1" ><input class="textbox" type="text" id="ban_comment" value="" onmouseup="$('comment_').checked = true" style="width: 87%;"></td>
+			        <td align="center" class="listtable_1" ><input id="comment_" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+			        <td class="text-gray-700 dark:text-gray-400" >Comment</td>
+			        <td class="listtable_1" ><input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" type="text" id="ban_comment" value="" onmouseup="$('comment_').checked = true"></td>
 			    </tr>
 				{/if}
 			    <tr>
-					<td colspan="4">{sb_button text="Search" onclick="search_blocks();" class="ok searchbtn" id="searchbtn" submit=false}</td>
+					<td colspan="4">{sb_button text="Search" onclick="search_blocks();" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="searchbtn" submit=false}</td>
 			    </tr>
 			   </table>
 			   </div>
@@ -151,5 +157,9 @@
 		</tr>
 	</table>
 </div>
+
+
+</div>
+
 {$server_script}
 <script>InitAccordion('tr.sea_open', 'div.panel', 'mainwrapper');</script>
