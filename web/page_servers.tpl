@@ -45,7 +45,7 @@
 
                     {if $IN_SERVERS_PAGE}
                     <tr
-                    class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
+                    xclass="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
                     >
                       <td colspan="8">
                       <div class="opener">    
@@ -62,9 +62,9 @@
                                                     <table class="w-full whitespace-no-wrap" id="playerlist_{$server.sid}" name="playerlist_{$server.sid}">
                                                     </table>
                                                 </td>
-                                                <td width="355px" class="" valign="" style="padding-right: 0px; padding-left: 13px; padding-top: 12px;">
+                                                <td width="355px" class="" valign="top" style="padding-right: 0px; padding-left: 13px; padding-top: 12px;">
                                                     <img id="mapimg_{$server.sid}" style="border-radius: 6px; padding-left: 1px;" width='340' src='images/maps/nomap.jpg'>
-                                                    <br><br>{$server.ip}:{$server.port}<br>
+                                                    <br><br>IP Address: {$server.ip}:{$server.port}<br>
                                                 </td>
                                             </tr>
                                         </table>
