@@ -56,14 +56,12 @@
     </table>
 {else}
 
-    <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
-    <div class="w-full overflow-x-auto">
+
 
     <br>
     {load_template file='admin.bans.search'}
     <br>
 
- 
     <div
         class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800"
         >
@@ -77,17 +75,17 @@
             <a href="index.php?p=banlist&hideinactive={if $hidetext == 'Hide'}true{else}false{/if}{$searchlink|smarty_htmlspecialchars}" title="{$hidetext} inactive">{$hidetext} inactive</a> | <i>Total Bans: {$total_bans}</i>
         </span>
         </div>
-    
     </div>
  
- 
- 
+    <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+    <div class="w-full overflow-x-auto">
+    
         <div id="banlist">
         <table class="w-full whitespace-no-wrap">
         <thead>
             <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                 {if $view_bans}
-                    <td class="px-4 py-3"><div class="ok" style="height:16px;width:16px;cursor:pointer;" title="Select All" name="tickswitch" id="tickswitch" onclick="TickSelectAll()"></div></td>
+                    <td class="px-4 py-3"><div class="ok text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" title="Select All" name="tickswitch" id="tickswitch" onclick="TickSelectAll()"></div></td>
                 {/if}
                 <td class="px-4 py-3"><b>MOD/Country</b></td>
                 <td class="px-4 py-3"><b>Date</b></td>
@@ -106,7 +104,7 @@
                         {/if}
                 >
                     {if $view_bans}
-                        <td class="px-4 py-3"><input type="checkbox" name="chkb_{$smarty.foreach.banlist.index}" id="chkb_{$smarty.foreach.banlist.index}" value="{$ban.ban_id}"></td>
+                        <td class="px-4 py-3"><input type="checkbox" class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" name="chkb_{$smarty.foreach.banlist.index}" id="chkb_{$smarty.foreach.banlist.index}" value="{$ban.ban_id}"></td>
                     {/if}
                     <td class="flex px-4 py-3 items-center">{$ban.mod_icon}</td>
                     <td class="px-4 py-3">{$ban.ban_date}</td>
@@ -432,6 +430,9 @@
 
 
         {if $general_unban || $can_delete}
+            <div
+            class="flex px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800"
+            >
             &nbsp;&nbsp;L&nbsp;&nbsp;<a href="#" onclick="TickSelectAll();return false;" title="Select All" name="tickswitchlink" id="tickswitchlink">Select All</a>&nbsp;&nbsp;|&nbsp;
             <select name="bulk_action" id="bulk_action" onchange="BulkEdit(this,'{$admin_postkey}');">
                 <option value="-1">Action</option>
@@ -443,6 +444,7 @@
                 {/if}
             </select>
             <hr>
+            </div>
         {/if}
         {if $can_export }
             <a href="./exportbans.php?type=steam" title="Export Permanent SteamID Bans">Export Permanent SteamID Bans</a>&nbsp;&nbsp;|&nbsp;

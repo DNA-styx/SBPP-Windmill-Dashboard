@@ -56,9 +56,6 @@
     </table>
 {else}
 
-    <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
-    <div class="w-full overflow-x-auto">
-
     <br>
     {load_template file='admin.comms.search'}
     <br>
@@ -79,6 +76,8 @@
             </div>
         </div>
 
+    <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+    <div class="w-full overflow-x-auto">
 
     <div id="banlist">
         <table class="w-full whitespace-no-wrap">
