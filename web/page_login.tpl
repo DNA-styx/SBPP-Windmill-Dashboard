@@ -1,3 +1,8 @@
+<div
+class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
+>
+
+
 <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
 <div class="w-full">
 
@@ -68,7 +73,7 @@
 </div>
  
 
-
+</div>
 
 <script>
     $E('html').onkeydown = function(event){
