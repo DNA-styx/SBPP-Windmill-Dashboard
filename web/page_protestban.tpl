@@ -12,7 +12,7 @@
         <input type="hidden" name="subprotest" value="1">
         <table>
             <tr>
-                <td colspan="3">
+                <td colspan="2">
                     <span class="text-gray-700 dark:text-gray-400">Your Details</span>
                 </td>
             </tr>
@@ -39,7 +39,7 @@
                     <input
                     class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
                     maxlength="64" name="SteamID" value="{$steam_id}"
-                    />
+                    >
                 </td>
             </tr>
             <tr id="ip.row" style="display: none;">
@@ -49,17 +49,17 @@
                     <input
                     class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
                     maxlength="64" name="IP" value="{$ip}"
-                    />
+                    >
                 </td>
             </tr>
             <tr>
                 <td width="20%">
-                <span class="text-gray-700 dark:text-gray-400">Name *:</td>
+                <span class="text-gray-700 dark:text-gray-400">Name *:</span></td>
                 <td>
                     <input
                     class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
                     maxlength="64" name="PlayerName" value="{$player_name}"
-                    />
+                    >
                 </td>
             </tr>
             <tr>
@@ -76,12 +76,12 @@
             </tr>
             <tr>
                 <td width="20%">
-                <span class="text-gray-700 dark:text-gray-400">Your Email*:</td>
+                <span class="text-gray-700 dark:text-gray-400">Your Email*:</span></td>
                 <td>
                     <input
                     class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
                     maxlength="70" name="EmailAddr" value="{$player_email}"
-                    />
+                    >
                 </td>
             </tr>
             <tr>
@@ -94,8 +94,8 @@
         </table>
     </form>
     <br><br>
-    <p class="text-sm text-gray-600 dark:text-gray-400"><b>What happens after I submit my appeal?</b><br />
-    The staff team will be notified of your appeal. They will then review if the ban is conclusive. After reviewing you will get a reply, which usally means within 24 hours.<br />
+    <p class="text-sm text-gray-600 dark:text-gray-400"><b>What happens after I submit my appeal?</b><br>
+    The staff team will be notified of your appeal. They will then review if the ban is conclusive. After reviewing you will get a reply, which usally means within 24 hours.<br>
     <b>Note:</b> Sending emails with threats to our admins, scolding or shouting will not get you unbanned and you will be permanently denied from using any of our services.
     </p>
 

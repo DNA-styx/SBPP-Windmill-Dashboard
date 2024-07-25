@@ -98,9 +98,10 @@
               <td>
                 <input name="demo_file" type="file" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" style="width: 268px;" /><br>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
-                        Note: Only DEM, <a href="http://www.winzip.com" target="_blank">ZIP</a>, <a href="http://www.rarlab.com" target="_blank">RAR</a>, <a href="http://www.7-zip.org" target="_blank">7Z</a>, <a href="http://www.bzip.org" target="_blank">BZ2</a> or <a href="http://www.gzip.org" target="_blank">GZ</a> allowed.	</td>
-                    </p>                    
-                </tr>
+                        Note: Only DEM, <a href="http://www.winzip.com" target="_blank">ZIP</a>, <a href="http://www.rarlab.com" target="_blank">RAR</a>, <a href="http://www.7-zip.org" target="_blank">7Z</a>, <a href="http://www.bzip.org" target="_blank">BZ2</a> or <a href="http://www.gzip.org" target="_blank">GZ</a> allowed.
+                </p>
+              </td>
+            </tr>
             <tr>
               <td><span class="text-gray-700 dark:text-gray-400">* = Mandatory Field</span></td>
               <td>
@@ -114,7 +115,7 @@
 <br>
 
 <p class="text-sm text-gray-600 dark:text-gray-400">
-    <b>What happens if someone gets banned?</b><br />
+    <b>What happens if someone gets banned?</b><br>
     If someone you reported gets banned, the SteamID or IP will be included onto the ban on the main bans list and everytime they try to connect to any server they will be blocked from joining and it will be logged into our database.
 </p>
 

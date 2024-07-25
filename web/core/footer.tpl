@@ -26,8 +26,6 @@
 </main>
 </div>
 </div>
-
-</div> 
 <script>
 
 {$query}
