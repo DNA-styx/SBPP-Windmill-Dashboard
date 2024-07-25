@@ -45,7 +45,7 @@
 
                     {if $IN_SERVERS_PAGE}
                     <tr
-                    xclass="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
+                    class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
                     >
                       <td colspan="7">
                       <div class="opener">    
@@ -70,7 +70,7 @@
                                         </table>
                                     </div>
                                     <div id="noplayer_{$server.sid}" name="noplayer_{$server.sid}" style="display:none;"><br>
-                                        <h2 style="color: #333;">No players in the server</h2><br>
+                                        <h2>No players in the server</h2><br>
                                     </div>
                                 </div>
 

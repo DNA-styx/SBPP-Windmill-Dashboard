@@ -365,7 +365,7 @@
                 <!-- ###############[ End Sliding Panel ]################## -->
             {/foreach}
         </tbody>
-        </table><div align="right" style="margin-top: 3px; font-size:7pt"></div>
+        </table>
     </div>
 
 
