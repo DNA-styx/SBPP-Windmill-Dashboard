@@ -85,7 +85,16 @@
         <thead>
             <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                 {if $view_bans}
-                    <td class="px-4 py-3"><div class="ok text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" title="Select All" name="tickswitch" id="tickswitch" onclick="TickSelectAll()"></div></td>
+                    <td class="px-4 py-3">
+                        <input 
+                            type="checkbox"  
+                            class="ok text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" 
+                            title="Select All" 
+                            name="tickswitch" 
+                            id="tickswitch" 
+                            onclick="TickSelectAll()">
+                        </input>
+                    </td>
                 {/if}
                 <td class="px-4 py-3"><b>MOD/Country</b></td>
                 <td class="px-4 py-3"><b>Date</b></td>
@@ -104,7 +113,15 @@
                         {/if}
                 >
                     {if $view_bans}
-                        <td class="px-4 py-3"><input type="checkbox" class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" name="chkb_{$smarty.foreach.banlist.index}" id="chkb_{$smarty.foreach.banlist.index}" value="{$ban.ban_id}"></td>
+                        <td class="px-4 py-3">
+                            <input 
+                                type="checkbox"
+                                class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                                name="chkb_{$smarty.foreach.banlist.index}"
+                                id="chkb_{$smarty.foreach.banlist.index}"
+                                value="{$ban.ban_id}"
+                            >
+                        </td>
                     {/if}
                     <td class="flex px-4 py-3 items-center">{$ban.mod_icon}</td>
                     <td class="px-4 py-3">{$ban.ban_date}</td>
