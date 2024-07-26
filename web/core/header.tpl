@@ -37,7 +37,7 @@
  
  
  
-        {$xajax}
+    {$xajax}
     </head>
     <body>
     <div

@@ -35,11 +35,13 @@
                         <td class="px-4 py-3 text-sm" id="players_{$server.sid}">N/A</td>
                         <td class="px-4 py-3 text-sm" id="map_{$server.sid}">N/A</td>
                         <td class="px-4 py-3 text-sm">
-                            <a href="steam://connect/{$server.ip}:{$server.port}">
                             <button
+                            type="button"
                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                            onclick="location.href='steam://connect/{$server.ip}:{$server.port}'"
                             >
-                            Connect</button></a>
+                                Connect
+                            </button>
                         </td>
                     </tr>
 
@@ -97,7 +99,7 @@
 </div>
 
 {literal}
-    <script type="text/javascript">window.addEvent('domready', function(){
+    <script>window.addEvent('domready', function(){
             InitAccordion('tr.opener', 'div.opener', 'mainwrapper');
             {/literal}
             {if $view_bans}

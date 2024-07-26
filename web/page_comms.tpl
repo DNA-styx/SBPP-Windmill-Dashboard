@@ -208,7 +208,7 @@
                                 </tr>
                                 <tr align="left">
                                     <td class="px-4">Steam ID</td>
-                                    <td class="px-4"">
+                                    <td class="px-4">
                                         {if empty($ban.steamid)}
                                             <i><font color="#677882">No Steam ID present</font></i>
                                         {else}

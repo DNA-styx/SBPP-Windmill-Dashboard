@@ -1,9 +1,9 @@
       <!-- Start navbar.tpl -->
       <!-- Desktop sidebar -->
-      <aside
-        class="z-20 flex-shrink-0 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block"
-      >
-        <div class="py-4 text-gray-500 dark:text-gray-400">
+<aside
+    class="z-20 flex-shrink-0 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block"
+    >
+    <div class="py-4 text-gray-500 dark:text-gray-400">
           <a
             class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
             href="#"
@@ -16,64 +16,65 @@
                 <li class="relative px-6 py-3">
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="index.php?p={$nav.endpoint}" title="{$nav.title}::{$nav.description}"
+                    href="index.php?p={$nav.endpoint}" 
+                    title="{$nav.title}::{$nav.description}"
                 >
-                    <i class="fa fa-chevron-right" aria-hidden="true"></i><span class="ml-4">{$nav.title}</span>
+                <i class="fa fa-chevron-right" aria-hidden="true"></i><span class="ml-4">{$nav.title}</span>
                 </a>
                 </li>
             {/foreach}
 
-        {if $isAdmin}
+            {if $isAdmin}
 
-            {foreach from=$adminbar item=admin}
+                {foreach from=$adminbar item=admin}
+                    <li class="relative px-6 py-3">
+                    <a
+                        class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                        href="index.php?p=admin&c={$admin.endpoint}" 
+                        title="{$nav.title}::{$nav.description}"
+                    >
+                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i><span class="ml-4">{$admin.title}</span>
+                    </a>
+                    </li>
+                {/foreach}
+            {/if}
+
+            {if $login}
+    
                 <li class="relative px-6 py-3">
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="index.php?p=admin&c={$admin.endpoint}" title="{$nav.title}::{$nav.description}"
+                    href="index.php?p=account"
                 >
-                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i><span class="ml-4">{$admin.title}</span>
+                <i class="fa fa-chevron-right" aria-hidden="true"></i> <span class="ml-4">{$username}</span>
                 </a>
                 </li>
-            {/foreach}
-        {/if}
+                
+                <li class="relative px-6 py-3">
+                <a
+                    class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="index.php?p=logout"
+                >
+                <i class="fa fa-chevron-right" aria-hidden="true"></i> <span class="ml-4">Logout</span>
+                </a>
+                </li>
 
-        {if $login}
- 
-            <li class="relative px-6 py-3">
-            <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                href="index.php?p=account"
-            >
-            <i class="fa fa-chevron-right" aria-hidden="true"></i> <span class="ml-4">{$username}</span>
-            </a>
-            </li>
+            {else}
+    
+                <li class="relative px-6 py-3">
+                <a
+                    class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="index.php?p=login"
+                >
+                <i class="fa fa-chevron-right" aria-hidden="true"></i><span class="ml-4">Login</span>
+                </a>
+                </li>
 
-             
-            <li class="relative px-6 py-3">
-            <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                href="index.php?p=logout"
-            >
-            <i class="fa fa-chevron-right" aria-hidden="true"></i> <span class="ml-4">Logout</span>
-            </a>
-            </li>
-
-        {else}
- 
-            <li class="relative px-6 py-3">
-            <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                href="index.php?p=login"
-            >
-            <i class="fa fa-chevron-right" aria-hidden="true"></i><span class="ml-4">Login</span>
-            </a>
-            </li>
-
-       {/if}
+            {/if}
        </ul>
 
-
-        </aside>
+    </div>
+</aside>
       <!-- Start Mobile sidebar -->
       <!-- Backdrop -->
       <div

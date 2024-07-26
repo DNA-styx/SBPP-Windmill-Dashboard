@@ -20,7 +20,7 @@ class="flex items-center justify-center p-4 mb-8 text-sm px-4 py-3 bg-white roun
                             <td align="center" class="listtable_1" ><input id="steam_" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
                             <td class="text-gray-700 dark:text-gray-400" >Steam ID</td>
                             <td class="flex items-center">
-                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" type="text" id="steamid" value="" onmouseup="$('steam_').checked = true"style="width: 50%; margin-right: 12px;">
+                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" type="text" id="steamid" value="" onmouseup="$('steam_').checked = true" style="width: 50%; margin-right: 12px;">
                                 <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" id="steam_match" onmouseup="$('steam_').checked = true" style="width: 33%;">
                                     <option value="0" selected>Exact Match</option>
                                     <option value="1">Partial Match</option>
@@ -155,7 +155,9 @@ class="flex items-center justify-center p-4 mb-8 text-sm px-4 py-3 bg-white roun
 			    </tr>
 				{/if}
 			    <tr>
-			        <td colspan="4">{sb_button text="Search" onclick="search_bans();" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="searchbtn" submit=false}</td>
+			        <td colspan="3">
+                        {sb_button text="Search" onclick="search_bans();" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="searchbtn" submit=false}
+                    </td>
 			    </tr>
 			   </table>
 			   </div>

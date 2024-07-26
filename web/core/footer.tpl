@@ -19,9 +19,7 @@
 </div>
 <!-- end footer bar -->
 
-
-
-
+</div>
 </div>
 </main>
 </div>
@@ -50,10 +48,9 @@
             className: 'perm'
         });
     });
-    {/literal}
+{/literal}
 
 </script>
 </body>
 </html>
-
 <!-- End footer.tpl -->
