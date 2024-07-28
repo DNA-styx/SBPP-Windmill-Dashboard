@@ -64,7 +64,7 @@
             </tr>
             <tr>
                 <td width="20%" valign="top">
-                    <span class="text-gray-700 dark:text-gray-400">Reason why you should be unbanned *: (Be as descriptive as possible)</span>
+                    <span class="text-gray-700 dark:text-gray-400">Reason why you should be unbanned *:<br>(Be as descriptive as possible)</span>
                 </td>
                 <td>
                     <textarea
