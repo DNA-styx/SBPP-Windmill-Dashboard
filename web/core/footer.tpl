@@ -13,7 +13,7 @@
     </div>
     <div class="flex items-center text-gray-600 dark:text-gray-400">
     <span>
-        Theme based on <a class="font-semibold" href="https://github.com/estevanmaito/windmill-dashboard" target="_blank">Windmill</a> with code from <a class="font-semibold" href="https://sbpp.github.io/" target="_blank">SourceBans++</a> & <a class="font-semibold" href="https://github.com/Rushaway/sourcebans-web-theme-fluent" target="_blank">Rushaway</a>
+        <a class="font-semibold" href="https://github.com/DNA-styx/sbpp-windmill-dashboard" target="_blank">Theme</a> based on <a class="font-semibold" href="https://github.com/estevanmaito/windmill-dashboard" target="_blank">Windmill</a> with code from <a class="font-semibold" href="https://sbpp.github.io/" target="_blank">SourceBans++</a> & <a class="font-semibold" href="https://github.com/Rushaway/sourcebans-web-theme-fluent" target="_blank">Rushaway</a>
     </span>
     </div>
 </div>
