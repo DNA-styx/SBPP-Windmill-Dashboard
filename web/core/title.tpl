@@ -136,14 +136,28 @@
                 class="inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                 href="#"
               >
-                <span>Messages</span>
-                <span
-                  class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-600 bg-red-100 rounded-full dark:text-red-100 dark:bg-red-600"
-                >
-                  13
-                </span>
+              <button class="btn" onclick="Credits.showModal()">Credits</button>
+
               </a>
-            </li>
+
+<!-- Open the modal using ID.showModal() method -->
+
+<dialog id="Credits" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+
+              </li>
             <li class="flex">
               <a
                 class="inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
@@ -245,7 +259,7 @@
 </header>
 <!-- end header -->
 
-<!-- start budy -->
+<!-- start body -->
 <main class="h-full pb-16 overflow-y-auto">
 <div class="container px-6 mx-auto grid">
   <h2
