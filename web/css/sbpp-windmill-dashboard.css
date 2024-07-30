@@ -234,6 +234,8 @@ hr {
     border: 1px solid #ddd;
 }
 
+/*
+
 #admin-page-menu > a {
     display: block;
     height: 20px;
@@ -252,6 +254,8 @@ hr {
 #admin-page-menu > .active {
     font-weight: bold;
 }
+
+*/
 
 .tabcontent {
     display: none;
