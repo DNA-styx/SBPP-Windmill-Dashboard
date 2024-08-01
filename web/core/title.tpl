@@ -1,4 +1,4 @@
-<!-- Start title.tpl -->
+<!-- Start Top Nav Bar -->
 <div class="flex flex-col flex-1 w-full">
 <header class="z-10 py-4 bg-white shadow-md dark:bg-gray-800">
   <div
@@ -25,7 +25,7 @@
     </button>
 
     <!-- Search input -->
-
+<!--
     <div class="flex justify-center flex-1 lg:mr-32">
     <form action="\index.php" method="GET">
       <div
@@ -46,7 +46,7 @@
       </div>
       </form>
     </div>
-
+-->
     <div class="flex justify-center flex-1 lg:mr-32">
     <form action="\index.php" method="GET">
       <div
@@ -67,7 +67,24 @@
       </div>
       </form>
     </div>
-
+<!--
+    <div class="flex justify-center">
+    <div>
+      <div>
+        <input 
+        class="w-full pl-8 pr-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input" 
+        placeholder="Search" 
+        >
+      </div>
+    </div>
+    <select class="select select-bordered join-item">
+      <option disabled selected>Filter</option>
+      <option>Bans</option>
+      <option>Comms</option>
+    </select>
+      <button class="btn join-item">Search</button>
+  </div>
+-->
 
     <ul class="flex items-center flex-shrink-0 space-x-6">
       <!-- Theme toggler -->
@@ -206,7 +223,6 @@
 
           {if $login}
 
-
              <li class="flex">
               <a
                 class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
@@ -237,7 +253,6 @@
           </ul>
 
           {else}
-          
         
             <li class="flex">
             <a
@@ -259,14 +274,35 @@
 </header>
 <!-- end header -->
 
+<!-- End Top Nav Bar -->
+
 <!-- start body -->
 <main class="h-full pb-16 overflow-y-auto">
 <div class="container px-6 mx-auto grid">
+
+<br>
+<div
+class="flex items-center justify-between p-4 mb-8 text-xl font-semibold text-purple-100 bg-purple-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
+>
+  <div class="flex items-center">
+  {$title}
+  </div>
+</div>
+
+<!--
+<br> 
+<br> 
+<br> 
+
   <h2
     class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
   >
   {$title}
   </h2>
+
+
+
+-->
 
 <!-- Default pop-up box -->
   <div id="dialog-placement" style="vertical-align:middle;display:none;opacity:0;text-align:center;width:892px;margin:0 auto;position:fixed !important;position:absolute;overflow:hidden;top:10px;left:100px;">

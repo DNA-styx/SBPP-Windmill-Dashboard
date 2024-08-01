@@ -174,4 +174,5 @@
         </div>
       </aside>
 
-      <!-- End navbar.tpl -->
+      <!-- End side navbar -->
+      
