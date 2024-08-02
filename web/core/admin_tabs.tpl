@@ -33,10 +33,27 @@
       Messages
     </a>
   </div>
- 
- 
- 
+
   <br><br><br>
+
+
+    <div class="inline-flex shadow-sm rounded-md">
+    <div class="rounded-l-lg border border-gray-200 bg-white text-sm font-medium px-4 py-2  hover:bg-gray-100 text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+    </div>
+
+  {foreach from=$tabs item="tab"}
+    <a onclick="openTab(this, '{$tab.name}');" href="#" class="border-t border-b border-gray-200 bg-white text-sm font-medium px-4 py-2 text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+
+              {$tab.name}
+      </a>
+  {/foreach}
+    <a href="#" class="rounded-r-md border border-gray-200 bg-white text-sm font-medium px-4 py-2 text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+    
+    </a>
+
+</div>
+  
+<br><br><br>
 
 <div id="admin-page-menu" class="inline-flex rounded-md shadow-sm" role="group">
   
