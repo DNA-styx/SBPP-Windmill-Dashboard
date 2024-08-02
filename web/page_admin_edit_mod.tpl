@@ -28,7 +28,7 @@ class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
                 <td>
                     <div align="left">
                         <input type="hidden" id="icon_hid" name="icon_hid" value="{$mod_icon}">
-                        <input type="text" TABINDEX=1 class="textbox" id="name" name="name" value="{$name}" />
+                        <input type="text" TABINDEX=1 id="name" name="name" value="{$name}" class="block mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
                     </div>
                     <div class="text-xs text-gray-600 dark:text-gray-400">
                         Type the name of the mod you are editting.
@@ -41,7 +41,7 @@ class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
                 <td valign="top"><div class="rowdesc text-gray-700 dark:text-gray-400">Mod Folder</div></td>
                 <td>
                     <div align="left">
-                        <input type="text" TABINDEX=2 class="textbox" id="folder" name="folder" value="{$folder}" />
+                        <input type="text" TABINDEX=2 id="folder" name="folder" value="{$folder}" class="block mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
                     </div>
                     <div class="text-xs text-gray-600 dark:text-gray-400">
                         Type the name of this mod's folder. For example, Counter-Strike: Source's mod folder is 'cstrike'.
@@ -53,7 +53,7 @@ class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
                 <td valign="top"><div class="rowdesc text-gray-700 dark:text-gray-400">Steam Universe Number</div></td>
                 <td>
                     <div align="left">
-                        <input type="text" TABINDEX=3 class="textbox" id="steam_universe" name="steam_universe" value="{$steam_universe}" />
+                        <input type="text" TABINDEX=3 id="steam_universe" name="steam_universe" value="{$steam_universe}" class="block mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
                     </div>
                     <div class="text-xs text-gray-600 dark:text-gray-400">
                         (STEAM_<b>X</b>:Y:Z) Some games display the steamid differently than others. Type the first number in the SteamID (<b>X</b>) depending on how it's rendered by this mod. (Default: 0).
@@ -64,7 +64,7 @@ class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
                 <td valign="top"><div class="rowdesc text-gray-700 dark:text-gray-400">Enabled</div></td>
                 <td>
                     <div align="left">
-                        <input type="checkbox" TABINDEX=4 id="enabled" name="enabled" value="1" />
+                        <input type="checkbox" TABINDEX=4 id="enabled" name="enabled" value="1" class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                     </div>
                     <div class="text-xs text-gray-600 dark:text-gray-400">
                         Select if this mod is enabled and assignable to bans and servers.
