@@ -14,7 +14,7 @@
                 <table class="w-full whitespace-no-wrap">
                   <thead>
                     <tr
-                      class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
+                      class="text-sm font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
                     >
                       <th class="px-4 py-3">Name</th>
                       <th class="px-4 py-3">Mod Folder</th>
@@ -32,13 +32,13 @@
                   {foreach from=$mod_list item="mod" name="gaben"}
                   <!-- start row -->
                     <tr id="mid_{$mod.mid}" class="text-gray-700 dark:text-gray-400">
-                      <td class="px-4 py-3 text-xs">
+                      <td class="px-4 py-3 text-sm">
                         {$mod.name|smarty_htmlspecialchars}
                       </td>
                       <td class="px-4 py-3 text-sm">
                         {$mod.modfolder|smarty_htmlspecialchars}
                       </td>
-                      <td class="px-4 py-3 text-xs">
+                      <td class="px-4 py-3 text-sm">
                         <img src="images/games/{$mod.icon}">  
                       </td>
                       <td class="px-4 py-3 text-sm">
@@ -48,7 +48,7 @@
                       {if $permission_editmods || $permission_deletemods}
                       
                       <td class="px-4 py-3">
-                        <div class="flex items-center space-x-4 text-sm">
+                        <div class="flex items-center space-x-4 text-s">
                           
                         {if $permission_editmods}
 
