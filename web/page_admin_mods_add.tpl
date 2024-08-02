@@ -94,17 +94,17 @@ class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
                         {sb_button text="Upload Mod Icon" onclick="childWindow=open('pages/admin.uploadicon.php','upload','resizable=yes,width=300,height=130');" class="save  block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="upload"}
                     </div>
                     <div class="text-xs text-gray-600 dark:text-gray-400">
-                    Click here to upload an icon to associate with this mod.
+                        Click here to upload an icon to associate with this mod.
                     </div>
-
-                    <div id="icon.msg" style="color:#CC0000;"></div>
+                    <div id="icon.msg"  class="badentry text-xs text-red-600 dark:text-red-400"></div>
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>
+                <td class="flex items-center">
                     {sb_button text="Add Mod" onclick="ProcessMod();" class="ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="amod"}&nbsp;
-<!--                    {sb_button text="Back" onclick="history.go(-1)" class="cancel" id="aback"} -->
+                    &nbsp;&nbsp;
+                    {sb_button text="Cancel" onclick="document.location='index.php?p=admin&c=mods'" class="cancel block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="back" submit=false}
                 </td>
             </tr>
         </table>
