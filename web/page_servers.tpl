@@ -72,7 +72,7 @@
                                         </table>
                                     </div>
                                     <div id="noplayer_{$server.sid}" name="noplayer_{$server.sid}" style="display:none;"><br>
-                                        <h2>No players in the server</h2><br>
+                                        <span class="text-sm text-gray-600 dark:text-gray-400">No players in the server</span>
                                     </div>
                                 </div>
 
