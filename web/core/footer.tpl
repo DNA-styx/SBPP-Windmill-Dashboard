@@ -3,8 +3,7 @@
 
 <!-- Start footer bar -->
 <div
-    class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800"
->
+    class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
     <div class="flex items-center text-gray-600 dark:text-gray-400">
         <span>
             <a class="font-semibold" href="https://sbpp.github.io/" target="_blank">SourceBans++</a> {$version}{$git}
@@ -12,9 +11,14 @@
         </span>
     </div>
     <div class="flex items-center text-gray-600 dark:text-gray-400">
-    <span>
-        <a class="font-semibold" href="https://github.com/DNA-styx/sbpp-windmill-dashboard" target="_blank">Theme</a> based on <a class="font-semibold" href="https://github.com/estevanmaito/windmill-dashboard" target="_blank">Windmill</a> with code from <a class="font-semibold" href="https://sbpp.github.io/" target="_blank">SourceBans++</a> & <a class="font-semibold" href="https://github.com/Rushaway/sourcebans-web-theme-fluent" target="_blank">Rushaway</a>
-    </span>
+        <span>
+            <a class="font-semibold" href="https://github.com/DNA-styx/sbpp-windmill-dashboard"
+                target="_blank">Theme</a> based on <a class="font-semibold"
+                href="https://github.com/estevanmaito/windmill-dashboard" target="_blank">Windmill</a> with code from <a
+                class="font-semibold" href="https://sbpp.github.io/" target="_blank">SourceBans++</a> & <a
+                class="font-semibold" href="https://github.com/Rushaway/sourcebans-web-theme-fluent"
+                target="_blank">Rushaway</a>
+        </span>
     </div>
 </div>
 <!-- end footer bar -->
