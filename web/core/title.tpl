@@ -27,7 +27,7 @@
     <!-- Search input -->
 <!--
     <div class="flex justify-center flex-1 lg:mr-32">
-    <form action="\index.php" method="GET">
+    <form action="index.php" method="GET">
       <div
         class="relative w-full max-w-xl mr-6 focus-within:text-purple-500"
       >
@@ -48,7 +48,7 @@
     </div>
 -->
 <div class="flex justify-center flex-1 lg:mr-32">
-  <form action="\index.php" method="GET">
+  <form action="index.php" method="GET">
     <div class="relative w-full max-w-xl mr-6 focus-within:text-purple-500">
       <div class="absolute inset-y-0 flex items-center pl-2">
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -299,9 +299,9 @@ class="flex items-center justify-between p-4 mb-8 text-xl font-semibold text-pur
 -->
 
 <!-- Default pop-up box -->
-  <div id="dialog-placement" style="vertical-align:middle;display:none;opacity:0;text-align:center;width:892px;margin:0 auto;position:fixed !important;position:absolute;overflow:hidden;top:10px;left:100px;">
+  <div id="dialog-placement" style="vertical-align:middle;display:none;opacity:0;text-align:center;width:892px;margin:0 auto;position:fixed !important;position:absolute;overflow:hidden;top:100px;left:100px;">
   <table width="460px" id="dialog-holder" class="dialog-holder" border="0" cellspacing="0" cellpadding="0" >
-      <tbody width="460px">
+      <tbody>
       <tr>
           <td class="box-content">
               <h2 align="left" id="dialog-title" class="ok"></h2>
