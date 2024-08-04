@@ -1,6 +1,5 @@
 <!-- Start footer.tpl -->
 
-
 <!-- Start footer bar -->
 <div
     class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
@@ -29,32 +28,31 @@
 </div>
 </div>
 <script>
+    {$query}
 
-{$query}
+    {literal}
+        window.addEvent('domready', function() {
 
-{literal}
-    window.addEvent('domready', function(){
-    
-        ProcessAdminTabs();
-    
-        var Tips2 = new Tips($('.tip'), {
-            initialize:function(){
-                this.fx = new Fx.Style(this.toolTip, 'opacity', {duration: 300, wait: false}).set(0);
-            },
-            onShow: function(toolTip) {
-                this.fx.start(1);
-            },
-            onHide: function(toolTip) {
-                this.fx.start(0);
-            }
+            ProcessAdminTabs();
+
+            var Tips2 = new Tips($('.tip'), {
+                initialize: function() {
+                    this.fx = new Fx.Style(this.toolTip, 'opacity', {duration: 300, wait: false}).set(0);
+                },
+                onShow: function(toolTip) {
+                    this.fx.start(1);
+                },
+                onHide: function(toolTip) {
+                    this.fx.start(0);
+                }
+            });
+            var Tips4 = new Tips($('.perm'), {
+                className: 'perm'
+            });
         });
-        var Tips4 = new Tips($('.perm'), {
-            className: 'perm'
-        });
-    });
-{/literal}
-
+    {/literal}
 </script>
 </body>
+
 </html>
 <!-- End footer.tpl -->
