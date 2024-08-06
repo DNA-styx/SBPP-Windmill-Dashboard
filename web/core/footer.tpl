@@ -1,6 +1,7 @@
 <!-- Start footer.tpl -->
-
+<br>
 <!-- Start footer bar -->
+
 <div
     class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
     <div class="flex items-center text-gray-600 dark:text-gray-400">
@@ -20,9 +21,10 @@
         </span>
     </div>
 </div>
+
 <!-- end footer bar -->
 
-</div>
+<!-- remove one div -->
 </div>
 </main>
 </div>

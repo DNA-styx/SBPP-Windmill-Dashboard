@@ -1,8 +1,7 @@
 <!-- Start title.tpl -->
 <!-- start body -->
-<main class="h-full pb-16 overflow-y-auto">
+<main class="h-full overflow-y-auto">
   <div class="container px-6 mx-auto grid">
-    <br>
 
     <!-- Start title -->
     <div
