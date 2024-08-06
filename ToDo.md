@@ -16,7 +16,8 @@
 | box_admin_log_search.tpl               | []      | []               | []       |        |
 | box_admin_admins_search.tpl            | []      | []               | []       |        |
 | box_admin_comms_search.tpl             | []      | []               | []       |        |
-| -------------------------------------- | ------- | ---------------- | -------- | ------ |
+|  |  |  |  |  |
+| Admin Pages |  |  |  |  |
 | page_admin_admins_add.tpl              | []      | []               | []       |        |
 | page_admin_bans_add.tpl                | []      | []               | []       |        |
 | page_admin_bans_groups.tpl             | []      | []               | []       |        |
