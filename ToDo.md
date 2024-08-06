@@ -1,4 +1,4 @@
-| Sections          | Page Name                              | Started | Theming Usable? | Coding Usable? | Related Issues |
+| Section           | Page                                   | Started | Theming Usable? | Coding Usable? | Related Issues |
 | ----------------- | -------------------------------------- | ------- | --------------- | -------------- | -------------- |
 | **Misc**          |                                        |         |                 |                |                |
 |                   | readme.md                              | [X]     | [na]            | [na]           |                |
