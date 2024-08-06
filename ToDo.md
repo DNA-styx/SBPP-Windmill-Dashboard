@@ -10,7 +10,7 @@
 | core/header.tpl                        | []      | []             | []            |                |
 | core/navbar.tpl                        | []      | []             | []            |                |
 | core/title.tpl                         | []      | []             | []            |                |
-| ###Public Pages                       |         |                |               |                |
+| **Public Pages**                       |         |                |               |                |
 | page_dashboard.tpl                     | []      | []             | []            |                |
 | page_login.tpl                         | []      | []             | []            |                |
 | page_protestban.tpl                    | []      | []             | []            |                |
