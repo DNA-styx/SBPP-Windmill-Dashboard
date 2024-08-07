@@ -1,4 +1,4 @@
-
+<!-- start bans page -->
     {if $comment}
         <h3>{$commenttype} Comment</h3>
         <table width="90%" align="center" border="0" style="border-collapse:collapse;" id="group.details" cellpadding="3">
@@ -511,3 +511,4 @@
         </script>
     {/literal}
 {/if}
+<!-- end bans page -->
