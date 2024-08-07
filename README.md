@@ -91,7 +91,7 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 
 
 
-### Built With (soon)
+### Built With (coming soon)
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
@@ -205,7 +205,7 @@ Project Link: [https://github.com/DNA-styx/sbpp-windmill-dashboard](https://gith
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments (coming soon)
 
-* []()
+* [Estevanmaito's Windmill Dashboard](https://github.com/estevanmaito/windmill-dashboard)
 * []()
 * []()
 
