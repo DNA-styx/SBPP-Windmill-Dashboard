@@ -1,5 +1,3 @@
-<!-- Added to enable default accordion -->
-<div id="mainwrapper">
 
     {if $comment}
         <h3>{$commenttype} Comment</h3>
@@ -85,7 +83,7 @@
             </div>
         </div>
 
-        <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+        <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
             <div class="w-full overflow-x-auto">
 
                 <div id="banlist">
@@ -498,7 +496,7 @@
 
 
         </div>
-    </div>
+
 
     {literal}
         <script type="text/javascript">
