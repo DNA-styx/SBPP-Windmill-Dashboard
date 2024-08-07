@@ -21,8 +21,9 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][https://img.shields.io/github/issues/DNA-styx/sbpp-windmill-dashboard.svg?style=for-the-badge][https://github.com/DNA-styx/sbpp-windmill-dashboard/issues]
-[![MIT License][https://img.shields.io/github/license/DNA-styx/sbpp-windmill-dashboard.svg?style=for-the-badge][https://github.com/DNA-styx/sbpp-windmill-dashboard/blob/master/LICENSE.md]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -83,7 +84,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][https://github.com/DNA-styx/sbpp-windmill-dashboard/blob/main/sbpp-windmill-dashboard/screenshot.jpg]](https://example.com)
+[![Product Name Screen Shot][https://raw.githubusercontent.com/DNA-styx/sbpp-windmill-dashboard/main/sbpp-windmill-dashboard/screenshot.jpg](https://github.com/DNA-styx/sbpp-windmill-dashboard/blob/main/sbpp-windmill-dashboard/screenshot.jpg)
 
 SourceBans++ Theme built using the default theme with Windmill Dashboard applied on top.
 
