@@ -37,7 +37,7 @@
 <h3 align="center">SourceBans++ Windmill Dashboard Theme</h3>
 
   <p align="center">
-    Reactive SourceBans++ Theme
+    Responsive SourceBans++ Theme
     <br />
     <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard"><strong>Explore the docs » (soon)</strong></a>
     <br />
@@ -57,7 +57,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">About The Project (soon)</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -83,7 +83,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][https://raw.githubusercontent.com/DNA-styx/sbpp-windmill-dashboard/main/sbpp-windmill-dashboard/screenshot.jpg](https://github.com/DNA-styx/sbpp-windmill-dashboard/blob/main/sbpp-windmill-dashboard/screenshot.jpg)
+[![Product Name Screen Shot][https://raw.githubusercontent.com/DNA-styx/sbpp-windmill-dashboard/main/sbpp-windmill-dashboard/screenshot.jpg](https://github.com/DNA-styx/sbpp-windmill-dashboard/blob/main/sbpp-windmill-dashboard/screenshot.jpg)]
 
 SourceBans++ Theme built using the default theme with Windmill Dashboard applied on top.
 
