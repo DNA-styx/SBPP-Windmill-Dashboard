@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/DNA-styx/sbpp-windmill-dashboard/main/media/sbpp-windmill-dashboard-logo.png" alt="Logo" width="390" height="149">
   </a>
 
 <h3 align="center">SourceBans++ Windmill Dashboard Theme</h3>
