@@ -83,7 +83,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][https://raw.githubusercontent.com/DNA-styx/sbpp-windmill-dashboard/main/sbpp-windmill-dashboard/screenshot.jpg](https://github.com/DNA-styx/sbpp-windmill-dashboard/blob/main/sbpp-windmill-dashboard/screenshot.jpg)]
+[![Product Name Screen Shot][https://raw.githubusercontent.com/DNA-styx/sbpp-windmill-dashboard/main/sbpp-windmill-dashboard/screenshot.jpg][https://github.com/DNA-styx/sbpp-windmill-dashboard/blob/main/sbpp-windmill-dashboard/screenshot.jpg]]
 
 SourceBans++ Theme built using the default theme with Windmill Dashboard applied on top.
 
