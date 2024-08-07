@@ -22,7 +22,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][https://img.shields.io/github/issues/DNA-styx/sbpp-windmill-dashboard.svg?style=for-the-badge][https://github.com/DNA-styx/sbpp-windmill-dashboard/issues]
-[![MIT License][https://img.shields.io/github/license/DNA-styx/sbpp-windmill-dashboard.svg?style=for-the-badge]][https://github.com/DNA-styx/sbpp-windmill-dashboard/blob/master/LICENSE.md]
+[![MIT License][https://img.shields.io/github/license/DNA-styx/sbpp-windmill-dashboard.svg?style=for-the-badge][https://github.com/DNA-styx/sbpp-windmill-dashboard/blob/master/LICENSE.md]
 
 
 
@@ -185,7 +185,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.md` for more information.
+Distributed under the GPL-3.0 license. See `LICENSE.md` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
