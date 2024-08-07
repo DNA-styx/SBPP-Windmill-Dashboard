@@ -23,7 +23,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -40,14 +39,14 @@
   <p align="center">
     Reactive SourceBans++ Theme
     <br />
-    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard"><strong>Explore the docs » (soon)</strong></a>
     <br />
     <br />
     <a href="https://sourcebans.dnagames.site/">View Live Demo</a>
     ·
-    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new?labels=bug&template=bug-report---.md">Report Bug (soon)</a>
     ·
-    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new?labels=enhancement&template=feature-request---.md">Request Feature (soon)</a>
   </p>
 </div>
 
@@ -92,7 +91,7 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 
 
 
-### Built With
+### Built With (soon)
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
@@ -108,7 +107,7 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Getting Started (soon)
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
@@ -121,7 +120,7 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-### Installation
+### Installation (soon)
 
 1. Clone the repo
    ```sh
@@ -141,7 +140,7 @@ This is an example of how to list things you need to use the software and how to
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Usage (soon)
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -152,7 +151,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Roadmap (soon)
 
 - [ ] Feature 1
 - [ ] Feature 2
@@ -166,7 +165,7 @@ See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Contributing (soon)
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -193,7 +192,7 @@ Distributed under the GPL-3.0 license. See `LICENSE.md` for more information.
 
 
 <!-- CONTACT -->
-## Contact
+## Contact (soon)
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
@@ -204,7 +203,7 @@ Project Link: [https://github.com/DNA-styx/sbpp-windmill-dashboard](https://gith
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Acknowledgments (soon)
 
 * []()
 * []()
