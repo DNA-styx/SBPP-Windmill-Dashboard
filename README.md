@@ -39,8 +39,6 @@
   <p align="center">
     Responsive SourceBans++ Theme
     <br />
-    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard"><strong>Explore the docs » (coming soon)</strong></a>
-    <br />
     <br />
     <a href="https://sourcebans.dnagames.site/">View Live Demo</a>
     ·
@@ -90,12 +88,9 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
+<!-- Screen shots -->
 ## Screenshots
 
-
-
-<!-- Screen shots -->
 <details>
   <summary>Dashboard on Mobile</summary>
   <p>
@@ -120,12 +115,12 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 <details>
   <summary>Bans and Comms Block on Mobile</summary>
   <p>
-    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Comms_Blocks_Light.png" >
     <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Bans_List_Dark.png" >
-</p>
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Comms_Blocks_Light.png" >
+  </p>
 </details>
 <details>
-  <summary>Bans Details and Comms Search on Mobile</summary>
+  <summary>Comms Blocks and Bans Search on Mobile</summary>
   <p>
     <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Comms_Blocks_Light.png" >
     <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Bans_Search_Light.png" >
