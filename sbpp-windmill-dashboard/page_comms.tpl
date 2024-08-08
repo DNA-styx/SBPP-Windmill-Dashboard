@@ -14,7 +14,7 @@
                 <div id="commenttext.msg" class="badentry"></div></td>
         </tr>
         <tr>
-            <td>
+            <td class="flex items-center">
                 <input type="hidden" name="bid" id="bid" value="{$comment}">
                 <input type="hidden" name="ctype" id="ctype" value="{$ctype}">
                 {if $cid != ""}
@@ -24,8 +24,8 @@
                 {/if}
                 <input type="hidden" name="page" id="page" value="{$page}">
                 {if $canedit}
-                    {sb_button text="$commenttype Comment" onclick="ProcessComment();" class="ok" id="acom" submit=false}&nbsp;
-                    {sb_button text="Back" onclick="history.go(-1)" class="cancel" id="aback"}
+                    {sb_button text="$commenttype Comment" onclick="ProcessComment();" class="ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="acom" submit=false}&nbsp;
+                    {sb_button text="Back" onclick="history.go(-1)" class="cancel block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="aback"}
                 {/if}
             </td>
         </tr>
@@ -107,7 +107,7 @@
                                 {$ban.player|escape:'html'|smarty_stripslashes}
                             {/if}
                         </div>
-                        <div style="items-center">
+                        <div style="float:right;">
                             {if $view_comments && $ban.commentdata != "None" && $ban.commentdata|@count > 0}
                                 &thinsp;{$ban.commentdata|@count}&thinsp;<i class="fas fa-clipboard-list fa-lg"></i>
                             {/if}
