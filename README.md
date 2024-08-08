@@ -98,7 +98,8 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Mobile Dashboard</summary>
-  ![https://github.com/DNA-styx/SBPP-Windmill-Dashboard/blob/main/assets/screenshots/Screenshot_Mobile_Dashboard_Dark.png?raw=true](https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Dashboard_Dark.png)
+  Dashboard on Mobile 
+  ![Screenshot Mobile Dashboard Dark)](https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Dashboard_Dark.png)
 </details>
 
 
