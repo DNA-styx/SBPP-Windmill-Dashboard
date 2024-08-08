@@ -95,7 +95,7 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 
 
 
-<!-- TABLE OF CONTENTS -->
+<!-- Screen shots -->
 <details>
   <summary>Dashboard on Mobile</summary>
   <p>
@@ -136,7 +136,7 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 
 
 
-
+<!-- Built with -->
 ### Built With (coming soon)
 
 * [![Next][Next.js]][Next-url]
