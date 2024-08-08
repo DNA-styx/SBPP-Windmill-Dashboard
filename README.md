@@ -97,10 +97,38 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Dashboard on Mobile </summary>
+  <summary>Dashboard on Mobile</summary>
   <p>
-    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Ban_Details_Light.png" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Dashboard_light.png" >
     <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Dashboard_Dark.png" >
+</p>
+</details>
+<details>
+  <summary>Server List on Mobile</summary>
+  <p>
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Server_List_Dark.png" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Server_List _Dark_2.png" >
+</p>
+</details>
+<details>
+  <summary>Menu & Logon on Mobile</summary>
+  <p>
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Menu_Light.png" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Login_Light.png" >
+</p>
+</details>
+<details>
+  <summary>Bans and Comms Block on Mobile</summary>
+  <p>
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Comms_Blocks_Light.png" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Bans_List_Dark.png" >
+</p>
+</details>
+<details>
+  <summary>Bans Details and Comms Search on Mobile</summary>
+  <p>
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Comms_Blocks_Light.png" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Bans_Search_Light.png" >
 </p>
 </details>
 
