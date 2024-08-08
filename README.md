@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard">
-    <img src="https://raw.githubusercontent.com/DNA-styx/sbpp-windmill-dashboard/main/media/sbpp-windmill-dashboard-logo.png" alt="Logo" width="390" height="149">
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/sbpp-windmill-dashboard-logo.png" alt="Sourcebans++ Windmill Dashboard Theme Logo" width="390" height="149">
   </a>
 
 <h3 align="center">SourceBans++ Windmill Dashboard Theme</h3>
@@ -88,6 +88,21 @@
 SourceBans++ Theme built using the default theme with Windmill Dashboard applied on top.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## Screenshots
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Mobile Dashboard</summary>
+  ![https://github.com/DNA-styx/SBPP-Windmill-Dashboard/blob/main/assets/screenshots/Screenshot_Mobile_Dashboard_Dark.png?raw=true](https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Dashboard_Dark.png)
+</details>
+
+
+
 
 
 
