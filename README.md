@@ -134,13 +134,7 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 ### Built With (coming soon)
 
 * [![Tailwind CSS][tailwindcss.com]][tailwindcss-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -265,5 +259,5 @@ Project Link: [https://github.com/DNA-styx/sbpp-windmill-dashboard](https://gith
 [issues-url]: https://github.com/DNA-styx/sbpp-windmill-dashboard/issues
 [license-shield]: https://img.shields.io/github/license/DNA-styx/sbpp-windmill-dashboard.svg?style=for-the-badge
 [license-url]: https://github.com/DNA-styx/sbpp-windmill-dashboard/blob/master/LICENSE.txt
-[tailwindcss.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[tailwindcss.com]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
 [tailwindcss-url]: https://tailwindcss.com 
