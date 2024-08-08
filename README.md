@@ -42,9 +42,9 @@
     <br />
     <a href="https://sourcebans.dnagames.site/">View Live Demo</a>
     ·
-    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new?labels=bug&template=bug-report---.md">Report Bug (coming soon)</a>
+    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new?labels=bug"></a>
     ·
-    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new?labels=enhancement&template=feature-request---.md">Request Feature (coming soon)</a>
+    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new?labels=enhancement">Request Feature</a>
   </p>
 </div>
 
