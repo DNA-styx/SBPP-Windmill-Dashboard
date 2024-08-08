@@ -63,10 +63,7 @@
     {else}
 
 
-
-        <br>
         {load_template file='admin.bans.search'}
-        <br>
 
         <div
             class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">

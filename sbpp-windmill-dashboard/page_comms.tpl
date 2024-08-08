@@ -56,10 +56,8 @@
     </table>
 {else}
 
-    <br>
     {load_template file='admin.comms.search'}
-    <br>
- 
+
     
         <div
         class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800"
@@ -109,9 +107,9 @@
                                 {$ban.player|escape:'html'|smarty_stripslashes}
                             {/if}
                         </div>
-                        <div style="float:right;">
+                        <div style="items-center">
                             {if $view_comments && $ban.commentdata != "None" && $ban.commentdata|@count > 0}
-                                {$ban.commentdata|@count}&thinsp;<i class="fas fa-clipboard-list fa-lg"></i>
+                                &thinsp;{$ban.commentdata|@count}&thinsp;<i class="fas fa-clipboard-list fa-lg"></i>
                             {/if}
                             {if $view_bans}
                                 {$ban.counts}
@@ -369,25 +367,20 @@
     </div>
 
 
-    <div
-    class="flex items-center justify-between p-4 mb-8 text-xs px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800"
-    >
-    <div class="flex items-center text-gray-600 dark:text-gray-400">
-        <span>
-            &nbsp;
-        </span>
-    </div>
-    <div class="flex items-center text-gray-600 dark:text-gray-400">
-        <span>
-        SourceComms plugin &#038; integration to SourceBans made by <a class="font-semibold" href="https://github.com/ppalex7" target="_blank">Alex</a>
-        </span>
-        </div>
-    </div>
 
+ 
 
 
 <!-- end wrapper --> 
 </div>
+
+<div
+class="px-4 py-3 text-xs tracking-wide text-gray-500 border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
+<span>
+SourceComms plugin &#038; integration to SourceBans made by <a class="font-semibold" href="https://github.com/ppalex7" target="_blank">Alex</a>
+</span>
+</div>
+
 
 {literal}
     <script type="text/javascript">window.addEvent('domready', function(){
