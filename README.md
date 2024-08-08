@@ -80,9 +80,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-![Product Name Screen Shot](https://raw.githubusercontent.com/DNA-styx/sbpp-windmill-dashboard/main/sbpp-windmill-dashboard/screenshot.jpg)
-
+<p align="center">
+![Product Name Screen Shot](https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Desktop_Dashboard_Dark.png)
+</p>
 SourceBans++ Theme built using the default theme with Windmill Dashboard applied on top.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -94,36 +94,36 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 <details>
   <summary>Dashboard on Mobile</summary>
   <p>
-    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Dashboard_light.png" >
-    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Dashboard_Dark.png" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Dashboard_light.png" hspace="10" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Dashboard_Dark.png" hspace="10" >
 </p>
 </details>
 <details>
   <summary>Server List on Mobile</summary>
   <p>
-    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Server_List_Dark.png" >
-    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Server_List _Dark_2.png" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Server_List_Dark.png" hspace="10" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Server_List _Dark_2.png" hspace="10" >
 </p>
 </details>
 <details>
   <summary>Menu & Logon on Mobile</summary>
   <p>
-    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Menu_Light.png" >
-    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Login_Light.png" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Menu_Light.png" hspace="10" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Login_Light.png" hspace="10" >
 </p>
 </details>
 <details>
   <summary>Bans and Comms Block on Mobile</summary>
   <p>
-    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Bans_List_Dark.png" >
-    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Comms_Blocks_Light.png" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Bans_List_Dark.png" hspace="10" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Comms_Blocks_Light.png" hspace="10" >
   </p>
 </details>
 <details>
   <summary>Comms Blocks and Bans Search on Mobile</summary>
   <p>
-    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Comms_Blocks_Light.png" >
-    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Bans_Search_Light.png" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Comms_Blocks_Light.png" hspace="10" >
+    <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Mobile_Bans_Search_Light.png" hspace="10" >
 </p>
 </details>
 
