@@ -12,7 +12,7 @@
 |                   | core/title.tpl                         | [X]     | [X]             | [ ]            |                |
 | **Public**        |                                        |         |                 |                |                |
 |                   | page_dashboard.tpl                     | [X]     | [X]             | [X]            |                |
-|                   | page_login.tpl                         | [X]     | [X]             | [ ]            |                |
+|                   | page_login.tpl                         | [X]     | [X]             | [X]            |                |
 |                   | page_protestban.tpl                    | [X]     | [X]             | [ ]            |                |
 |                   | page_submitban.tpl                     | [X]     | [X]             | [ ]            | #9             |
 |                   | page_youraccount.tpl                   | [ ]     | [ ]             | [ ]            |                |
@@ -46,7 +46,7 @@
 | **Manage Mods**   |                                        |         |                 |                |                |
 |                   | page_admin_mods_list.tpl               | [X]     | [X]             | [ ]            | #11               |
 |                   | page_admin_mods_add.tpl                | [X]     | [X]             | [ ]            |                |
-|                   | page_admin_edit_mod.tpl                | [X]     | [ ]             | [ ]            |                |
+|                   | page_admin_edit_mod.tpl                | [X]     | [X]             | [X]            |                |
 | **Manage Admins** |                                        |         |                 |                |                |
 |                   | page_admin_admins_add.tpl              | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_admins_list.tpl             | [ ]     | [ ]             | [ ]            |                |
