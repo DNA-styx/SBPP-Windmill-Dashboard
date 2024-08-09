@@ -13,7 +13,7 @@
     <div class="flex items-center text-gray-600 dark:text-gray-400">
         <span>
             <a class="font-semibold" href="https://github.com/DNA-styx/sbpp-windmill-dashboard"
-                target="_blank">Theme</a> {$theme_version} based on <a class="font-semibold"
+                target="_blank">Theme</a> .{$theme_version}. based on <a class="font-semibold"
                 href="https://github.com/estevanmaito/windmill-dashboard" target="_blank">Windmill</a> with code from <a
                 class="font-semibold" href="https://sbpp.github.io/" target="_blank">SourceBans++</a> & <a
                 class="font-semibold" href="https://github.com/Rushaway/sourcebans-web-theme-fluent"
