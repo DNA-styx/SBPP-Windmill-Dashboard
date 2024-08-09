@@ -1,6 +1,5 @@
+<!-- Start log in Page -->
 <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-
-
     <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
         <div class="w-full">
 
@@ -42,11 +41,9 @@
                 -{sb_button text="Login" onclick=$redir class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="alogin" submit=false}-
             -{/if}-
 
-
             <br>
             <center><a href="index.php?p=login&o=steam"><img src="images/steamlogin.png"></a></center>
             <br>
-
 
             -{if $steamlogin_show == 1}-
                 <p class="mt-4">
@@ -75,3 +72,4 @@
         if (event.key == 'space' ) -{$redir}-
     };
 </script>
+<!-- End log in Page -->
