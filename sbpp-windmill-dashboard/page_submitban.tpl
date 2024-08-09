@@ -96,7 +96,7 @@
     </table>
   </form>
   <br>
-  <p class="text-sm text-gray-600 dark:text-gray-400">
+  <p class="text-gray-600 dark:text-gray-400">
     <b>What happens if someone gets banned?</b><br>
     If someone you reported gets banned, the SteamID or IP will be included onto the ban on the main bans list and
     everytime they try to connect to any server they will be blocked from joining and it will be logged into our
