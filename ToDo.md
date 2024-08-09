@@ -14,7 +14,7 @@
 |                   | page_dashboard.tpl                     | [X]     | [X]             | [ ]            | #1             |
 |                   | page_login.tpl                         | [X]     | [X]             | [ ]            |                |
 |                   | page_protestban.tpl                    | [X]     | [ ]             | [ ]            |                |
-|                   | page_submitban.tpl                     | [X]     | [ ]             | [ ]            |                |
+|                   | page_submitban.tpl                     | [X]     | [ ]             | [ ]            | #9             |
 |                   | page_youraccount.tpl                   | [ ]     | [ ]             | [ ]            |                |
 |                   | page_bans.tpl                          | [X]     | [X]             | [ ]            |                |
 |                   | page_comms.tpl                         | [X]     | [X]             | [ ]            |                |

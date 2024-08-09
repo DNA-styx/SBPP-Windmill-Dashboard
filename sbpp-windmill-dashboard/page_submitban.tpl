@@ -1,24 +1,19 @@
-<!-- Big section cards -->
+<!-- Start submit ban page -->
 <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-  <p class="text-sm text-gray-600 dark:text-gray-400">
+  <p class="text-gray-600 dark:text-gray-400">
     In order to keep our servers running smoothly, offenders of our rules should be punished and we can't always be on
-    call to help.<br>
-    When submitting a player report, we ask you to fill out the report as detailed as possible to help ban the offender
-    as this will help us process your report quickly.<br>
-    If you are unsure on how to record evidence within in-game, please <a class="font-semibold" href="#"
-      @click="openModal">click here</a> for an explanation.
+    call to help.<br>When submitting a player report, we ask you to fill out the report as detailed
+    as possible as this will help us process your report quickly.<br>If you are unsure on how to record
+    evidence within in-game, please <a class="font-semibold" href="#" @click="openModal">click here</a> for an
+    explanation.
   </p>
-
   <br>
-
   <form action="index.php?p=submit" method="post" enctype="multipart/form-data">
     <input type="hidden" name="subban" value="1">
-    <table>
+    <table class="block text-sm">
       <tr>
         <td>
           <span class="text-gray-700 dark:text-gray-400">Player's SteamID:</span>
-        </td>
-        <td>
           <input
             class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
             maxlength="64" name="SteamID" value="{$STEAMID}">
@@ -27,8 +22,6 @@
       <tr>
         <td>
           <span class="text-gray-700 dark:text-gray-400">Player's IP:</span>
-        </td>
-        <td>
           <input
             class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
             maxlength="64" name="BanIP" value="{$ban_ip}">
@@ -37,20 +30,16 @@
       <tr>
         <td>
           <span class="text-gray-700 dark:text-gray-400">Player's Nickname *</span>
-        </td>
-        <td>
           <input
             class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
             maxlength="70" name="PlayerName" value="{$player_name}">
       </tr>
       <tr>
-        <td valign="top">
+        <td>
           <span class="text-gray-700 dark:text-gray-400">
             Comments *<br>
             <small>(Please write down a descriptive comment.<br>So NO comments like: "hacking")</small>
           </span>
-        </td>
-        <td>
           <textarea
             class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
             rows="3" name="BanReason">{$ban_reason}</textarea>
@@ -59,8 +48,6 @@
       <tr>
         <td>
           <span class="text-gray-700 dark:text-gray-400">Your Name:</span>
-        </td>
-        <td>
           <input
             class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
             maxlength="70" name="SubmitName" value="{$subplayer_name}">
@@ -68,8 +55,6 @@
       <tr>
         <td>
           <span class="text-gray-700 dark:text-gray-400">Your Email *:</span>
-        </td>
-        <td>
           <input
             class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
             maxlength="70" name="EmailAddr" value="{$player_email}">
@@ -77,8 +62,6 @@
       <tr>
         <td>
           <span class="text-gray-700 dark:text-gray-400">Server *:</span>
-        </td>
-        <td>
           <select
             class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
             id="server" name="server">
@@ -93,8 +76,6 @@
       <tr>
         <td>
           <span class="text-gray-700 dark:text-gray-400">Upload demo:</span>
-        </td>
-        <td>
           <input name="demo_file" type="file"
             class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
             style="width: 268px;">
@@ -107,27 +88,21 @@
         </td>
       </tr>
       <tr>
-        <td><span class="text-gray-700 dark:text-gray-400">* = Mandatory Field</span></td>
         <td>
+          <span class="text-gray-700 dark:text-gray-400">* = Mandatory Field</span>
           {sb_button text=Submit onclick="" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id=save submit=true}
         </td>
       </tr>
     </table>
   </form>
-
   <br>
-
   <p class="text-sm text-gray-600 dark:text-gray-400">
     <b>What happens if someone gets banned?</b><br>
     If someone you reported gets banned, the SteamID or IP will be included onto the ban on the main bans list and
     everytime they try to connect to any server they will be blocked from joining and it will be logged into our
     database.
   </p>
-
-
-
 </div>
-
 
 
 <!-- Modal backdrop. This what you want to place close to the closing body tag -->
@@ -165,7 +140,7 @@
         The best way to record evidence on someone breaking the rules would be to use Shadow Play or Plays.TV.
         Both pieces of software will record your game 24/7 with little to no impact on your game and you simply
         press a keybind to record the last X amount of minutes of gameplay which is perfect for catching rule breakers.
-        <br>
+        <br><br>
         Alternatively, you can use the old method of using demos. While you are spectating the offending player,
         press the ` key on your keyboard to show the Developers Console. If this does not show, you will need to go into
         your Game Settings and enable this. Then type `record [demoname]` and hit enter, the file will then be in your
@@ -182,3 +157,4 @@
   </div>
 </div>
 <!-- End of modal backdrop -->
+<!-- end submit ban page -->
