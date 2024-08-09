@@ -11,7 +11,7 @@
 |                   | core/navbar.tpl                        | [X]     | [X]             | [ ]            | #4             |
 |                   | core/title.tpl                         | [X]     | [X]             | [ ]            |                |
 | **Public**        |                                        |         |                 |                |                |
-|                   | page_dashboard.tpl                     | [X]     | [X]             | [ ]            | #1             |
+|                   | page_dashboard.tpl                     | [X]     | [X]             | [X]            |                |
 |                   | page_login.tpl                         | [X]     | [X]             | [ ]            |                |
 |                   | page_protestban.tpl                    | [X]     | [X]             | [ ]            |                |
 |                   | page_submitban.tpl                     | [X]     | [X]             | [ ]            | #9             |
