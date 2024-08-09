@@ -1,6 +1,4 @@
-
-            
-            - name: Increment value automatically
+name: Increment value automatically
   # You may pin to the exact commit or the version.
   # uses: yoichiro/gh-action-increment-value@03a794ec691e62fdb2dd03f105ef239e8f932678
   on: [push]
