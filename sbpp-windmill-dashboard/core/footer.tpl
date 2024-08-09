@@ -23,7 +23,7 @@
 </div>
 
 <!-- end footer bar -->
-
+ 
 <!-- remove one div -->
 </div>
 </main>
