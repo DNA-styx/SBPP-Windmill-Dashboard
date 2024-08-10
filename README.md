@@ -83,7 +83,7 @@ SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard C
 ### Prerequisites
 
 * Working Sourcebans++ install 1.7.0 or higher, 1.8.0 recommended https://sbpp.github.io/
-* FTP or cpanel access to upload files
+* FTP or cpanel access to upload files to your web server
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
