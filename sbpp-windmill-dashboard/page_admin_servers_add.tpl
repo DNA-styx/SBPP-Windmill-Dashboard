@@ -96,10 +96,12 @@
                     <label class="block mt-4 text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Server Groups</span>
                         {foreach from=$grouplist item="group"}
-                            <div align="right">{$group.name} </div>
-                            <div align="left">
-                                <input type="checkbox" value="{$group.gid}" id="g_{$group.gid}" name="groups[]" />
-                            </div>
+                            <label class="flex items-center dark:text-gray-400">
+                                <input type="checkbox" value="{$group.gid}" id="g_{$group.gid}" name="groups[]"
+                                    class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" />
+                                <span class="ml-2">{$group.name}</span>
+                                </span>
+                            </label>
                         {/foreach}
                     </label>
                     <div class="text-xs text-gray-600 dark:text-gray-400">
@@ -118,14 +120,14 @@
                                 {sb_button text=$submit_text onclick="process_add_server();" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="aserver" submit=false}
                             {/if}
                             &nbsp;
-                            {sb_button text="Cancel" onclick="document.location='index.php?p=admin&c=servers'" class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="back" submit=false}
+                            {sb_button text="Exit" onclick="document.location='index.php?p=admin&c=servers'" class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="back" submit=false}
                         </label>
                     </div>
 
                 </div>
             </div>
+        </div>
     </div>
-</div>
 
 
 
