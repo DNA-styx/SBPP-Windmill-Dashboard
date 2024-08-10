@@ -68,8 +68,10 @@
                         <div id="mapimg.msg" style="color:#CC0000;" class="text-xs text-red-600 dark:text-red-400"></div>
                     {/if}
                 {/if}
+                <!-- These next two div shoudl be inside the if loop, but doing so breaks stuff -->
+                <!-- Something strange going on with the page that calls this? -->
             </div>
         </div>
     </div>
-<!-- Looks like there is a closing div missing but when I addd it the footer gets broken -->
+    <!-- Looks like there is a closing div missing but when I addd it the footer gets broken -->
 <!-- end list servers -->

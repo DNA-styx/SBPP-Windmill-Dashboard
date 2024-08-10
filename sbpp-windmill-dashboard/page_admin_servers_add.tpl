@@ -1,9 +1,9 @@
+<!-- Start Server add Page -->
 <div class="tabcontent" id="Add new server">
     {if not $permission_addserver}
         Access Denied
     {else}
 
-        <!-- Start Server add Page -->
         <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
             <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
                 <div class="w-full">
@@ -255,3 +255,7 @@
 </div>
 </div>
 -->
+
+
+
+<!-- End Server add Page -->
