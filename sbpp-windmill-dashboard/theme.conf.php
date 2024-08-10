@@ -29,18 +29,6 @@ define('theme_name', "SourceBans++ Windmill Dashboard");
 define('theme_author', "DNA.styx");
 
 // Set the version of the theme here
-define('theme_version', "0.0.NaN"); 
-
-// Set the author of this theme here
-define('theme_author', "DNA.styx");
-
-// Set the version of the theme here
-define('theme_version', "0.0.NaN"); 
-
-// Set the author of this theme here
-define('theme_author', "DNA.styx");
-
-// Set the version of the theme here
 define('theme_version', "0.0.82");
 
 // Set the link of the theme here
