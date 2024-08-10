@@ -92,7 +92,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-* Sourcebans++ >1.7.0 https://sbpp.github.io/
+* Working Sourcebans++ install 1.7.0 or higher, 1.8.0 recommended https://sbpp.github.io/
+
+* FTP or cancel access to upload files
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
