@@ -80,14 +80,6 @@ SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard C
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- GETTING STARTED -->
-## Getting Started (coming soon)
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Prerequisites
 
 * Working Sourcebans++ install 1.7.0 or higher, 1.8.0 recommended https://sbpp.github.io/
@@ -101,13 +93,11 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    git clone https://github.com/DNA-styx/sbpp-windmill-dashboard.git
    ```
-or Download all files from repository or clone:
-```
+or Download all files from repository
 
 2. Move **sbpp-windmill-dashboard** folder to Your Sourcebans -> **themes**;
 3. Go to (Website): AdminCP -> Web Panel -> **Themes**;
 4. Select theme **Sourceban Windmill Dashboard**;
-   ```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
