@@ -174,7 +174,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Public pages
    - [ ] themed
     - [ ] working 
-- [ ] Admin pages themed and working 
+- [ ] Admin pages 
+ - [ ] themed 
+ - [ ] working 
 - [ ] All old CSS and unused files removed 
 - [ ] Code tidy up
 
