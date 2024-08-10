@@ -34,7 +34,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Desktop_Dashboard_Dark.png" >
 </p>
-SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard CSS applied on top. Dark and light coloured theme switcher. Fully tested on mobile.
+SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard CSS applied on top. Dark and light theme switcher. Fully tested on mobile.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
