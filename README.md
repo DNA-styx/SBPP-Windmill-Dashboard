@@ -26,7 +26,6 @@
 
 
 
-
 <!-- PROJECT LOGO -->
 <br/>
 <div align="center">
@@ -37,7 +36,7 @@
 <h3 align="center">SourceBans++ Windmill Dashboard Theme</h3>
 
   <p align="center">
-    Responsive SourceBans++ Theme
+    Responsive SourceBans++ 1.8.0 Theme
     <br />
     <br />
     <a href="https://sourcebans.dnagames.site/">View Live Demo</a>
