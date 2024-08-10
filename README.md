@@ -34,9 +34,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Desktop_Dashboard_Dark.png" >
 </p>
-SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard CSS applied on top.
-
-Fully tested on mobile.
+SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard CSS applied on top. Dark and light coloured theme switcher. Fully tested on mobile.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,8 +91,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 * Working Sourcebans++ install 1.7.0 or higher, 1.8.0 recommended https://sbpp.github.io/
-
-* FTP or cancel access to upload files
+* FTP or cpanel access to upload files
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,18 +113,6 @@ To get a local copy up and running follow these simple example steps.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- USAGE EXAMPLES -->
-## Usage (coming soon)
-
-.....
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
@@ -135,23 +120,24 @@ _For more examples, please refer to the [Documentation](https://example.com)_
   - [X] Basic theme applied 
   - [X] Usable on desktop 
   - [X] Usable on mobile
-  - [ ] Fully themed 
 - [ ] Admin pages 
   - [ ] Basic theme applied 
   - [ ] Usable on desktop 
   - [ ] Usable on mobile
-  - [ ] Fully themed 
-- [ ] All old/unused CSS, js and  files removed 
+- [ ] Beta release 
+- [ ] Fully themed and old code replaced 
+- [ ] Remove all old/unused CSS, js and files
 - [ ] Code tidy up
+- [ ] Full Release
+
 
 See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- CONTRIBUTING -->
-## Contributing (coming soon)
+## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
