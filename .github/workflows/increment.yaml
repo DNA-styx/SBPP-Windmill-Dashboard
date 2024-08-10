@@ -1,0 +1,24 @@
+name: Increment value
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT }}
+          ref: main
+
+      - name: Increment patch version
+        uses: yoichiro/gh-action-increment-value@v5
+        with:
+          target_directory: 'sbpp-windmill-dashboard'
+          target_file: 'versions.txt'
+          prefix: 'define(''theme_version'', "0.0.'
+          suffix: '");'
+          commit_message: '[skip ci] Increments the patch version to'
