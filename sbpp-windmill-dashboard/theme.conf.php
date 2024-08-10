@@ -35,6 +35,12 @@ define('theme_version', "0.0.1-AlphaNaN");
 define('theme_author', "DNA.styx");
 
 // Set the version of the theme here
+define('theme_version', "0.0.1-AlphaNaN"); 
+
+// Set the author of this theme here
+define('theme_author', "DNA.styx");
+
+// Set the version of the theme here
 define('theme_version', "0.0.1-Alpha80");
 
 // Set the link of the theme here
