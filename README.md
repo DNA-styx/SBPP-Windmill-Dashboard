@@ -134,13 +134,9 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites (coming soon)
+### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* Sourcebans++ 1.8.0 https://sbpp.github.io/
 
 ### Installation (coming soon)
 
@@ -173,12 +169,16 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- ROADMAP -->
-## Roadmap (coming soon)
+## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Public pages
+   - [ ] themed
+    - [ ] working 
+- [ ] Admin pages 
+ - [ ] themed 
+ - [ ] working 
+- [ ] All old CSS and unused files removed 
+- [ ] Code tidy up
 
 See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a full list of proposed features (and known issues).
 
