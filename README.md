@@ -172,12 +172,16 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [ ] Public pages
-   - [ ] themed
-    - [ ] working 
+  - [X] Basic theme applied 
+  - [X] Usable on desktop 
+  - [X] Usable on mobile
+  - [ ] Fully themed 
 - [ ] Admin pages 
- - [ ] themed 
- - [ ] working 
-- [ ] All old CSS and unused files removed 
+  - [ ] Basic theme applied 
+  - [ ] Usable on desktop 
+  - [ ] Usable on mobile
+  - [ ] Fully themed 
+- [ ] All old/unused CSS, js and  files removed 
 - [ ] Code tidy up
 
 See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a full list of proposed features (and known issues).
