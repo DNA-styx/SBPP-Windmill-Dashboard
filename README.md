@@ -172,8 +172,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [ ] Public pages
-   -[ ] themed
-    -[ ] working 
+   - [ ] themed
+    - [ ] working 
 - [ ] Admin pages themed and working 
 - [ ] All old CSS and unused files removed 
 - [ ] Code tidy up
