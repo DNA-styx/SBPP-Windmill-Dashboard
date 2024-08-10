@@ -187,7 +187,11 @@ Project Link: [https://github.com/DNA-styx/sbpp-windmill-dashboard](https://gith
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LINKS -->
+* https://forums.alliedmods.net/forumdisplay.php?f=152
+* Sourcebans++ Discord https://discord.gg/4Bhj6NU
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
