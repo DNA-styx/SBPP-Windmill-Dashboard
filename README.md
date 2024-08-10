@@ -86,9 +86,13 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Prerequisites
 
-* Sourcebans++ 1.8.0 https://sbpp.github.io/
+* Sourcebans++ >1.7.0 https://sbpp.github.io/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Installation (coming soon)
 
@@ -159,20 +163,10 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the GPL-3.0 license. See `LICENSE.md` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact (coming soon)
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - DNA.styx - dnagames.admin@proton.me
 
 Project Link: [https://github.com/DNA-styx/sbpp-windmill-dashboard](https://github.com/DNA-styx/sbpp-windmill-dashboard)
 
