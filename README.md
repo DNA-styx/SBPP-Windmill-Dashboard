@@ -95,20 +95,27 @@ To get a local copy up and running follow these simple example steps.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Installation (coming soon)
+### Installation
 
 1. Clone the repo
    ```sh
    git clone https://github.com/DNA-styx/sbpp-windmill-dashboard.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
+or Download all files from repository or clone:
+```
+
+2. Move **sbpp-windmill-dashboard** folder to Your Sourcebans -> **themes**;
+3. Go to (Website): AdminCP -> Web Panel -> **Themes**;
+4. Select theme **Sourceban Windmill Dashboard**;
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Upgrade
+
+Download and overwrite all files in the sbpp-windmill-dashboard folder
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
