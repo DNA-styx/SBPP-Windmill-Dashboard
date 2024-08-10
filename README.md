@@ -8,24 +8,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br/>
 <div align="center">
@@ -41,48 +23,18 @@
     <br />
     <a href="https://sourcebans.dnagames.site/">View Live Demo</a>
     ·
-    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new?labels=bug">Report a Bug</a>
+    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new">Report a Bug</a>
     ·
-    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new?labels=enhancement">Request Feature</a>
+    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new">Request Feature</a>
   </p>
 </div>
 
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Theme
 <p align="center">
   <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Desktop_Dashboard_Dark.png" >
 </p>
-SourceBans++ Theme built using the default theme with Windmill Dashboard applied on top.
+SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard CSS applied on top. Dark and light theme switcher. Fully tested on mobile.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,44 +80,34 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- GETTING STARTED -->
-## Getting Started (coming soon)
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-* Sourcebans++ 1.8.0 https://sbpp.github.io/
+* Working Sourcebans++ install 1.7.0 or higher, 1.8.0 recommended https://sbpp.github.io/
+* FTP or cpanel access to upload files
 
-### Installation (coming soon)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Installation
 
 1. Clone the repo
    ```sh
    git clone https://github.com/DNA-styx/sbpp-windmill-dashboard.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+or Download all files from repository
+
+2. Move **sbpp-windmill-dashboard** folder to Your Sourcebans -> **themes**;
+3. Go to (Website): AdminCP -> Web Panel -> **Themes**;
+4. Select theme **Sourceban Windmill Dashboard**;
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## Upgrade
 
-<!-- USAGE EXAMPLES -->
-## Usage (coming soon)
-
-.....
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Download and overwrite all files in the sbpp-windmill-dashboard folder
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
@@ -175,23 +117,24 @@ _For more examples, please refer to the [Documentation](https://example.com)_
   - [X] Basic theme applied 
   - [X] Usable on desktop 
   - [X] Usable on mobile
-  - [ ] Fully themed 
 - [ ] Admin pages 
   - [ ] Basic theme applied 
   - [ ] Usable on desktop 
   - [ ] Usable on mobile
-  - [ ] Fully themed 
-- [ ] All old/unused CSS, js and  files removed 
+- [ ] Beta release 
+- [ ] Fully themed and old code replaced 
+- [ ] Remove all old/unused CSS, js and files
 - [ ] Code tidy up
+- [ ] Full Release
+
 
 See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- CONTRIBUTING -->
-## Contributing (coming soon)
+## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -207,20 +150,10 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the GPL-3.0 license. See `LICENSE.md` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact (coming soon)
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - DNA.styx - dnagames.admin@proton.me
 
 Project Link: [https://github.com/DNA-styx/sbpp-windmill-dashboard](https://github.com/DNA-styx/sbpp-windmill-dashboard)
 
@@ -237,7 +170,15 @@ Project Link: [https://github.com/DNA-styx/sbpp-windmill-dashboard](https://gith
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LINKS -->
+## Links
 
+* https://forums.alliedmods.net/forumdisplay.php?f=152
+* Sourcebans++ Discord https://discord.gg/4Bhj6NU
+* Sourcebans++ on Docker https://github.com/crinis/sourcebans-docker
+* Recommended web hosts https://github.com/sbpp/hosts
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
