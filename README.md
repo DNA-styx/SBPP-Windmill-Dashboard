@@ -169,12 +169,14 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- ROADMAP -->
-## Roadmap (coming soon)
+## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Public pages
+   -[ ] themed
+    -[ ] working 
+- [ ] Admin pages themed and working 
+- [ ] All old CSS and unused files removed 
+- [ ] Code tidy up
 
 See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a full list of proposed features (and known issues).
 
