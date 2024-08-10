@@ -23,18 +23,20 @@
     <br />
     <a href="https://sourcebans.dnagames.site/">View Live Demo</a>
     ·
-    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new?labels=bug">Report a Bug</a>
+    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new">Report a Bug</a>
     ·
-    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new?labels=enhancement">Request Feature</a>
+    <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new">Request Feature</a>
   </p>
 </div>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Theme
 <p align="center">
   <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Desktop_Dashboard_Dark.png" >
 </p>
-SourceBans++ Theme built using the default theme with Windmill Dashboard applied on top.
+SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard CSS applied on top.
+
+Fully tested on mobile.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
