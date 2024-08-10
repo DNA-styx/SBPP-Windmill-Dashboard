@@ -1,24 +1,25 @@
-name: Increment value in theme.conf.php
-
+name: Increment value test
 on:
   push:
     branches:
       - main
     paths-ignore:
       - 'sbpp-windmill-dashboard/theme.conf.php'
- 
 jobs:
   test:
-    name: Increment value in theme.conf.php
+    name: Increment value test
     runs-on: ubuntu-latest
-
     steps:
-      - name: Increment patch version
-        uses: yoichiro/gh-action-increment-value@v5
+      - name: Check out source code
+        uses: actions/checkout@v3
         with:
+          ref: ${{ github.ref }}
           token: ${{ secrets.PAT }}
+      - name: Increment value
+        uses: yoichiro/gh-action-increment-value@main
+        with:
           target_directory: 'sbpp-windmill-dashboard'
           target_file: 'theme.conf.php'
           prefix: 'define(''theme_version'', "0.0.'
           suffix: '");'
-          commit_message: '[skip ci] Increments the theme version to 0.0.'
+          commit_message: 'Increments the theme version to 0.0.'
