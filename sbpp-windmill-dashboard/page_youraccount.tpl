@@ -33,91 +33,138 @@
     </div>
 
 
-    <div class="tabcontent" id="Change Password"> <!-- div ID 1 is the second 'panel' to be shown -->
-        <h3>Change Password</h3>
-        <table width="90%" border="0" style="border-collapse:collapse;" id="group.details" cellpadding="3">
-            <tr>
-                <td valign="top" width="35%"><div class="rowdesc">-{help_icon title="Current Password" message="We need to know your current password to verify its you."}-Current Password</div></td>
-                <td><div align="left">
-                        <input type="password" onblur="xajax_CheckPassword(-{$user_aid}-, $('current').value);" class="textbox" id="current" name="current" />
-                    </div>
-                    <div id="current.msg" class="badentry"></div></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td valign="top"><div class="rowdesc">-{help_icon title="New password" message="Type your new password here. <br /><br /><i>Min Length: $min_pass_len</i>"}-New Password</div></td>
-                <td><div align="left">
-                        <input class="textbox" type="password" onkeyup="checkYourAcctPass();" id="pass1" value="" name="pass1" />
-                    </div><div id="pass1.msg" class="badentry"></div></td>
-            </tr>
-            <tr>
-                <td valign="top"><div class="rowdesc">-{help_icon title="Confirm Password" message="Please type your new password again to avoid a mistake"}-Confirm Password</div></td>
-                <td><div align="left">
-                        <input type="password" onkeyup="checkYourAcctPass();" class="textbox" id="pass2" name="pass2" />
-                    </div>
-                    <div id="pass2.msg" class="badentry"></div></td>
-            </tr>
+<!-- div ID 1 is the second 'panel' to be shown -->
+<div class="tabcontent px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="Change Password">
+    <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+        <div class="w-full">
 
-            <tr>
-                <td>&nbsp;</td>
-                <td>
-                    <input type="submit" onclick="xajax_CheckPassword(-{$user_aid}-, $('current').value);dispatch();" name="button" class="btn ok" id="button" value="Save" />
-                    &nbsp; <input type="submit" onclick="history.go(-1)" name="button" class="btn cancel" id="button" value="Cancel" />	</td>
-            </tr>
-        </table>
+            <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Current Password</span>
+                <input type="password" onblur="xajax_CheckPassword(-{$user_aid}-, $('current').value);"
+                    class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    id="current" name="current">
+            </label>
+            <span class="text-xs text-gray-600 dark:text-gray-400">
+                We need to know your current password to verify its you.
+            </span>
+            <span class="text-xs text-red-600 dark:text-red-400">
+                <div id="current.msg" class="badentry"></div>
+            </span>
+
+            <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">New Password</span>
+                <input
+                    class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    type="password" onkeyup="checkYourAcctPass();" id="pass1" value="" name="pass1" />
+            </label>
+            <span class="text-xs text-gray-600 dark:text-gray-400">
+                Type your new password here. <i>Min Length: -{$min_pass_len}- charecters</i>.
+            </span>
+            <span class="text-xs text-red-600 dark:text-red-400">
+                <div id="pass1.msg" class="badentry"></div>
+            </span>
+
+            <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Confirm Password</span>
+                <input type="password" onkeyup="checkYourAcctPass();"
+                    class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    id="pass2" name="pass2" />
+            </label>
+            <span class="text-xs text-gray-600 dark:text-gray-400">
+                Please type your new password again to avoid a mistake
+            </span>
+            <span class="text-xs text-red-600 dark:text-red-400">
+                <div id="pass2.msg" class="badentry"></div>
+            </span>
+
+            <span class="flex items-center">
+                <input type="submit" onclick="xajax_CheckPassword(-{$user_aid}-, $('current').value);dispatch();"
+                    name="button"
+                    class="btn ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                    id="button" value="Save">
+            </span>
+
+        </div>
     </div>
+</div>
 
+<!-- div ID 2 is the third 'panel' to be shown -->
+<div class="tabcontent px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="Server Password">
+    <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+        <div class="w-full">
 
-    <div class="tabcontent" id="Server Password"> <!-- div ID 2 is the third 'panel' to be shown -->
-        <h3>Change Server Password</h3>
-        You will need to specify this password in the game server before you can use your admin rights.<br />Click <a href="http://wiki.alliedmods.net/Adding_Admins_%28SourceMod%29#Passwords" title="SourceMod Password Info" target="_blank"><b>here</b></a> for more infos.
-        <table width="90%" border="0" style="border-collapse:collapse;" id="group.details" cellpadding="3">
-            -{if $srvpwset}-
-            <tr>
-                <td valign="top" width="35%"><div class="rowdesc">-{help_icon title="Current Password" message="We need to know your current password to verify its you."}-Current Server Password</div></td>
-                <td><div align="left">
-                        <input type="password" onblur="xajax_CheckSrvPassword(-{$user_aid}-, $('scurrent').value);" class="textbox" id="scurrent" name="scurrent" />
-                    </div>
-                    <div id="scurrent.msg" class="badentry"></div></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            -{/if}-
-            <tr>
-                <td valign="top"><div class="rowdesc">-{help_icon title="New password" message="Type your new server password here. <br /><br /><i>Min Length: $min_pass_len"}-New Password</div></td>
-                <td><div align="left">
-                        <input class="textbox" type="password" onkeyup="checkYourSrvPass();" id="spass1" value="" name="spass1" />
-                    </div><div id="spass1.msg" class="badentry"></div></td>
-            </tr>
-            <tr>
-                <td valign="top"><div class="rowdesc">-{help_icon title="Confirm Password" message="Please type your new server password again to avoid a mistake."}-Confirm Password</div></td>
-                <td><div align="left">
-                        <input type="password" onkeyup="checkYourSrvPass();" class="textbox" id="spass2" name="spass2" />
-                    </div>
-                    <div id="spass2.msg" class="badentry"></div></td>
-            </tr>
-            -{if $srvpwset}-
-            <tr>
-                <td valign="top"><div class="rowdesc">-{help_icon title="Remove Server Password" message="Check this box, if you want to delete your server password"}-Remove Password</div></td>
-                <td><div align="left">
-                        <input type="checkbox" id="delspass" name="delspass" />
-                    </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+                You will need to specify this password in the game server before you can use your admin rights.
+                Click <a class="font-semibold" href="http://wiki.alliedmods.net/Adding_Admins_%28SourceMod%29#Passwords"
+                    title="SourceMod Password Info" target="_blank">here</a> for more infos.
+            </p>
+
+            <br>
+
+            <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Current Server Password</span>
+                <input type="password" onblur="xajax_CheckSrvPassword(-{$user_aid}-, $('scurrent').value);"
+                    class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    id="scurrent" name="scurrent" />
+            </label>
+            <span class="text-xs text-gray-600 dark:text-gray-400">
+                We need to know your current password to verify its you.
+            </span>
+            <span class="text-xs text-red-600 dark:text-red-400">
+                <div id="scurrent.msg" class="badentry"></div>
+            </span>
+
+            <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">New Password</span>
+                <input
+                    class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    type="password" onkeyup="checkYourSrvPass();" id="spass1" value="" name="spass1">
+            </label>
+            <span class="text-xs text-gray-600 dark:text-gray-400">
+                Type your new server password here. <i>Min Length: -{$min_pass_len}-
+            </span>
+            <span class="text-xs text-red-600 dark:text-red-400">
+                <div id="spass1.msg" class="badentry"></div>
                 </td>
-            </tr>
-            -{/if}-
-            <tr>
-                <td>&nbsp;</td>
-                <td>
-                    <input type="submit" onclick="-{if $srvpwset}-xajax_CheckSrvPassword(-{$user_aid}-, $('scurrent').value);-{/if}-srvdispatch();" name="button" class="btn ok" id="button" value="Save" />
-                    &nbsp; <input type="submit" onclick="history.go(-1)" name="button" class="btn cancel" id="button" value="Cancel" />	</td>
-            </tr>
-        </table>
+            </span>
+
+            <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Confirm Password</span>
+                <input type="password" onkeyup="checkYourSrvPass();"
+                    class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    id="spass2" name="spass2" />
+            </label>
+            <span class="text-xs text-gray-600 dark:text-gray-400">
+                Please type your new server password again to avoid a mistake.
+            </span>
+            <span class="text-xs text-red-600 dark:text-red-400">
+                <div id="spass2.msg" class="badentry"></div>
+            </span>
+
+            <div class="flex mt-6 text-sm">
+                <label class="flex items-center dark:text-gray-400">
+                    <input type="checkbox" id="delspass" name="delspass"
+                        class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                    <span class="ml-2">Remove Server Password</span>
+                    <span class="text-xs text-gray-600 dark:text-gray-400">
+                        Check this box, if you want to delete your server password
+                    </span>
+                </label>
+            </div>
+
+            <span class="flex items-center">
+                <input type="submit"
+                    onclick="-{if $srvpwset}-xajax_CheckSrvPassword(-{$user_aid}-, $('scurrent').value);-{/if}-srvdispatch();"
+                    name="button"
+                    class="btn ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                    id="button" value="Save">
+            </span>
+
+        </div>
     </div>
+</div>
+
+
 
 
     <div class="tabcontent" id="Change Email"> <!-- div ID 3 is the fourth 'panel' to be shown -->
@@ -214,7 +261,7 @@
                 if($('spass1').value.length < -{$min_pass_len}-)
                 {
                     $('spass1.msg').setStyle('display', 'block');
-                    $('spass1.msg').setHTML('Your password must be atleast -{$min_pass_len}- letters long');
+                    $('spass1.msg').setHTML('Your password must be at least -{$min_pass_len}- letters long');
                     err++;
                 }
                 else
