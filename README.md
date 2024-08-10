@@ -160,7 +160,6 @@ Project Link: [https://github.com/DNA-styx/sbpp-windmill-dashboard](https://gith
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments (coming soon)
 
