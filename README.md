@@ -134,13 +134,9 @@ SourceBans++ Theme built using the default theme with Windmill Dashboard applied
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites (coming soon)
+### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* Sourcebans++ 1.8.0 https://sbpp.github.io/
 
 ### Installation (coming soon)
 
