@@ -59,8 +59,8 @@
 |                   | page_admin_overrides.tpl               | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_servers_adminlist.tpl       | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_servers_rcon.tpl            | [ ]     | [ ]             | [ ]            |                |
-|                   | page_admin_servers_add.tpl             | [ ]     | [ ]             | [ ]            |                |
-|                   | page_admin_servers_list.tpl            | [X]     | [ ]             | [ ]            |                |
+|                   | page_admin_servers_add.tpl             | [X]     | [X]             | [X]            |                |
+|                   | page_admin_servers_list.tpl            | [X]     | [X]             | [X]            |                |
 |                   | page_admin_settings_logs.tpl           | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_settings_themes.tpl         | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_settings_features.tpl       | [ ]     | [ ]             | [ ]            |                |
