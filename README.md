@@ -177,6 +177,7 @@ Project Link: [https://github.com/DNA-styx/sbpp-windmill-dashboard](https://gith
 * https://forums.alliedmods.net/forumdisplay.php?f=152
 * Sourcebans++ Discord https://discord.gg/4Bhj6NU
 * Sourcebans++ on Docker https://github.com/crinis/sourcebans-docker
+* Recommended web hosts https://github.com/sbpp/hosts
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
