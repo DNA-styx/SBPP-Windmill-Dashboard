@@ -1,3 +1,4 @@
+<!-- Start edit comms Page -->
 <form action="" method="post">
     <div id="admin-page-content">
         <div id="0">
@@ -8,85 +9,77 @@
                 The block details have been updated.<br /><br />
                 <i>Redirecting back to blocks page</i>
             </div>
-            <div id="add-group">
-                <h3>Block Details</h3>
-                For more information or help regarding a certain subject move your mouse over the question mark.<br /><br />
-                <input type="hidden" name="insert_type" value="add">
-                <table width="90%" border="0" style="border-collapse:collapse;" id="group.details" cellpadding="3">
-                    <tr>
-                        <td valign="top" width="35%">
-                            <div class="rowdesc">
-                                -{help_icon title="Player name" message="This is the name of the player that was blocked."}-Player name
-                            </div>
-                        </td>
-                        <td>
-                            <div align="left">
-                                <input type="text" class="submit-fields" id="name" name="name" value="-{$ban_name}-" />
-                            </div>
-                            <div id="name.msg" class="badentry"></div></td>
-                    </tr>
 
-                    <tr>
-                        <td valign="top">
-                            <div class="rowdesc">
-                                -{help_icon title="Steam ID" message="This is the Steam ID of the player that is banned. You may want to type a Community ID either."}-Steam ID
-                            </div>
-                        </td>
-                        <td>
-                            <div align="left">
-                                <input value="-{$ban_authid}-" type="text" TABINDEX=2 class="submit-fields" id="steam" name="steam" />
-                            </div>
+            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="add-group1">
+                <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+                    <div class="w-full">
+
+                        <label class="block text-sm">
+                            <span class="text-gray-700 dark:text-gray-400">Player name</span>
+                            <input type="text" id="name" name="name" value="-{$ban_name}-"
+                                class="submit-fields block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
+                        </label>
+                        <span class="text-xs text-gray-600 dark:text-gray-400">
+                            This is the nickname of the personthat is banned.
+                        </span>
+                        <span class="text-xs text-red-600 dark:text-red-400">
+                            <div id="name.msg" class="badentry"></div>
+                        </span>
+
+                        <label class="block text-sm">
+                            <span class="text-gray-700 dark:text-gray-400">Steam ID</span>
+                            <input value="-{$ban_authid}-" type="text" TABINDEX=2 id="steam" name="steam"
+                                class="submit-fields block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
+                        </label>
+                        <span class="text-xs text-gray-600 dark:text-gray-400">
+                            This is the Steam ID of the player that is banned. You may want to type a Community ID
+                            either.
+                        </span>
+                        <span class="text-xs text-red-600 dark:text-red-400">
                             <div id="steam.msg" class="badentry"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top" width="35%">
-                            <div class="rowdesc">
-                                -{help_icon title="Block Type" message="Choose what to block - chat or voice"}-Block Type
-                            </div>
-                        </td>
-                        <td>
-                            <div align="left">
-                                <select id="type" name="type" TABINDEX=2 class="submit-fields">
-                                    <option value="1">Voice</option>
-                                    <option value="2">Chat</option>
-                                </select>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top" width="35%">
-                            <div class="rowdesc">
-                                -{help_icon title="Block Reason" message="Explain in detail, why this block is being made."}-Block Reason
-                            </div>
-                        </td>
-                        <td>
-                            <div align="left">
-                                <select id="listReason" name="listReason" TABINDEX=4 class="submit-fields" onChange="changeReason(this[this.selectedIndex].value);">
-                                    <option value="" selected> -- Select Reason -- </option>
-                                    <optgroup label="Violation">
-                                        <option value="Obscene language">Obscene language</option>
-                                        <option value="Insult players">Insult players</option>
-                                        <option value="Admin disrespect">Admin disrespect</option>
-                                        <option value="Inappropriate Language">Inappropriate Language</option>
-                                        <option value="Trading">Trading</option>
-                                        <option value="Spam in chat/voice">Spam</option>
-                                        <option value="Advertisement">Advertisement</option>
-                                    </optgroup>
-                                    <option value="other">Custom</option>
-                                </select>
+                        </span>
 
-                                <div id="dreason" style="display:none;">
-                                    <textarea class="submit-fields" TABINDEX=4 cols="30" rows="5" id="txtReason" name="txtReason"></textarea>
-                                </div>
+                        <label class="block text-sm">
+                            <span class="text-gray-700 dark:text-gray-400">Block Type</span>
+                            <select id="type" name="type" TABINDEX=2
+                                class="submit-fields block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                                <option value="1">Voice</option>
+                                <option value="2">Chat</option>
+                            </select>
+                        </label>
+                        <span class="text-xs text-gray-600 dark:text-gray-400">
+                            Change what to block - chat or voice.
+                        </span>
+
+                        <label class="block text-sm">
+                            <span class="text-gray-700 dark:text-gray-400">Block Reason</span>
+                            <select id="listReason" name="listReason" TABINDEX=4
+                                onChange="changeReason(this[this.selectedIndex].value);"
+                                class="submit-fields block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                                <option value="" selected> -- Select Reason -- </option>
+                                <optgroup label="Violation">
+                                    <option value="Obscene language">Obscene language</option>
+                                    <option value="Insult players">Insult players</option>
+                                    <option value="Admin disrespect">Admin disrespect</option>
+                                    <option value="Inappropriate Language">Inappropriate Language</option>
+                                    <option value="Trading">Trading</option>
+                                    <option value="Spam in chat/voice">Spam</option>
+                                    <option value="Advertisement">Advertisement</option>
+                                </optgroup>
+                                <option value="other">Custom</option>
+                            </select>
+                            <div id="dreason" style="display:none;">
+                                <textarea TABINDEX=4 cols="30" rows="5" id="txtReason" name="txtReason"
+                                    class="submit-fields block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></textarea>
                             </div>
-                            <div id="reason.msg" class="badentry"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top" width="35%"><div class="rowdesc">-{help_icon title="Block Length" message="Select how long you want to block this person for."}-Block Length</div></td>
-                        <td><div align="left">
-                                <select id="banlength" name="banlength" TABINDEX=4 class="submit-fields">
+                            <span class="text-xs text-red-600 dark:text-red-400">
+                                <div id="reason.msg" class="badentry"></div>
+                            </span>
+
+                            <label class="block text-sm">
+                                <span class="text-gray-700 dark:text-gray-400">Block Length</span>
+                                <select id="banlength" name="banlength" TABINDEX=4
+                                    class="submit-fields block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                                     <option value="0">Permanent</option>
                                     <optgroup label="minutes">
                                         <option value="1">1 minute</option>
@@ -125,20 +118,26 @@
                                         <option value="518400">12 months</option>
                                     </optgroup>
                                 </select>
-                            </div><div id="length.msg" class="badentry"></div></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>
-                            <input type="hidden" name="did" id="did" value="" />
-                            <input type="hidden" name="dname" id="dname" value="" />
-                            -{sb_button text="Save changes" class="ok" id="editban" submit=true}-
-                            &nbsp;
-                            -{sb_button text="Back" onclick="history.go(-1)" class="cancel" id="back" submit=false}-
-                        </td>
-                    </tr>
-                </table>
+                            </label>
+                            <span class="text-xs text-gray-600 dark:text-gray-400">
+                                Select how long you want to block this person for.
+                            </span>
+                            <span class="text-xs text-red-600 dark:text-red-400">
+                                <div id="length.msg" class="badentry"></div>
+                            </span>
+
+                            <span class="flex items-center">
+                                <input type="hidden" name="did" id="did" value="" />
+                                <input type="hidden" name="dname" id="dname" value="" />
+                                -{sb_button text="Save changes" id="editban" submit=true class="ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}-
+                                &nbsp;
+                                -{sb_button text="Back" onclick="history.go(-1)" id="back" submit=false class="cancel block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}-
+                            </span>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </form>
+<!-- End edit comms Page -->

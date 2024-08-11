@@ -49,6 +49,10 @@
             <option value="3">Chat &amp; Voice</option>
           </select>
         </label>
+        <span class="text-xs text-gray-600 dark:text-gray-400">
+          Choose what to block - chat, voice or both.
+        </span>
+
 
         <label class="block text-sm">
           <span class="text-gray-700 dark:text-gray-400">Block Reason</span>

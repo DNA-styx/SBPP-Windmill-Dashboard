@@ -6,10 +6,10 @@
 |                   | theme.conf.php                         | [X]     | [na]            | [na]           |                |
 | **Core**          |                                        |         |                 |                |                |
 |                   | core/admin_tabs.tpl                    | [X]     | [ ]             | [ ]            |                |
-|                   | core/footer.tpl                        | [X]     | [X]             | [ ]            | #3             |
-|                   | core/header.tpl                        | [X]     | [X]             | [ ]            |                |
-|                   | core/navbar.tpl                        | [X]     | [X]             | [ ]            | #4             |
-|                   | core/title.tpl                         | [X]     | [X]             | [ ]            |                |
+|                   | core/footer.tpl                        | [X]     | [X]             | [X]            | #3             |
+|                   | core/header.tpl                        | [X]     | [X]             | [X]            |                |
+|                   | core/navbar.tpl                        | [X]     | [X]             | [X]            | #4             |
+|                   | core/title.tpl                         | [X]     | [X]             | [X]            |                |
 | **Public**        |                                        |         |                 |                |                |
 |                   | page_dashboard.tpl                     | [X]     | [X]             | [X]            |                |
 |                   | page_login.tpl                         | [X]     | [X]             | [X]            |                |
@@ -54,7 +54,7 @@
 |                   | page_admin_edit_admins_details.tpl     | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_edit_admins_servers.tpl     | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_edit_admins_group.tpl       | [ ]     | [ ]             | [ ]            |                |
-|                   | page_admin_edit_comms.tpl              | [ ]     | [ ]             | [ ]            |                |
+|                   | page_admin_edit_comms.tpl              | [X]     | [X]             | [X]            |                |
 |                   | page_admin_groups_add.tpl              | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_overrides.tpl               | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_servers_adminlist.tpl       | [ ]     | [ ]             | [ ]            |                |
