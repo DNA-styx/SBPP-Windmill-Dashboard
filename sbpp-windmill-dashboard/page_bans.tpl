@@ -465,36 +465,38 @@
                     </table>
 
 
-                    {if $general_unban || $can_delete}
-                        <div
-                            class="flex px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
-                            &nbsp;&nbsp;L&nbsp;&nbsp;<a href="#" onclick="TickSelectAll();return false;" title="Select All"
-                                name="tickswitchlink" id="tickswitchlink">Select All</a>&nbsp;&nbsp;|&nbsp;
-                            <select name="bulk_action" id="bulk_action" onchange="BulkEdit(this,'{$admin_postkey}');">
-                                <option value="-1">Action</option>
-                                {if $general_unban}
-                                    <option value="U">Unban</option>
-                                {/if}
-                                {if $can_delete}
-                                    <option value="D">Delete</option>
-                                {/if}
-                            </select>
-                            <hr>
-                        </div>
-                    {/if}
-                    {if $can_export }
-                        <a href="./exportbans.php?type=steam" title="Export Permanent SteamID Bans">Export Permanent SteamID
-                            Bans</a>&nbsp;&nbsp;|&nbsp;
-                        <a href="./exportbans.php?type=ip" title="Export Permanent IP Bans">Export Permanent IP Bans</a>
-                    {/if}
                 </div>
 
             </div>
 
 
+
+        {if $general_unban || $can_delete}
+            <div
+                class="flex items-center px-4 py-3 text-xs tracking-wide text-gray-500 border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
+                &nbsp;&nbsp;L&nbsp;&nbsp;<a href="#" onclick="TickSelectAll();return false;" title="Select All"
+                    name="tickswitchlink" id="tickswitchlink">Select All</a>&nbsp;&nbsp;|&nbsp;
+                <select name="bulk_action" id="bulk_action" onchange="BulkEdit(this,'{$admin_postkey}');" class="select block mt-1 text-xs dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                    <option value="-1">Action</option>
+                    {if $general_unban}
+                        <option value="U">Unban</option>
+                    {/if}
+                    {if $can_delete}
+                        <option value="D">Delete</option>
+                    {/if}
+                </select>
+            </div>
+        {/if}
+        {if $can_export }
+            <div
+                class="flex items-center px-4 py-3 text-xs tracking-wide text-gray-500 border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
+            <a href="./exportbans.php?type=steam" title="Export Permanent SteamID Bans">Export Permanent SteamID
+                Bans</a>&nbsp;&nbsp;|&nbsp;
+            <a href="./exportbans.php?type=ip" title="Export Permanent IP Bans">Export Permanent IP Bans</a>
+            </div>
+        {/if}
+
         </div>
-
-
     {literal}
         <script type="text/javascript">
             window.addEvent('domready', function() {
