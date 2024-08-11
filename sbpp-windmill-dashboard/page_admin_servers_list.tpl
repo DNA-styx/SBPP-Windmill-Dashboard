@@ -59,13 +59,14 @@
                     {if $permission_addserver}
                         <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
                             <p class="text-sm text-gray-600 dark:text-gray-400">
-                                {sb_button text="Upload Map Image" onclick="childWindow=open('pages/admin.uploadmapimg.php','upload','resizable=yes,width=300,height=130');" class="save mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" id="upload"}
+                                {sb_button text="Upload Map Image" onclick="childWindow=open('pages/admin.uploadmapimg.php','upload','resizable=yes,width=300,height=130');" class="save block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="upload"}
                             </p>
+                            <br>
                             <div class="text-xs text-gray-600 dark:text-gray-400">
                                 Click here to upload a screenshot of a map. Use the mapname as filename.
                             </div>
                         </div>
-                        <div id="mapimg.msg" style="color:#CC0000;" class="text-xs text-red-600 dark:text-red-400"></div>
+                        <div id="mapimg.msg" class="text-xs text-red-600 dark:text-red-400"></div>
                     {/if}
                 {/if}
                 <!-- These next two div shoudl be inside the if loop, but doing so breaks stuff -->
