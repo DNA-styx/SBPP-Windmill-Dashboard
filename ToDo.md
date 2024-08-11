@@ -16,7 +16,7 @@
 |                   | page_protestban.tpl                    | [X]     | [X]             | [X]            |                |
 |                   | page_submitban.tpl                     | [X]     | [X]             | [X]            | #9             |
 |                   | page_youraccount.tpl                   | [X]     | [X]             | [X]            |  #20              |
-|                   | page_bans.tpl                          | [X]     | [X]             | [X]            |                |
+|                   | page_bans.tpl                          | [X]     | [X]             | [X]            |  #21              |
 |                   | page_comms.tpl                         | [X]     | [X]             | [X]            |                |
 |                   | page_lostpassword.tpl                  | [X]     | [X]             | [ ]            |                |
 |                   | page_servers.tpl                       | [X]     | [X]             | [X]            | #5             |

@@ -1,7 +1,7 @@
 <div class="flex items-center justify-center p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
     <table>
         <tr class="sea_open">
-            <td class="font-semibold text-center text-gray-700 dark:text-gray-400" >Advanced Search (Click)
+            <td class="font-semibold text-center text-gray-700 dark:text-gray-400">Advanced Search (Click)
             </td>
         </tr>
         <tr>
