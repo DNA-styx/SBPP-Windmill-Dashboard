@@ -38,7 +38,7 @@
 |                   | page_admin_bans_groups.tpl             | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_bans_protests.tpl           | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_bans_submissions.tpl        | [ ]     | [ ]             | [ ]            |                |
-|                   | page_admin_bans_email.tpl              | [ ]     | [ ]             | [ ]            |                |
+|                   | page_admin_bans_email.tpl              | [X]     | [X]             | [X]            |                |
 |                   | page_admin_bans_import.tpl             | [X]     | [X]             | [X]            |                |
 |                   | page_admin_bans_protests_archiv.tpl    | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_bans_submissions_archiv.tpl | [ ]     | [ ]             | [ ]            |                |
