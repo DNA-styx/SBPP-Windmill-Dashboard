@@ -149,23 +149,12 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<!-- CONTACT -->
-## Contact (coming soon)
-
-Your Name - DNA.styx - dnagames.admin@proton.me
-
-Project Link: [https://github.com/DNA-styx/sbpp-windmill-dashboard](https://github.com/DNA-styx/sbpp-windmill-dashboard)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments (coming soon)
+## Acknowledgments
 
 * [Estevanmaito's Windmill Dashboard](https://github.com/estevanmaito/windmill-dashboard)
-* []()
-* []()
+* [sourcebans-web-theme-fluent](https://github.com/Rushaway/sourcebans-web-theme-fluent)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,7 +164,7 @@ Project Link: [https://github.com/DNA-styx/sbpp-windmill-dashboard](https://gith
 * https://forums.alliedmods.net/forumdisplay.php?f=152
 * Sourcebans++ Discord https://discord.gg/4Bhj6NU
 * Sourcebans++ on Docker https://github.com/crinis/sourcebans-docker
-* Recommended web hosts https://github.com/sbpp/hosts
+* Recommended Sourcebans++ web hosts https://github.com/sbpp/hosts
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
