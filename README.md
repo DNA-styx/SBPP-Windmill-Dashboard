@@ -89,6 +89,8 @@ SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard C
 
 ### Installation
 
+Warning: this theme is in early Alpha stage.
+
 1. Clone the repo
    ```sh
    git clone https://github.com/DNA-styx/sbpp-windmill-dashboard.git
@@ -127,8 +129,9 @@ Download and overwrite all files in the sbpp-windmill-dashboard folder
 - [ ] Code tidy up
 - [ ] Full Release
 
+[Current status](https://github.com/DNA-styx/SBPP-Windmill-Dashboard/blob/main/ToDo.md)
 
-See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a full list of known issues.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
