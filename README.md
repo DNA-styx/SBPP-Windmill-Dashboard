@@ -83,7 +83,7 @@ SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard C
 ### Prerequisites
 
 * Working Sourcebans++ install 1.7.0 or higher, 1.8.0 recommended https://sbpp.github.io/
-* FTP or cpanel access to upload files
+* FTP or cpanel access to upload files to your web server
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,9 +95,9 @@ SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard C
    ```
 or Download all files from repository
 
-2. Move **sbpp-windmill-dashboard** folder to Your Sourcebans -> **themes**;
-3. Go to (Website): AdminCP -> Web Panel -> **Themes**;
-4. Select theme **Sourceban Windmill Dashboard**;
+2. Move **sbpp-windmill-dashboard** folder to your web server Sourcebans -> **themes** folder;
+3. Go to Sourcebans website: Log in as admin then go to Admin Panel -> Settings -> **Themes**;
+4. Select theme **Sourceban Windmill Dashboard** and click apply;
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -158,7 +158,6 @@ Your Name - DNA.styx - dnagames.admin@proton.me
 Project Link: [https://github.com/DNA-styx/sbpp-windmill-dashboard](https://github.com/DNA-styx/sbpp-windmill-dashboard)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
