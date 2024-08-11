@@ -74,7 +74,7 @@
                         <li class="relative px-6 py-3">
                             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                                 href="index.php?p={$nav.endpoint}" title="{$nav.title}::{$nav.description}">
-                                <i class="fa fa-chevron-right" aria-hidden="true"></i><span class="ml-4">{$nav.title}</span>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i><span class="ml-4">{$nav.title}</span>
                             </a>
                         </li>
                     {/foreach}
@@ -83,7 +83,7 @@
                             <li class="relative px-6 py-3">
                                 <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                                     href="index.php?p=admin&c={$admin.endpoint}" title="{$nav.title}::{$nav.description}">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i><span
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i><span
                                         class="ml-4">{$admin.title}</span>
                                 </a>
                             </li>
@@ -93,20 +93,20 @@
                         <li class="relative px-6 py-3">
                             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                                 href="index.php?p=account">
-                                <i class="fa fa-chevron-right" aria-hidden="true"></i> <span class="ml-4">{$username}</span>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <span class="ml-4">{$username}</span>
                             </a>
                         </li>
                         <li class="relative px-6 py-3">
                             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                                 href="index.php?p=logout">
-                                <i class="fa fa-chevron-right" aria-hidden="true"></i> <span class="ml-4">Logout</span>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <span class="ml-4">Logout</span>
                             </a>
                         </li>
                     {else}
                         <li class="relative px-6 py-3">
                             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                                 href="index.php?p=login">
-                                <i class="fa fa-chevron-right" aria-hidden="true"></i><span class="ml-4">Login</span>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i><span class="ml-4">Login</span>
                             </a>
                         </li>
                     {/if}
