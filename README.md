@@ -89,7 +89,9 @@ SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard C
 
 ### Installation
 
-Warning: this theme is in early Alpha stage.
+This theme is in Beta stage but is usable
+Check the [ToDo](https://github.com/DNA-styx/SBPP-Windmill-Dashboard/blob/main/ToDo.md) page for progress.
+If text does not display on any pages not themed, switch to the light theme to make it visable.
 
 1. Clone the repo
    ```sh
