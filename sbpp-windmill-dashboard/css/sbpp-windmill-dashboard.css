@@ -264,3 +264,8 @@ hr {
 .tabcontent:first-of-type {
     display: block;
 }
+
+/* Scroll bar */
+body {
+    scrollbar-color: #4b5563 #1f2937;
+  }
