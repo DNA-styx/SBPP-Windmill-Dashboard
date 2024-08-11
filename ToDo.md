@@ -33,7 +33,7 @@
 |                   | page_kickit.tpl                        | [ ]     | [ ]             | [ ]            |                |
 |                   | updater.tpl                            | [ ]     | [ ]             | [ ]            |                |
 | **Manage Bans**   |                                        |         |                 |                |                |
-|                   | page_admin_bans_add.tpl                | [ ]     | [ ]             | [ ]            |                |
+|                   | page_admin_bans_add.tpl                | [X]     | [X]             | [X]            |                |
 |                   | page_admin_edit_ban.tpl                | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_bans_groups.tpl             | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_bans_protests.tpl           | [ ]     | [ ]             | [ ]            |                |
