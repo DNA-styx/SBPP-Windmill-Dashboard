@@ -1,5 +1,6 @@
+<!-- Start comms add page -->
 {if NOT $permission_addban}
-	Access Denied!
+  Access Denied!
 {else}
   <div id="msg-green" style="display:none;">
     <i class="fas fa-check fa-2x"></i>
@@ -8,90 +9,80 @@
     <i>Redirecting back to comms page</i>
   </div>
 
-  <div id="add-group1">
-    <h3>Add Block</h3>
-	For more information or help regarding a certain subject move your mouse over the question mark.<br /><br />
-    <table width="90%" style="border-collapse:collapse;" id="group.details" cellpadding="3">
-    <tr>
-        <td valign="top" width="35%">
-          <div class="rowdesc">
-            {help_icon title="Nickname" message="Type the nickname of the person that you are banning."}Nickname
-          </div>
-        </td>
-        <td>
-          <div align="left">
-            <input type="hidden" id="fromsub" value="" />
-              <input type="text" TABINDEX=1 class="textbox" id="nickname" name="nickname" style="width: 169px" />
-          </div>
+  <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="add-group1">
+    <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+      <div class="w-full">
+
+        <label class="block text-sm">
+          <span class="text-gray-700 dark:text-gray-400">Nickname</span>
+          <input type="hidden" id="fromsub" value="">
+          <input type="text" TABINDEX=1
+            class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+            id="nickname" name="nickname">
+        </label>
+        <span class="text-xs text-gray-600 dark:text-gray-400">
+          Type the nickname of the person that you are banning.
+        </span>
+        <span class="text-xs text-red-600 dark:text-red-400">
           <div id="nick.msg" class="badentry"></div>
-        </td>
-      </tr>
-      <tr>
-        <td valign="top">
-          <div class="rowdesc">
-            {help_icon title="Steam ID / Community ID" message="The Steam ID or Community ID of the person to ban."}Steam ID / Community ID
-          </div>
-        </td>
-        <td>
-          <div align="left">
-            <input type="text" TABINDEX=3 class="textbox" id="steam" name="steam" style="width: 169px" />
-          </div>
+        </span>
+
+        <label class="block text-sm">
+          <span class="text-gray-700 dark:text-gray-400">Steam ID / Community ID</span>
+          <input type="text" TABINDEX=3
+            class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+            id="steam" name="steam">
+        </label>
+        <span class="text-xs text-gray-600 dark:text-gray-400">
+          The Steam ID or Community ID of the person to ban.
+        </span>
+        <span class="text-xs text-red-600 dark:text-red-400">
           <div id="steam.msg" class="badentry"></div>
-        </td>
-      </tr>
-        <tr>
-            <td valign="top" width="35%">
-                <div class="rowdesc">
-                    {help_icon title="Block Type" message="Choose what to block - chat or voice"}Block Type
-                </div>
-            </td>
-            <td>
-                <div align="left">
-                    <select id="type" name="type" TABINDEX=2 class="select" style="width: 196px">
-                        <option value="1">Voice</option>
-                        <option value="2">Chat</option>
-                        <option value="3">Chat &amp; Voice</option>
-                    </select>
-                </div>
-            </td>
-          </tr>
-      <tr>
-        <td valign="top" width="35%">
-          <div class="rowdesc">
-           {help_icon title="Block Reason" message="Explain in detail, why this block is being made."}Block Reason
+        </span>
+
+        <label class="block text-sm">
+          <span class="text-gray-700 dark:text-gray-400">Block Type</span>
+          <select id="type" name="type" TABINDEX=2
+            class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+            <option value="1">Voice</option>
+            <option value="2">Chat</option>
+            <option value="3">Chat &amp; Voice</option>
+          </select>
+        </label>
+
+        <label class="block text-sm">
+          <span class="text-gray-700 dark:text-gray-400">Block Reason</span>
+          <select id="listReason" name="listReason" TABINDEX=4 onChange="changeReason(this[this.selectedIndex].value);"
+            class="select block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+            <option value="" selected> -- Select Reason -- </option>
+            <optgroup label="Violation">
+              <option value="Obscene language">Obscene language</option>
+              <option value="Insult players">Insult players</option>
+              <option value="Admin disrespect">Admin disrespect</option>
+              <option value="Inappropriate Language">Inappropriate Language</option>
+              <option value="Trading">Trading</option>
+              <option value="Spam in chat/voice">Spam</option>
+              <option value="Advertisement">Advertisement</option>
+            </optgroup>
+            <option value="other">Other Reason</option>
+          </select>
+          <div id="dreason" style="display:none;">
+            <textarea
+              class="textbox block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+              TABINDEX=4 cols="30" rows="5" id="txtReason" name="txtReason"></textarea>
           </div>
-        </td>
-        <td>
-			<div align="left">
-				<select id="listReason" name="listReason" TABINDEX=4 class="select" onChange="changeReason(this[this.selectedIndex].value);">
-					<option value="" selected> -- Select Reason -- </option>
-					<optgroup label="Violation">
-						<option value="Obscene language">Obscene language</option>
-						<option value="Insult players">Insult players</option>
-						<option value="Admin disrespect">Admin disrespect</option>
-						<option value="Inappropriate Language">Inappropriate Language</option>
-						<option value="Trading">Trading</option>
-						<option value="Spam in chat/voice">Spam</option>
-						<option value="Advertisement">Advertisement</option>
-					</optgroup>
-					<option value="other">Other Reason</option>
-				</select>
-				<div id="dreason" style="display:none;">
-					<textarea class="textbox" TABINDEX=4 cols="30" rows="5" id="txtReason" name="txtReason"></textarea>
-				</div>
-			</div>
-			<div id="reason.msg" class="badentry"></div>
-        </td>
-      </tr>
-      <tr>
-        <td valign="top" width="35%">
-          <div class="rowdesc">
-            {help_icon title="Block Length" message="Select how long you want to block this person for."}Block Length
-          </div>
-        </td>
-        <td>
-          <div align="left">
-              <select id="banlength" TABINDEX=5 class="select" style="width: 196px">
+        </label>
+        <span class="text-xs text-gray-600 dark:text-gray-400">
+          Explain in detail, why this block is being made.
+        </span>
+        <span class="text-xs text-red-600 dark:text-red-400">
+          <div id="reason.msg" class="badentry"></div>
+        </span>
+
+        <label class="block text-sm">
+          <span class="text-gray-700 dark:text-gray-400">Block Length</span>
+          <select id="banlength" TABINDEX=5
+            class="select block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
             <option value="0">Permanent</option>
             <optgroup label="minutes">
               <option value="1">1 minute</option>
@@ -130,18 +121,21 @@
               <option value="518400">12 months</option>
             </optgroup>
           </select>
-          </div>
+        </label>
+        <span class="text-xs text-gray-600 dark:text-gray-400">
+          Select how long you want to block this person for.
+        </span>
+        <span class="text-xs text-red-600 dark:text-red-400">
           <div id="length.msg" class="badentry"></div>
-        </td>
-      </tr>
-  		<tr>
-    		<td>&nbsp;</td>
-	    	<td>
-	      		{sb_button text="Add block" onclick="ProcessBan();" class="ok" id="aban" submit=false}
-				      &nbsp;
-				{sb_button text="Back" onclick="history.go(-1)" class="cancel" id="aback"}
-	      	</td>
-  		</tr>
-  </table>
-</div>
+        </span>
+
+        <span class="flex items-center">
+          {sb_button text="Add block" onclick="ProcessBan();" class="ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="aban" submit=false}
+        </span>
+
+      </div>
+    </div>
+  </div>
+
 {/if}
+<!-- End comms add page -->
