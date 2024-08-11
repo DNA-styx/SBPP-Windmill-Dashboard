@@ -9,7 +9,7 @@
                     <input type="hidden" name="action" value="importBans" />
 
                     <label class="block text-sm">
-                        <span class="text-gray-700 dark:text-gray-400">File</span>
+                        <span class="text-gray-700 dark:text-gray-400">Select File to Import</span>
                         <input type="file" TABINDEX=1 class="file" id="importFile" name="importFile">
                     </label>
                     <span class="text-xs text-gray-600 dark:text-gray-400">
@@ -20,13 +20,13 @@
                     </span>
 
                     <label class="block text-sm">
-                        <span class="text-gray-700 dark:text-gray-400">Get Names</span>
+                        <span class="text-gray-700 dark:text-gray-400">Get Names?</span>
                         <input type="checkbox" name="friendsname" id="friendsname"
                             class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                     </label>
                     <span class="text-xs text-gray-600 dark:text-gray-400">
                         Check this box, if you want to get the names of the players from their steam community profile.
-                        (just works with banned_users.cfg)
+                        Just works with banned_users.cfg.
                     </span>
                     <span class="text-xs text-red-600 dark:text-red-400">
                         <div id="friendsname.msg" class="badentry"></div>
