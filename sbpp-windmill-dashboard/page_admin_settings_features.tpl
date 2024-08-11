@@ -1,95 +1,105 @@
-<form action="" method="post">
-    <input type="hidden" name="settingsGroup" value="features" />
-    <table width="99%" border="0" style="border-collapse:collapse;" id="group.features" cellpadding="3">
-        <tr>
-            <td valign="top" colspan="2"><h3>Ban Features</h3>For more information or help regarding a certain subject move your mouse over the question mark.<br /><br /></td>
-        </tr>
-        <tr>
-            <td valign="top" width="35%"><div class="rowdesc">{help_icon title="Enable Public Bans" message="Check this box to enable the entire ban list to be publically downloaded and shared."}Make Export Bans Public</div></td>
-            <td>
-                <div align="left">
-                    <input type="checkbox" name="export_public" id="export_public" />
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td valign="top"><div class="rowdesc">{help_icon title="Enable KickIt" message="Check this box to kick a player when a ban is posted."}Enable KickIt</div></td>
-            <td>
-                <div align="left">
-                    <input type="checkbox" name="enable_kickit" id="enable_kickit" />
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td valign="top"><div class="rowdesc">{help_icon title="Enable Group Banning" message="Check this box, if you want to enable banning of whole steam community groups."}Enable Group Banning</div></td>
-            <td>
-                <div align="left">
+<!-- Start settings features page -->
+<div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+        <div class="w-full">
+
+            <form action="" method="post">
+                <input type="hidden" name="settingsGroup" value="features">
+
+                <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
+                    Ban Features
+                </h4>
+
+                <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Make Export Bans Public</span>
+                    <input type="checkbox" name="export_public" id="export_public"
+                        class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                </label>
+                <span class="text-xs text-gray-600 dark:text-gray-400">
+                    Check this box to enable the entire ban list to be publically downloaded and shared.
+                </span>
+
+                <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Enable KickIt</span>
+                    <input type="checkbox" name="enable_kickit" id="enable_kickit"
+                        class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                </label>
+                <span class="text-xs text-gray-600 dark:text-gray-400">
+                    Check this box to kick a player when a ban is posted.
+                </span>
+
+                <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Enable Group Banning</span>
                     {if $steamapi}
-                        <input type="checkbox" name="enable_groupbanning" id="enable_groupbanning" />
+                        <input type="checkbox" name="enable_groupbanning" id="enable_groupbanning"
+                            class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                     {else}
-                        <input type="checkbox" name="enable_groupbanning" id="enable_groupbanning" disabled />
-                        <br/>You haven't set a valid steamapi key in the config
+                        <input type="checkbox" name="enable_groupbanning" id="enable_groupbanning" disabled
+                            class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                        <br />You haven't set a valid steamapi key in the config
                     {/if}
-                </div>
-                <div id="enable_groupbanning.msg" class="badentry"></div>
-            </td>
-        </tr>
-        <tr>
-            <td valign="top"><div class="rowdesc">{help_icon title="Enable Friend Banning" message="Check this box, if you want to enable banning all steam community friends of a player."}Enable Friends Banning</div></td>
-            <td>
-                <div align="left">
-                    <input type="checkbox" name="enable_friendsbanning" id="enable_friendsbanning" />
-                </div>
-                <div id="enable_friendsbanning.msg" class="badentry"></div>
-            </td>
-        </tr>
-        <tr>
-            <td valign="top"><div class="rowdesc">{help_icon title="Enable Admin Rehashing" message="Check this box, if you want to enable the admin rehashing everytime an admin/group has been changed."}Enable Admin Rehashing</div></td>
-            <td>
-                <div align="left">
-                    <input type="checkbox" name="enable_adminrehashing" id="enable_adminrehashing" />
-                </div>
-                <div id="enable_adminrehashing.msg" class="badentry"></div>
-            </td>
-        </tr>
+                </label>
+                <span class="text-xs text-gray-600 dark:text-gray-400">
+                    Check this box, if you want to enable banning of whole steam community groups.
+                </span>
+                <span class="text-xs text-red-600 dark:text-red-400">
+                    <div id="enable_groupbanning.msg" class="badentry"></div>
+                </span>
 
+                <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Enable Friends Banning</span>
+                    <input type="checkbox" name="enable_friendsbanning" id="enable_friendsbanning"
+                        class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                </label>
+                <span class="text-xs text-gray-600 dark:text-gray-400">
+                    Check this box, if you want to enable banning all steam community friends of a player.
+                </span>
+                <span class="text-xs text-red-600 dark:text-red-400">
+                    <div id="enable_friendsbanning.msg" class="badentry"></div>
+                </span>
 
-        <!-- added for steam login option mod -->
+                <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Enable Admin Rehashing</span>
+                    <input type="checkbox" name="enable_adminrehashing" id="enable_adminrehashing"
+                        class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                </label>
+                <span class="text-xs text-gray-600 dark:text-gray-400">
+                    Check this box, if you want to enable the admin rehashing everytime an admin/group has been changed.
+                </span>
+                <span class="text-xs text-red-600 dark:text-red-400">
+                    <div id="enable_adminrehashing.msg" class="badentry"></div>
+                </span>
 
-        <tr>
-            <td valign="top"><div class="rowdesc">{help_icon title="Enable Normal Login" message="Check this box, if you want to enable the Normal login option on the login form."}Enable Normal Login</div></td>
-            <td>
-                <div align="left">
-                    <input type="checkbox" name="enable_steamlogin" id="enable_steamlogin" />
-                </div>
-                <div id="enable_steamlogin.msg" class="badentry"></div>
-            </td>
-        </tr>
+                <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Enable Normal Login</span>
+                    <input type="checkbox" name="enable_steamlogin" id="enable_steamlogin"
+                        class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                </label>
+                <span class="text-xs text-gray-600 dark:text-gray-400">
+                    Check this box, if you want to enable the Normal login option on the login form.
+                </span>
+                <span class="text-xs text-red-600 dark:text-red-400">
+                    <div id="enable_steamlogin.msg" class="badentry"></div>
+                </span>
 
-        <!-- end steam login option mod -->
+                <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Make Comments Visable to Public</span>
+                    <input type="checkbox" name="enable_publiccomments" id="enable_publiccomments"
+                        class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                </label>
+                <span class="text-xs text-gray-600 dark:text-gray-400">
+                    Check this box, if you want to make admin comments on bans viewable by everyone.
+                </span>
+                <span class="text-xs text-red-600 dark:text-red-400">
+                    <div id="enable_publiccomments.msg" class="badentry"></div>
+                </span>
 
+                <span class="flex items-center">
+                    {sb_button text="Save Changes" id="fsettings" submit=true class="ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" }
+                </span>
 
-        <!-- public comments -->
-
-        <tr>
-            <td valign="top"><div class="rowdesc">{help_icon title="Enable Public Comments" message="Check this box, if you want to make admin comments on bans viewable by everyone."}Enable Public Comments</div></td>
-            <td>
-                <div align="left">
-                    <input type="checkbox" name="enable_publiccomments" id="enable_publiccomments" />
-                </div>
-                <div id="enable_publiccomments.msg" class="badentry"></div>
-            </td>
-        </tr>
-
-        <!-- end public comments -->
-
-
-        <tr>
-            <td colspan="2" align="center">
-                {sb_button text="Save Changes" class="ok" id="fsettings" submit=true}
-                &nbsp;
-                {sb_button text="Back" class="cancel" id="fback"}
-            </td>
-        </tr>
-    </table>
-</form>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- end settings features page -->
