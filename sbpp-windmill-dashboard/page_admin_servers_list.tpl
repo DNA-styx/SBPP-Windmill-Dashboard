@@ -1,13 +1,10 @@
 <!-- Start list servers -->
-<div id="admin-page-content">
-    <div class="tabcontent" id="List servers">
-        {if NOT $permission_list}
-            Access Denied
-        {else}
-            <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
-                Servers (<span id="srvcount">{$server_count}</span>)
-            </h4>
-            <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+{if NOT $permission_list}
+    Access Denied
+{else}
+    <div id="admin-page-content">
+        <div class="tabcontent" id="List servers">
+            <div class="w-full overflow-hidden rounded-lg shadow-xs">
                 <div class="w-full overflow-x-auto">
                     <table class="w-full whitespace-no-wrap">
                         <thead>
@@ -57,7 +54,7 @@
                     </div>
                     <br>
                     {if $permission_addserver}
-                        <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                        <div class="px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
                             <p class="text-sm text-gray-600 dark:text-gray-400">
                                 {sb_button text="Upload Map Image" onclick="childWindow=open('pages/admin.uploadmapimg.php','upload','resizable=yes,width=300,height=130');" class="save block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="upload"}
                             </p>
@@ -68,11 +65,9 @@
                         </div>
                         <div id="mapimg.msg" class="text-xs text-red-600 dark:text-red-400"></div>
                     {/if}
-                {/if}
-                <!-- These next two div shoudl be inside the if loop, but doing so breaks stuff -->
-                <!-- Something strange going on with the page that calls this? -->
+                </div>
             </div>
         </div>
     </div>
-    <!-- Looks like there is a closing div missing but when I addd it the footer gets broken -->
+{/if}
 <!-- end list servers -->
