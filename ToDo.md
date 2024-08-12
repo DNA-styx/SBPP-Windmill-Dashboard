@@ -55,7 +55,7 @@
 |                   | page_admin_edit_admins_servers.tpl     | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_edit_admins_group.tpl       | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_edit_comms.tpl              | [X]     | [X]             | [X]            |                |
-|                   | page_admin_groups_add.tpl              | [ ]     | [ ]             | [ ]            |                |
+|                   | page_admin_groups_add.tpl              | [X]     | [X]             | [X]            |                |
 |                   | page_admin_overrides.tpl               | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_servers_adminlist.tpl       | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_servers_rcon.tpl            | [X]     | [X]             | [X]            |                |
