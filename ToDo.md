@@ -1,11 +1,11 @@
 | Section           | Page                                   | Started | Theming Usable? | Coding Usable? | Related Issues |
-| ----------------- | -------------------------------------- | ------- | --------------- | -------------- | -------------- |
+|-------------------|----------------------------------------|---------|-----------------|----------------|----------------|
 | **Misc**          |                                        |         |                 |                |                |
 |                   | readme.md                              | [X]     | [na]            | [na]           |                |
 |                   | screenshot.jpg                         | [X]     | [na]            | [na]           |                |
 |                   | theme.conf.php                         | [X]     | [na]            | [na]           |                |
 | **Core**          |                                        |         |                 |                |                |
-|                   | core/admin_tabs.tpl                    | [X]     | [ ]             | [ ]            |                |
+|                   | core/admin_tabs.tpl                    | [X]     | [X]             | [X]            |                |
 |                   | core/footer.tpl                        | [X]     | [X]             | [X]            | #3             |
 |                   | core/header.tpl                        | [X]     | [X]             | [X]            |                |
 |                   | core/navbar.tpl                        | [X]     | [X]             | [X]            | #4             |
@@ -15,10 +15,10 @@
 |                   | page_login.tpl                         | [X]     | [X]             | [X]            |                |
 |                   | page_protestban.tpl                    | [X]     | [X]             | [X]            |                |
 |                   | page_submitban.tpl                     | [X]     | [X]             | [X]            | #9             |
-|                   | page_youraccount.tpl                   | [X]     | [X]             | [X]            |  #20              |
-|                   | page_bans.tpl                          | [X]     | [X]             | [X]            |  #21              |
+|                   | page_youraccount.tpl                   | [X]     | [X]             | [X]            | #20            |
+|                   | page_bans.tpl                          | [X]     | [X]             | [X]            | #21            |
 |                   | page_comms.tpl                         | [X]     | [X]             | [X]            |                |
-|                   | page_lostpassword.tpl                  | [X]     | [X]             | [ ]            |                |
+|                   | page_lostpassword.tpl                  | [X]     | [X]             | [X]            |                |
 |                   | page_servers.tpl                       | [X]     | [X]             | [X]            | #5             |
 |                   | page_uploadfile.tpl                    | [ ]     | [ ]             | [ ]            |                |
 | **Search**        |                                        |         |                 |                |                |
@@ -42,7 +42,7 @@
 |                   | page_admin_bans_import.tpl             | [X]     | [X]             | [X]            |                |
 |                   | page_admin_bans_protests_archiv.tpl    | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_bans_submissions_archiv.tpl | [ ]     | [ ]             | [ ]            |                |
-|                   | page_admin_comms_add.tpl               | [X]     | [X]             | [X]            | #21               |
+|                   | page_admin_comms_add.tpl               | [X]     | [X]             | [X]            | #21            |
 | **Manage Mods**   |                                        |         |                 |                |                |
 |                   | page_admin_mods_list.tpl               | [X]     | [X]             | [X]            | #11            |
 |                   | page_admin_mods_add.tpl                | [X]     | [X]             | [X]            |                |
