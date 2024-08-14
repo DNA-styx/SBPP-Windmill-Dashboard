@@ -22,10 +22,10 @@
 |                   | page_servers.tpl                       | [X]     | [X]             | [X]            | #5             |
 |                   | page_uploadfile.tpl                    | [ ]     | [ ]             | [ ]            |                |
 | **Search**        |                                        |         |                 |                |                |
-|                   | box_admin_bans_search.tpl              | [X]     | [X]             | [ ]            |                |
+|                   | box_admin_bans_search.tpl              | [X]     | [X]             | [X]            |                |
 |                   | box_admin_log_search.tpl               | [ ]     | [ ]             | [ ]            |                |
 |                   | box_admin_admins_search.tpl            | [ ]     | [ ]             | [ ]            |                |
-|                   | box_admin_comms_search.tpl             | [X]     | [X]             | [ ]            |                |
+|                   | box_admin_comms_search.tpl             | [X]     | [X]             | [X]            |                |
 | **Admin**         |                                        |         |                 |                |                |
 | **Misc**          |                                        |         |                 |                |                |
 |                   | page_admin.tpl                         | [ ]     | [ ]             | [ ]            |                |
@@ -45,10 +45,10 @@
 |                   | page_admin_comms_add.tpl               | [X]     | [X]             | [X]            | #21               |
 | **Manage Mods**   |                                        |         |                 |                |                |
 |                   | page_admin_mods_list.tpl               | [X]     | [X]             | [X]            | #11            |
-|                   | page_admin_mods_add.tpl                | [X]     | [X]             | [ ]            |                |
+|                   | page_admin_mods_add.tpl                | [X]     | [X]             | [X]            |                |
 |                   | page_admin_edit_mod.tpl                | [X]     | [X]             | [X]            |                |
 | **Manage Admins** |                                        |         |                 |                |                |
-|                   | page_admin_admins_add.tpl              | [ ]     | [ ]             | [ ]            |                |
+|                   | page_admin_admins_add.tpl              | [X]     | [X]             | [X]            |                |
 |                   | page_admin_admins_list.tpl             | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_groups_list.tpl             | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_edit_admins_details.tpl     | [ ]     | [ ]             | [ ]            |                |
