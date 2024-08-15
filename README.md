@@ -131,7 +131,7 @@ Download and overwrite all files in the sbpp-windmill-dashboard folder
 - [ ] Code tidy up
 - [ ] Full Release
 
-[Current status](https://github.com/DNA-styx/SBPP-Windmill-Dashboard/blob/main/ToDo.md)
+[Current progress](https://github.com/DNA-styx/SBPP-Windmill-Dashboard/blob/main/ToDo.md)
 
 See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a full list of known issues.
 
