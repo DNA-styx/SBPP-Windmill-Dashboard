@@ -35,7 +35,7 @@
 | **Manage Bans**   |                                        |         |                 |                |                |
 |                   | page_admin_bans_add.tpl                | [X]     | [X]             | [X]            |                |
 |                   | page_admin_edit_ban.tpl                | [X]     | [X]             | [X]            |                |
-|                   | page_admin_bans_groups.tpl             | [ ]     | [ ]             | [ ]            |                |
+|                   | page_admin_bans_groups.tpl             | [X]     | [X]             | [ ]            |                |
 |                   | page_admin_bans_protests.tpl           | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_bans_submissions.tpl        | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_bans_email.tpl              | [X]     | [X]             | [X]            |                |
