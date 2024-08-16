@@ -106,11 +106,9 @@
       </thead>
       <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
         {foreach from=$players_banned item=player}
-          <tr class="text-gray-700 dark:text-gray-400" id="opener_{$server.sid}" style="cursor:pointer;"
-            onclick="{$player.link_url}">
+          <tr class="text-gray-700 dark:text-gray-400" style="cursor:pointer;" onclick="{$player.link_url}">
             <td class="px-4 py-3">
               <div class="flex items-center text-sm">
-                <!-- Avatar with inset shadow -->
                 <div>
                   <img src="images/games/{$player.icon}" width="26" alt="MOD" title="MOD">
                 </div>
