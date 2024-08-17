@@ -50,7 +50,7 @@
 | **Manage Admins** |                                        |         |                 |                |                |
 |                   | page_admin_admins_add.tpl              | [X]     | [X]             | [X]            |                |
 |                   | page_admin_admins_list.tpl             | [ ]     | [ ]             | [ ]            |                |
-|                   | page_admin_groups_list.tpl             | [ ]     | [ ]             | [ ]            |                |
+|                   | page_admin_groups_list.tpl             | [X]     | [X]             | [X]            |                |
 |                   | page_admin_edit_admins_details.tpl     | [X]     | [X]             | [X]            |                |
 |                   | page_admin_edit_admins_servers.tpl     | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_edit_admins_group.tpl       | [ ]     | [ ]             | [ ]            |                |
