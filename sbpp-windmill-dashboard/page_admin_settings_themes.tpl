@@ -1,49 +1,64 @@
-<h3 align="left">Themes</h3>
-<div id="current-theme-holder">
-    <h4 class="largetitle">Selected Theme: <span id="theme.name">{$theme_name}</span></h4>
-    <div id="current-theme-screenshot">
-        {$theme_screenshot}
-    </div>
-    <div id="current-theme-details">
-        <table width="98%" cellspacing="0" cellpadding="3" align="left">
-            <tr>
-                <td><b>Theme Author:</b></td>
-            </tr>
-            <tr>
-                <td><div id="theme.auth">{$theme_author}</div></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td><b>Theme Version:</b></td>
-            </tr>
-            <tr>
-                <td><div id="theme.vers">{$theme_version}</div></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td><b>Theme Link:</b></td>
-            </tr>
-            <tr>
-                <td><div id="theme.link"><a href="{$theme_link}" target="_new">{$theme_link}</a></div></td>
-            </tr>
-            <tr>
-                <td align="right"><div id="theme.apply"></div></td>
-            </tr>
-        </table>
+<!-- Start Themes Page -->
+<div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+        <div class="w-full">
+            <div id="current-theme-holder">
+                <p class="font-bold text-gray-700 dark:text-gray-400">Selected Theme: {$theme_name}</p>
+                <div id="current-theme-screenshot">
+                    {$theme_screenshot}
+                </div>
+                <div id="current-theme-details">
+                    <table width="98%" cellspacing="0" cellpadding="3" align="left">
+                        <tr>
+                            <td class="font-bold text-gray-700 dark:text-gray-400">Theme Author:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="theme.auth" class="text-gray-700 dark:text-gray-400">{$theme_author}</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold text-gray-700 dark:text-gray-400">Theme Version:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="theme.vers" class="text-gray-700 dark:text-gray-400">{$theme_version}</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold text-gray-700 dark:text-gray-400">Theme Link:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="theme.link" class="text-gray-700 dark:text-gray-400"><a href="{$theme_link}"
+                                        target="_new">{$theme_link}</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <div id="theme.apply"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br>
+            <br>
+            <p class="font-bold text-gray-700 dark:text-gray-400">Available Themes</p>
+            <span class="text-gray-700 dark:text-gray-400">
+                Click a theme below to see details about it.
+            </span>
+            <br>
+            <br>
+            <div id="theme-list">
+                <ul>
+                    {foreach from=$theme_list item=theme}
+                        <li>- <a href="javascript:void(0);" onclick="javascript:xajax_SelTheme('{$theme.dir}');"
+                                class="text-gray-700 dark:text-gray-400">{$theme.name}</a></li>
+                    {/foreach}
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
-
-<br />
-<h4 class="largetitle">Available Themes</h4>
-Click a theme below to see details about it.<br /><br />
-<div id="theme-list">
-    <ul>
-        {foreach from=$theme_list item=theme}
-            <li><a href="javascript:void(0);" onclick="javascript:xajax_SelTheme('{$theme.dir}');"><b>{$theme.name}</b></a></li>
-        {/foreach}
-    </ul>
-</div>
+<!-- End Themes Page -->
