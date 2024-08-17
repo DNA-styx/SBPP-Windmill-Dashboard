@@ -219,9 +219,6 @@
     </table>
 </div>
 
-
-</div>
-
 {$server_script}
 <script>
     InitAccordion('tr.sea_open', 'div.panel', 'mainwrapper');

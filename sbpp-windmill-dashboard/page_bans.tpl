@@ -208,10 +208,20 @@
 
                                                                     {if $ban.type == 0}
                                                                         {if $groupban}
-                                                                            <li>{$ban.groups_link}</li>
+                                                                            <li>
+                                                                                <button
+                                                                                    class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                    {$ban.groups_link}
+                                                                                </button>
+                                                                            </li>                                                                      
                                                                         {/if}
                                                                         {if $friendsban}
-                                                                            <li>{$ban.friend_ban_link}</li>
+                                                                            <li>
+                                                                                <button
+                                                                                    class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                    {$ban.friend_ban_link}
+                                                                                </button>
+                                                                            </li>
                                                                         {/if}
                                                                     {/if}
                                                                     {if ($ban.view_edit && !$ban.unbanned)}
@@ -247,10 +257,15 @@
                                                             class="listtable_2 opener">
                                                             <div class="ban-edit">
                                                                 <ul>
-                                                                    <li>{$ban.demo_link}</li>
+                                                                    <li>
+                                                                        <button
+                                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                            {$ban.demo_link}
+                                                                        </button>
+                                                                    </li>
                                                                 </ul>
                                                             </div>
-                                                        </td>
+</td>
                                                     {/if}
                                                     <!-- ###############[ End Admin Controls ]##################### -->
                                                 </tr>

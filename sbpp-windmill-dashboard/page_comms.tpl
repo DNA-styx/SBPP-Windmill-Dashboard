@@ -1,5 +1,5 @@
 <!-- Added to enable default accordion -->
-<div id="mainwrapper">
+
 
 {if $comment}
     <h3>{$commenttype} Comment</h3>
@@ -74,7 +74,7 @@
             </div>
         </div>
 
-    <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+    <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
     <div class="w-full overflow-x-auto">
 
     <div id="banlist">
@@ -365,20 +365,20 @@
         </tbody>
         </table>
     </div>
-
+    </div>
 
 
  
 
 
-<!-- end wrapper --> 
-</div>
 
 <div
 class="px-4 py-3 text-xs tracking-wide text-gray-500 border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
 <span>
 SourceComms plugin &#038; integration to SourceBans made by <a class="font-semibold" href="https://github.com/ppalex7" target="_blank">Alex</a>
 </span>
+</div>
+
 </div>
 
 
@@ -394,3 +394,4 @@ SourceComms plugin &#038; integration to SourceBans made by <a class="font-semib
     </script>
 {/literal}
 {/if}
+<!-- end wrapper --> 
