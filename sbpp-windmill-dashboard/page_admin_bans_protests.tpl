@@ -1,30 +1,45 @@
+<!-- start ban protests -->
 {if NOT $permission_protests}
     Access Denied!
 {else}
-    <div id="protests">
-        <h3 style="margin-top:0px;">Ban Protests (<span id="protcount">{$protest_count}</span>)</h3>
-        Click a player's nickname to view information about their ban<br /><br />
-        <div id="banlist-nav">
-            {$protest_nav}
+    <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+        <div class="w-full overflow-x-auto">
+
+    <div
+        class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
+        <div class="flex items-center text-gray-600 dark:text-gray-400">
+            <span>Ban Protests (<span id="protcount">{$protest_count}</span>)</span>
         </div>
-        <table width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td width="40%" height='16' class="listtable_top"><strong>Nickname</strong></td>
-                <td width="20%" height='16' class="listtable_top"><strong>SteamID</strong></td>
-                <td width="25%" height='16' class="listtable_top"><strong>Action</strong></td>
+        <div class="flex items-center text-gray-600 dark:text-gray-400">
+            <span>{$protest_nav}</span>
+        </div>
+    </div>
+
+    <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Click a player's nickname to view information about their ban</h4>
+
+    <div id="protests">
+ 
+        <table class="w-full whitespace-no-wrap">
+        <thead>
+                <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                <td class="px-4 py-3"><strong>Nickname</strong></td>
+                <td class="px-4 py-3"><strong>SteamID</strong></td>
+                <td class="px-4 py-3"><strong>Action</strong></td>
             </tr>
+            </thead>
+            <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
             {foreach from=$protest_list item="protest"}
-                <tr id="pid_{$protest.pid}" class="opener2 tbl_out" onmouseout="this.className='tbl_out'" onmouseover="this.className='tbl_hover'">
-                    <td class="toggler listtable_1" height='16'><a href="./index.php?p=banlist&advSearch={$protest.authid}&advType=steamid" title="Show ban">{$protest.name}</a></td>
+                <tr id="pid_{$protest.pid}" class="opener2 text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                    <td class="toggler listtable_1" height='16'>{$protest.name}</td>
                     <td class="listtable_1" height='16'>{if $protest.authid!=""}{$protest.authid}{else}{$protest.ip}{/if}</td>
-                    <td class="listtable_1" height='16'>
+                    <td class="listtable_1" height='16'><a href="./index.php?p=banlist&advSearch={$protest.authid}&advType=steamid" title="Show ban">View Full Ban Details</a> -
                         {if $permission_editban}
                             <a href="#" onclick="RemoveProtest('{$protest.pid}', '{if $protest.authid!=""}{$protest.authid}{else}{$protest.ip}{/if}', '1');">Remove</a> -
                         {/if}
                         <a href="index.php?p=admin&c=bans&o=email&type=p&id={$protest.pid}">Contact</a>
                     </td>
                 </tr>
-                <tr id="pid_{$protest.pid}a" >
+                <tr id="pid_{$protest.pid}a" class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                     <td colspan="3" align="center" id="ban_details_{$protest.pid}">
                         <div class="opener2">
                             <table width="90%" cellspacing="0" cellpadding="0" class="listtable">
@@ -155,7 +170,12 @@
                     </td>
                 </tr>
             {/foreach}
-        </table>
+            </tbody>
+            </table>
+        </div>
     </div>
+</div>
+    
     <script>InitAccordion('tr.opener2', 'div.opener2', 'protests');</script>
 {/if}
+<!-- end ban protests -->
