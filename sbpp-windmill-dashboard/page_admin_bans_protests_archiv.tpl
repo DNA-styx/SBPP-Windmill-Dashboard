@@ -2,22 +2,36 @@
     Access Denied!
 {else}
     <div id="protests">
-        <h3 style="margin-top:0px;">Ban Protests Archive (<span id="protcountarchiv">{$protest_count_archiv}</span>)</h3>
-        Click a player's nickname to view information about their ban<br /><br />
-        <div id="banlist-nav">
-            {$aprotest_nav}
+
+    <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+    <div class="w-full overflow-x-auto">
+    
+    <div
+        class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
+        <div class="flex items-center text-gray-600 dark:text-gray-400">
+            <span>Ban Protests Archive (<span id="protcountarchiv">{$protest_count_archiv}</span>)</span>
         </div>
-        <table width="100%" cellpadding="0" cellspacing="0">
-            <tr>
+        <div class="flex items-center text-gray-600 dark:text-gray-400">
+            <span>{$aprotest_nav}</span>
+        </div>
+    </div>
+    
+    <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Click a player's nickname to view information about their ban</h4>
+
+        <table class="w-full whitespace-no-wrap">
+        <thead> 
+        <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                 <td width="40%" height='16' class="listtable_top"><strong>Nickname</strong></td>
                 <td width="20%" height='16' class="listtable_top"><strong>SteamID</strong></td>
                 <td width="25%" height='16' class="listtable_top"><strong>Action</strong></td>
             </tr>
+            <thead> 
+            <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">        
             {foreach from=$protest_list_archiv item="protest"}
-                <tr id="apid_{$protest.pid}" class="opener5 tbl_out" onmouseout="this.className='tbl_out'" onmouseover="this.className='tbl_hover'">
-                    <td class="toggler" style="border-bottom: solid 1px #ccc" height='16'>{if $protest.archiv!=2}<a href="./index.php?p=banlist{if $protest.authid!=""}&advSearch={$protest.authid}&advType=steamid{else}&advSearch={$protest.ip}&advType=ip{/if}" title="Show ban">{$protest.name}</a>{else}<i><font color="#677882">ban removed</font></i>{/if}</td>
-                    <td style="border-bottom: solid 1px #ccc" height='16'>{if $protest.authid!=""}{$protest.authid}{else}{$protest.ip}{/if}</td>
-                    <td style="border-bottom: solid 1px #ccc" height='16'>
+                <tr id="apid_{$protest.pid}" class="opener5  text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                    <td class="toggler" height='16'>{if $protest.archiv!=2}<a href="./index.php?p=banlist{if $protest.authid!=""}&advSearch={$protest.authid}&advType=steamid{else}&advSearch={$protest.ip}&advType=ip{/if}" title="Show ban">{$protest.name}</a>{else}<i><font color="#677882">ban removed</font></i>{/if}</td>
+                    <td height='16'>{if $protest.authid!=""}{$protest.authid}{else}{$protest.ip}{/if}</td>
+                    <td height='16'>
                         {if $permission_editban}
                             <a href="#" onclick="RemoveProtest('{$protest.pid}', '{if $protest.authid!=""}{$protest.authid}{else}{$protest.ip}{/if}', '2');">Restore</a> -
                             <a href="#" onclick="RemoveProtest('{$protest.pid}', '{if $protest.authid!=""}{$protest.authid}{else}{$protest.ip}{/if}', '0');">Delete</a> -
@@ -25,7 +39,7 @@
                         <a href="index.php?p=admin&c=bans&o=email&type=p&id={$protest.pid}">Contact</a>
                     </td>
                 </tr>
-                <tr id="apid_{$protest.pid}a" >
+                <tr id="apid_{$protest.pid}a" class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                     <td colspan="4" align="center" id="ban_details_{$protest.pid}">
                         <div class="opener5">
                             <table width="90%" cellspacing="0" cellpadding="0" class="listtable">
@@ -173,7 +187,9 @@
                     </td>
                 </tr>
             {/foreach}
+            </tbody>        
         </table>
     </div>
-    <script>InitAccordion('tr.opener5', 'div.opener5', 'protests');</script>
+</div>
+<script>InitAccordion('tr.opener5', 'div.opener5', 'protests');</script>
 {/if}

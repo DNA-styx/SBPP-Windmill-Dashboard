@@ -40,7 +40,7 @@
 |                   | page_admin_bans_submissions.tpl        | [X]     | [X]             | [X]            |                |
 |                   | page_admin_bans_email.tpl              | [X]     | [X]             | [X]            |                |
 |                   | page_admin_bans_import.tpl             | [X]     | [X]             | [X]            |                |
-|                   | page_admin_bans_protests_archiv.tpl    | [ ]     | [ ]             | [ ]            |                |
+|                   | page_admin_bans_protests_archiv.tpl    | [X]     | [X]             | [X]            |                |
 |                   | page_admin_bans_submissions_archiv.tpl | [X]     | [X]             | [X]            |                |
 |                   | page_admin_comms_add.tpl               | [X]     | [X]             | [X]            | #21            |
 | **Manage Mods**   |                                        |         |                 |                |                |
