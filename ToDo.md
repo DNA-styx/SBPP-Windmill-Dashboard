@@ -64,4 +64,4 @@
 |                   | page_admin_settings_logs.tpl           | [ ]     | [ ]             | [ ]            |                |
 |                   | page_admin_settings_themes.tpl         | [X]     | [X]             | [X]            |                |
 |                   | page_admin_settings_features.tpl       | [X]     | [X]             | [X]            |                |
-|                   | page_admin_settings_settings.tpl       | [ ]     | [ ]             | [ ]            |                |
+|                   | page_admin_settings_settings.tpl       | [X]     | [X]             | [X]            | #28            |
