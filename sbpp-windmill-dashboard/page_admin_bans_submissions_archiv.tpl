@@ -1,22 +1,39 @@
 {if NOT $permissions_submissions}
     Access Denied!
 {else}
-    <h3 style="margin-top:0px;">Ban Submissions Archive (<span id="subcountarchiv">{$submission_count_archiv}</span>)</h3>
-    Click a player's nickname to view information about their submission<br /><br />
-    <div id="banlist-nav">
-        {$asubmission_nav}
+
+    <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+    <div class="w-full overflow-x-auto">
+
+<div
+    class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="flex items-center text-gray-600 dark:text-gray-400">
+        <span>BBan Submissions Archive (<span id="subcountarchiv">{$submission_count_archiv}</span>)</span>
     </div>
-    <table width="100%" cellpadding="0" cellspacing="0">
-        <tr  class="tbl_out">
-            <td width="40%" height='16' class="listtable_top"><strong>Nickname</strong></td>
+    <div class="flex items-center text-gray-600 dark:text-gray-400">
+        <span>{$asubmission_nav}</span>
+    </div>
+</div>
+
+<h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Click a player's nickname to view information about their ban</h4>
+
+
+
+
+<table class="w-full whitespace-no-wrap">
+        <thead>    
+        <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                    <td width="40%" height='16' class="listtable_top"><strong>Nickname</strong></td>
             <td width="20%" height='16' class="listtable_top"><strong>SteamID</strong></td>
             <td width="25%" height='16' class="listtable_top"><strong>Action</strong></td>
         </tr>
+        <thead>    
+        <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">        
         {foreach from=$submission_list_archiv item="sub"}
-            <tr id="asid_{$sub.subid}" class="opener4 tbl_out" {if $sub.hostname == ""}onclick="xajax_ServerHostPlayers('{$sub.server}', 'id', 'suba{$sub.subid}');"{/if} onmouseout="this.className='tbl_out'" onmouseover="this.className='tbl_hover'">
-                <td style="border-bottom: solid 1px #ccc" height='16'>{$sub.name}</td>
-                <td style="border-bottom: solid 1px #ccc" height='16'>{if $sub.SteamId!=""}{$sub.SteamId}{else}{$sub.sip}{/if}</td>
-                <td style="border-bottom: solid 1px #ccc" height='16'>
+            <tr id="asid_{$sub.subid}" class="opener4 text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800" {if $sub.hostname == ""}onclick="xajax_ServerHostPlayers('{$sub.server}', 'id', 'suba{$sub.subid}');"{/if}>
+                <td height='16'>{$sub.name}</td>
+                <td height='16'>{if $sub.SteamId!=""}{$sub.SteamId}{else}{$sub.sip}{/if}</td>
+                <td height='16'>
                     {if $sub.archiv != "2" and $sub.archiv != "3"}
                         <a href="#" onclick="xajax_SetupBan({$sub.subid});">Ban</a> -
                         {if $permissions_editsub}
@@ -29,7 +46,7 @@
                     <a href="index.php?p=admin&c=bans&o=email&type=s&id={$sub.subid}">Contact</a>
                 </td>
             </tr>
-            <tr id="asid_{$sub.subid}a">
+            <tr id="asid_{$sub.subid}a" class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                 <td colspan="3">
                     <div class="opener4" width="100%" align="center">
                         <table width="90%" cellspacing="0" cellpadding="0" class="listtable">
@@ -168,6 +185,7 @@
                 </td>
             </tr>
         {/foreach}
-    </table>
+        </tbody>
+        </table>
     <script>InitAccordion('tr.opener4', 'div.opener4', 'mainwrapper');</script>
 {/if}
