@@ -161,7 +161,8 @@
                 </td>
             </tr>
         {/foreach}
-    </table>
+        </tbody>
+        </table>
     </div>
     </div>
 

@@ -2,8 +2,8 @@
     Access Denied!
 {else}
 
-    <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
-    <div class="w-full overflow-x-auto">
+<div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+<div class="w-full overflow-x-auto">
 
 <div
     class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
@@ -16,9 +16,6 @@
 </div>
 
 <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Click a player's nickname to view information about their ban</h4>
-
-
-
 
 <table class="w-full whitespace-no-wrap">
         <thead>    
@@ -186,6 +183,8 @@
             </tr>
         {/foreach}
         </tbody>
-        </table>
-    <script>InitAccordion('tr.opener4', 'div.opener4', 'mainwrapper');</script>
+    </table>
+</div>
+</div>
+<script>InitAccordion('tr.opener4', 'div.opener4', 'mainwrapper');</script>
 {/if}
