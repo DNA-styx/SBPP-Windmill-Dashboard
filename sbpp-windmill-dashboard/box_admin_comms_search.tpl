@@ -1,3 +1,4 @@
+<!-- Start comms search -->
 <div id="mainwrapper" class="flex items-center justify-center p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
     <table>
         <tr class="sea_open">
@@ -223,3 +224,4 @@
 <script>
     InitAccordion('tr.sea_open', 'div.panel', 'mainwrapper');
 </script>
+<!-- end comms search -->
