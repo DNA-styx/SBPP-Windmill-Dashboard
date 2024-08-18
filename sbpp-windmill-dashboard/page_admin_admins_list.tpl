@@ -1,44 +1,57 @@
+<!-- start admin admin page -->
 <div id="admin-page-content">
     <div class="tabcontent" id="List admins">
         {if not $permission_listadmin}
             Access Denied
         {else}
-            <h3>Admins (<span id="admincount">{$admin_count}</span>)</h3>
-            Click on an admin to see more detailed information and actions to perform on them.<br /><br />
 
             {load_template file="admin.admins.search"}
 
-            <div id="banlist-nav">
-                {$admin_nav}
+            <div
+            class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center text-gray-600 dark:text-gray-400">
+                <span>
+                Admins (<span id="admincount">{$admin_count}</span>) {$admin_nav}
+                </span>
             </div>
+            <div class="flex items-center text-gray-600 dark:text-gray-400">
+                Click on a admin to see more details about the event.
+            </div>
+        </div>
+        
+        <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+        <div class="w-full overflow-x-auto">
+
             <div id="banlist">
-                <table width="99%" cellspacing="0" cellpadding="0" align="center">
-                    <tr>
-                        <td width="34%" class="listtable_top"><b>Name</b></td>
-                        <td width="33%" class="listtable_top"><b>Server Admin Group </b></td>
-                        <td width="33%" class="listtable_top"><b>Web Admin Group</b></td>
+                <table class="w-full whitespace-no-wrap">
+                    <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                        <td class="px-4 py-3"><b>Name</b></td>
+                        <td class="px-4 py-3"><b>Bans Actioned</b></td>
+                        <td class="px-4 py-3"><b>Server Admin Group </b></td>
+                        <td class="px-4 py-3"><b>Web Admin Group</b></td>
                     </tr>
                     {foreach from=$admins item="admin"}
-                        <tr onmouseout="this.className='tbl_out'" onmouseover="this.className='tbl_hover'" class="tbl_out opener">
-                            <td class="listtable_1" style="padding:3px;">{$admin.user} (<a href="./index.php?p=banlist&advSearch={$admin.aid}&advType=admin" title="Show bans">{$admin.bancount} bans</a> | <a href="./index.php?p=banlist&advSearch={$admin.aid}&advType=nodemo" title="Show bans without demo">{$admin.nodemocount} w.d.</a>)</td>
-                            <td class="listtable_1" style="padding:3px;">{$admin.server_group}</td>
-                            <td class="listtable_1" style="padding:3px;">{$admin.web_group}</td>
+                        <tr class="opener text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                            <td class="px-4 py-3">{$admin.user}</td>
+                            <td class="px-4 py-3"><a href="./index.php?p=banlist&advSearch={$admin.aid}&advType=admin" title="Show bans">{$admin.bancount} bans</a> | <a href="./index.php?p=banlist&advSearch={$admin.aid}&advType=nodemo" title="Show bans without demo">{$admin.nodemocount} without demos</a></td>
+                            <td class="px-4 py-3">{$admin.server_group}</td>
+                            <td class="px-4 py-3">{$admin.web_group}</td>
                         </tr>
                         <tr>
-                            <td colspan="3">
+                            <td colspan="4">
                                 <div class="opener" align="center" border="1">
-                                    <table width="100%" cellspacing="0" cellpadding="3" bgcolor="#eaebeb">
-                                        <tr>
+                                    <table class="w-full whitespace-no-wrap">
+                                        <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                             <td align="left" colspan="3" class="front-module-header">
                                                 <b>Admin Details of {$admin.user}</b>
                                             </td>
                                         </tr>
-                                        <tr align="left">
+                                        <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                             <td width="35%" class="front-module-line"><b>Server Admin Permissions</b></td>
                                             <td width="35%" class="front-module-line"><b>Web Admin Permissions</b></td>
                                             <td width="30%" valign="top" class="front-module-line"><b>Action</b></td>
                                         </tr>
-                                        <tr align="left">
+                                        <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                             <td valign="top">
                                                 <span style='font-size:10px;color:#1b75d1;'>Server Permissions</span>
                                                 <br/>
@@ -95,7 +108,10 @@
                         </tr>
                     {/foreach}
                 </table>
+                </div>
             </div>
-            <script type="text/javascript">InitAccordion('tr.opener', 'div.opener', 'mainwrapper');</script>
-        {/if}
-    </div>
+        </div>
+    <script type="text/javascript">InitAccordion('tr.opener', 'div.opener', 'mainwrapper');</script>
+    {/if}
+</div>
+<!-- end admin admin page -->
