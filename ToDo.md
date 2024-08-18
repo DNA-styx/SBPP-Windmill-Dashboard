@@ -23,7 +23,7 @@
 |                   | page_uploadfile.tpl                    | [ ]     | [ ]             | [ ]            |                |
 | **Search**        |                                        |         |                 |                |                |
 |                   | box_admin_bans_search.tpl              | [X]     | [X]             | [X]            |                |
-|                   | box_admin_log_search.tpl               | [ ]     | [ ]             | [ ]            |                |
+|                   | box_admin_log_search.tpl               | [X]     | [X]             | [X]            | #31            |
 |                   | box_admin_admins_search.tpl            | [ ]     | [ ]             | [ ]            |                |
 |                   | box_admin_comms_search.tpl             | [X]     | [X]             | [X]            |                |
 | **Admin**         |                                        |         |                 |                |                |

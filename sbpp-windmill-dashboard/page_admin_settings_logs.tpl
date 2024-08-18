@@ -1,6 +1,5 @@
 <!-- start logs page -->
 <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">System Log</h4>
-<p class="mb-4 text-sm text-gray-600 dark:text-gray-300">Click on a row to see more details about the event.</p>
 
 {load_template file="admin.log.search" }
 
@@ -12,7 +11,7 @@
         </span>
     </div>
     <div class="flex items-center text-gray-600 dark:text-gray-400">
-        .
+        Click on a row to see more details about the event.
     </div>
 </div>
 
