@@ -1,75 +1,56 @@
 <!-- start bans page -->
 {if $comment}
-    <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
-        <div class="w-full overflow-x-auto">
-            <div class="text-lg text-gray-700 dark:text-gray-400">
-                {$commenttype} Comment
-            </div>
-            <table width="90%" align="center" border="0" style="border-collapse:collapse;" id="group.details"
-                cellpadding="3">
-                <tr>
-                    <td>
-                        <label class="block text-sm">
-                            <span class="text-gray-700 dark:text-gray-400">Comment</span>
-                            <textarea rows="10" cols="60" style="width:500px;" id="commenttext" name="commenttext"
-                                {if !$canedit}disabled{/if}
-                                class="submit-fields block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">{$commenttext}</textarea>
-                        </label>
-                        <span class="text-xs text-gray-600 dark:text-gray-400">
-                            Type the text you would like to say.
-                        </span>
-                        <span class="text-xs text-red-600 dark:text-red-400">
-                            <div id="commenttext.msg" class="badentry"></div>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="hidden" name="bid" id="bid" value="{$comment}">
-                        <input type="hidden" name="ctype" id="ctype" value="{$ctype}">
-                        {if $cid != ""}
-                            <input type="hidden" name="cid" id="cid" value="{$cid}">
-                        {else}
-                            <input type="hidden" name="cid" id="cid" value="-1">
-                        {/if}
-                        <input type="hidden" name="page" id="page" value="{$page}">
-                        {if $canedit}
-                            <span class="flex items-center">
-                                {sb_button text="$commenttype Comment" onclick="ProcessComment();" class="ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="acom" submit=false}&nbsp;
-                                &nbsp;
-                                {sb_button text="Back" onclick="history.go(-1)" class="cancel block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="aback"}
-                            </span>
-                        {/if}
-                    </td>
-                </tr>
+
+    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="add-group1">
+        <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+            <div class="w-full">
+
+                <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">{$commenttype} Comment</h4>
+
+                <label class="block mt-4 text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Comment</span>
+                    <textarea rows="10" cols="60" id="commenttext" name="commenttext" {if !$canedit}disabled{/if}
+                        class="submit-fields w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">{$commenttext}</textarea>
+                </label>
+                <span class="text-xs text-gray-600 dark:text-gray-400">
+                    Type the text you would like to say.
+                </span>
+                <span class="text-xs text-red-600 dark:text-red-400">
+                    <div id="commenttext.msg" class="badentry"></div>
+                </span>
+
+                <input type="hidden" name="bid" id="bid" value="{$comment}">
+                <input type="hidden" name="ctype" id="ctype" value="{$ctype}">
+                {if $cid != ""}
+                    <input type="hidden" name="cid" id="cid" value="{$cid}">
+                {else}
+                    <input type="hidden" name="cid" id="cid" value="-1">
+                {/if}
+                <input type="hidden" name="page" id="page" value="{$page}">
+                {if $canedit}
+                    <span class="flex items-center">
+                        {sb_button text="$commenttype Comment" onclick="ProcessComment();" class="ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="acom" submit=false}&nbsp;
+                        &nbsp;
+                        {sb_button text="Back" onclick="history.go(-1)" class="cancel block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="aback"}
+                    </span>
+                {/if}
+
+                <br>
+                <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Comments</h4>
                 {foreach from=$othercomments item="com"}
-                    <tr>
-                        <td colspan='3'>
-                            <hr>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-gray-700 dark:text-gray-400">
-                            <b>{$com.comname}</b>
-                        </td>
-                        <td class="text-gray-700 dark:text-gray-400" align="right"><b>{$com.added}</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-gray-700 dark:text-gray-400" colspan='2'>
-                            {$com.commenttxt}
-                        </td>
-                    </tr>
+                    <label class="block mt-4 text-sm">
+                        <span class="text-gray-700 dark:text-gray-400">{$com.comname} {$com.added}</span>
+                        <textarea rows="3" cols="60" id="commenttext" name="commenttext" disabled
+                            class="submit-fields w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">{$com.commenttxt}</textarea>
+                    </label>
                     {if $com.editname != ''}
-                        <tr>
-                            <td colspan='3'>
-                                <span class="text-gray-700 dark:text-gray-400" style='font-size:6pt;color:grey;'>last edit
-                                    {$com.edittime} by {$com.editname}</span>
-                            </td>
-                        </tr>
+                        <span class="text-xs text-gray-600 dark:text-gray-400">
+                            Last Edit {$com.edittime} by {$com.editname}
+                        </span>
                     {/if}
                 {/foreach}
-            </table>
+
+            </div>
         </div>
     </div>
 
