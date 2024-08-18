@@ -16,9 +16,6 @@
 
     <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Click a player's nickname to view information about their ban</h4>
 
-    <div id="banlist-nav">
-        
-    </div>
     <table class="w-full whitespace-no-wrap">
     <thead>    
     <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
