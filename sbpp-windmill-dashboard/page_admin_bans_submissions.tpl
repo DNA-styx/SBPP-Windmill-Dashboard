@@ -1,19 +1,35 @@
 {if NOT $permissions_submissions}
     Access Denied!
 {else}
-    <h3 style="margin-top:0px;">Ban Submissions (<span id="subcount">{$submission_count}</span>)</h3>
-    Click a player's nickname to view information about their submission<br /><br />
-    <div id="banlist-nav">
-        {$submission_nav}
+    <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+        <div class="w-full overflow-x-auto">
+
+    <div
+        class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
+        <div class="flex items-center text-gray-600 dark:text-gray-400">
+            <span>Ban Submissions (<span id="subcount">{$submission_count}</span>)</span>
+        </div>
+        <div class="flex items-center text-gray-600 dark:text-gray-400">
+            <span>{$submission_nav}</span>
+        </div>
     </div>
-    <table width="100%" cellpadding="0" cellspacing="0">
-        <tr  class="tbl_out">
-            <td width="40%" height='16' class="listtable_top"><strong>Nickname</strong></td>
-            <td width="20%" height='16' class="listtable_top"><strong>SteamID</strong></td>
-            <td width="25%" height='16' class="listtable_top"><strong>Action</strong></td>
+
+    <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Click a player's nickname to view information about their ban</h4>
+
+    <div id="banlist-nav">
+        
+    </div>
+    <table class="w-full whitespace-no-wrap">
+    <thead>    
+    <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+            <td class="px-4 py-3"><strong>Nickname</strong></td>
+            <td class="px-4 py-3"><strong>SteamID</strong></td>
+            <td class="px-4 py-3"><strong>Action</strong></td>
         </tr>
+        </thead>
+        <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
         {foreach from=$submission_list item="sub"}
-            <tr id="sid_{$sub.subid}" class="opener3 tbl_out" {if $sub.hostname == ""}onclick="xajax_ServerHostPlayers('{$sub.server}', 'id', 'sub{$sub.subid}');"{/if} onmouseout="this.className='tbl_out'" onmouseover="this.className='tbl_hover'">
+            <tr id="sid_{$sub.subid}" class="opener3 text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800" {if $sub.hostname == ""}onclick="xajax_ServerHostPlayers('{$sub.server}', 'id', 'sub{$sub.subid}');"{/if}>
                 <td class="listtable_1" height='16'>{$sub.name}</td>
                 <td class="listtable_1" height='16'>{if $sub.SteamId!=""}{$sub.SteamId}{else}{$sub.sip}{/if}</td>
                 <td class="listtable_1" height='16'>
@@ -24,7 +40,7 @@
                     <a href="index.php?p=admin&c=bans&o=email&type=s&id={$sub.subid}">Contact</a>
                 </td>
             </tr>
-            <tr id="sid_{$sub.subid}a">
+            <tr id="sid_{$sub.subid}a" class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                 <td colspan="3">
                     <div class="opener3" width="100%" align="center">
                         <table width="90%" cellspacing="0" cellpadding="0" class="listtable">
@@ -149,5 +165,8 @@
             </tr>
         {/foreach}
     </table>
+    </div>
+    </div>
+
     <script>InitAccordion('tr.opener3', 'div.opener3', 'mainwrapper');</script>
 {/if}
