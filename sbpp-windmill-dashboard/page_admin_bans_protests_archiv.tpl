@@ -190,6 +190,7 @@
             </tbody>        
         </table>
     </div>
-</div>
+    </div>
+    </div>
 <script>InitAccordion('tr.opener5', 'div.opener5', 'protests');</script>
 {/if}
