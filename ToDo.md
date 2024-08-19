@@ -29,9 +29,9 @@
 | **Admin**         |                                        |         |                 |                |                |
 | **Misc**          |                                        |         |                 |                |                |
 |                   | page_admin.tpl                         | [ ]     | [ ]             | [ ]            |                |
-|                   | page_blockit.tpl                       | [ ]     | [ ]             | [ ]            |                |
-|                   | page_kickit.tpl                        | [ ]     | [ ]             | [ ]            |                |
-|                   | updater.tpl                            | [ ]     | [ ]             | [ ]            |                |
+|                   | page_blockit.tpl                       | [na]    | [na]            | [na]           |                |
+|                   | page_kickit.tpl                        | [na]    | [na]            | [na]           |                |
+|                   | updater.tpl                            | [na]    | [na]            | [na]           |                |
 | **Manage Bans**   |                                        |         |                 |                |                |
 |                   | page_admin_bans_add.tpl                | [X]     | [X]             | [X]            |                |
 |                   | page_admin_edit_ban.tpl                | [X]     | [X]             | [X]            |                |
