@@ -20,7 +20,7 @@
 |                   | page_comms.tpl                         | [X]     | [X]             | [X]            |                |
 |                   | page_lostpassword.tpl                  | [X]     | [X]             | [X]            |                |
 |                   | page_servers.tpl                       | [X]     | [X]             | [X]            | #5             |
-|                   | page_uploadfile.tpl                    | [ ]     | [ ]             | [ ]            |                |
+|                   | page_uploadfile.tpl                    | [X]     | [X]             | [X]            |                |
 | **Search**        |                                        |         |                 |                |                |
 |                   | box_admin_bans_search.tpl              | [X]     | [X]             | [X]            |                |
 |                   | box_admin_log_search.tpl               | [X]     | [X]             | [X]            | #31            |
