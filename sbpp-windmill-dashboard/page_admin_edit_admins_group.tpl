@@ -1,56 +1,70 @@
 <form action="" method="post">
     <div id="admin-page-content">
         <div id="add-group">
-            <h3>Admin Groups</h3>
-            For more information or help regarding a certain subject move your mouse over the question mark.<br /><br />
-            Choose the new groups that you want <b>{$group_admin_name}</b> to appear in.<br /><br />
-            <table width="90%" border="0" style="border-collapse:collapse;" id="group.details" cellpadding="3">
-                <tr>
-                    <td valign="middle"><div class="rowdesc">{help_icon title="Web Group" message="Choose the group you want this admin to appear in for web permissions"}Web Admin Group</div></td>
-                    <td>
-                        <div align="left" id="wadmingroup">
-                            <select name="wg" id="wg" class="select">
-                                <option value="-1">No Group</option>
-                                <optgroup label="Groups" style="font-weight:bold;">
-                                    {foreach from=$web_lst item=wg}
-                                        <option value="{$wg.gid}"{if $wg.gid == $group_admin_id} selected="selected"{/if}>{$wg.name}</option>
-                                    {/foreach}
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div id="wgroup.msg" class="badentry"></div>
-                    </td>
-                </tr>
 
-                <tr id="nsgroup" valign="top" style="height:5px;overflow:hidden;">
-                </tr>
+            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="add-group1">
+                <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+                    <div class="w-full">
 
-                <tr>
-                    <td valign="middle"><div class="rowdesc">{help_icon title="Server Group" message="Choose the group you want this admin to appear in for server admin permissions"}Server Admin Group </div></td>
-                    <td><div align="left" id="wadmingroup">
-                            <select name="sg" id="sg" class="select">
-                                <option value="-1">No Group</option>
+                        <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Admin Groups</h4>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Choose the groups that you want <b>{$group_admin_name}</b> to appear in.
+                        </p>
+                        <br>
 
-                                <optgroup label="Groups" style="font-weight:bold;">
-                                    {foreach from=$group_lst item=sg}
-                                        <option value="{$sg.id}"{if $sg.id == $server_admin_group_id} selected="selected"{/if}>{$sg.name}</option>
-                                    {/foreach}
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div id="sgroup.msg" class="badentry"></div>
-                    </td>
-                </tr>
+                        <label class="block text-sm">
+                            <span class="text-gray-700 dark:text-gray-400">Web Admin Group</span>
+                            <div align="left" id="wadmingroup">
+                                <select name="wg" id="wg"
+                                    class="select nputbox block mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                                    <option value="-1">No Group</option>
+                                    <optgroup label="Groups" style="font-weight:bold;">
+                                        {foreach from=$web_lst item=wg}
+                                            <option value="{$wg.gid}" {if $wg.gid == $group_admin_id} selected="selected"
+                                                {/if}>{$wg.name}</option>
+                                        {/foreach}
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </label>
+                        <span class="text-xs text-gray-600 dark:text-gray-400">
+                            Choose the group you want this admin to appear in for web permissions
+                        </span>
+                        <span class="text-xs text-red-600 dark:text-red-400">
+                            <div id="wgroup.msg" class="badentry"></div>
+                        </span>
 
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>
-                        {sb_button text="Save Changes" class="ok" id="agroups" submit=true}
-                        &nbsp;
-                        {sb_button text="Back" onclick="history.go(-1)" class="cancel" id="aback"}
-                    </td>
-                </tr>
-            </table>
+                        <label class="block text-sm">
+                            <span class="text-gray-700 dark:text-gray-400">Server Admin Group</span>
+                            <div align="left" id="wadmingroup">
+                                <select name="wg" id="wg"
+                                    class="select nputbox block mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                                    <option value="-1">No Group</option>
+                                    <optgroup label="Groups" style="font-weight:bold;">
+                                        {foreach from=$web_lst item=wg}
+                                            <option value="{$wg.gid}" {if $wg.gid == $group_admin_id} selected="selected"
+                                                {/if}>{$wg.name}</option>
+                                        {/foreach}
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </label>
+                        <span class="text-xs text-gray-600 dark:text-gray-400">
+                            Choose the group you want this admin to appear in for server admin permissions
+                        </span>
+                        <span class="text-xs text-red-600 dark:text-red-400">
+                            <div id="sgroup.msg" class="badentry"></div>
+                        </span>
+
+                        <span class="flex items-center">
+                            {sb_button text="Save Changes" id="agroups" submit=true class="ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
+                            &nbsp;
+                            {sb_button text="Back" onclick="history.go(-1)" id="aback" class="cancel block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
+                        </span>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </form>

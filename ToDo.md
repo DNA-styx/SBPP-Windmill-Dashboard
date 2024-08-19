@@ -53,7 +53,7 @@
 |                   | page_admin_groups_list.tpl             | [X]     | [X]             | [X]            |                |
 |                   | page_admin_edit_admins_details.tpl     | [X]     | [X]             | [X]            |                |
 |                   | page_admin_edit_admins_servers.tpl     | [X]     | [X]             | [X]            |                |
-|                   | page_admin_edit_admins_group.tpl       | [ ]     | [ ]             | [ ]            |                |
+|                   | page_admin_edit_admins_group.tpl       | [X]     | [X]             | [X]            |                |
 |                   | page_admin_edit_comms.tpl              | [X]     | [X]             | [X]            |                |
 |                   | page_admin_groups_add.tpl              | [X]     | [X]             | [X]            |                |
 |                   | page_admin_overrides.tpl               | [X]     | [X]             | [X]            |                |
