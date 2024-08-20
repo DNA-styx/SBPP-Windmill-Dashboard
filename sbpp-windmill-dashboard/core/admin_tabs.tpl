@@ -49,8 +49,25 @@
   {/foreach}
 </div>
 
-<br><br><br>
 -->
+
+<div id="admin-page-menu"
+  class="tabinator flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400">
+  {counter assign=i start=0}
+  {foreach from=$tabs item="tab"}
+    {counter}
+    <a onclick="openTab(this, '{$tab.name}');" aria-current="page"
+      class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">
+      <input type="radio" id="tab{$i}" name="tabs" {if $i==1} checked{/if}>
+      <label for="tab{$i}">{$tab.name}</label>
+    </a>
+  {/foreach}
+</div>
+
+<!--
+
+<br><br><br>
+
 <ul id="admin-page-menu"
   class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
   {foreach from=$tabs item="tab"}
@@ -63,18 +80,6 @@
   {/foreach}
 </ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+-->
  
   <!-- End Admin Tabs -->
