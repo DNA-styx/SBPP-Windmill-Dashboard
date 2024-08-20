@@ -24,8 +24,6 @@
 
 <!-- end footer bar -->
 
-Web server time: {$smarty.now|date_format:'%Y-%m-%d %H:%M:%S'} - Powered by Smarty {$smarty.version}
-
 <!-- remove one div -->
 </div>
 </main>

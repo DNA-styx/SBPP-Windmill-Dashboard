@@ -1,126 +1,145 @@
-<table style="width: 101%; margin: 0 0 -2px -2px;">
-    <tr>
-        <td colspan="3" class="listtable_top"><b>Please select an option to administer</b></td>
-    </tr>
-</table>
-<div id="cpanel">
-    <ul>
-        {if $access_admins}
-            <li>
-                <a href="index.php?p=admin&amp;c=admins">
-                    <i class="fas fa-user fa-5x"></i>
-                    <br/><br/>
-                    <b>Admin Settings</b>
-                </a>
-            </li>
-        {/if}
-        {if $access_servers}
-            <li>
-                <a href="index.php?p=admin&amp;c=servers">
-                    <i class="fas fa-server fa-5x"></i>
-                    <br/><br/>
-                    <b>Server Settings</b>
-                </a>
-            </li>
-        {/if}
-        {if $access_bans}
-            <li>
-                <a href="index.php?p=admin&amp;c=bans">
-                    <i class="fas fa-times fa-5x"></i>
-                    <br/><br/>
-                    <b>Bans</b>
-                </a>
-            </li>
-        {/if}
-        {if $access_bans}
-            <li>
-                <a href="index.php?p=admin&amp;c=comms">
-                    <i class="fas fa-volume-off fa-5x"></i>
-                    <br/><br/>
-                    <b>Comms</b>
-                </a>
-            </li>
-        {/if}
-        {if $access_groups}
-            <li>
-                <a href="index.php?p=admin&amp;c=groups">
-                    <i class="fas fa-users fa-5x"></i>
-                    <br/><br/>
-                    <b>Group Settings</b>
-                </a>
-            </li>
-        {/if}
-        {if $access_settings}
-            <li>
-                <a href="index.php?p=admin&amp;c=settings">
-                    <i class="fas fa-cogs fa-5x"></i>
-                    <br/><br/>
-                    <b>Webpanel Settings</b>
-                </a>
-            </li>
-        {/if}
-        {if $access_mods}
-            <li>
-                <a href="index.php?p=admin&amp;c=mods">
-                    <i class="fas fa-cubes fa-5x"></i>
-                    <br/><br/>
-                    <b>Manage Mods</b>
-                </a>
-            </li>
-        {/if}
-    </ul>
+<!-- Start admin page -->
+<h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
+    Please select an option to administer
+</h4>
+<div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
+    {if $access_admins}
+        <!-- Settings Card -->
+        <a href="index.php?p=admin&amp;c=admins">
+            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                <div
+                    class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
+                    &nbsp;<i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Admin Settings</p>
+                </div>
+            </div>
+        </a>
+    {/if}
+    {if $access_servers}
+        <!-- Servers Card -->
+        <a href="index.php?p=admin&amp;c=servers">
+            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                <div
+                    class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
+                    &nbsp;<i class="fa fa-server" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Server Settings</p>
+                </div>
+            </div>
+        </a>
+    {/if}
+    {if $access_bans}
+        <!-- Bans Card -->
+        <a href="index.php?p=admin&amp;c=bans">
+            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                <div
+                    class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
+                    &nbsp;<i class="fa fa-ban" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Bans</p>
+                </div>
+            </div>
+        </a>
+        <!-- Comms Card -->
+        <a href="index.php?p=admin&amp;c=comms">
+            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                <div
+                    class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
+                    &nbsp;<i class="fa fa-microphone-slash" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Comms</p>
+                </div>
+            </div>
+        </a>
+    {/if}
+    {if $access_groups}
+        <!-- Card -->
+        <a href="index.php?p=admin&amp;c=groups">
+            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                <div
+                    class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
+                    &nbsp;<i class="fa fa-users" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Group Settings</p>
+                </div>
+            </div>
+        </a>
+    {/if}
+    {if $access_settings}
+        <!-- Card -->
+        <a href="index.php?p=admin&amp;c=settings">
+            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                <div
+                    class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
+                    &nbsp;<i class="fa fa-cogs" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Webpanel Settings</p>
+                </div>
+            </div>
+        </a>
+    {/if}
+    {if $access_mods}
+        <!-- Mods Card -->
+        <a href="index.php?p=admin&amp;c=mods">
+            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                <div
+                    class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
+                    &nbsp;<i class="fa fa-cubes" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Manage Mods</p>
+                </div>
+            </div>
+        </a>
+    {/if}
 </div>
-<br />
-
-<table width="100%" border="0" cellpadding="3" cellspacing="0">
-    <tr>
-        <td width="33%" class="listtable_top" align="center" style="border-right: 3px solid #CFCAC6;">Version Information</td>
-        <td width="33%" class="listtable_top" align="center" style="border-right: 3px solid #CFCAC6; border-left: 3px solid #CFCAC6;">Admin Information</td>
-        <td width="33%" class="listtable_top" align="center" style="border-left: 3px solid #CFCAC6;">Ban Information</td>
-    </tr>
-    <tr>
-        <td class="listtable_1" style="border-right: 3px solid #CFCAC6;">Latest release: <strong id='relver'>Please Wait...</strong></td>
-        <td class="listtable_1" style="border-right: 3px solid #CFCAC6; border-left: 3px solid #CFCAC6;">Total admins: <strong>{$total_admins}</strong></td>
-        <td class="listtable_1" style="border-left: 3px solid #CFCAC6;">Total bans: <strong>{$total_bans}</strong></td>
-    </tr>
-    <tr>
-        <td class="listtable_1" style="border-right: 3px solid #CFCAC6;">
+<div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
+    <div class="w-1/3 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+        <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Server</h4>
+        <p class="text-gray-600 dark:text-gray-400">
+            Total Servers: {$total_servers}<br>
+            Total Admins: {$total_admins}<br>
+            Total Demo Size: {$demosize}<br>
+            Web server time: {$smarty.now|date_format:'%d-%b %H:%M'}
+        </p>
+    </div>
+    <div class="w-1/3  p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+        <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Bans</h4>
+        <p class="text-gray-600 dark:text-gray-400">
+            Total Player bans: {$total_bans}<br>
+            Total Comms Mute/Gags: {$total_comms}<br>
+            Banned Player Blocked: {$total_blocks}
+        </p>
+    </div>
+    <div class="w-1/3  p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+        <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Submissions</h4>
+        <p class="text-gray-600 dark:text-gray-400">
+            New Ban Appeals: {$total_protests}<br>
+            Archived Appeals: {$archived_protests}<br>
+            New Player Reports: {$total_submissions}<br>
+            Archived Player Reports: {$archived_submissions}
+        </p>
+    </div>
+    <div class="w-1/3  p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+        <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Software</h4>
+        <p class="text-gray-600 dark:text-gray-400">
+            Latest SB++ release: <span id='relver'>Please Wait...</span><br>
             {if $dev}
-                Latest Git: <strong id='svnrev'>Please Wait...</strong>
+                Latest Dev Git: <span id='svnrev'>Please Wait...</span><br>
             {/if}
-        </td>
-        <td class="listtable_1" style="border-right: 3px solid #CFCAC6; border-left: 3px solid #CFCAC6;">&nbsp;</td>
-        <td class="listtable_1" style="border-left: 3px solid #CFCAC6;">Total comms: <strong>{$total_comms}</strong></td>
-    </tr>
-    <tr>
-        <td class="listtable_1" id='versionmsg' style="border-right: 3px solid #CFCAC6;">Please Wait...</td>
-        <td class="listtable_1" style="border-right: 3px solid #CFCAC6; border-left: 3px solid #CFCAC6;"><strong> </strong></td>
-        <td class="listtable_1" style="border-left: 3px solid #CFCAC6;">Connections Blocked: <strong>{$total_blocks}</strong></td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td width="33%" class="listtable_top" align="center" style="border-right: 3px solid #CFCAC6;">Server Information</td>
-        <td width="33%" class="listtable_top" align="center" style="border-right: 3px solid #CFCAC6; border-left: 3px solid #CFCAC6;">Protest Information</td>
-        <td width="33%" class="listtable_top" align="center" style="border-left: 3px solid #CFCAC6;">Submission Information</td>
-    </tr>
-    <tr>
-        <td class="listtable_1" style="border-right: 3px solid #CFCAC6;">Total Servers: <strong>{$total_servers}</strong></td>
-        <td class="listtable_1" style="border-right: 3px solid #CFCAC6; border-left: 3px solid #CFCAC6;">Pending Protests: <strong>{$total_protests}</strong></td>
-        <td class="listtable_1" style="border-left: 3px solid #CFCAC6;">Pending Submissions: <strong>{$total_submissions}</strong></td>
-    </tr>
-    <tr>
-        <td class="listtable_1" style="border-right: 3px solid #CFCAC6;">Total demo size: <strong>{$demosize}</td>
-        <td class="listtable_1" style="border-right: 3px solid #CFCAC6; border-left: 3px solid #CFCAC6;">Archived Protests: <strong>{$archived_protests}</strong></td>
-        <td class="listtable_1" style="border-left: 3px solid #CFCAC6;">Archived Submissions: <strong>{$archived_submissions}</strong></td>
-    </tr>
-    <tr>
-        <td class="listtable_1" style="border-right: 3px solid #CFCAC6;">&nbsp;</td>
-        <td class="listtable_1" style="border-right: 3px solid #CFCAC6; border-left: 3px solid #CFCAC6;">&nbsp;</td>
-        <td class="listtable_1" style="border-left: 3px solid #CFCAC6;">&nbsp;</td>
-    </tr>
-</table>
-<script type="text/javascript">xajax_CheckVersion();</script>
+            <span id='versionmsg'>Please Wait...</span>
+            Smarty: v{$smarty.version}
+        </p>
+    </div>
+</div>
+<script type="text/javascript">
+    xajax_CheckVersion();
+</script>
+<!-- Start admin page -->
