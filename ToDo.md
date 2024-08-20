@@ -5,7 +5,7 @@
 |                   | screenshot.jpg                         | [X]     | [na]            | [na]           |                |
 |                   | theme.conf.php                         | [X]     | [na]            | [na]           |                |
 | **Core**          |                                        |         |                 |                |                |
-|                   | core/admin_tabs.tpl                    | [X]     | [X]             | [X]            |                |
+|                   | core/admin_tabs.tpl                    | [X]     | [X]             | [ ]            |                |
 |                   | core/footer.tpl                        | [X]     | [X]             | [X]            | #3             |
 |                   | core/header.tpl                        | [X]     | [X]             | [X]            |                |
 |                   | core/navbar.tpl                        | [X]     | [X]             | [X]            | #4             |
@@ -28,7 +28,7 @@
 |                   | box_admin_comms_search.tpl             | [X]     | [X]             | [X]            |                |
 | **Admin**         |                                        |         |                 |                |                |
 | **Misc**          |                                        |         |                 |                |                |
-|                   | page_admin.tpl                         | [ ]     | [ ]             | [ ]            |                |
+|                   | page_admin.tpl                         | [X]     | [X]             | [X]            |                |
 |                   | page_blockit.tpl                       | [na]    | [na]            | [na]           |                |
 |                   | page_kickit.tpl                        | [na]    | [na]            | [na]           |                |
 |                   | updater.tpl                            | [na]    | [na]            | [na]           |                |
