@@ -102,7 +102,7 @@
 </div>
 <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
     <div class="w-1/3 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
-        <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Server</h4>
+        <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Servers</h4>
         <p class="text-gray-600 dark:text-gray-400">
             Total Servers: {$total_servers}<br>
             Total Admins: {$total_admins}<br>
@@ -128,7 +128,7 @@
         </p>
     </div>
     <div class="w-1/3  p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
-        <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Software</h4>
+        <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Software Versions</h4>
         <p class="text-gray-600 dark:text-gray-400">
             Latest SB++ release: <span id='relver'>Please Wait...</span><br>
             {if $dev}
@@ -136,7 +136,7 @@
             {/if}
             <span id='versionmsg'>Please Wait...</span>
             Smarty: v{$smarty.version}<br>
-            Theme: {include file='\assets\theme_version.txt' assign=theme_version}{$theme_version|regex_replace:'/[\s*]/':''} 
+            Current theme: {include file='\assets\theme_version.txt' assign=theme_version}{$theme_version|regex_replace:'/[\s*]/':''} 
         </p>
     </div>
 </div>
