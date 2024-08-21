@@ -207,8 +207,8 @@ placeholder="Search"
                             </button>
                         </li>
 
-{if 1 < 0}
-<!-- Hack to hide this section -->
+{*
+
 
                         <!-- Notifications menu -->
                         <li class="relative">
@@ -319,8 +319,7 @@ placeholder="Search"
                     </ul>
                     </template>
                     </li>
-<!-- end of hack to hide this section -->
-{/if}
+*}
                     </ul>
                 </div>
             </header>
