@@ -8,10 +8,10 @@
   <script src="./scripts/fontawesome-all.min.js"></script>
   <script src="./scripts/sourcebans.js"></script>
   <!--        
-<link href="themes/{$theme}/css/main.css" rel="stylesheet" type="text/css">
+<link href="themes/{$theme}/assets/css/main.css" rel="stylesheet" type="text/css">
 -->
   <!-- .css taken from main.css -->
-  <link href="themes/{$theme}/css/sbpp-windmill-dashboard.css" rel="stylesheet" type="text/css">
+  <link href="themes/{$theme}/assets/css/sbpp-windmill-dashboard.css" rel="stylesheet" type="text/css">
   <!-- You need focus-trap.js to make the modal accessible -->
   <script src="themes/{$theme}/assets/js/focus-trap.js" defer></script>
   <script src="./scripts/mootools.js"></script>
