@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths-ignore:
-      - 'sbpp-windmill-dashboard/theme.conf.php'
+      - 'sbpp-windmill-dashboard/assets/theme_version.txt'
 jobs:
   test:
     name: Increment value test
@@ -18,8 +18,8 @@ jobs:
       - name: Increment value
         uses: yoichiro/gh-action-increment-value@main
         with:
-          target_directory: 'sbpp-windmill-dashboard'
-          target_file: 'theme.conf.php'
-          prefix: '0.0.1-Alpha'
-          suffix: '");'
-          commit_message: 'Increments the theme version to 0.0.'
+          target_directory: 'sbpp-windmill-dashboard/assets/'
+          target_file: 'theme_version.txt'
+          prefix: 'v00.01.'
+          suffix: '"'
+          commit_message: 'Increments the theme version on commit'
