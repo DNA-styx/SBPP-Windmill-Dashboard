@@ -136,7 +136,7 @@
             {/if}
             <span id='versionmsg'>Please Wait...</span>
             Smarty: v{$smarty.version}<br>
-            Theme: {include file='\assets\theme_version.txt' assign=theme_version}{$theme_version|replace:'"':''}
+            Theme: {include file='\assets\theme_version.txt' assign=theme_version}{$theme_version|replace:'"':''} 
         </p>
     </div>
 </div>
