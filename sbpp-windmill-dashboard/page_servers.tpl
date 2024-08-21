@@ -55,7 +55,7 @@
                               {if $access_bans}
                               <br>
                               Right click on a player to take action.<br>
-                              Mobile users use long select.</br>
+                              Mobile users use long press and release.</br>
                               <br>
                               Upload missing map images <a href="/index.php?p=admin&c=servers" class="font-semibold">here</a>.
                               {/if}
