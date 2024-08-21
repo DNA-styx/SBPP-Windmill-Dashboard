@@ -135,8 +135,9 @@
                 Latest Dev Git: <span id='svnrev'>Please Wait...</span><br>
             {/if}
             <span id='versionmsg'>Please Wait...</span>
-            Smarty: v{$smarty.version}<br>
-            Current theme: {include file='\assets\theme_version.txt' assign=theme_version}{$theme_version|regex_replace:'/[\s*]/':''} 
+            <a href="https://www.smarty.net/" target=_blank class="font-semibold">Smarty: v{$smarty.version}</a><br>
+            Current theme:
+            {include file='\assets\theme_version.txt' assign=theme_version}{$theme_version|regex_replace:'/[\s*]/':''}
         </p>
     </div>
 </div>
