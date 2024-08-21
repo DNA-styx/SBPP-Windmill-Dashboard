@@ -1,4 +1,5 @@
 <!-- Start Admin Tabs -->
+{*
 <!--
 <div id="admin-page-menu">
 {foreach from=$tabs item="tab"}
@@ -50,7 +51,7 @@
 </div>
 
 -->
-
+*}
 <div id="admin-page-menu"
   class="tabinator flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400">
   {counter assign=i start=0}
@@ -63,7 +64,7 @@
     </a>
   {/foreach}
 </div>
-
+{*
 <!--
 
 <br><br><br>
@@ -81,5 +82,5 @@
 </ul>
 
 -->
- 
-  <!-- End Admin Tabs -->
+ *}
+<!-- End Admin Tabs -->

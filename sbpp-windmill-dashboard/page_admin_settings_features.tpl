@@ -6,10 +6,6 @@
             <form action="" method="post">
                 <input type="hidden" name="settingsGroup" value="features">
 
-                <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
-                    Ban Features
-                </h4>
-
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Make Export Bans Public</span>
                     <input type="checkbox" name="export_public" id="export_public"

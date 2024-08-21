@@ -4,13 +4,15 @@
     {if NOT $groupbanning_enabled}
         This feature is disabled! Only follow links!
     {else}
-
         <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="add-group1">
             <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
                 <div class="w-full">
 
                     {if NOT $list_steam_groups}
-                        Here you can add a ban for a whole steam community group.<br />
+                        <span class="text-gray-700 dark:text-gray-400">
+                            Here you can add a ban for a whole steam community group.
+                        </span>
+                        <br>
 
                         <label class="block text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Group Link</span>
@@ -87,7 +89,5 @@
                 </div>
             </div>
         </div>
-
     {/if}
-
 {/if}

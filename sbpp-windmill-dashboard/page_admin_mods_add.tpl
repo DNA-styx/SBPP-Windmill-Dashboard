@@ -2,9 +2,6 @@
 {if NOT $permission_add}
     Access Denied!
 {else}
-    <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
-        Add New Mod
-    </h4>
     <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <div id="add-group1">
             <table width="90%" style="border-collapse:collapse;" id="group.details" cellpadding="3">

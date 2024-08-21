@@ -1,5 +1,6 @@
 <!-- start logs page -->
-<h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">System Log</h4>
+<br>
+<br>
 
 {load_template file="admin.log.search" }
 

@@ -3,18 +3,14 @@
     Access Denied!
 {else}
 
-
     <div id="mainwrapper" class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
 
-
-                <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Groups</h4>
                 <span class="text-gray-700 dark:text-gray-400">Click on a group to view its permissions.</span><br><br>
 
                 <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
                     <div class="w-full overflow-x-auto">
-
 
                         <!-- Web Admin Groups -->
                         <table width="100%" cellpadding="0" cellspacing="0" class="w-full whitespace-no-wrap">

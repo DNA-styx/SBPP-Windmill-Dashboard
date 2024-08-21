@@ -2,9 +2,6 @@
 {if NOT $permission_listmods}
   Access Denied!
 {else}
-  <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
-    Server Mods ({$mod_count})
-  </h4>
   <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
     <div class="w-full overflow-x-auto">
       <table class="w-full whitespace-no-wrap">

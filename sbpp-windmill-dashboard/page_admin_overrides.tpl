@@ -21,7 +21,6 @@
                     <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
                         <div class="w-full">
 
-                            <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Overrides</h4>
                             <span class="text-gray-700 dark:text-gray-400">
                                 With Overrides you can change the flags or permissions on any command, either globally, or
                                 for a specific group, without editing plugin source code.<br>
