@@ -18,7 +18,7 @@ jobs:
       - name: Increment value
         uses: yoichiro/gh-action-increment-value@main
         with:
-          target_directory: 'sbpp-windmill-dashboard/assets/'
+          target_directory: 'sbpp-windmill-dashboard/assets'
           target_file: 'theme_version.txt'
           prefix: 'v00.01.'
           suffix: '"'
