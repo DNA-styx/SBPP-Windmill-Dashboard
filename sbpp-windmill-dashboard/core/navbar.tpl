@@ -138,7 +138,7 @@
                             <form action="index.php" method="GET">
                                 <div class="relative w-full max-w-xl mr-6 focus-within:text-purple-500">
                                     <div class="absolute inset-y-0 flex items-center pl-2">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <i class="fas fa-search"></i>
                                     </div>
                                     <input type="hidden" id="Submit" name="Submit" value="search">
                                     <input type="hidden" id="p" name="p" value="commslist">
@@ -154,7 +154,7 @@
                         <form action="index.php" method="GET">
                             <div class="relative w-full max-w-xl mr-6 focus-within:text-purple-500">
                                 <div class="absolute inset-y-0 flex items-center pl-2">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <i class="fas fa-search"></i>
                                 </div>
                                 <input type="hidden" id="Submit" name="Submit" value="search">
                                 <input type="hidden" id="p" name="p" value="banlist">
