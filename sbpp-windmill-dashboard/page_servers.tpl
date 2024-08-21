@@ -11,7 +11,7 @@
           <th class="px-4 py-3">Hostname</th>
           <th class="px-4 py-3">Players</th>
           <th class="px-4 py-3">Map</th>
-          <th class="px-4 py-3">&nbsp;</th>
+          <th class="hidden md:block px-4 py-3">&nbsp;</th>
         </tr>
       </thead>
       <tbody class="bg-white dark:bg-gray-800">
@@ -24,9 +24,9 @@
             <td class="px-4 py-3 text-sm" id="host_{$server.sid}"><i>Querying Server Data...</i></td>
             <td class="px-4 py-3 text-sm" id="players_{$server.sid}">N/A</td>
             <td class="px-4 py-3 text-sm" id="map_{$server.sid}">N/A</td>
-            <td class="px-4 py-3 text-sm">
+            <td class="hidden md:block px-4 py-3 text-sm">
               <button type="button"
-                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                class="hidden md:block px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
                 onclick="location.href='steam://connect/{$server.ip}:{$server.port}'">
                 Connect
               </button>
@@ -38,9 +38,6 @@
               <td colspan="7">
                 <div class="opener">
                   <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                  <!-- paragraph not needed? -->
-                  <!-- <p class="text-sm text-gray-600 dark:text-gray-400"> -->
-
                     <div id="serverwindow_{$server.sid}">
                       <div id="sinfo_{$server.sid}">
                         <table class="w-full whitespace-no-wrap">
@@ -50,11 +47,18 @@
                                 name="playerlist_{$server.sid}">
                               </table>
                             </td>
-                            <td width="355px" class="" valign="top"
+                            <td width="355px" class="hidden md:block" valign="top"
                               style="padding-right: 0px; padding-left: 13px; padding-top: 12px;">
                               <img id="mapimg_{$server.sid}" style="border-radius: 6px; padding-left: 1px;" width='340'
                                 src='images/maps/nomap.jpg'>
-                              <br><br>IP Address: {$server.ip}:{$server.port}<br>
+                              <br>Server's IP Address: {$server.ip}:{$server.port}<br>
+                              {if $access_bans}
+                              <br>
+                              Right click on a player to take action.<br>
+                              Mobile users use long select.</br>
+                              <br>
+                              Upload missing map images <a href="/index.php?p=admin&c=servers" class="font-semibold">here</a>.
+                              {/if}
                             </td>
                           </tr>
                         </table>
@@ -65,7 +69,6 @@
                         </span>
                       </div>
                     </div>
-              <!--  </p> -->
                   </div>
                   <!-- Close opener div -->
                 </div>
