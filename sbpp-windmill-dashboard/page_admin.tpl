@@ -134,7 +134,8 @@
             {if $dev}
                 Latest Dev Git: <span id='svnrev'>Please Wait...</span><br>
             {/if}
-            <span id='versionmsg'>Please Wait...</span>
+            <span id='versionmsg'>Please Wait...</span><br>
+            <a href="https://v1.tailwindcss.com/" class="font-semibold">Tailwind CSS: v1.4.6</a><br>
             <a href="https://www.smarty.net/" target=_blank class="font-semibold">Smarty: v{$smarty.version}</a><br>
             Current theme:
             {include file='\assets\theme_version.txt' assign=theme_version}{$theme_version|regex_replace:'/[\s*]/':''}
