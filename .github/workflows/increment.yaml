@@ -1,5 +1,6 @@
 name: Increment value test
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
