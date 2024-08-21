@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>{$title}</title>
-  <link rel="Shortcut Icon" href="themes/{$theme}/images/favicon.ico">
+  <link rel="Shortcut Icon" href="themes/{$theme}/assets/images/favicon.ico">
   <script src="./scripts/fontawesome-all.min.js"></script>
   <script src="./scripts/sourcebans.js"></script>
   <!--        
