@@ -1,5 +1,6 @@
 <!-- Start navbar.tpl -->
 <!-- Start Body -->
+
 <body>
     <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen}">
         <!-- Desktop sidebar -->
@@ -131,28 +132,24 @@
                     </button>
 
                     <!-- Search input -->
-                    <!--
-<div class="flex justify-center flex-1 lg:mr-32">
-<form action="index.php" method="GET">
-<div
-class="relative w-full max-w-xl mr-6 focus-within:text-purple-500"
->
-<div class="absolute inset-y-0 flex items-center pl-2">
-<i class="fa-solid fa-magnifying-glass"></i>
-</div>
-<input type="hidden" id="Submit" name="Submit" value="search">
-<input type="hidden" id="p" name="p" value="commslist">
-<input
-class="w-full pl-8 pr-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input"
-type="text"
-placeholder="Search comms..."
-aria-label="Search"
-name="searchText"
->
-</div>
-</form>
-</div>
--->
+
+                    <div class="hidden md:block">
+                        <div class="flex justify-center flex-1 lg:mr-32">
+                            <form action="index.php" method="GET">
+                                <div class="relative w-full max-w-xl mr-6 focus-within:text-purple-500">
+                                    <div class="absolute inset-y-0 flex items-center pl-2">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <input type="hidden" id="Submit" name="Submit" value="search">
+                                    <input type="hidden" id="p" name="p" value="commslist">
+                                    <input
+                                        class="w-full pl-8 pr-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input"
+                                        type="text" placeholder="Search comms..." aria-label="Search" name="searchText">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
                     <div class="flex justify-center flex-1 lg:mr-32">
                         <form action="index.php" method="GET">
                             <div class="relative w-full max-w-xl mr-6 focus-within:text-purple-500">
@@ -167,24 +164,6 @@ name="searchText"
                             </div>
                         </form>
                     </div>
-                    <!--
-<div class="flex justify-center">
-<div>
-<div>
-<input 
-class="w-full pl-8 pr-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input" 
-placeholder="Search" 
->
-</div>
-</div>
-<select class="select select-bordered join-item">
-<option disabled selected>Filter</option>
-<option>Bans</option>
-<option>Comms</option>
-</select>
-<button class="btn join-item">Search</button>
-</div>
--->
 
                     <ul class="flex items-center flex-shrink-0 space-x-6">
                         <!-- Theme toggler -->
@@ -207,7 +186,7 @@ placeholder="Search"
                             </button>
                         </li>
 
-{*
+                        {*
 
 
                         <!-- Notifications menu -->
