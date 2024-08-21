@@ -22,6 +22,6 @@ jobs:
         with:
           target_directory: 'sbpp-windmill-dashboard/assets'
           target_file: 'theme_version.txt'
-          prefix: '** '
-          suffix: ' **'
+          prefix: '**v0.1.'
+          suffix: '**'
           commit_message: 'Increments the theme version on commit to '
