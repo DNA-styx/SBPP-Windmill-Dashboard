@@ -5,7 +5,7 @@
 |                   | screenshot.jpg                         | [X]     | [na]            | [na]           |                |
 |                   | theme.conf.php                         | [X]     | [na]            | [na]           |                |
 | **Core**          |                                        |         |                 |                |                |
-|                   | core/admin_tabs.tpl                    | [X]     | [X]             | [ ]            |                |
+|                   | core/admin_tabs.tpl                    | [X]     | [X]             | [X]            |                |
 |                   | core/footer.tpl                        | [X]     | [X]             | [X]            | #3             |
 |                   | core/header.tpl                        | [X]     | [X]             | [X]            |                |
 |                   | core/navbar.tpl                        | [X]     | [X]             | [X]            | #4             |
@@ -35,7 +35,7 @@
 | **Manage Bans**   |                                        |         |                 |                |                |
 |                   | page_admin_bans_add.tpl                | [X]     | [X]             | [X]            |                |
 |                   | page_admin_edit_ban.tpl                | [X]     | [X]             | [X]            |                |
-|                   | page_admin_bans_groups.tpl             | [X]     | [X]             | [ ]            |                |
+|                   | page_admin_bans_groups.tpl             | [X]     | [X]             | [X]            |                |
 |                   | page_admin_bans_protests.tpl           | [X]     | [X]             | [X]            | #29            |
 |                   | page_admin_bans_submissions.tpl        | [X]     | [X]             | [X]            |                |
 |                   | page_admin_bans_email.tpl              | [X]     | [X]             | [X]            |                |
