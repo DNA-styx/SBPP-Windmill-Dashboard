@@ -135,7 +135,8 @@
                 Latest Dev Git: <span id='svnrev'>Please Wait...</span><br>
             {/if}
             <span id='versionmsg'>Please Wait...</span>
-            Smarty: v{$smarty.version}
+            Smarty: v{$smarty.version}<br>
+            Theme: {include file='\assets\theme_version.txt'}
         </p>
     </div>
 </div>
