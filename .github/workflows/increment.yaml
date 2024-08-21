@@ -6,6 +6,7 @@ on:
       - main
     paths-ignore:
       - 'sbpp-windmill-dashboard/assets/theme_version.txt'
+      - '.github/workflows/increment.yaml'
 jobs:
   test:
     name: Increment value test
@@ -21,6 +22,6 @@ jobs:
         with:
           target_directory: 'sbpp-windmill-dashboard/assets'
           target_file: 'theme_version.txt'
-          prefix: 'v00.01.'
-          suffix: '"'
-          commit_message: 'Increments the theme version on commit'
+          prefix: '**v00.01.'
+          suffix: '**'
+          commit_message: 'Increments the theme version on commit to '
