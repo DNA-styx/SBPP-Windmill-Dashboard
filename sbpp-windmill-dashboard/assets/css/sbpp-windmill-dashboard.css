@@ -126,6 +126,7 @@ div.dialog-control{
 
 
 /** ======= Context Menu Styles ======= **/
+/** Used on server page right click menu **/
 
 div.contextmenu {
     position: absolute;
