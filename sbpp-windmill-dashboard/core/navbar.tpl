@@ -140,8 +140,8 @@
                                     <div class="absolute inset-y-0 flex items-center pl-2">
                                         <i class="fas fa-search"></i>
                                     </div>
-                                    <input type="hidden" id="Submit" name="Submit" value="search">
-                                    <input type="hidden" id="p" name="p" value="commslist">
+                                    <input type="hidden" id="comms_search" name="Submit" value="comms_search">
+                                    <input type="hidden" id="comms_search_qs" name="p" value="commslist">
                                     <input
                                         class="w-full pl-8 pr-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input"
                                         type="text" placeholder="Search comms..." aria-label="Search" name="searchText">
@@ -156,8 +156,8 @@
                                 <div class="absolute inset-y-0 flex items-center pl-2">
                                     <i class="fas fa-search"></i>
                                 </div>
-                                <input type="hidden" id="Submit" name="Submit" value="search">
-                                <input type="hidden" id="p" name="p" value="banlist">
+                                <input type="hidden" id="bans_search" name="Submit" value="bans_search">
+                                <input type="hidden" id="ban_search_qs" name="p" value="banlist">
                                 <input
                                     class="w-full pl-8 pr-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input"
                                     type="text" placeholder="Search bans..." aria-label="Search" name="searchText">
