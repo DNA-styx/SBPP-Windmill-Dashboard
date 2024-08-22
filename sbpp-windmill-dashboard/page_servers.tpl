@@ -34,7 +34,7 @@
           </tr>
           {if $IN_SERVERS_PAGE}
             <tr
-              class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+              class="text-xs tracking-wide text-left text-gray-500 border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
               <td colspan="7">
                 <div class="opener">
                   <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
@@ -53,13 +53,9 @@
                                 src='images/maps/nomap.jpg'>
                               <br>Server's IP Address: {$server.ip}:{$server.port}<br>
                               {if $access_bans}
-                              <br>
-                              Right click on a player to take action.<br>
-                              Mobile users use long press and release.</br>
-                              <br>
-                              Upload missing map images <a href="/index.php?p=admin&c=servers" class="font-semibold">here</a>.
+                                Upload missing map images <a href="/index.php?p=admin&c=servers" class="font-semibold">here</a>.
                               {/if}
-                            </td>
+                              </td>
                           </tr>
                         </table>
                       </div>
@@ -80,8 +76,9 @@
     </table>
   </div>
   <div
-    class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
-  </div>
+    class="px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
+    {if $access_bans and $IN_SERVERS_PAGE}Right click on a player to take action. Mobile users use long press and release.{/if}
+    </div>
 </div>
 {if $IN_SERVERS_PAGE}
   {literal}
