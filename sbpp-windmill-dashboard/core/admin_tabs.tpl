@@ -59,7 +59,7 @@
     {counter}
     <a onclick="openTab(this, '{$tab.name}');" aria-current="page"
       class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">
-      <input type="radio" id="tab{$i}" name="tabs" {if $i==1} checked{/if}>
+      <input type="radio" id="tab{$i}" name="tabs"{if $i==1} checked{/if}>
       <label for="tab{$i}">{$tab.name}</label>
     </a>
   {/foreach}
