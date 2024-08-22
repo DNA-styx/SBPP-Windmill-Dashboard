@@ -3,9 +3,9 @@
   <p class="text-gray-600 dark:text-gray-400">
     In order to keep our servers running smoothly, offenders of our rules should be punished and we can't always be on
     call to help.<br>When submitting a player report, we ask you to fill out the report as detailed
-    as possible as this will help us process your report quickly.<br>If you are unsure on how to record
-    evidence within in-game, please <a class="font-semibold" href="#" @click="openModal">click here</a> for an
-    explanation.
+    as possible as this will help us process your report quickly.{*<br>If you are unsure on how to record
+    evidence within in-game, please  <a class="font-semibold" href="#" @click="openModal">click here</a> for an
+    explanation. *}
   </p>
   <br>
   <form action="index.php?p=submit" method="post" enctype="multipart/form-data">
@@ -104,7 +104,7 @@
   </p>
 </div>
 
-
+{*
 <!-- Modal backdrop. This what you want to place close to the closing body tag -->
 <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150" x-transition:enter-start="opacity-0"
   x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150"
@@ -157,4 +157,5 @@
   </div>
 </div>
 <!-- End of modal backdrop -->
+*}
 <!-- end submit ban page -->
