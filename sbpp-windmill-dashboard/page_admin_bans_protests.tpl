@@ -126,7 +126,7 @@
                                                     {if $commenta.morecom}
                                                         <tr>
                                                             <td colspan="3">
-                                                                <hr />
+                                                                <hr>
                                                             </td>
                                                         </tr>
                                                     {/if}
