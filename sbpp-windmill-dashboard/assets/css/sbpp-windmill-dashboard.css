@@ -289,3 +289,48 @@ body {
     top: 0; right: 0; bottom: 0; left: 0;
     box-shadow: 0 0 15px #939393;
   }
+
+
+
+
+/** ================ Tabs ================ **/
+
+#tabs {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+}
+
+#tabs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#tabs ul li {
+    float: left;
+}
+
+#tabs ul li a {
+    border: 0;
+    display: block;
+    padding: 0 16px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bolder;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: grey;
+}
+
+
+#tabs ul li.active {
+}
+
+#tabs ul li.active a {
+    /* padding: 0.1em 0.6em; */
+    padding: 0 16px;
+    color: grey;
+}
+

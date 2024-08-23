@@ -11,7 +11,7 @@
             <span>Ban Protests (<span id="protcount">{$protest_count}</span>)</span>
         </div>
         <div class="flex items-center text-gray-600 dark:text-gray-400">
-            <span>{$protest_nav}</span>
+            {$protest_nav}
         </div>
     </div>
 
