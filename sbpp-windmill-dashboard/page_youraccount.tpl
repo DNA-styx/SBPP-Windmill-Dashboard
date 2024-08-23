@@ -227,7 +227,6 @@
                 </span>
                 <span class="text-xs text-red-600 dark:text-red-400">
                     <div id="email2.msg" class="badentry"></div>
-                    </td>
                 </span>
 
                 <span class="flex items-center">
