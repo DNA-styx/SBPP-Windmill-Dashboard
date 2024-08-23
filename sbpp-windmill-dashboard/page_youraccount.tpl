@@ -116,7 +116,7 @@
                     <span class="text-gray-700 dark:text-gray-400">Current Server Password</span>
                     <input type="password" onblur="xajax_CheckSrvPassword(-{$user_aid}-, $('scurrent').value);"
                         class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                        id="scurrent" name="scurrent" />
+                        id="scurrent" name="scurrent">
                 </label>
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     We need to know your current password to verify its you.
