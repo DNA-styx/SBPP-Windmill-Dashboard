@@ -90,7 +90,7 @@
         <a href="index.php?p=admin&amp;c=mods">
             <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                 <div
-                    class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
+                    class="p-3 mr-4 text-teal-500 bg-teal-100 flex items-center justify-center rounded-full dark:text-teal-100 dark:bg-teal-500">
                     <i class="fa fa-cubes" aria-hidden="true"></i>
                 </div>
                 <div>
