@@ -13,8 +13,8 @@
 
                 <table width="100%" border="0">
                     <tr>
-                        <td width="35%" valign="top">
-                            <span class="text-gray-700 dark:text-gray-400">Web Permissions</span>
+                        <td width="35%" valign="top" class="text-gray-700 dark:text-gray-400">
+                            <span class="font-semibold">Web Permissions</span>
                             <br>
                             -{if $web_permissions}-
                                 -{foreach from=$web_permissions item=permission}-
@@ -24,8 +24,8 @@
                                 <i>None</i>
                             -{/if}-
                         </td>
-                        <td valign="top">
-                            <span class="text-gray-700 dark:text-gray-400">Server Permissions</span>
+                        <td valign="top" class="text-gray-700 dark:text-gray-400">
+                            <span class="font-semibold">Server Permissions</span>
                             <br>
                             -{if $server_permissions}-
                                 -{foreach from=$server_permissions item=permission}-
