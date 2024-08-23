@@ -73,7 +73,7 @@
         </div>
     </div>
 
-    <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+    <div id="mainwrapper" class="w-full mb-2 overflow-hidden rounded-lg shadow-xs">
         <div class="w-full overflow-x-auto">
 
             <div id="banlist">
@@ -115,9 +115,7 @@
                                 <td class="px-4 py-3">
                                     <div style="float:left;">
                                         {if empty($ban.player)}
-                                            <i>
-                                                <font color="#677882">no nickname present</font>
-                                            </i>
+                                            <i><font color="#677882">no nickname present</font></i>
                                         {else}
                                             {$ban.player|escape:'html'|smarty_stripslashes}
                                         {/if}
@@ -138,9 +136,7 @@
                                         {if !empty($ban.admin)}
                                             {$ban.admin|escape:'html'}
                                         {else}
-                                            <i>
-                                                <font color="#677882">Admin deleted</font>
-                                            </i>
+                                            <i><font color="#677882">Admin deleted</font></i>
                                         {/if}
                                     </td>
                                 {/if}
@@ -152,17 +148,13 @@
                                     <div class="opener">
                                         <table>
                                             <tr>
-                                                <td class="px-4 py-3" colspan="3">
-                                                    <b>Ban Details</b>
-                                                </td>
+                                                <td class="px-4 py-3" colspan="3"><b>Ban Details</b></td>
                                             </tr>
                                             <tr align="left">
                                                 <td class="px-4">Player</td>
                                                 <td class="px-4">
                                                     {if empty($ban.player)}
-                                                        <i>
-                                                            <font color="#677882">no nickname present</font>
-                                                        </i>
+                                                        <i><font color="#677882">no nickname present</font></i>
                                                     {else}
                                                         {$ban.player|escape:'html'|smarty_stripslashes}
                                                     {/if}
@@ -266,9 +258,7 @@
                                                 <td class="px-4">Steam ID</td>
                                                 <td class="px-4">
                                                     {if empty($ban.steamid)}
-                                                        <i>
-                                                            <font color="#677882">No Steam ID present</font>
-                                                        </i>
+                                                        <i><font color="#677882">No Steam ID present</font></i>
                                                     {else}
                                                         {$ban.steamid}
                                                     {/if}
@@ -278,9 +268,7 @@
                                                 <td class="px-4">Steam3 ID</td>
                                                 <td class="px-4">
                                                     {if empty($ban.steamid)}
-                                                        <i>
-                                                            <font color="#677882">No Steam3 ID present</font>
-                                                        </i>
+                                                        <i><font color="#677882">No Steam3 ID present</font></i>
                                                     {else}
                                                         <a href="http://steamcommunity.com/profiles/{$ban.steamid3}"
                                                             target="_blank">{$ban.steamid3}</a>
@@ -292,9 +280,7 @@
                                                     <td class="px-4">Steam Community</td>
                                                     <td class="px-4">
                                                         {if empty($ban.steamid)}
-                                                            <i>
-                                                                <font color="#677882">No Steam Community ID present</font>
-                                                            </i>
+                                                            <i><font color="#677882">No Steam Community ID present</font></i>
                                                         {else}
                                                             <a href="http://steamcommunity.com/profiles/{$ban.communityid}"
                                                                 target="_blank">{$ban.communityid}</a>
@@ -307,9 +293,7 @@
                                                     <td class="px-4">IP address</td>
                                                     <td class="flex px-4 items-center">
                                                         {if $ban.ip == "none"}
-                                                            <i>
-                                                                <font color="#677882">no IP address present</font>
-                                                            </i>
+                                                            <i><font color="#677882">no IP address present</font></i>
                                                         {else}
                                                             {$ban.ip}
                                                         {/if}
@@ -329,9 +313,7 @@
                                                     <td class="px-4">Unban reason</td>
                                                     <td class="px-4">
                                                         {if $ban.ureason == ""}
-                                                            <i>
-                                                                <font color="#677882">no reason present</font>
-                                                            </i>
+                                                            <i><font color="#677882">no reason present</font></i>
                                                         {else}
                                                             {$ban.ureason}
                                                         {/if}
@@ -343,9 +325,7 @@
                                                         {if !empty($ban.removedby)}
                                                             {$ban.removedby|escape:'html'}
                                                         {else}
-                                                            <i>
-                                                                <font color="#677882">Admin deleted.</font>
-                                                            </i>
+                                                            <i><font color="#677882">Admin deleted.</font></i>
                                                         {/if}
                                                     </td>
                                                 </tr>
@@ -354,9 +334,7 @@
                                                 <td class="px-4">Expires on</td>
                                                 <td class="px-4">
                                                     {if $ban.expires == "never"}
-                                                        <i>
-                                                            <font color="#677882">Not applicable.</font>
-                                                        </i>
+                                                        <i><font color="#677882">Not applicable.</font></i>
                                                     {else}
                                                         {$ban.expires}
                                                     {/if}
@@ -373,9 +351,7 @@
                                                         {if !empty($ban.admin)}
                                                             {$ban.admin|escape:'html'}
                                                         {else}
-                                                            <i>
-                                                                <font color="#677882">Admin deleted.</font>
-                                                            </i>
+                                                            <i><font color="#677882">Admin deleted.</font></i>
                                                         {/if}
                                                     </td>
                                                 </tr>
@@ -413,9 +389,7 @@
                                                                 {foreach from=$ban.commentdata item=commenta}
                                                                     {if $commenta.morecom}
                                                                         <tr>
-                                                                            <td colspan='3'>
-                                                                                <hr>
-                                                                            </td>
+                                                                            <td colspan='3'><hr></td>
                                                                         </tr>
                                                                     {/if}
                                                                     <tr>
@@ -423,9 +397,7 @@
                                                                             {if !empty($commenta.comname)}
                                                                                 <b>{$commenta.comname|escape:'html'}</b>
                                                                             {else}
-                                                                                <i>
-                                                                                    <font color="#677882">Admin deleted</font>
-                                                                                </i>
+                                                                                <i><font color="#677882">Admin deleted</font></i>
                                                                             {/if}
                                                                         </td>
                                                                         <td align="right">
@@ -438,21 +410,19 @@
                                                                         {/if}
                                                                     </tr>
                                                                     <tr>
-                                                                        <td colspan='3'>
-                                                                            {$commenta.commenttxt}
-                                                                        </td>
+                                                                        <td colspan='3'>{$commenta.commenttxt}</td>
                                                                     </tr>
                                                                     {if !empty($commenta.edittime)}
-                                                                        <tr>
-                                                                            <td colspan='3'>
-                                                                                <span style="font-size:6pt;color:grey;">last edit
-                                                                                    {$commenta.edittime} by
-                                                                                    {if !empty($commenta.editname)}{$commenta.editname}
-                                                                                    {else}<i>
-                                                                                            <font color="#677882">Admin deleted</font>
-                                                                                    </i>{/if}</span>
-                                                                            </td>
-                                                                        </tr>
+                                                                    <tr>
+                                                                        <td colspan='3'>
+                                                                            <span style="font-size:6pt;color:grey;">last edit
+                                                                                {$commenta.edittime} by
+                                                                                {if !empty($commenta.editname)}{$commenta.editname}
+                                                                                {else}<i><font color="#677882">Admin deleted</font></i>
+                                                                                {/if}
+                                                                            </span>
+                                                                        </td>
+                                                                    </tr>
                                                                     {/if}
                                                                 {/foreach}
                                                             </table>
