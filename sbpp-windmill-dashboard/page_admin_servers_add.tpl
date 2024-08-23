@@ -100,7 +100,6 @@
                                 <input type="checkbox" value="{$group.gid}" id="g_{$group.gid}" name="groups[]"
                                     class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" />
                                 <span class="ml-2">{$group.name}</span>
-                                </span>
                             </label>
                         {/foreach}
                     </label>
@@ -119,8 +118,6 @@
                             {else}
                                 {sb_button text=$submit_text onclick="process_add_server();" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="aserver" submit=false}
                             {/if}
-                            &nbsp;
-                            {sb_button text="Exit" onclick="document.location='index.php?p=admin&c=servers'" class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="back" submit=false}
                         </label>
                     </div>
 
