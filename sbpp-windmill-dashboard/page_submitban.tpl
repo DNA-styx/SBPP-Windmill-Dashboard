@@ -1,5 +1,5 @@
 <!-- Start submit ban page -->
-<div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+<div class="px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800">
   <p class="text-gray-600 dark:text-gray-400">
     In order to keep our servers running smoothly, offenders of our rules should be punished and we can't always be on
     call to help.<br>When submitting a player report, we ask you to fill out the report as detailed

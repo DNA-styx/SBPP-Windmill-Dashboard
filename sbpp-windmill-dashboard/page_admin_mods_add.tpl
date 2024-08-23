@@ -2,7 +2,7 @@
 {if NOT $permission_add}
     Access Denied!
 {else}
-    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <div id="add-group1">
             <table width="90%" style="border-collapse:collapse;" id="group.details" cellpadding="3">
                 <tr>

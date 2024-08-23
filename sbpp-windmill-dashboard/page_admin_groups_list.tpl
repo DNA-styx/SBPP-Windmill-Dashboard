@@ -3,7 +3,7 @@
     Access Denied!
 {else}
 
-    <div id="mainwrapper" class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div id="mainwrapper" class="px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
 

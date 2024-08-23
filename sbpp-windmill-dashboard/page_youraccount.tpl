@@ -2,7 +2,7 @@
 <div id="admin-page-content">
 
     <!-- div ID 0 is the first 'panel' to be shown -->
-    <div class="tabcontent px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="View Permissions">
+    <div class="tabcontent px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800" id="View Permissions">
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
 

@@ -1,8 +1,8 @@
-<-- start ban submissions page -->
+<!-- start ban submissions page -->
 {if NOT $permissions_submissions}
     Access Denied!
 {else}
-    <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+    <div id="mainwrapper" class="w-full mb-2 overflow-hidden rounded-lg shadow-xs">
         <div class="w-full overflow-x-auto">
 
     <div
@@ -169,4 +169,4 @@
 
     <script>InitAccordion('tr.opener3', 'div.opener3', 'mainwrapper');</script>
 {/if}
-<-- end ban submissions page -->
+<!-- end ban submissions page -->

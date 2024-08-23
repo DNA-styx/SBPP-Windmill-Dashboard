@@ -1,5 +1,5 @@
 <!-- Start Protest ban page -->
-<div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+<div class="px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800">
     <p class="text-gray-600 dark:text-gray-400">
         In order to appeal a ban, you must make sure you are banned via clicking <a class="font-semibold"
             href="index.php?p=banlist">here</a> to see if you are banned and for what reason.<br>

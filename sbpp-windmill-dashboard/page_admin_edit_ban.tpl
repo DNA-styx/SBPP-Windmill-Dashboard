@@ -11,7 +11,7 @@
             </div>
             <div id="add-group">
 
-                <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="add-group1">
+                <div class="px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800" id="add-group1">
                     <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
                         <div class="w-full">
 
@@ -163,7 +163,7 @@
 
                             <label class="block text-sm">
                                 <span class="text-gray-700 dark:text-gray-400">Upload Demo</span>
-                                -{sb_button text="Upload a Demo" onclick="childWindow=open('pages/admin.uploaddemo.php','upload','resizable=no,width=300,height=130');" class="save block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="uploaddemo" submit=false}-
+                                -{sb_button text="Upload a Demo" onclick="childWindow=open('pages/admin.uploaddemo.php','upload','resizable=no,width=350,height=350');" class="save block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="uploaddemo" submit=false}-
                             </label>
                             <span class="text-xs text-gray-600 dark:text-gray-400">
                                 Click here to upload a demo with this ban submission.
