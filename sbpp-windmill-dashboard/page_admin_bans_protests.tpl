@@ -21,7 +21,7 @@
  
         <table class="w-full whitespace-no-wrap">
         <thead>
-                <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+            <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                 <td class="px-4 py-3"><strong>Nickname</strong></td>
                 <td class="px-4 py-3"><strong>SteamID</strong></td>
                 <td class="px-4 py-3"><strong>Action</strong></td>
