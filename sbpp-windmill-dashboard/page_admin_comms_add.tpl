@@ -4,8 +4,8 @@
 {else}
   <div id="msg-green" style="display:none;">
     <i class="fas fa-check fa-2x"></i>
-    <b>Block Added</b><br />
-    The new block has been added to the system.<br /><br />
+    <b>Block Added</b><br>
+    The new block has been added to the system.<br><br>
     <i>Redirecting back to comms page</i>
   </div>
 
