@@ -302,6 +302,7 @@
                     </ul>
                 </div>
             </header>
+<!--             </div>  this is a missing div, but it breaks stuff -->
             <!-- end header -->
 
             <!-- End Top Nav Bar -->
