@@ -4,8 +4,8 @@
 {else}
     <div id="msg-green" style="display:none;">
         <i class="fas fa-check fa-2x"></i>
-        <b>Ban Added</b><br />
-        The new ban has been added to the system.<br /><br />
+        <b>Ban Added</b><br>
+        The new ban has been added to the system.<br><br>
         <i>Redirecting back to bans page</i>
     </div>
 
