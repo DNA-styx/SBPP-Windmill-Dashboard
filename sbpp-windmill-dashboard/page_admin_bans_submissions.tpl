@@ -1,3 +1,4 @@
+<-- start ban submissions page -->
 {if NOT $permissions_submissions}
     Access Denied!
 {else}
@@ -168,3 +169,4 @@
 
     <script>InitAccordion('tr.opener3', 'div.opener3', 'mainwrapper');</script>
 {/if}
+<-- end ban submissions page -->

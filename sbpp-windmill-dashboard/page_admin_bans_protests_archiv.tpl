@@ -1,3 +1,4 @@
+<!-- start ban protests archive -->
 {if NOT $permission_protests}
     Access Denied!
 {else}
@@ -194,3 +195,4 @@
     </div>
 <script>InitAccordion('tr.opener5', 'div.opener5', 'protests');</script>
 {/if}
+<!-- end ban protests archive -->
