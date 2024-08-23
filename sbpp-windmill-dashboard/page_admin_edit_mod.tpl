@@ -64,7 +64,7 @@
                         <td>
                             <div class="rowdesc text-gray-700 dark:text-gray-400">Upload Icon</div>
                             <div align="left">
-                                {sb_button text="Upload MOD Icon" onclick="childWindow=open('pages/admin.uploadicon.php','upload','resizable=yes,width=300,height=130');" class="save ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="upload" submit=false}
+                                {sb_button text="Upload MOD Icon" onclick="childWindow=open('pages/admin.uploadicon.php','upload','resizable=yes,width=350,height=350');" class="save ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="upload" submit=false}
                             </div>
                             <div id="icon.msg" class="badentry text-xs text-red-600 dark:text-red-400"
                                 style="display:block;">
