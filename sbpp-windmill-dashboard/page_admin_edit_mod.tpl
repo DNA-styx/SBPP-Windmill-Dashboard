@@ -1,8 +1,4 @@
 <!-- Start of edit mod -->
-<h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
-    Edit Mod
-</h4>
-
 <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
     <div id="add-group1">
         <form action="" method="post">
