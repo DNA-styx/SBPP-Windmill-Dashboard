@@ -132,7 +132,7 @@
                         type="password" onkeyup="checkYourSrvPass();" id="spass1" value="" name="spass1">
                 </label>
                 <span class="text-xs text-gray-600 dark:text-gray-400">
-                    Type your new server password here. <i>Min Length: -{$min_pass_len}-
+                    Type your new server password here. <i>Min Length: -{$min_pass_len}-</i>
                 </span>
                 <span class="text-xs text-red-600 dark:text-red-400">
                     <div id="spass1.msg" class="badentry"></div>
