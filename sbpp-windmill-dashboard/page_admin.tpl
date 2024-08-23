@@ -8,8 +8,8 @@
         <a href="index.php?p=admin&amp;c=admins">
             <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                 <div
-                    class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
-                    &nbsp;<i class="fa fa-user" aria-hidden="true"></i>
+                    class="p-3 mr-4 text-teal-500 bg-teal-100 flex items-center justify-center rounded-full dark:text-teal-100 dark:bg-teal-500">
+                    <i class="fa fa-user" aria-hidden="true"></i>
                 </div>
                 <div>
                     <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Admin Settings</p>
@@ -22,8 +22,8 @@
         <a href="index.php?p=admin&amp;c=servers">
             <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                 <div
-                    class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
-                    &nbsp;<i class="fa fa-server" aria-hidden="true"></i>
+                    class="p-3 mr-4 text-green-500 bg-green-100 flex items-center justify-center rounded-full dark:text-green-100 dark:bg-green-500">
+                    <i class="fa fa-server" aria-hidden="true"></i>
                 </div>
                 <div>
                     <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Server Settings</p>
@@ -36,8 +36,8 @@
         <a href="index.php?p=admin&amp;c=bans">
             <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                 <div
-                    class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
-                    &nbsp;<i class="fa fa-ban" aria-hidden="true"></i>
+                    class="p-3 mr-4 text-red-700 bg-red-100 flex items-center justify-center rounded-full dark:text-red-100 dark:bg-red-700">
+                    <i class="fa fa-ban" aria-hidden="true"></i>
                 </div>
                 <div>
                     <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Bans</p>
@@ -49,7 +49,7 @@
             <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                 <div
                     class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
-                    &nbsp;<i class="fa fa-microphone-slash" aria-hidden="true"></i>
+                    <i class="fa fa-microphone-slash" aria-hidden="true"></i>
                 </div>
                 <div>
                     <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Comms</p>
@@ -62,8 +62,8 @@
         <a href="index.php?p=admin&amp;c=groups">
             <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                 <div
-                    class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
-                    &nbsp;<i class="fa fa-users" aria-hidden="true"></i>
+                    class="p-3 mr-4 text-orange-500 bg-orange-100 flex items-center justify-center rounded-full dark:text-orange-100 dark:bg-orange-500">
+                    <i class="fa fa-users" aria-hidden="true"></i>
                 </div>
                 <div>
                     <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Group Settings</p>
@@ -77,7 +77,7 @@
             <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                 <div
                     class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
-                    &nbsp;<i class="fa fa-cogs" aria-hidden="true"></i>
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
                 </div>
                 <div>
                     <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Webpanel Settings</p>
@@ -91,7 +91,7 @@
             <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                 <div
                     class="p-3 mr-4 text-blue-500 bg-blue-100 flex items-center justify-center rounded-full dark:text-blue-100 dark:bg-blue-500">
-                    &nbsp;<i class="fa fa-cubes" aria-hidden="true"></i>
+                    <i class="fa fa-cubes" aria-hidden="true"></i>
                 </div>
                 <div>
                     <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Manage Mods</p>
