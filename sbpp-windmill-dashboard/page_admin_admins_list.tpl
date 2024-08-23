@@ -15,7 +15,7 @@
                 </span>
             </div>
             <div class="flex items-center text-gray-600 dark:text-gray-400">
-                Click on a admin's name to see and edit permissions.
+                Click on an admin's name to see and edit permissions.
             </div>
         </div>
         
