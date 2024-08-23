@@ -276,10 +276,10 @@ body {
   }
   .tabinator input:checked + label {
     position: relative;
-    color: #000;
-    background: #fff;
-    border: 1px solid #bbb;
-    border-bottom: 1px solid #fff;
+    color: #1a1c23;
+    background: #6B7280;
+    border: 1px solid #1a1c23;
+    border-bottom: 1px solid #6B7280;
     border-radius: 5px 5px 0 0;
   }
   .tabinator input:checked + label:after {
@@ -287,7 +287,6 @@ body {
     content: '';
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
-    box-shadow: 0 0 15px #939393;
   }
 
 
