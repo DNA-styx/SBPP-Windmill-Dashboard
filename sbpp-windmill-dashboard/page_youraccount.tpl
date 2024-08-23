@@ -44,7 +44,7 @@
 
 
     <!-- div ID 1 is the second 'panel' to be shown -->
-    <div class="tabcontent px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="Change Password">
+    <div class="tabcontent px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800" id="Change Password">
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
 
@@ -100,7 +100,7 @@
 
     
     <!-- div ID 2 is the third 'panel' to be shown -->
-    <div class="tabcontent px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="Server Password">
+    <div class="tabcontent px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800" id="Server Password">
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
 
@@ -176,7 +176,7 @@
 
 
     <!-- div ID 3 is the forth 'panel' to be shown -->
-    <div class="tabcontent px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="Change Email">
+    <div class="tabcontent px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800" id="Change Email">
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
 
