@@ -45,7 +45,7 @@
                             <td align="center" class="listtable_1" ><input id="srvadmgroup_" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
                             <td class="text-gray-700 dark:text-gray-400">Serveradmin Group</td>
                             <td class="listtable_1" >
-                                <select id="srvadmgroup" onmouseup="$('srvadmgroup_').checked = true" style="width: 379px;"class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                                <select id="srvadmgroup" onmouseup="$('srvadmgroup_').checked = true" style="width: 379px;" class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                                     {foreach from=$srvadmgroup_list item="srvadmgrp"}
                                         <option label="{$srvadmgrp.name}" value="{$srvadmgrp.name}">{$srvadmgrp.name}</option>
                                     {/foreach}
