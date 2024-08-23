@@ -132,7 +132,6 @@ div.contextmenu {
     position: absolute;
     top: 0;
     left: 0;
-    font-family: Verdana, Arial, Tahoma, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
     background-color: #eaeaea;
     border: 1px solid #dddddd;
     border-left: 5px solid #dddddd;
@@ -186,7 +185,7 @@ div.contextmenu .separator {
     padding-right: 5px;
     padding-bottom: 3px;
     padding-left: 5px;
-    color: #fff;
+    color: #555;
 }
 
 .select {
@@ -226,10 +225,6 @@ div.contextmenu .separator {
 .front-module-header {
     margin-bottom: 3px;
     font-size: 12px;
-    font-weight: 600;
-}
-
-#breadcrumb > a:last-child {
     font-weight: 600;
 }
 
@@ -292,7 +287,9 @@ body {
 
 
 
-/** ================ Tabs ================ **/
+/** ================ Admin Sub Tabs ================ **/
+/** === Used on Ban/comm current & archive pages === **/
+
 
 #tabs {
     float: left;
