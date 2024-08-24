@@ -77,7 +77,7 @@
   </div>
   <div
     class="px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
-    {if $access_bans and $IN_SERVERS_PAGE}Right click on a player to take action. Mobile users use long press and release.{/if}
+    {if $access_bans and $IN_SERVERS_PAGE}<span class="hidden md:block">Right click on a player to take action</span><span class="md:hidden">Press and release on a player to take action</span>{/if}
     </div>
 </div>
 {if $IN_SERVERS_PAGE}
