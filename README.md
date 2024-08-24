@@ -1,12 +1,6 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a id="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
+
 
 <!-- PROJECT LOGO -->
 <br/>
@@ -29,12 +23,13 @@
   </p>
 </div>
 
+
 <!-- ABOUT THE PROJECT -->
 ## About The Theme
 <p align="center">
   <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Desktop_Dashboard_Dark.png" >
 </p>
-SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard CSS applied on top. Dark and light theme switcher. Fully tested on mobile.
+SourceBans++ Theme built using the default v1.8.0 theme with Windmill Dashboard CSS applied on top. Dark and light theme switcher. Tested on mobile.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,20 +82,27 @@ SourceBans++ Theme built using the default 1.8.0 theme with Windmill Dashboard C
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Known issues
+
+* Default theme pop-up will appear off screen on mobile. Best use desktop for complex admin functions.
+* If text does not display on any pages not themed, switch to the light theme to make it visable.
+
+See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a list of known issues and the todo list.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ### Installation
 
-This theme is in pre-Beta but is usable.<br>
-Check the [ToDo](https://github.com/DNA-styx/SBPP-Windmill-Dashboard/blob/main/ToDo.md) page for progress.<br>
-If text does not display on any pages not themed, switch to the light theme to make it visable.
-
-1. Clone the repo
+1. Download the [latest release](https://github.com/DNA-styx/SBPP-Windmill-Dashboard/releases)
+or Clone the repo
    ```sh
    git clone https://github.com/DNA-styx/sbpp-windmill-dashboard.git
    ```
-or Download all files from repository
+or Download all files from repository (Code -> Download zip)
 
-2. Move **sbpp-windmill-dashboard** folder to your web server Sourcebans -> **themes** folder;
-3. Go to Sourcebans website: Log in as admin then go to Admin Panel -> Settings -> **Themes**;
+2. Move **sbpp-windmill-dashboard** folder to your web server. Sourcebans -> **themes** folder;
+3. Go your Sourcebans website. Log in as admin then go to Admin Panel -> Settings -> **Themes**;
 4. Select theme **Sourceban Windmill Dashboard** and click apply;
 
 
@@ -109,7 +111,7 @@ or Download all files from repository
 
 ## Upgrade
 
-Download and overwrite all files in the sbpp-windmill-dashboard folder
+Download and overwrite all files in the sbpp-windmill-dashboard folder on your web server.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,23 +119,19 @@ Download and overwrite all files in the sbpp-windmill-dashboard folder
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Public pages
+- [X] Public pages
   - [X] Basic theme applied 
   - [X] Usable on desktop 
   - [X] Usable on mobile
-- [ ] Admin pages 
-  - [ ] Basic theme applied 
-  - [ ] Usable on desktop 
-  - [ ] Usable on mobile
+- [X] Admin pages 
+  - [X] Basic theme applied 
+  - [X] Usable on desktop 
+  - [X] Usable on mobile
 - [ ] Beta release 
 - [ ] Fully themed and old code replaced 
 - [ ] Remove all old/unused CSS, js and files
 - [ ] Code tidy up
 - [ ] Full Release
-
-[Current progress](https://github.com/DNA-styx/SBPP-Windmill-Dashboard/blob/main/ToDo.md)
-
-See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a full list of known issues.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,19 +152,21 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Estevanmaito's Windmill Dashboard](https://github.com/estevanmaito/windmill-dashboard)
-* [sourcebans-web-theme-fluent](https://github.com/Rushaway/sourcebans-web-theme-fluent)
-
+* [Estevanmaito's Windmill Dashboard](https://github.com/estevanmaito/windmill-dashboard) for the underlying css design code
+* [sourcebans-web-theme-fluent](https://github.com/Rushaway/sourcebans-web-theme-fluent) for some design choices
+* [ekscentrysytet](https://codepen.io/ekscentrysytet/pen/QbNdEB) for admin tabs
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- LINKS -->
 ## Links
 
-* https://forums.alliedmods.net/forumdisplay.php?f=152
+* Sourcebans++ forum https://forums.alliedmods.net/forumdisplay.php?f=152
 * Sourcebans++ Discord https://discord.gg/4Bhj6NU
 * Sourcebans++ on Docker https://github.com/crinis/sourcebans-docker
 * Recommended Sourcebans++ web hosts https://github.com/sbpp/hosts
