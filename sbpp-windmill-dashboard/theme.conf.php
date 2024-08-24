@@ -29,7 +29,7 @@ define('theme_name', "SourceBans++ Windmill Dashboard");
 define('theme_author', "DNA.styx");
 
 // Set the version of the theme here
-define('theme_version', "0.0.1-Alpha80");
+define('theme_version', "0.1.0");
 
 // Set the link of the theme here
 define('theme_link', "https://github.com/DNA-styx/sbpp-windmill-dashboard");
