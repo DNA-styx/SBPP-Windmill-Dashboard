@@ -24,4 +24,4 @@ jobs:
           target_file: 'theme_version.txt'
           prefix: '** '
           suffix: ' **'
-          commit_message: 'Theme version updated to '
+          commit_message: 'Theme version updated to 0.1.'
