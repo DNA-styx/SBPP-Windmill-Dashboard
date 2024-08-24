@@ -15,14 +15,13 @@
                 ({include file='\assets\theme_version.txt' assign=theme_version}{$theme_version|regex_replace:'/[\s*]/':''})</a>
                 based on <a class="font-semibold" href="https://github.com/estevanmaito/windmill-dashboard"
                 target="_blank">Windmill</a> with code from <a class="font-semibold" href="https://sbpp.github.io/"
-                target="_blank">SourceBans++</a> & <a class="font-semibold"
-                href="https://github.com/Rushaway/sourcebans-web-theme-fluent" target="_blank">Rushaway</a>
+                target="_blank">SourceBans++</a>
         </span>
     </div>
 </div>
 <!-- end footer bar -->
 
-<!-- remove one div -->
+<!-- removed one div -->
 </div>
 </main>
 </div>
