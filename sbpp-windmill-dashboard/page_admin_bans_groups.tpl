@@ -38,8 +38,8 @@
                             <div id="groupreason.msg" class="badentry"></div>
                         </span>
 
-                        <div class="flex mt-6 text-sm">
-                            <label class="flex items-center dark:text-gray-400">
+                        <div>
+                            <label class="flex items-center">
                                 {sb_button text="Add Group Ban" onclick="ProcessGroupBan();" id="agban" submit=false class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
                                 &nbsp;
                                 {sb_button text="Back" onclick="history.go(-1)" id="aback" class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
