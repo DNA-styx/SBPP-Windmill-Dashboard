@@ -105,7 +105,6 @@ or Download all files from repository (Code -> Download zip) - For latest featur
 3. Go your Sourcebans website. Log in as admin then go to Admin Panel -> Settings -> **Themes**;
 4. Select theme **Sourceban Windmill Dashboard** and click apply;
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
