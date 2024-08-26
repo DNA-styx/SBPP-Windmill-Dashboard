@@ -4,7 +4,7 @@
         <form action="" method="post">
             <div id="add-group">
                 <input type="hidden" name="insert_type" value="add">
-                <table width="90%" border="0" style="border-collapse:collapse;" id="group.details" cellpadding="3">
+                <table id="group.details">
                     <tr>
                         <td>
                             <div align="left">
@@ -42,7 +42,7 @@
                                     class="block mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
                             </div>
                             <div class="text-xs text-gray-600 dark:text-gray-400">
-                                (STEAM_<b>X</b>:Y:Z) Some games display the steamid differently than others. Type the
+                                (STEAM_<b>X</b>:Y:Z) Some games display the steamid differently than others. Type the<br>
                                 first number in the SteamID (<b>X</b>) depending on how it's rendered by this mod.
                                 (Default: 0).
                             </div>
@@ -76,9 +76,9 @@
                     </tr>
                     <tr>
                         <td class="flex items-center">
-                            {sb_button text="Save Changes" class="ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="editmod" submit=true}
+                            {sb_button text="Save Changes" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="editmod" submit=true}
                             &nbsp;&nbsp;
-                            {sb_button text="Cancel" onclick="document.location='index.php?p=admin&c=mods'" class="cancel block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="back" submit=false}
+                            {sb_button text="Cancel" onclick="document.location='index.php?p=admin&c=mods'" class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="back" submit=false}
                         </td>
                     </tr>
                 </table>
