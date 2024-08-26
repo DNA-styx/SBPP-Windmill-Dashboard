@@ -114,7 +114,7 @@
                 </div>
             </div>
         </div>
-    <script type="text/javascript">InitAccordion('tr.opener', 'div.opener', 'mainwrapper');</script>
+    <script>InitAccordion('tr.opener', 'div.opener', 'mainwrapper');</script>
     {/if}
 </div>
 <!-- end admin admin page -->
