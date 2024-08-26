@@ -95,14 +95,14 @@ See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues
 ### Installation
 
 1. Download the [latest release](https://github.com/DNA-styx/SBPP-Windmill-Dashboard/releases) - Recomended for stability
+or Download all files from repository (Code -> Download zip) - For latest features/bug fixes but may contain other issues
 or Clone the repo - For latest features/bug fixes but may contain other issues 
    ```sh
    git clone https://github.com/DNA-styx/sbpp-windmill-dashboard.git
    ```
-or Download all files from repository (Code -> Download zip) - For latest features/bug fixes but may contain other issues
 
-2. Move **sbpp-windmill-dashboard** folder to your web server. Sourcebans -> **themes** folder;
-3. Go your Sourcebans website. Log in as admin then go to Admin Panel -> Settings -> **Themes**;
+2. Copy the **sbpp-windmill-dashboard** folder to your web server. Into Sourcebans -> **themes** folder;
+3. Go your Sourcebans website. Log in as admin and go to Admin Panel -> Settings -> **Themes**;
 4. Select theme **Sourceban Windmill Dashboard** and click apply;
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
