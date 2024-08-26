@@ -14,7 +14,7 @@
           <th class="hidden md:block px-4 py-3">&nbsp;</th>
         </tr>
       </thead>
-      <tbody class="bg-white dark:bg-gray-800">
+      <tbody class="bg-white dark:bg-gray-800 divide-y dark:divide-gray-700">
         {foreach from=$server_list item=server}
           <tr class="text-gray-700 dark:text-gray-400 opener" id="opener_{$server.sid}" style="cursor:pointer;"
             {if !$IN_SERVERS_PAGE} onclick="{$server.evOnClick}" {/if}>
