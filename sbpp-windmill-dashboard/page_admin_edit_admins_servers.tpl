@@ -7,7 +7,6 @@
                 <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
                     <div class="w-full">
 
-                        <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Admin Server Access</h4>
                         <span class="text-gray-700 dark:text-gray-400">
                             Please select the servers and/or groups of servers you want this admin to have access to.
                         </span>
@@ -50,9 +49,6 @@
                                     </tr>
                                 {/foreach}
                             {/if}
-                            <tr>
-                                <td>&nbsp;</td>
-                            </tr>
                             <tr>
                                 <td class="flex items-center">
                                     {if $row_count > 0}
