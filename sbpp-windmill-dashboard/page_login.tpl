@@ -26,6 +26,13 @@
                     <div id="loginPassword.msg" class="badentry"></div>
                 </span>
 
+                <span class="mt-4">
+                    <a class="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
+                        href="index.php?p=lostpassword">
+                        Forgot your password?
+                    </a>
+                </span>
+
                 <div class="flex mt-6 text-sm">
                     <label class="flex items-center dark:text-gray-400">
                         <input type="checkbox"
@@ -41,18 +48,9 @@
                 -{sb_button text="Login" onclick=$redir class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="alogin" submit=false}-
             -{/if}-
 
-            <br>
-            <center><a href="index.php?p=login&o=steam"><img src="images/steamlogin.png"></a></center>
-            <br>
-
-            -{if $steamlogin_show == 1}-
-                <p class="mt-4">
-                    <a class="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
-                        href="index.php?p=lostpassword">
-                        Forgot your password?
-                    </a>
-                </p>
-            -{/if}-
+            <div class="mt-6 flex items-center justify-center">
+                <a href="index.php?p=login&o=steam"><img src="images/steamlogin.png"></a>
+            </div>
 
         </div>
     </div>
