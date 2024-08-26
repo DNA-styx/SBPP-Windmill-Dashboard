@@ -6,8 +6,8 @@
         <tr
           class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
           <th class="px-4 py-3">MOD</th>
-          <th class="px-4 py-3">OS</th>
-          <th class="px-4 py-3">VAC</th>
+          <th class="px-4 py-3 hidden md:block">OS</th>
+          <th class="px-4 py-3 hidden md:block">VAC</th>
           <th class="px-4 py-3">Hostname</th>
           <th class="px-4 py-3">Players</th>
           <th class="px-4 py-3">Map</th>
@@ -19,8 +19,8 @@
           <tr class="text-gray-700 dark:text-gray-400 opener" id="opener_{$server.sid}" style="cursor:pointer;"
             {if !$IN_SERVERS_PAGE} onclick="{$server.evOnClick}" {/if}>
             <td class="px-4 py-3"><img height="26px" width="26px" src="images/games/{$server.icon}"></td>
-            <td class="px-4 py-3 text-sm" id="os_{$server.sid}"></td>
-            <td class="px-4 py-3 text-sm" id="vac_{$server.sid}"></td>
+            <td class="px-4 py-3 text-sm hidden md:block" id="os_{$server.sid}"></td>
+            <td class="px-4 py-3 text-sm hidden md:block" id="vac_{$server.sid}"></td>
             <td class="px-4 py-3 text-sm" id="host_{$server.sid}"><i>Querying Server Data...</i></td>
             <td class="px-4 py-3 text-sm" id="players_{$server.sid}">N/A</td>
             <td class="px-4 py-3 text-sm" id="map_{$server.sid}">N/A</td>
