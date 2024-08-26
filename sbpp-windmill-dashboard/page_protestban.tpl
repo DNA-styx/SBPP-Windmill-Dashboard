@@ -1,12 +1,12 @@
 <!-- Start Protest ban page -->
 <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-    <p class="text-gray-600 dark:text-gray-400">
+    <p class="mb-8 text-gray-600 dark:text-gray-400">
         In order to appeal a ban, you must make sure you are banned via clicking <a class="font-semibold"
             href="index.php?p=banlist">here</a> to see if you are banned and for what reason.<br>
         If you are indeed on our ban list and you feel it is unjust or any other circumstances, please fill out the
-        appeal format below.<br><br>
+        appeal format below.
     </p>
-    <form action="index.php?p=protest" method="post">
+    <form action="index.php?p=protest" method="post" class="mb-8">
         <input type="hidden" name="subprotest" value="1">
         <table class="block text-sm">
             <tr>
@@ -69,7 +69,6 @@
             </tr>
         </table>
     </form>
-    <br>
     <p class="text-gray-600 dark:text-gray-400"><b>What happens after I submit my appeal?</b><br>
         The staff team will be notified of your appeal. They will then review if the ban is conclusive. After reviewing
         you will get a reply, which usally means within 24 hours. <br>
