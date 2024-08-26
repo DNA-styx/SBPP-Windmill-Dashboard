@@ -126,6 +126,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- End Server add Page -->
+    {/if}
+</div>
+<!-- End Server add Page -->
