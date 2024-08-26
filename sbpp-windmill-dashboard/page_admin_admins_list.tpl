@@ -5,6 +5,8 @@
             Access Denied
         {else}
 
+            {load_template file="admin.admins.search"}
+
             <div
                 class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
                 <div class="flex items-center text-gray-600 dark:text-gray-400">
@@ -14,8 +16,6 @@
                     Click on an admin's name to see and edit permissions.
             </div>
         </div>
-
-        {load_template file="admin.admins.search"}
 
         <div id="mainwrapper" class="w-full mb-2 overflow-hidden rounded-lg shadow-xs">
             <div class="w-full overflow-x-auto">
