@@ -184,8 +184,8 @@
                             <div id="web.msg" class="badentry"></div>
                         </span>
 
-                        <div class="flex mt-6 text-sm">
-                            <label class="flex items-center">
+                        <div>
+                            <label>
                                 {sb_button text="Add Admin" onclick="ProcessAddAdmin();" id="aadmin" submit=false class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
                             </label>
                         </div>
