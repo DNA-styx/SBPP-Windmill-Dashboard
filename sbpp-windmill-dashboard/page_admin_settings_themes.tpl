@@ -2,7 +2,7 @@
 <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
     <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
         <div class="w-full">
-            <div id="current-theme-holder">
+            <div id="current-theme-holder mb-8">
 
                 <p class="font-bold text-gray-700 dark:text-gray-400">Selected Theme: {$theme_name}</p>
 
@@ -59,14 +59,12 @@
                 </table>
 
             </div>
-            <br>
-            <br>
+
             <p class="font-bold text-gray-700 dark:text-gray-400">Available Themes</p>
-            <span class="text-gray-700 dark:text-gray-400">
+            <span class="mb-4 text-gray-700 dark:text-gray-400">
                 Click a theme below to see details about it.
             </span>
-            <br>
-            <br>
+
             <div id="theme-list">
                 <ul>
                     {foreach from=$theme_list item=theme}
