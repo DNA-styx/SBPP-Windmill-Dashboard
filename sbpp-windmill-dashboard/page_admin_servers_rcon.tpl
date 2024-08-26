@@ -2,7 +2,7 @@
 -{if NOT $permission_rcon}-
     Access Denied!
 -{else}-
-    <div class="px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <div class="w-full">
             <div id="1">
                 <span class="text-gray-700 dark:text-gray-400">Server Console</span>

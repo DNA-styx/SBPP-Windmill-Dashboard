@@ -1,5 +1,5 @@
 <!-- Start of edit mod -->
-<div class="px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800">
+<div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
     <div id="add-group1">
         <form action="" method="post">
             <div id="add-group">

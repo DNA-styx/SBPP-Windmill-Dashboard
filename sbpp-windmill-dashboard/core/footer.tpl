@@ -1,5 +1,5 @@
 <!-- Start footer.tpl -->
-<br>
+
 <!-- Start footer bar -->
 <div
     class="flex items-center justify-between p-4 mb-4 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800 text-gray-600 dark:text-gray-400">

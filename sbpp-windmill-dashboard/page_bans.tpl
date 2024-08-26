@@ -1,7 +1,7 @@
 <!-- start bans page -->
 {if $comment}
 
-    <div class="px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800" id="add-group1">
+    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="add-group1">
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
 
@@ -73,7 +73,7 @@
         </div>
     </div>
 
-    <div id="mainwrapper" class="w-full mb-2 overflow-hidden rounded-lg shadow-xs">
+    <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
         <div class="w-full overflow-x-auto">
 
             <div id="banlist">

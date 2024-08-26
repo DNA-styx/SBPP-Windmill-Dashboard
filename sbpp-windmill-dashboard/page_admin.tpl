@@ -100,7 +100,7 @@
         </a>
     {/if}
 </div>
-<div class="grid gap-6 mb-2 md:grid-cols-2 xl:grid-cols-4">
+<div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
     <div class="w-1/3 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
         <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Servers</h4>
         <p class="text-gray-600 dark:text-gray-400">
@@ -110,7 +110,7 @@
             Web server time: {$smarty.now|date_format:'%d-%b %H:%M'}
         </p>
     </div>
-    <div class="w-1/3  p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+    <div class="w-1/3 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
         <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Bans</h4>
         <p class="text-gray-600 dark:text-gray-400">
             Total Player bans: {$total_bans}<br>
@@ -118,7 +118,7 @@
             Banned Player Blocked: {$total_blocks}
         </p>
     </div>
-    <div class="w-1/3  p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+    <div class="w-1/3 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
         <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Submissions</h4>
         <p class="text-gray-600 dark:text-gray-400">
             New Ban Appeals: {$total_protests}<br>
@@ -127,7 +127,7 @@
             Archived Player Reports: {$archived_submissions}
         </p>
     </div>
-    <div class="w-1/3  p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+    <div class="w-1/3 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
         <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Software Versions</h4>
         <p class="text-gray-600 dark:text-gray-400">
             Latest SB++ release: <span id='relver'>Please Wait...</span><br>

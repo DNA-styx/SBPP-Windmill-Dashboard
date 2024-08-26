@@ -1,6 +1,4 @@
 <!-- start logs page -->
-<br>
-<br>
 
 {load_template file="admin.log.search" }
 

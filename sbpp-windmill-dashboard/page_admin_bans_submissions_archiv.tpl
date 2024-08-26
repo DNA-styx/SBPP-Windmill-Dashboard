@@ -2,7 +2,7 @@
     Access Denied!
 {else}
 
-<div id="mainwrapper" class="w-full mb-2 overflow-hidden rounded-lg shadow-xs">
+<div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
 <div class="w-full overflow-x-auto">
 
 <div

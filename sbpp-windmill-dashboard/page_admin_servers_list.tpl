@@ -4,7 +4,7 @@
 {else}
     <div id="admin-page-content">
         <div class="tabcontent" id="List servers">
-            <div class="w-full overflow-hidden rounded-lg shadow-xs">
+            <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
                 <div class="w-full overflow-x-auto">
                     <table class="w-full whitespace-no-wrap">
                         <thead>
