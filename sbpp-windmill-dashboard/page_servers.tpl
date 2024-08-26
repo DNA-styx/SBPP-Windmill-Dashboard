@@ -1,26 +1,26 @@
 <!-- Start server.tpl -->
-<div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
+<div id="mainwrapper" class="w-full mb-2 overflow-hidden rounded-lg shadow-xs">
   <div class="w-full overflow-x-auto">
     <table class="w-full whitespace-no-wrap">
       <thead>
         <tr
           class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
           <th class="px-4 py-3">MOD</th>
-          <th class="px-4 py-3 hidden md:block">OS</th>
-          <th class="px-4 py-3 hidden md:block">VAC</th>
+          <th class="px-4 py-3">OS</th>
+          <th class="px-4 py-3">VAC</th>
           <th class="px-4 py-3">Hostname</th>
           <th class="px-4 py-3">Players</th>
           <th class="px-4 py-3">Map</th>
           <th class="hidden md:block px-4 py-3">&nbsp;</th>
         </tr>
       </thead>
-      <tbody class="bg-white dark:bg-gray-800 divide-y dark:divide-gray-700">
+      <tbody class="bg-white dark:bg-gray-800">
         {foreach from=$server_list item=server}
           <tr class="text-gray-700 dark:text-gray-400 opener" id="opener_{$server.sid}" style="cursor:pointer;"
             {if !$IN_SERVERS_PAGE} onclick="{$server.evOnClick}" {/if}>
             <td class="px-4 py-3"><img height="26px" width="26px" src="images/games/{$server.icon}"></td>
-            <td class="px-4 py-3 text-sm hidden md:block" id="os_{$server.sid}"></td>
-            <td class="px-4 py-3 text-sm hidden md:block" id="vac_{$server.sid}"></td>
+            <td class="px-4 py-3 text-sm" id="os_{$server.sid}"></td>
+            <td class="px-4 py-3 text-sm" id="vac_{$server.sid}"></td>
             <td class="px-4 py-3 text-sm" id="host_{$server.sid}"><i>Querying Server Data...</i></td>
             <td class="px-4 py-3 text-sm" id="players_{$server.sid}">N/A</td>
             <td class="px-4 py-3 text-sm" id="map_{$server.sid}">N/A</td>
