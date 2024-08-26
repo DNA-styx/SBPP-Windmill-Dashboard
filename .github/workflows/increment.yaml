@@ -6,7 +6,9 @@ on:
       - main
     paths-ignore:
       - 'sbpp-windmill-dashboard/assets/theme_version.txt'
-      - '.github/workflows/increment.yaml'
+      - '.github/**'
+      - 'assets/**'
+      - '**.md'
 jobs:
   test:
     name: Increment value test
