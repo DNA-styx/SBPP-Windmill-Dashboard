@@ -84,7 +84,7 @@ SourceBans++ Theme built using the default v1.8.0 theme with Windmill Dashboard 
 
 ### Known issues
 
-* Default theme pop-up will appear off screen on mobile. Best use desktop for complex admin functions.
+* Default theme admin pop-up will appear off screen on mobile. Best use desktop for complex admin functions.
 * If text does not display on any pages not themed, switch to the light theme to make it visable.
 
 See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a list of known issues and the todo list.
@@ -94,12 +94,12 @@ See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues
 
 ### Installation
 
-1. Download the [latest release](https://github.com/DNA-styx/SBPP-Windmill-Dashboard/releases)
-or Clone the repo
+1. Download the [latest release](https://github.com/DNA-styx/SBPP-Windmill-Dashboard/releases) - Recomended for stability
+or Clone the repo - For latest features/bug fixes but may contain other issues 
    ```sh
    git clone https://github.com/DNA-styx/sbpp-windmill-dashboard.git
    ```
-or Download all files from repository (Code -> Download zip)
+or Download all files from repository (Code -> Download zip) - For latest features/bug fixes but may contain other issues
 
 2. Move **sbpp-windmill-dashboard** folder to your web server. Sourcebans -> **themes** folder;
 3. Go your Sourcebans website. Log in as admin then go to Admin Panel -> Settings -> **Themes**;
@@ -166,7 +166,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LINKS -->
 ## Links
 
-* Sourcebans++ forum https://forums.alliedmods.net/forumdisplay.php?f=152
+* Sourcebans++ forum on AlliedMods https://forums.alliedmods.net/forumdisplay.php?f=152
 * Sourcebans++ Discord https://discord.gg/4Bhj6NU
 * Sourcebans++ on Docker https://github.com/crinis/sourcebans-docker
 * Recommended Sourcebans++ web hosts https://github.com/sbpp/hosts
