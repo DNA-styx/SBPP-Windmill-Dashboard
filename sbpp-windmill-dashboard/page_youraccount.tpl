@@ -87,12 +87,10 @@
                     <div id="pass2.msg" class="badentry"></div>
                 </span>
 
-                <span class="flex items-center">
-                    <input type="submit" onclick="xajax_CheckPassword(-{$user_aid}-, $('current').value);dispatch();"
-                        name="button"
-                        class="btn ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
-                        id="button" value="Save">
-                </span>
+                <input type="submit" onclick="xajax_CheckPassword(-{$user_aid}-, $('current').value);dispatch();"
+                    name="button"
+                    class="btn ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                    id="button" value="Save">
 
             </div>
         </div>
@@ -162,13 +160,11 @@
                     </label>
                 </div>
 
-                <span class="flex items-center">
-                    <input type="submit"
-                        onclick="-{if $srvpwset}-xajax_CheckSrvPassword(-{$user_aid}-, $('scurrent').value);-{/if}-srvdispatch();"
-                        name="button"
-                        class="btn ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
-                        id="button" value="Save">
-                </span>
+                <input type="submit"
+                    onclick="-{if $srvpwset}-xajax_CheckSrvPassword(-{$user_aid}-, $('scurrent').value);-{/if}-srvdispatch();"
+                    name="button"
+                    class="btn ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                    id="button" value="Save">
 
             </div>
         </div>
@@ -229,11 +225,9 @@
                     <div id="email2.msg" class="badentry"></div>
                 </span>
 
-                <span class="flex items-center">
-                    <input
-                        class="btn ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
-                        type="submit" onclick="checkmail();" name="button" id="button" value="Save">
-                </span>
+                <input
+                    class="btn ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                    type="submit" onclick="checkmail();" name="button" id="button" value="Save">
 
             </div>
         </div>
