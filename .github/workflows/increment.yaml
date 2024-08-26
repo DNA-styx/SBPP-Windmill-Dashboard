@@ -9,6 +9,7 @@ on:
       - '.github/**'
       - 'assets/**'
       - '**.md'
+      - '.gitignore'
 jobs:
   test:
     name: Increment value test
