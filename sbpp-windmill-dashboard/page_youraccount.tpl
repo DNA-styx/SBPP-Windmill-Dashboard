@@ -6,12 +6,11 @@
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
 
-                <p class="text-sm text-gray-600 dark:text-gray-400">
+                <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">
                     The following is a list of the permissions that you have on this system.
                 </p>
-                <br>
 
-                <table width="100%" border="0">
+                <table>
                     <tr>
                         <td width="35%" valign="top" class="text-gray-700 dark:text-gray-400">
                             <span class="font-semibold">Web Permissions</span>
