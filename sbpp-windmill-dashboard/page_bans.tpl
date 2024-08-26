@@ -161,7 +161,7 @@
                                                 </td>
                                                 <!-- ###############[ Start Admin Controls ]################## -->
                                                 {if $view_bans}
-                                                    <td rowspan="{if $ban.unbanned}15{else}13{/if}" class="px-4 py-3 opener">
+                                                    <td rowspan="{if $ban.unbanned}15{else}13{/if}" class="opener">
                                                         <div class="ban-edit">
                                                             <ul>
                                                                 {if $ban.unbanned && $ban.reban_link != false}
