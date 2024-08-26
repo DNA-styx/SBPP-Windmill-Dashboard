@@ -133,9 +133,7 @@
           <div id="length.msg" class="badentry"></div>
         </span>
 
-        <span class="flex items-center">
-          {sb_button text="Add block" onclick="ProcessBan();" class="ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="aban" submit=false}
-        </span>
+        {sb_button text="Add block" onclick="ProcessBan();" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="aban" submit=false}
 
       </div>
     </div>
