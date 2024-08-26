@@ -11,7 +11,7 @@
         {if $overrides_save_success}
             <script type="text/javascript">
                 ShowBox("Overrides updated", "The changes have been saved successfully.", "green",
-                "index.php?p=admin&c=admins");
+                    "index.php?p=admin&c=admins");
             </script>
         {/if}
         <div id="add-group">
@@ -21,16 +21,15 @@
                     <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
                         <div class="w-full">
 
-                            <span class="text-gray-700 dark:text-gray-400">
+                            <span class="mb-2 text-gray-700 dark:text-gray-400">
                                 With Overrides you can change the flags or permissions on any command, either globally, or
                                 for a specific group, without editing plugin source code.<br>
-                                <i>Read about <b><a
+                                Read about <a
                                             href="http://wiki.alliedmods.net/Overriding_Command_Access_%28SourceMod%29"
-                                            title="Overriding Command Access (SourceMod)" target="_blank">overriding command
-                                            access</a></b> in the AlliedModders Wiki!</i><br><br>
-                                Blanking out an overrides' name will delete it.<br><br>
+                                            title="Overriding Command Access (SourceMod)" class="font-semibold" target="_blank">overriding command
+                                            access</a></b> in the AlliedModders Wiki!<br><br>
+                                            Blanking out an overrides' name will delete it.<br><br>
                             </span>
-                            <br>
 
                             <table class="w-full whitespace-no-wrap">
                                 <thead>
@@ -53,7 +52,7 @@
                                                 </select>
                                                 <input type="hidden" name="override_id[]" value="{$override.id}">
                                             </td>
-                                        <td class="px-4 py-3""><input name=" override_name[]"
+                                        <td class="px-4 py-3"><input name=" override_name[]"
                                         value="{$override.name|smarty_htmlspecialchars}"></td>
                                     <td class="px-4 py-3"><input name="override_flags[]"
                                             value="{$override.flags|smarty_htmlspecialchars}"></td>
@@ -77,16 +76,18 @@
                             </tbody>
                         </table>
                         <br>
-                        <div class="flex mt-6 text-sm">
-                            <div class="flex items-center">
-                                {sb_button text="Save" class="ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="oversave" submit=true}
+                        <div>
+                            <div>
+                                {sb_button text="Save" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="oversave" submit=true}
                                 </div>
                             </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </form>
         </div>
-    </div>
-    </div>
-    </div>
-{/if}
+    {/if}
 </div>
 <!-- End admin overrides -->
