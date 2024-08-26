@@ -6,7 +6,7 @@
             <div class="w-full">
 
                 <form action="" method="post" enctype="multipart/form-data">
-                    <input type="hidden" name="action" value="importBans" />
+                    <input type="hidden" name="action" value="importBans">
 
                     <label class="block text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Select File to Import</span>
@@ -32,9 +32,7 @@
                         <div id="friendsname.msg" class="badentry"></div>
                     </span>
 
-                    <span class="flex items-center">
-                        {sb_button text="Import" id="iban" submit=true class="ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
-                    </span>
+                    {sb_button text="Import" id="iban" submit=true class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
 
                 </form>
 
@@ -43,7 +41,7 @@
     </div>
 
     {if !$extreq}
-        <script type="text/javascript">
+        <script>
             $('friendsname').disabled = true;
         </script>
     {/if}
