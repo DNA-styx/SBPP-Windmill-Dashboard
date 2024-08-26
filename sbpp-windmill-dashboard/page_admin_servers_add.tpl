@@ -111,10 +111,10 @@
                         <div id="loginPassword.msg" class="badentry"></div>
                     </span>
 
-                    <div class="flex mt-6 text-sm">
-                        <label class="flex items-center dark:text-gray-400">
+                    <div class="flex mt-6">
+                        <label class="flex items-center">
                             {if $edit_server}
-                                {sb_button text=$submit_text onclick="process_edit_server();" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="aserver" submit=false}
+                                {sb_button text=$submit_text onclick="process_edit_server();" id="aserver" submit=true class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
                                 &nbsp;&nbsp;
                                 {sb_button text="Cancel" onclick="document.location='index.php?p=admin&c=servers'" id="back" submit=false class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
                             {else}
