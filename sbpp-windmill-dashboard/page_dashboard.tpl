@@ -160,7 +160,6 @@
           <tr class="text-gray-700 dark:text-gray-400" style="cursor: pointer;" onclick="{$player.link_url}">
             <td class="px-4 py-3">
               <div class="flex items-center text-sm">
-                <!-- Avatar with inset shadow -->
                 <div>
                   <i class="{$player.type}"></i>
                 </div>
