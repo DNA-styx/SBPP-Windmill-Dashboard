@@ -33,6 +33,7 @@
           <input
             class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
             maxlength="70" name="PlayerName" value="{$player_name}">
+        </td>
       </tr>
       <tr>
         <td>
@@ -51,6 +52,7 @@
           <input
             class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
             maxlength="70" name="SubmitName" value="{$subplayer_name}">
+        </td>
       </tr>
       <tr>
         <td>
@@ -58,6 +60,7 @@
           <input
             class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
             maxlength="70" name="EmailAddr" value="{$player_email}">
+        </td>
       </tr>
       <tr>
         <td>
