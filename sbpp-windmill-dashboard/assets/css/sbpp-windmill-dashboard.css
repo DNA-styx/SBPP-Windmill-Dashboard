@@ -7,7 +7,7 @@
     table-layout:fixed;
     width:465px;
 }
-
+/* Images not present in default theme 
 td.dialog-topleft{
     background-image:url(../images/dialog/dialog_topleft.png) !important;
 }
@@ -30,7 +30,7 @@ td.dialog-topleft, td.dialog-topright, td.dialog-bottomright, td.dialog-bottomle
     padding:0px !important;
     width:10px !important;
 }
-
+*/
 h2{
     color:white;
     font-size:14px;
