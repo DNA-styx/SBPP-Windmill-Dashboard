@@ -15,9 +15,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Type the text you would like to say.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="commenttext.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="commenttext.msg" class="badentry"></span>
+                </div>
 
                 <input type="hidden" name="bid" id="bid" value="{$comment}">
                 <input type="hidden" name="ctype" id="ctype" value="{$ctype}">
@@ -473,7 +473,7 @@
 
     </div>
     {literal}
-        <script type="text/javascript">
+        <script>
             window.addEvent('domready', function() {
                 InitAccordion('tr.opener', 'div.opener', 'mainwrapper');
             {/literal}
