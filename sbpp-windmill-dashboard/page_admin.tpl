@@ -139,7 +139,7 @@
         </p>
     </div>
 </div>
-<script type="text/javascript">
+<script>
     xajax_CheckVersion();
 </script>
 <!-- Start admin page -->
