@@ -98,9 +98,9 @@
                             <td class="px-4 py-3"><b>Length</b></td>
                         </tr>
                     </thead>
-                    <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
+                    <tbody class="bg-white dark:bg-gray-800">
                         {foreach from=$ban_list item=ban name=banlist}
-                            <tr class="opener text-gray-700 dark:text-gray-400" {if $ban.server_id != 0}
+                            <tr class="opener text-gray-700 dark:text-gray-400 divide-y dark:divide-gray-700" {if $ban.server_id != 0}
                                 onclick="xajax_ServerHostPlayers({$ban.server_id}, 'id', 'host_{$ban.ban_id}');" {/if}>
                                 {if $view_bans}
                                     <td class="px-4 py-3">
