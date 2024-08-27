@@ -56,9 +56,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     We need to know your current password to verify its you.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="current.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="current.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">New Password</span>
@@ -69,9 +69,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Type your new password here. <i>Min Length: -{$min_pass_len}- charecters</i>.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="pass1.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="pass1.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Confirm Password</span>
@@ -82,9 +82,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Please type your new password again to avoid a mistake
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="pass2.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="pass2.msg" class="badentry"></span>
+                </div>
 
                 <input type="submit" onclick="xajax_CheckPassword(-{$user_aid}-, $('current').value);dispatch();"
                     name="button"
@@ -118,9 +118,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     We need to know your current password to verify its you.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="scurrent.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="scurrent.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">New Password</span>
@@ -131,9 +131,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Type your new server password here. <i>Min Length: -{$min_pass_len}-</i>
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="spass1.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="spass1.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Confirm Password</span>
@@ -144,9 +144,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Please type your new server password again to avoid a mistake.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="spass2.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="spass2.msg" class="badentry"></span>
+                </div>
 
                 <div class="flex mt-6 text-sm">
                     <label class="flex items-center dark:text-gray-400">
@@ -194,9 +194,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Type your password here.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="emailpw.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="emailpw.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">New E-mail</span>
@@ -207,9 +207,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Type your new email address here.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="email1.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="email1.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Confirm E-mail</span>
@@ -220,9 +220,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Please type your new email address again to avoid a mistake.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="email2.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="email2.msg" class="badentry"></span>
+                </div>
 
                 <input
                     class="btn ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
