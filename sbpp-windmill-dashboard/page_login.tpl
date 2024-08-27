@@ -11,9 +11,9 @@
                         class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
                 </label>
 
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="loginUsername.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="loginUsername.msg" class="badentry"></span>
+                </div>
 
                 <label class="block mt-4 text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Password</span>
@@ -22,9 +22,9 @@
                         type="password">
                 </label>
 
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="loginPassword.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="loginPassword.msg" class="badentry"></span>
+                </div>
 
                 <span class="mt-4">
                     <a class="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
