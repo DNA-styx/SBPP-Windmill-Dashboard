@@ -16,7 +16,7 @@
       </thead>
       <tbody class="bg-white dark:bg-gray-800">
         {foreach from=$server_list item=server}
-          <tr class="text-gray-700 dark:text-gray-400 opener" id="opener_{$server.sid}" style="cursor:pointer;"
+          <tr class="text-gray-700 dark:text-gray-400 opener divide-y dark:divide-gray-700" id="opener_{$server.sid}" style="cursor:pointer;"
             {if !$IN_SERVERS_PAGE} onclick="{$server.evOnClick}" {/if}>
             <td class="px-4 py-3"><img height="26px" width="26px" src="images/games/{$server.icon}"></td>
             <td class="px-4 py-3 text-sm" id="os_{$server.sid}"></td>
