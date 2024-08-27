@@ -16,7 +16,7 @@
                     Type the text you would like to say.
                 </span>
                 <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="commenttext.msg" class="badentry"></div>
+                    <span id="commenttext.msg" class="badentry"></span>
                 </span>
 
                 <input type="hidden" name="bid" id="bid" value="{$comment}">
@@ -400,7 +400,7 @@
     </div>
 
     {literal}
-        <script type="text/javascript">
+        <script>
             window.addEvent('domready', function() {
                 InitAccordion('tr.opener', 'div.opener', 'mainwrapper');
             {/literal}
