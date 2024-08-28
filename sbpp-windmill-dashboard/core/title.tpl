@@ -37,7 +37,4 @@
       </table>
     </div>
 
-
-
-
 <!-- End title.tpl -->
