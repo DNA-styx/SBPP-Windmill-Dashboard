@@ -1,5 +1,64 @@
 /* CSS taken from default main.css and non-tailwind css */
 
+/* === New popup ======*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+
+
+
 /* ================ Popup Boxes ============== */
 .dialog-holder{
     border-collapse:collapse;
@@ -31,6 +90,7 @@ td.dialog-topleft, td.dialog-topright, td.dialog-bottomright, td.dialog-bottomle
     width:10px !important;
 }
 */
+/*
 h2{
     color:white;
     font-size:14px;
@@ -59,42 +119,42 @@ h2.ok{
     background:#75b46d none repeat scroll 0%;
     border:1px solid #46983b;
 }
-
+*/
 
 .icon-ok{
-    background-image:url(../images/ok.png);
+    /*background-image:url(../images/ok.png);
     float:left;
     height:48px;
     overflow:hidden;
     padding:0px !important;
-    width:48px !important;
+    width:48px !important;*/
 }
 .icon-error{
-    background-image:url(../images/warning.png);
+    /*background-image:url(../images/warning.png);
     float:left;
     height:48px;
     overflow:hidden;
     padding:0px !important;
-    width:48px !important;
+    width:48px !important;*/
 }
 .icon-warning{
-    background-image:url(../images/warning.png);
+    /*background-image:url(../images/warning.png);
     float:left;
     height:48px;
     overflow:hidden;
     padding:0px !important;
-    width:48px !important;
+    width:48px !important;*/
 }
 .icon-info{
-    background-image:url(../images/info.png);
+    /*background-image:url(../images/info.png);
     float:left;
     height:48px;
     overflow:hidden;
     padding:0px !important;
-    width:48px !important;
+    width:48px !important;*/
 }
 
-
+/*
 .dialog-content{
     background:#FFFFFF none repeat scroll 0%;
     border-color:#555555;
@@ -111,7 +171,7 @@ div.dialog-control{
     text-align:right;
     vertical-align:bottom
 }
-
+*/
 .clearfix:after {
     content: ".";
     display: block;
@@ -122,6 +182,32 @@ div.dialog-control{
 
 .clearfix {display: inline-block;}
 
+.btn {
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    border-radius: 0.5rem; 
+    border-width: 1px; 
+    border-color: transparent; 
+    width: 100%; 
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 500; 
+    line-height: 1.25rem; 
+    color: #ffffff; 
+    background-color: #7C3AED; 
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+    transition-duration: 150ms; 
+    
+    :hover {
+     background-color: #6D28D9; 
+     }
+    
+}
 
 
 
