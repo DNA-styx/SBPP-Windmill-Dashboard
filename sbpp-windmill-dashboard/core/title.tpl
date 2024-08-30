@@ -38,17 +38,17 @@
     </div>
 *}
 
-<div id="dialog-placement" class="overlay">
+<div id="dialog-placement" class="overlay text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-gray-800">
   <div class="popup">
     <span
       class="flex items-center justify-between p-4 text-xl font-semibold text-purple-100 bg-purple-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple">
       <h2 id="dialog-title" class="ok"></h2>
     </span>
     <div class="content">
-      <div class="clearfix">
-        <span id="dialog-icon" class="icon-info"></span>
-        <span id="dialog-content-text"></span>
-      </div>
+      <!-- <div class="clearfix"> -->
+      <span id="dialog-icon" class="icon-info"></span>
+      <span id="dialog-content-text"></span>
+      <!-- </div> -->
       <span id="dialog-control" class="dialog-control"></span>
     </div>
   </div>

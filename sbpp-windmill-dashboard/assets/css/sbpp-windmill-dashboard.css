@@ -8,7 +8,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.7);
+    /* background: rgba(0, 0, 0, 0.7); */
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
@@ -21,14 +21,14 @@
   .popup {
     margin: 70px auto;
     padding: 20px;
-    background: #fff;
+    /* background: #fff;*/
     border-radius: 5px;
     width: 30%;
     position: relative;
-    transition: all 5s ease-in-out;
+    /* transition: all 5s ease-in-out; */
   }
   
-
+/*
   .popup .close {
     position: absolute;
     top: 20px;
@@ -46,7 +46,7 @@
     max-height: 30%;
     overflow: auto;
   }
-  
+  */
   @media screen and (max-width: 700px){
     .box{
       width: 70%;
@@ -59,13 +59,15 @@
 
 
 
-/* ================ Popup Boxes ============== */
+/* ================ Default Popup Boxes ============== */
+/*
 .dialog-holder{
     border-collapse:collapse;
     margin:auto;
     table-layout:fixed;
     width:465px;
 }
+*/
 /* Images not present in default theme 
 td.dialog-topleft{
     background-image:url(../images/dialog/dialog_topleft.png) !important;
@@ -182,7 +184,9 @@ div.dialog-control{
 
 .clearfix {display: inline-block;}
 
-.btn {
+/* Windmill theme for default button used in pop-up */
+
+.btn, .btnhvr {
 
     padding-top: 0.5rem;
     padding-bottom: 0.5rem; 
@@ -198,15 +202,6 @@ div.dialog-control{
     line-height: 1.25rem; 
     color: #ffffff; 
     background-color: #7C3AED; 
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms; 
-    transition-duration: 150ms; 
-    
-    :hover {
-     background-color: #6D28D9; 
-     }
-    
 }
 
 
