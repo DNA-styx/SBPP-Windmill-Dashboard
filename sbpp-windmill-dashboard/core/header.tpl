@@ -17,9 +17,10 @@
 
   <!-- .css taken from main.css -->
   <link href="themes/{$theme}/assets/css/sbpp-windmill-dashboard.css" rel="stylesheet" type="text/css">
+  
   <!-- Windmill default JS and CSS -->
-  <!-- You need focus-trap.js to make the default Windmill modal accessible -->
-  <script src="themes/{$theme}/assets/js/focus-trap.js" defer></script> 
+  <!-- You need focus-trap.js to make the default Windmill modal accessible
+  <script src="themes/{$theme}/assets/js/focus-trap.js" defer></script>  -->
   <script src="themes/{$theme}/assets/js/init-alpine.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <link rel="stylesheet" href="themes/{$theme}/assets/css/tailwind.output.css">
