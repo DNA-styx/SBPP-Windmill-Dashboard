@@ -50,9 +50,8 @@
                             </tbody>
                     </table>
                     <div
-                        class="grid px-4 py-3 rounded-b-lg tracking-wide text-gray-500 border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
+                        class="grid px-4 py-3 mb-8 rounded-b-lg tracking-wide text-gray-500 border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
                     </div>
-                    <br>
                     {if $permission_addserver}
                         <div class="px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
                             <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">
