@@ -12,7 +12,7 @@
 -->
   <!-- .css taken from main.css -->
   <link href="themes/{$theme}/assets/css/sbpp-windmill-dashboard.css" rel="stylesheet" type="text/css">
-  <!-- You need focus-trap.js to make the modal accessible -->
+  <!-- You need focus-trap.js to make the default Windmill modal accessible -->
   <script src="themes/{$theme}/assets/js/focus-trap.js" defer></script>
   <script src="./scripts/mootools.js"></script>
   <script src="./scripts/contextMenoo.js"></script>
