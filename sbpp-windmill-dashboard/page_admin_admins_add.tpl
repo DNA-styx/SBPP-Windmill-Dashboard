@@ -23,9 +23,9 @@
                         This is the username the admin will use to login-to their admin panel. Also this will identify the
                         admin on any bans they make.
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="name.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="name.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Admin Steam ID</span>
@@ -35,9 +35,9 @@
                     <span class="text-xs text-gray-600 dark:text-gray-400">
                         This is the admins 'STEAM' id. This must be set so that admins can use their admin rights ingame.
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="steam.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="steam.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Admin Email</span>
@@ -48,9 +48,9 @@
                         Set the admins e-mail address. This will be used for sending out any automated messages from the
                         system and changing of forgotten passwords. This is only required, if you set webpanel permissions.
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="email.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="email.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Admin Password</span>
@@ -71,9 +71,9 @@
                         The password the admin will need to access the admin panel. This is only required, if you set
                         webpanel permissions.
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="password.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="password.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Admin Password (confirm)</span>
@@ -83,9 +83,9 @@
                     <span class="text-xs text-gray-600 dark:text-gray-400">
                         Type the password again to confirm.
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="password2.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="password2.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block mt-4 text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Server Password</span>
@@ -100,9 +100,9 @@
                             (<a href="http://wiki.alliedmods.net/Adding_Admins_%28SourceMod%29#Passwords"
                                 title="SourceMod Password Info" target="_blank">More</a>)
                         </div>
-                        <span class="text-xs text-red-600 dark:text-red-400">
-                            <div id="a_serverpass.msg" class="badentry"></div>
-                        </span>
+                        <div class="text-xs text-red-600 dark:text-red-400">
+                            <span id="a_serverpass.msg" class="badentry"></span>
+                        </div>
 
                         <label class="block mt-4 text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Server Access</span>
@@ -155,9 +155,9 @@
                             new group.<br>
                             <b>Groups:</b> Select a pre-made group to add the admin to.
                         </div>
-                        <span class="text-xs text-red-600 dark:text-red-400">
-                            <div id="server.msg" class="badentry"></div>
-                        </span>
+                        <div class="text-xs text-red-600 dark:text-red-400">
+                            <span id="server.msg" class="badentry"></span>
+                        </div>
 
                         <label class="block mt-4 text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Web Admin Group</span>
@@ -180,15 +180,11 @@
                             new group.<br>
                             <b>Groups:</b> Select a pre-made group to add the admin to.
                         </div>
-                        <span class="text-xs text-red-600 dark:text-red-400">
-                            <div id="web.msg" class="badentry"></div>
-                        </span>
-
-                        <div>
-                            <span>
-                                {sb_button text="Add Admin" onclick="ProcessAddAdmin();" id="aadmin" submit=false class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
-                            </span>
+                        <div class="text-xs text-red-600 dark:text-red-400">
+                            <span id="web.msg" class="badentry"></span>
                         </div>
+
+                        {sb_button text="Add Admin" onclick="ProcessAddAdmin();" id="aadmin" submit=false class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
 
                 </div>
             </div>
