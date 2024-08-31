@@ -84,8 +84,7 @@ SourceBans++ Theme built using the default v1.8.0 theme with Windmill Dashboard 
 
 ### Known issues
 
-* Default theme admin pop-up will appear off screen on mobile. Best use desktop for complex admin functions.
-* If text does not display on any pages not themed, switch to the light theme to make it visable.
+* If text does not display on any pages not themed, switch to the light theme to make it visable and open an issue.
 
 See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a list of known issues and the todo list.
 
