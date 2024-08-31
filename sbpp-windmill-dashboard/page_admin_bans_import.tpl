@@ -1,3 +1,4 @@
+<!-- Start admin bans import -->
 {if NOT $permission_import}
     Access Denied!
 {else}
@@ -46,3 +47,4 @@
         </script>
     {/if}
 {/if}
+<!-- end admin bans import -->

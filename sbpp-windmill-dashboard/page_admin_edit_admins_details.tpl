@@ -1,3 +1,4 @@
+<!-- Start edit admin details -->
 <form action="" method="post">
     <div id="admin-page-content">
 
@@ -93,11 +94,11 @@
                     {/if}
 
                     <div>
-                        <label class="flex items-center">
+                        <span class="flex items-center">
                             {sb_button text="Save Changes" id="editmod" submit=true class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
                             &nbsp;&nbsp;
                             {sb_button text="Cancel" onclick="document.location='index.php?p=admin&c=admins'" id="back" submit=false class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
-                        </label>
+                        </span>
                     </div>
 
                 </div>
@@ -106,3 +107,4 @@
 
     </div>
 </form>
+<!-- end edit admin details -->

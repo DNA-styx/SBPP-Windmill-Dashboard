@@ -112,7 +112,7 @@
                     </span>
 
                     <div>
-                        <label class="flex items-center">
+                        <span class="flex items-center">
                             {if $edit_server}
                                 {sb_button text=$submit_text onclick="process_edit_server();" id="aserver" submit=true class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
                                 &nbsp;&nbsp;
@@ -120,7 +120,7 @@
                             {else}
                                 {sb_button text=$submit_text onclick="process_add_server();" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="aserver" submit=false}
                             {/if}
-                        </label>
+                        </span>
                     </div>
 
                 </div>
