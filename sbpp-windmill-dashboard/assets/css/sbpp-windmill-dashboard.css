@@ -2,13 +2,14 @@
 
 /* === Popup test ======*/
 /* === Based on https://codepen.io/sahil4test/pen/xERYvX === */
+/*
 .overlay {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    /* background: rgba(0, 0, 0, 0.7); */
+    /* background: rgba(0, 0, 0, 0.7); 
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
@@ -21,11 +22,11 @@
   .popup {
     margin: 70px auto;
     padding: 20px;
-    /* background: #fff;*/
+  background: #fff;
     border-radius: 5px;
     width: 30%;
     position: relative;
-    /* transition: all 5s ease-in-out; */
+    /* transition: all 5s ease-in-out; 
   }
   
 /*
@@ -46,7 +47,7 @@
     max-height: 30%;
     overflow: auto;
   }
-  */
+
   @media screen and (max-width: 700px){
     .box{
       width: 70%;
@@ -55,7 +56,7 @@
       width: 70%;
     }
   }
-
+  */
 
 
 
@@ -121,23 +122,24 @@ h2.ok{
     background:#75b46d none repeat scroll 0%;
     border:1px solid #46983b;
 }
-*/
+
 
 .icon-ok{
-    /*background-image:url(../images/ok.png);
+    background-image:url(../images/ok.png);
     float:left;
     height:48px;
     overflow:hidden;
     padding:0px !important;
-    width:48px !important;*/
+    width:48px !important;
 }
+
 .icon-error{
     /*background-image:url(../images/warning.png);
     float:left;
     height:48px;
     overflow:hidden;
     padding:0px !important;
-    width:48px !important;*/
+    width:48px !important;
 }
 .icon-warning{
     /*background-image:url(../images/warning.png);
@@ -145,7 +147,7 @@ h2.ok{
     height:48px;
     overflow:hidden;
     padding:0px !important;
-    width:48px !important;*/
+    width:48px !important;
 }
 .icon-info{
     /*background-image:url(../images/info.png);
@@ -153,10 +155,10 @@ h2.ok{
     height:48px;
     overflow:hidden;
     padding:0px !important;
-    width:48px !important;*/
+    width:48px !important;
 }
 
-/*
+
 .dialog-content{
     background:#FFFFFF none repeat scroll 0%;
     border-color:#555555;
@@ -173,7 +175,7 @@ div.dialog-control{
     text-align:right;
     vertical-align:bottom
 }
-*/
+
 .clearfix:after {
     content: ".";
     display: block;
@@ -183,8 +185,10 @@ div.dialog-control{
 }
 
 .clearfix {display: inline-block;}
+*/
 
-/* Windmill theme for default button used in pop-up */
+
+/* Windmill theme for default SB++ button used in pop-up */
 
 .btn, .btnhvr {
 
@@ -352,10 +356,10 @@ body {
   }
   .tabinator input:checked + label {
     position: relative;
-    color: #1a1c23;
-    background: #6B7280;
+    color: #fff;
+    background: #7C3AED;
     border: 1px solid #1a1c23;
-    border-bottom: 1px solid #6B7280;
+    border-bottom: 1px solid #7C3AED;
     border-radius: 5px 5px 0 0;
   }
   .tabinator input:checked + label:after {
@@ -401,13 +405,13 @@ body {
     color: grey;
 }
 
-
+/*
 #tabs ul li.active {
 }
-
+*/
 #tabs ul li.active a {
     /* padding: 0.1em 0.6em; */
     padding: 0 16px;
-    color: grey;
+    color: #7C3AED;
 }
 
