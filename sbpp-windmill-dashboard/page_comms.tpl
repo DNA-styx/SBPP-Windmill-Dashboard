@@ -35,19 +35,19 @@
                 </div>
                 <br>
                 <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Comments</h4>
-                
+
                 {foreach from=$othercomments item="com"}
 
                     <label class="block mt-4 text-sm">
-                    <span class="text-gray-700 dark:text-gray-400">{$com.comname} {$com.added}</span>
-                    <textarea rows="3" cols="60" id="commenttext" name="commenttext" disabled
-                        class="submit-fields w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">{$com.commenttxt}</textarea>
-                </label>
-                {if $com.editname != ''}
-                    <span class="text-xs text-gray-600 dark:text-gray-400">
-                        Last Edit {$com.edittime} by {$com.editname}
-                    </span>
-                {/if}
+                        <span class="text-gray-700 dark:text-gray-400">{$com.comname} {$com.added}</span>
+                        <textarea rows="3" cols="60" id="commenttext" name="commenttext" disabled
+                            class="submit-fields w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">{$com.commenttxt}</textarea>
+                    </label>
+                    {if $com.editname != ''}
+                        <span class="text-xs text-gray-600 dark:text-gray-400">
+                            Last Edit {$com.edittime} by {$com.editname}
+                        </span>
+                    {/if}
 
                 {/foreach}
             </div>
@@ -68,7 +68,8 @@
         <div class="flex items-center text-gray-600 dark:text-gray-400">
             <span>
                 <a href="index.php?p=commslist&hideinactive={if $hidetext == 'Hide'}true{else}false{/if}{$searchlink|smarty_htmlspecialchars}"
-                    rel="nofollow" title="{$hidetext} inactive">{$hidetext} inactive</a> | <i>Total Blocks: {$total_bans}</i>
+                    rel="nofollow" title="{$hidetext} inactive">{$hidetext} inactive</a> | <i>Total Blocks:
+                    {$total_bans}</i>
             </span>
         </div>
     </div>
@@ -92,7 +93,8 @@
                     </thead>
                     <tbody class="bg-white dark:bg-gray-800">
                         {foreach from=$ban_list item=ban name=banlist}
-                            <tr class="opener text-gray-700 dark:text-gray-400 divide-y dark:divide-gray-700" {if $ban.server_id != 0}
+                            <tr class="opener text-gray-700 dark:text-gray-400 divide-y dark:divide-gray-700"
+                                {if $ban.server_id != 0}
                                 onclick="xajax_ServerHostPlayers({$ban.server_id}, 'id', 'host_{$ban.ban_id}');" {/if}>
                                 <td class="flex px-4 py-3 items-center">{$ban.mod_icon}</td>
                                 <td class="px-4 py-3">{$ban.ban_date}</td>
@@ -158,46 +160,48 @@
                                                     <td width="30%" rowspan="{if isset($ban.unbanned)}13{else}11{/if}"
                                                         class="listtable_2 opener">
                                                         <div class="ban-edit">
-                                                            <ul class="mt-6">
-                                                                {if isset($ban.unbanned) && $ban.reban_link != false}
+                                                            <aside
+                                                                class="w-full rounded-lg border-2 border-purple-600 p-4 mt-16 max-w-sm mx-auto">
+                                                                <ul class="mt-6">
+                                                                    {if isset($ban.unbanned) && $ban.reban_link != false}
+                                                                        <li class="relative px-2 py-2">
+                                                                            <button
+                                                                                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                {$ban.reban_link}
+                                                                            </button>
+                                                                        </li>
+                                                                    {/if}
                                                                     <li class="relative px-2 py-2">
                                                                         <button
                                                                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                            {$ban.reban_link}
+                                                                            {$ban.addcomment}
                                                                         </button>
                                                                     </li>
-                                                                {/if}
-                                                                <li class="relative px-2 py-2">
-                                                                    <button
-                                                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                        {$ban.addcomment}
-                                                                    </button>
-                                                                </li>
-                                                                {if ($ban.view_edit && (!isset($ban.unbanned) || !$ban.unbanned))}
-                                                                    <li class="relative px-2 py-2">
-                                                                        <button
-                                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                            {$ban.edit_link}
-                                                                        </button>
-                                                                    </li>
-                                                                {/if}
-                                                                {if isset($ban.unbanned) && ($ban.unbanned == false && $ban.view_unban)}
-                                                                    <li class="relative px-2 py-2">
-                                                                        <button
-                                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                            {$ban.unban_link}
-                                                                        </button>
-                                                                    </li>
-                                                                {/if}
-                                                                {if $ban.view_delete}
-                                                                    <li class="relative px-2 py-2">
-                                                                        <button
-                                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                            {$ban.delete_link}
-                                                                        </button>
-                                                                    </li>
-                                                                {/if}
-                                                            </ul>
+                                                                    {if ($ban.view_edit && (!isset($ban.unbanned) || !$ban.unbanned))}
+                                                                        <li class="relative px-2 py-2">
+                                                                            <button
+                                                                                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                {$ban.edit_link}
+                                                                            </button>
+                                                                        </li>
+                                                                    {/if}
+                                                                    {if isset($ban.unbanned) && ($ban.unbanned == false && $ban.view_unban)}
+                                                                        <li class="relative px-2 py-2">
+                                                                            <button
+                                                                                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                {$ban.unban_link}
+                                                                            </button>
+                                                                        </li>
+                                                                    {/if}
+                                                                    {if $ban.view_delete}
+                                                                        <li class="relative px-2 py-2">
+                                                                            <button
+                                                                                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                {$ban.delete_link}
+                                                                            </button>
+                                                                        </li>
+                                                                    {/if}
+                                                                </ul>
                                                         </div>
                                                     </td>
                                                 {/if}

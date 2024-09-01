@@ -100,7 +100,8 @@
                     </thead>
                     <tbody class="bg-white dark:bg-gray-800">
                         {foreach from=$ban_list item=ban name=banlist}
-                            <tr class="opener text-gray-700 dark:text-gray-400 divide-y dark:divide-gray-700" {if $ban.server_id != 0}
+                            <tr class="opener text-gray-700 dark:text-gray-400 divide-y dark:divide-gray-700"
+                                {if $ban.server_id != 0}
                                 onclick="xajax_ServerHostPlayers({$ban.server_id}, 'id', 'host_{$ban.ban_id}');" {/if}>
                                 {if $view_bans}
                                     <td class="px-4 py-3">
@@ -115,7 +116,9 @@
                                 <td class="px-4 py-3">
                                     <div style="float:left;">
                                         {if empty($ban.player)}
-                                            <i><font color="#677882">no nickname present</font></i>
+                                            <i>
+                                                <font color="#677882">no nickname present</font>
+                                            </i>
                                         {else}
                                             {$ban.player|escape:'html'|smarty_stripslashes}
                                         {/if}
@@ -136,7 +139,9 @@
                                         {if !empty($ban.admin)}
                                             {$ban.admin|escape:'html'}
                                         {else}
-                                            <i><font color="#677882">Admin deleted</font></i>
+                                            <i>
+                                                <font color="#677882">Admin deleted</font>
+                                            </i>
                                         {/if}
                                     </td>
                                 {/if}
@@ -154,7 +159,9 @@
                                                 <td class="px-4">Player</td>
                                                 <td class="px-4">
                                                     {if empty($ban.player)}
-                                                        <i><font color="#677882">no nickname present</font></i>
+                                                        <i>
+                                                            <font color="#677882">no nickname present</font>
+                                                        </i>
                                                     {else}
                                                         {$ban.player|escape:'html'|smarty_stripslashes}
                                                     {/if}
@@ -163,79 +170,81 @@
                                                 {if $view_bans}
                                                     <td rowspan="{if $ban.unbanned}15{else}13{/if}" class="opener">
                                                         <div class="ban-edit">
-                                                        <aside class="w-full rounded-lg border-2 border-purple-600 p-4 mt-16 max-w-sm mx-auto">    
-                                                        <ul>
-                                                                {if $ban.unbanned && $ban.reban_link != false}
-                                                                    <li class="relative px-2 py-2">
-                                                                        <button
-                                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                            {$ban.reban_link}
-                                                                        </button>
-                                                                    </li>
-                                                                {/if}
-                                                                <li class="relative px-2 py-2">
-                                                                    <button
-                                                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                        {$ban.blockcomm_link}
-                                                                    </button>
-                                                                </li>
-                                                                <li class="relative px-2 py-2">
-                                                                    <button
-                                                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                        {$ban.demo_link}
-                                                                    </button>
-                                                                </li>
-                                                                <li class="relative px-2 py-2">
-                                                                    <button
-                                                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                        {$ban.addcomment}
-                                                                    </button>
-                                                                </li>
-
-                                                                {if $ban.type == 0}
-                                                                    {if $groupban}
+                                                            <aside
+                                                                class="w-full rounded-lg border-2 border-purple-600 p-4 mt-16 max-w-sm mx-auto">
+                                                                <ul>
+                                                                    {if $ban.unbanned && $ban.reban_link != false}
                                                                         <li class="relative px-2 py-2">
                                                                             <button
                                                                                 class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                                {$ban.groups_link}
+                                                                                {$ban.reban_link}
                                                                             </button>
                                                                         </li>
                                                                     {/if}
-                                                                    {if $friendsban}
-                                                                        <li class="relative px-2 py-2">
-                                                                            <button
-                                                                                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                                {$ban.friend_ban_link}
-                                                                            </button>
-                                                                        </li>
-                                                                    {/if}
-                                                                {/if}
-                                                                {if ($ban.view_edit && !$ban.unbanned)}
                                                                     <li class="relative px-2 py-2">
                                                                         <button
                                                                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                            {$ban.edit_link}
+                                                                            {$ban.blockcomm_link}
+                                                                        </button>
+                                                                    </li>
+                                                                    <li class="relative px-2 py-2">
+                                                                        <button
+                                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                            {$ban.demo_link}
+                                                                        </button>
+                                                                    </li>
+                                                                    <li class="relative px-2 py-2">
+                                                                        <button
+                                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                            {$ban.addcomment}
                                                                         </button>
                                                                     </li>
 
-                                                                {/if}
-                                                                {if ($ban.unbanned == false && $ban.view_unban)}
-                                                                    <li class="relative px-2 py-2">
-                                                                        <button
-                                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                            {$ban.unban_link}
-                                                                        </button>
-                                                                    </li>
-                                                                {/if}
-                                                                {if $ban.view_delete}
-                                                                    <li class="relative px-2 py-2">
-                                                                        <button
-                                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                                                                            {$ban.delete_link}
-                                                                        </button>
-                                                                    </li>
-                                                                {/if}
-                                                            </ul>
+                                                                    {if $ban.type == 0}
+                                                                        {if $groupban}
+                                                                            <li class="relative px-2 py-2">
+                                                                                <button
+                                                                                    class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                    {$ban.groups_link}
+                                                                                </button>
+                                                                            </li>
+                                                                        {/if}
+                                                                        {if $friendsban}
+                                                                            <li class="relative px-2 py-2">
+                                                                                <button
+                                                                                    class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                    {$ban.friend_ban_link}
+                                                                                </button>
+                                                                            </li>
+                                                                        {/if}
+                                                                    {/if}
+                                                                    {if ($ban.view_edit && !$ban.unbanned)}
+                                                                        <li class="relative px-2 py-2">
+                                                                            <button
+                                                                                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                {$ban.edit_link}
+                                                                            </button>
+                                                                        </li>
+
+                                                                    {/if}
+                                                                    {if ($ban.unbanned == false && $ban.view_unban)}
+                                                                        <li class="relative px-2 py-2">
+                                                                            <button
+                                                                                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                {$ban.unban_link}
+                                                                            </button>
+                                                                        </li>
+                                                                    {/if}
+                                                                    {if $ban.view_delete}
+                                                                        <li class="relative px-2 py-2">
+                                                                            <button
+                                                                                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                {$ban.delete_link}
+                                                                            </button>
+                                                                        </li>
+                                                                    {/if}
+                                                                </ul>
+                                                            </aside>
                                                         </div>
                                                     </td>
                                                 {else}
@@ -250,8 +259,7 @@
                                                                     </button>
                                                                 </li>
                                                             </ul>
-                                                            </aside>
-                                                            </div>
+                                                        </div>
                                                     </td>
                                                 {/if}
                                                 <!-- ###############[ End Admin Controls ]##################### -->
@@ -260,7 +268,9 @@
                                                 <td class="px-4">Steam ID</td>
                                                 <td class="px-4">
                                                     {if empty($ban.steamid)}
-                                                        <i><font color="#677882">No Steam ID present</font></i>
+                                                        <i>
+                                                            <font color="#677882">No Steam ID present</font>
+                                                        </i>
                                                     {else}
                                                         {$ban.steamid}
                                                     {/if}
@@ -270,7 +280,9 @@
                                                 <td class="px-4">Steam3 ID</td>
                                                 <td class="px-4">
                                                     {if empty($ban.steamid)}
-                                                        <i><font color="#677882">No Steam3 ID present</font></i>
+                                                        <i>
+                                                            <font color="#677882">No Steam3 ID present</font>
+                                                        </i>
                                                     {else}
                                                         <a href="http://steamcommunity.com/profiles/{$ban.steamid3}"
                                                             target="_blank">{$ban.steamid3}</a>
@@ -282,7 +294,9 @@
                                                     <td class="px-4">Steam Community</td>
                                                     <td class="px-4">
                                                         {if empty($ban.steamid)}
-                                                            <i><font color="#677882">No Steam Community ID present</font></i>
+                                                            <i>
+                                                                <font color="#677882">No Steam Community ID present</font>
+                                                            </i>
                                                         {else}
                                                             <a href="http://steamcommunity.com/profiles/{$ban.communityid}"
                                                                 target="_blank">{$ban.communityid}</a>
@@ -295,7 +309,9 @@
                                                     <td class="px-4">IP address</td>
                                                     <td class="flex px-4 items-center">
                                                         {if $ban.ip == "none"}
-                                                            <i><font color="#677882">no IP address present</font></i>
+                                                            <i>
+                                                                <font color="#677882">no IP address present</font>
+                                                            </i>
                                                         {else}
                                                             {$ban.ip}
                                                         {/if}
@@ -315,7 +331,9 @@
                                                     <td class="px-4">Unban reason</td>
                                                     <td class="px-4">
                                                         {if $ban.ureason == ""}
-                                                            <i><font color="#677882">no reason present</font></i>
+                                                            <i>
+                                                                <font color="#677882">no reason present</font>
+                                                            </i>
                                                         {else}
                                                             {$ban.ureason}
                                                         {/if}
@@ -327,7 +345,9 @@
                                                         {if !empty($ban.removedby)}
                                                             {$ban.removedby|escape:'html'}
                                                         {else}
-                                                            <i><font color="#677882">Admin deleted.</font></i>
+                                                            <i>
+                                                                <font color="#677882">Admin deleted.</font>
+                                                            </i>
                                                         {/if}
                                                     </td>
                                                 </tr>
@@ -336,7 +356,9 @@
                                                 <td class="px-4">Expires on</td>
                                                 <td class="px-4">
                                                     {if $ban.expires == "never"}
-                                                        <i><font color="#677882">Not applicable.</font></i>
+                                                        <i>
+                                                            <font color="#677882">Not applicable.</font>
+                                                        </i>
                                                     {else}
                                                         {$ban.expires}
                                                     {/if}
@@ -353,7 +375,9 @@
                                                         {if !empty($ban.admin)}
                                                             {$ban.admin|escape:'html'}
                                                         {else}
-                                                            <i><font color="#677882">Admin deleted.</font></i>
+                                                            <i>
+                                                                <font color="#677882">Admin deleted.</font>
+                                                            </i>
                                                         {/if}
                                                     </td>
                                                 </tr>
@@ -391,7 +415,9 @@
                                                                 {foreach from=$ban.commentdata item=commenta}
                                                                     {if $commenta.morecom}
                                                                         <tr>
-                                                                            <td colspan='3'><hr></td>
+                                                                            <td colspan='3'>
+                                                                                <hr>
+                                                                            </td>
                                                                         </tr>
                                                                     {/if}
                                                                     <tr>
@@ -399,7 +425,9 @@
                                                                             {if !empty($commenta.comname)}
                                                                                 <b>{$commenta.comname|escape:'html'}</b>
                                                                             {else}
-                                                                                <i><font color="#677882">Admin deleted</font></i>
+                                                                                <i>
+                                                                                    <font color="#677882">Admin deleted</font>
+                                                                                </i>
                                                                             {/if}
                                                                         </td>
                                                                         <td align="right">
@@ -415,16 +443,18 @@
                                                                         <td colspan='3'>{$commenta.commenttxt}</td>
                                                                     </tr>
                                                                     {if !empty($commenta.edittime)}
-                                                                    <tr>
-                                                                        <td colspan='3'>
-                                                                            <span style="font-size:6pt;color:grey;">last edit
-                                                                                {$commenta.edittime} by
-                                                                                {if !empty($commenta.editname)}{$commenta.editname}
-                                                                                {else}<i><font color="#677882">Admin deleted</font></i>
-                                                                                {/if}
-                                                                            </span>
-                                                                        </td>
-                                                                    </tr>
+                                                                        <tr>
+                                                                            <td colspan='3'>
+                                                                                <span style="font-size:6pt;color:grey;">last edit
+                                                                                    {$commenta.edittime} by
+                                                                                    {if !empty($commenta.editname)}{$commenta.editname}
+                                                                                    {else}<i>
+                                                                                            <font color="#677882">Admin deleted</font>
+                                                                                        </i>
+                                                                                    {/if}
+                                                                                </span>
+                                                                            </td>
+                                                                        </tr>
                                                                     {/if}
                                                                 {/foreach}
                                                             </table>
