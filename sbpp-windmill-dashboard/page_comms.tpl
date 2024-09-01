@@ -162,7 +162,7 @@
                                                         <div class="ban-edit">
                                                             <aside
                                                                 class="w-full rounded-lg border-2 border-purple-600 p-4 mt-16 max-w-sm mx-auto">
-                                                                <ul class="mt-6">
+                                                                <ul>
                                                                     {if isset($ban.unbanned) && $ban.reban_link != false}
                                                                         <li class="relative px-2 py-2">
                                                                             <button
