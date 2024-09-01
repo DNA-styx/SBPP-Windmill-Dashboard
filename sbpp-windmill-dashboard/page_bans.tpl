@@ -68,7 +68,7 @@
         <div class="flex items-center text-gray-600 dark:text-gray-400">
             <span>
                 <a href="index.php?p=banlist&hideinactive={if $hidetext == 'Hide'}true{else}false{/if}{$searchlink|smarty_htmlspecialchars}"
-                    title="{$hidetext} inactive">{$hidetext} inactive</a> | <i>Total Bans: {$total_bans}</i>
+                    rel="nofollow" title="{$hidetext} inactive">{$hidetext} inactive</a> | <i>Total Bans: {$total_bans}</i>
             </span>
         </div>
     </div>
@@ -150,7 +150,7 @@
                                             <tr>
                                                 <td class="px-4 py-3" colspan="3"><b>Ban Details</b></td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Player</td>
                                                 <td class="px-4">
                                                     {if empty($ban.player)}
@@ -163,28 +163,29 @@
                                                 {if $view_bans}
                                                     <td rowspan="{if $ban.unbanned}15{else}13{/if}" class="opener">
                                                         <div class="ban-edit">
-                                                            <ul>
+                                                        <aside class="w-full rounded-lg border-2 border-purple-600 p-4 mt-16 max-w-sm mx-auto">    
+                                                        <ul>
                                                                 {if $ban.unbanned && $ban.reban_link != false}
-                                                                    <li>
+                                                                    <li class="relative px-2 py-2">
                                                                         <button
                                                                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                             {$ban.reban_link}
                                                                         </button>
                                                                     </li>
                                                                 {/if}
-                                                                <li>
+                                                                <li class="relative px-2 py-2">
                                                                     <button
                                                                         class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                         {$ban.blockcomm_link}
                                                                     </button>
                                                                 </li>
-                                                                <li>
+                                                                <li class="relative px-2 py-2">
                                                                     <button
                                                                         class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                         {$ban.demo_link}
                                                                     </button>
                                                                 </li>
-                                                                <li>
+                                                                <li class="relative px-2 py-2">
                                                                     <button
                                                                         class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                         {$ban.addcomment}
@@ -193,7 +194,7 @@
 
                                                                 {if $ban.type == 0}
                                                                     {if $groupban}
-                                                                        <li>
+                                                                        <li class="relative px-2 py-2">
                                                                             <button
                                                                                 class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                                 {$ban.groups_link}
@@ -201,7 +202,7 @@
                                                                         </li>
                                                                     {/if}
                                                                     {if $friendsban}
-                                                                        <li>
+                                                                        <li class="relative px-2 py-2">
                                                                             <button
                                                                                 class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                                 {$ban.friend_ban_link}
@@ -210,7 +211,7 @@
                                                                     {/if}
                                                                 {/if}
                                                                 {if ($ban.view_edit && !$ban.unbanned)}
-                                                                    <li>
+                                                                    <li class="relative px-2 py-2">
                                                                         <button
                                                                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                             {$ban.edit_link}
@@ -219,7 +220,7 @@
 
                                                                 {/if}
                                                                 {if ($ban.unbanned == false && $ban.view_unban)}
-                                                                    <li>
+                                                                    <li class="relative px-2 py-2">
                                                                         <button
                                                                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                             {$ban.unban_link}
@@ -227,7 +228,7 @@
                                                                     </li>
                                                                 {/if}
                                                                 {if $ban.view_delete}
-                                                                    <li>
+                                                                    <li class="relative px-2 py-2">
                                                                         <button
                                                                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                             {$ban.delete_link}
@@ -249,12 +250,13 @@
                                                                     </button>
                                                                 </li>
                                                             </ul>
-                                                        </div>
+                                                            </aside>
+                                                            </div>
                                                     </td>
                                                 {/if}
                                                 <!-- ###############[ End Admin Controls ]##################### -->
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Steam ID</td>
                                                 <td class="px-4">
                                                     {if empty($ban.steamid)}
@@ -264,7 +266,7 @@
                                                     {/if}
                                                 </td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Steam3 ID</td>
                                                 <td class="px-4">
                                                     {if empty($ban.steamid)}
@@ -276,7 +278,7 @@
                                                 </td>
                                             </tr>
                                             {if $ban.type == 0}
-                                                <tr align="left">
+                                                <tr>
                                                     <td class="px-4">Steam Community</td>
                                                     <td class="px-4">
                                                         {if empty($ban.steamid)}
@@ -289,7 +291,7 @@
                                                 </tr>
                                             {/if}
                                             {if !$hideplayerips}
-                                                <tr align="left">
+                                                <tr>
                                                     <td class="px-4">IP address</td>
                                                     <td class="flex px-4 items-center">
                                                         {if $ban.ip == "none"}
@@ -300,16 +302,16 @@
                                                     </td>
                                                 </tr>
                                             {/if}
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Invoked on</td>
                                                 <td class="px-4">{$ban.ban_date}</td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Banlength</td>
                                                 <td class="px-4">{$ban.banlength}</td>
                                             </tr>
                                             {if $ban.unbanned}
-                                                <tr align="left">
+                                                <tr>
                                                     <td class="px-4">Unban reason</td>
                                                     <td class="px-4">
                                                         {if $ban.ureason == ""}
@@ -319,7 +321,7 @@
                                                         {/if}
                                                     </td>
                                                 </tr>
-                                                <tr align="left">
+                                                <tr>
                                                     <td class="px-4">Unbanned by Admin</td>
                                                     <td class="px-4">
                                                         {if !empty($ban.removedby)}
@@ -330,7 +332,7 @@
                                                     </td>
                                                 </tr>
                                             {/if}
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Expires on</td>
                                                 <td class="px-4">
                                                     {if $ban.expires == "never"}
@@ -340,12 +342,12 @@
                                                     {/if}
                                                 </td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Reason</td>
                                                 <td class="px-4">{$ban.reason|escape:'html'}</td>
                                             </tr>
                                             {if !$hideadminname}
-                                                <tr align="left">
+                                                <tr>
                                                     <td class="px-4">Banned by Admin</td>
                                                     <td class="px-4">
                                                         {if !empty($ban.admin)}
@@ -356,7 +358,7 @@
                                                     </td>
                                                 </tr>
                                             {/if}
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Banned from</td>
                                                 <td class="px-4" {if $ban.server_id != 0} id="host_{$ban.ban_id}" {/if}>
                                                     {if $ban.server_id == 0}
@@ -366,11 +368,11 @@
                                                     {/if}
                                                 </td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Total Bans</td>
                                                 <td class="px-4">{$ban.prevoff_link}</td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Blocked ({$ban.blockcount})</td>
                                                 <td class="px-4">
                                                     {if $ban.banlog == ""}
@@ -381,7 +383,7 @@
                                                 </td>
                                             </tr>
                                             {if $view_comments}
-                                                <tr align="left">
+                                                <tr>
                                                     <td class="px-4">Comments</td>
                                                     <td class="px-4" colspan="2">
                                                         {if $ban.commentdata != "None"}
