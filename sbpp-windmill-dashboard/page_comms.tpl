@@ -68,7 +68,7 @@
         <div class="flex items-center text-gray-600 dark:text-gray-400">
             <span>
                 <a href="index.php?p=commslist&hideinactive={if $hidetext == 'Hide'}true{else}false{/if}{$searchlink|smarty_htmlspecialchars}"
-                    title="{$hidetext} inactive">{$hidetext} inactive</a> | <i>Total Blocks: {$total_bans}</i>
+                    rel="nofollow" title="{$hidetext} inactive">{$hidetext} inactive</a> | <i>Total Blocks: {$total_bans}</i>
             </span>
         </div>
     </div>
@@ -158,23 +158,23 @@
                                                     <td width="30%" rowspan="{if isset($ban.unbanned)}13{else}11{/if}"
                                                         class="listtable_2 opener">
                                                         <div class="ban-edit">
-                                                            <ul>
+                                                            <ul class="mt-6">
                                                                 {if isset($ban.unbanned) && $ban.reban_link != false}
-                                                                    <li>
+                                                                    <li class="relative px-2 py-2">
                                                                         <button
                                                                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                             {$ban.reban_link}
                                                                         </button>
                                                                     </li>
                                                                 {/if}
-                                                                <li>
+                                                                <li class="relative px-2 py-2">
                                                                     <button
                                                                         class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                         {$ban.addcomment}
                                                                     </button>
                                                                 </li>
                                                                 {if ($ban.view_edit && (!isset($ban.unbanned) || !$ban.unbanned))}
-                                                                    <li>
+                                                                    <li class="relative px-2 py-2">
                                                                         <button
                                                                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                             {$ban.edit_link}
@@ -182,7 +182,7 @@
                                                                     </li>
                                                                 {/if}
                                                                 {if isset($ban.unbanned) && ($ban.unbanned == false && $ban.view_unban)}
-                                                                    <li>
+                                                                    <li class="relative px-2 py-2">
                                                                         <button
                                                                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                             {$ban.unban_link}
@@ -190,7 +190,7 @@
                                                                     </li>
                                                                 {/if}
                                                                 {if $ban.view_delete}
-                                                                    <li>
+                                                                    <li class="relative px-2 py-2">
                                                                         <button
                                                                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                                                             {$ban.delete_link}
