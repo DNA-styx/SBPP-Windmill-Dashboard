@@ -17,9 +17,9 @@
                     <div class="text-xs text-gray-600 dark:text-gray-400">
                         This is the IP address or hostname of your server.
                     </div>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="address.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="address.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block mt-4 text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Server Port</span>
@@ -30,9 +30,9 @@
                     <div class="text-xs text-gray-600 dark:text-gray-400">
                         This is the port that the server is running off. <i>Default: 27015</i>
                     </div>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="port.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="port.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block mt-4 text-sm">
                         <span class="text-gray-700 dark:text-gray-400">RCON Password</span>
@@ -45,9 +45,9 @@
                         <i>rcon_password</i>. This
                         will be used to allow admins to administrate the server though the web interface.
                     </div>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="rcon.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="rcon.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block mt-4 text-sm">
                         <span class="text-gray-700 dark:text-gray-400">RCON Password (Confirm)</span>
@@ -58,9 +58,9 @@
                     <div class="text-xs text-gray-600 dark:text-gray-400">
                         Please re-type your rcon password to avoid 'typos'.
                     </div>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="rcon2.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="rcon2.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block mt-4 text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Server MOD</span>
@@ -77,9 +77,9 @@
                     <div class="text-xs text-gray-600 dark:text-gray-400">
                         Select the mod that your server is currently running.
                     </div>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="mod.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="mod.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block mt-4 text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Enabled?</span>
@@ -89,9 +89,9 @@
                     <div class="text-xs text-gray-600 dark:text-gray-400">
                         Enables the server to be shown on the public servers list.
                     </div>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="enabled.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="enabled.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block mt-4 text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Server Groups</span>
@@ -107,9 +107,9 @@
                         Choose the groups to add this server to. Server groups are used for adding admins to specific sets
                         of servers.
                     </div>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="loginPassword.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="loginPassword.msg" class="badentry"></span>
+                    </div>
 
                     <div>
                         <span class="flex items-center">
