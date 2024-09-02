@@ -32,8 +32,10 @@ color: #9CA3AF; ">
 		Plese select the file to upload. The file must either be {$formats} file format.
 	</div>
 	<br>
-
+	<div style="color: #FF0000;">
 	<b>{$message}</b>
+	</div>
+	
 	<form action="" method="POST" id="{$form_name}" enctype="multipart/form-data">
 		<input name="upload" value="1" type="hidden">
 		<input name="{$input_name}" size="25" class="submit-fields" type="file" style="font-size: 0.75rem;
