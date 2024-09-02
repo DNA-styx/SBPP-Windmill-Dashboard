@@ -1,13 +1,12 @@
 <!-- Start submit ban page -->
 <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-  <p class="text-gray-600 dark:text-gray-400">
+  <p class="mb-8 text-gray-600 dark:text-gray-400">
     In order to keep our servers running smoothly, offenders of our rules should be punished and we can't always be on
     call to help.<br>When submitting a player report, we ask you to fill out the report as detailed
     as possible as this will help us process your report quickly.<br>If you are unsure on how to record
     evidence within in-game, please <a class="font-semibold" href="#" @click="openModal">click here</a> for an
     explanation.
   </p>
-  <br>
   <form action="index.php?p=submit" method="post" enctype="multipart/form-data">
     <input type="hidden" name="subban" value="1">
     <table class="block text-sm">
@@ -99,8 +98,7 @@
       </tr>
     </table>
   </form>
-  <br>
-  <p class="text-gray-600 dark:text-gray-400">
+  <p class="mt-8 text-gray-600 dark:text-gray-400">
     <b>What happens if someone gets banned?</b><br>
     If someone you reported gets banned, the SteamID or IP will be included onto the ban on the main bans list and
     everytime they try to connect to any server they will be blocked from joining and it will be logged into our
