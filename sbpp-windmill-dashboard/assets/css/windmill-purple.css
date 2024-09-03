@@ -1,0 +1,24 @@
+/* Default Purple */
+
+.windmill-title {
+    color: #EDE9FE; 
+    background-color: #7C3AED; 
+}
+.windmill-button {
+    color: #EDE9FE; 
+    background-color: #7C3AED;
+    transition: background-color 0.5s; 
+}
+/* Make this a lighter colour */ 
+.windmill-button:hover {
+    background-color: #6D28D9; 
+}
+.windmill-header-icons {
+    color: #7C3AED; 
+}
+windmill-header-icons:focus {
+    color: #6D28D9; 
+}
+windmill-header-icons:hover {
+    color: #6D28D9; 
+}

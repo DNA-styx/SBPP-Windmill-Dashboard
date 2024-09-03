@@ -26,7 +26,7 @@
             <td class="px-4 py-3 text-sm" id="map_{$server.sid}">N/A</td>
             <td class="hidden md:block px-4 py-3 text-sm">
               <button type="button"
-                class="hidden md:block px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                class="windmill-button hidden md:block px-4 py-2 text-sm font-medium leading-5 transition-colors duration-150 border border-transparent rounded-lg"
                 onclick="location.href='steam://connect/{$server.ip}:{$server.port}'">
                 Connect
               </button>

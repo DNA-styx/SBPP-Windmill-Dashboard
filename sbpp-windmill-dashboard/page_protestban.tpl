@@ -64,7 +64,7 @@
             <tr>
                 <td>
                     <span class="text-gray-700 dark:text-gray-400">* = Mandatory Field</span>
-                    {sb_button text=Submit class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id=alogin submit=true}
+                    {sb_button text=Submit class="windmill-button ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center border border-transparent rounded-lg" id=alogin submit=true}
                 </td>
             </tr>
         </table>

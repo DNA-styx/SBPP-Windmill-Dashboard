@@ -120,9 +120,9 @@
         <div class="flex flex-col flex-1 w-full">
             <header class="z-10 py-4 bg-white shadow-md dark:bg-gray-800">
                 <div
-                    class="container flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300">
+                    class="windmill-header-icons container flex items-center justify-between h-full px-6 mx-auto">
                     <!-- Mobile hamburger -->
-                    <button class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
+                    <button class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none"
                         @click="toggleSideMenu" aria-label="Menu">
                         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
@@ -168,7 +168,7 @@
                     <ul class="flex items-center flex-shrink-0 space-x-6">
                         <!-- Theme toggler -->
                         <li class="flex">
-                            <button class="rounded-md focus:outline-none focus:shadow-outline-purple"
+                            <button class="rounded-md focus:outline-none"
                                 @click="toggleTheme" aria-label="Toggle color mode">
                                 <template x-if="!dark">
                                     <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
@@ -189,7 +189,7 @@
                         <!-- Links menu -->
                         <li class="relative">
                             <button
-                                class="relative align-middle rounded-md focus:outline-none focus:shadow-outline-purple"
+                                class="relative align-middle rounded-md focus:outline-none"
                                 @click="toggleNotificationsMenu" @keydown.escape="closeNotificationsMenu"
                                 aria-label="Notifications" aria-haspopup="true">
                                 Links

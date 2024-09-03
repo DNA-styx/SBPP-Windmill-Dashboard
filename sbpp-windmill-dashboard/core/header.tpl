@@ -18,6 +18,10 @@
   <!-- .css taken from main.css -->
   <link href="themes/{$theme}/assets/css/sbpp-windmill-dashboard.css" rel="stylesheet" type="text/css">
   
+  <!-- Custom colours -->
+  <link href="themes/{$theme}/assets/css/windmill-purple.css" rel="stylesheet" type="text/css">
+  
+
   <!-- Windmill default JS and CSS -->
   <!-- You need focus-trap.js to make the default Windmill modal accessible
   <script src="themes/{$theme}/assets/js/focus-trap.js" defer></script>  -->
