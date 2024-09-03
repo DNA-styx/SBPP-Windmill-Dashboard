@@ -1,4 +1,8 @@
-/* Default Purple for Public Pages */
+/*  Custom Colors for Public Pages  */
+
+/*  Rename this file to windmill-custom.css
+    ,update it with your custom colors
+    and uncomment it out in header.tpl      */
 
 .windmill-title {
     color: #EDE9FE; 
