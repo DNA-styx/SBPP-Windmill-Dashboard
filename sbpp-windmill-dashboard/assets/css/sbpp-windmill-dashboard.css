@@ -147,7 +147,8 @@ body {
     scrollbar-color: #4b5563 #1f2937;
   }
 
-/** ======= Admin Tabs ======= **/
+/** ==================== Admin Tabs ==================== **/
+/** Credit: https://codepen.io/ekscentrysytet/pen/QbNdEB **/
   .tabinator input {
     display: none;
   }
