@@ -9,12 +9,11 @@
     background-color: #4c1a1a;
     transition: background-color 0.5s; 
 }
+.windmill-button:hover {
+    background-color: #C4A484; 
+}
 .btn {
     color: #EDE9FE; 
     background-color: #4c1a1a;
     transition: background-color 0.5s; 
-}
-/* Make this a lighter color */ 
-.windmill-button:hover {
-    background-color: #C4A484; 
 }
