@@ -180,9 +180,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Click this button, to clean the cache folder.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="clearcache.msg"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="clearcache.msg"></span>
+                </div>
 
                 <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Banlist Settings</h4>
 
@@ -195,9 +195,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Choose how many items to show on each page.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="bansperpage.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="bansperpage.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Hide Admin Name</span>
@@ -207,9 +207,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Check this box, if you want to hide the name of the admin in the baninfo.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="banlist_hideadmname.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="banlist_hideadmname.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">No Country Research</span>
@@ -220,9 +220,9 @@
                     Check this box, if you don't want to display the country out of an IP in the banlist. Use if you
                     encounter display problems.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="banlist_nocountryfetch.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="banlist_nocountryfetch.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Hide Player IP</span>
@@ -232,9 +232,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Check this box, if you want to hide the player IP from the public.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="banlist_hideplayerips.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="banlist_hideplayerips.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Custom Banreasons</span>
@@ -265,9 +265,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Type the custom banreasons you want to appear in the dropdown menu.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="bans_customreason.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="bans_customreason.msg" class="badentry"></span>
+                </div>
 
                 <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Mail Settings</h4>
 
@@ -279,9 +279,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Outgoing SMTP server, hostname or IP address.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="mailhost.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="mailhost.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Email User</span>
@@ -291,9 +291,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Username for account allowed to send though SMTP server.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="mail_user.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="mail_user.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Email Password</span>
@@ -303,9 +303,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Password for account allowed to send though SMTP server.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="mail_pass.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="mail_pass.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">SMTP Port</span>
@@ -315,9 +315,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Port used by SMTP server. Common ports include 25, 465, 587, and 2525.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="mail_port.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="mail_port.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Cert verify</span>
@@ -327,9 +327,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Require verification of SSL certificate used.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="mail_verify_peer.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="mail_verify_peer.msg" class="badentry"></span>
+                </div>
 
                 <span>
                     {sb_button text="Save Changes" id="asettings" submit=true class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
