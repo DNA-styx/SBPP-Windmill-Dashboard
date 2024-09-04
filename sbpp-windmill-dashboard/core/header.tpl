@@ -9,9 +9,9 @@
   <!-- Start of custom colour options -->
   <!-- Ensure only one of the following css files are active  -->
   <!-- Comment out all the others -->  
-  <!-- <link href="themes/{$theme}/assets/css/windmill-purple.css" rel="stylesheet" type="text/css"> -->
+  <link href="themes/{$theme}/assets/css/windmill-purple.css" rel="stylesheet" type="text/css">
+  <!-- <link href="themes/{$theme}/assets/css/windmill-dark-red.css" rel="stylesheet" type="text/css"> -->
   <!--  <link href="themes/{$theme}/assets/css/windmill-custom.css" rel="stylesheet" type="text/css"> -->
-  <link href="themes/{$theme}/assets/css/windmill-dark-red.css" rel="stylesheet" type="text/css">
   <!-- End of Custom colours -->
 
   <!-- SB++ default JS -->
