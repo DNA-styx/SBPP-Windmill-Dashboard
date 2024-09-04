@@ -210,7 +210,7 @@
                         {/if}
                         <tr>
                             <td colspan="4">
-                                {sb_button text="Search" onclick="search_blocks();" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="searchbtn" submit=false}
+                                {sb_button text="Search" onclick="search_blocks();" class="windmill-button ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none" id="searchbtn" submit=false}
                             </td>
                         </tr>
                     </table>

@@ -4,7 +4,7 @@
     ,update it with your custom colors
     and uncomment it out in header.tpl      */
 
-.windmill-title {
+.windmill-title-bar {
     color: #EDE9FE; 
     background-color: #7C3AED; 
 }
@@ -13,17 +13,12 @@
     background-color: #7C3AED;
     transition: background-color 0.5s; 
 }
+.btn {
+    color: #EDE9FE; 
+    background-color: #7C3AED;
+    transition: background-color 0.5s; 
+}
 /* Make this a lighter color */ 
 .windmill-button:hover {
     background-color: #6D28D9; 
-}
-.windmill-header-icons {
-    color: #7C3AED; 
-}
-/* Make these a lighter color */
-windmill-header-icons:focus {
-    color: #6D28D9; 
-}
-windmill-header-icons:hover {
-    color: #6D28D9; 
 }

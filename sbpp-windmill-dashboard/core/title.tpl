@@ -4,7 +4,7 @@
   <div class="container px-6 mx-auto grid">
     <!-- Start title -->
     <div
-      class="windmill-title flex items-center justify-between p-4 mt-8 mb-8 text-xl font-semibold rounded-lg shadow-md">
+      class="windmill-title-bar flex items-center justify-between p-4 mt-8 mb-8 text-xl font-semibold rounded-lg shadow-md">
       <div class="flex items-center">{$title}</div>
     </div>
     <!-- End title -->

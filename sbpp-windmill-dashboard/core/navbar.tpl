@@ -120,9 +120,9 @@
         <div class="flex flex-col flex-1 w-full">
             <header class="z-10 py-4 bg-white shadow-md dark:bg-gray-800">
                 <div
-                    class="windmill-header-icons container flex items-center justify-between h-full px-6 mx-auto">
+                    class="container flex items-center justify-between h-full px-6 mx-auto">
                     <!-- Mobile hamburger -->
-                    <button class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none"
+                    <button class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
                         @click="toggleSideMenu" aria-label="Menu">
                         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
@@ -136,8 +136,8 @@
                     <div class="hidden md:block">
                         <div class="flex justify-center flex-1 lg:mr-32">
                             <form action="index.php" method="GET">
-                                <div class="relative w-full max-w-xl mr-6 focus-within:text-purple-500">
-                                    <div class="absolute inset-y-0 flex items-center pl-2">
+                                <div class="relative w-full max-w-xl mr-6">
+                                    <div class="absolute inset-y-0 flex items-center pl-2 text-gray-500 dark:text-gray-400">
                                         <i class="fas fa-search"></i>
                                     </div>
                                     <input type="hidden" id="comms_search" name="Submit" value="comms_search">
@@ -152,8 +152,8 @@
 
                     <div class="flex justify-center flex-1 lg:mr-32">
                         <form action="index.php" method="GET">
-                            <div class="relative w-full max-w-xl mr-6 focus-within:text-purple-500">
-                                <div class="absolute inset-y-0 flex items-center pl-2">
+                            <div class="relative w-full max-w-xl mr-6">
+                                <div class="absolute inset-y-0 flex items-center pl-2 text-gray-500 dark:text-gray-400">
                                     <i class="fas fa-search"></i>
                                 </div>
                                 <input type="hidden" id="bans_search" name="Submit" value="bans_search">
@@ -168,7 +168,7 @@
                     <ul class="flex items-center flex-shrink-0 space-x-6">
                         <!-- Theme toggler -->
                         <li class="flex">
-                            <button class="rounded-md focus:outline-none"
+                            <button class="rounded-md focus:outline-none text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
                                 @click="toggleTheme" aria-label="Toggle color mode">
                                 <template x-if="!dark">
                                     <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
@@ -189,7 +189,7 @@
                         <!-- Links menu -->
                         <li class="relative">
                             <button
-                                class="relative align-middle rounded-md focus:outline-none"
+                                class="relative align-middle rounded-md focus:outline-none text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
                                 @click="toggleNotificationsMenu" @keydown.escape="closeNotificationsMenu"
                                 aria-label="Notifications" aria-haspopup="true">
                                 Links

@@ -1,20 +1,20 @@
-/* Default Purple for Public Pages */
+/* Dark Red Theme for Public Pages */
 
 .windmill-title-bar {
     color: #EDE9FE; 
-    background-color: #7C3AED; 
+    background-color: #4c1a1a; 
 }
 .windmill-button {
     color: #EDE9FE; 
-    background-color: #7C3AED;
+    background-color: #4c1a1a;
     transition: background-color 0.5s; 
 }
 .btn {
     color: #EDE9FE; 
-    background-color: #7C3AED;
+    background-color: #4c1a1a;
     transition: background-color 0.5s; 
 }
 /* Make this a lighter color */ 
 .windmill-button:hover {
-    background-color: #6D28D9; 
+    background-color: #C4A484; 
 }

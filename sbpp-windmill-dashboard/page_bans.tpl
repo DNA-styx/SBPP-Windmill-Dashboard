@@ -176,26 +176,26 @@
                                                                     {if $ban.unbanned && $ban.reban_link != false}
                                                                         <li class="relative px-2 py-2">
                                                                             <button
-                                                                                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                class="windmill-button px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none">
                                                                                 {$ban.reban_link}
                                                                             </button>
                                                                         </li>
                                                                     {/if}
                                                                     <li class="relative px-2 py-2">
                                                                         <button
-                                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                            class="windmill-button px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none">
                                                                             {$ban.blockcomm_link}
                                                                         </button>
                                                                     </li>
                                                                     <li class="relative px-2 py-2">
                                                                         <button
-                                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                            class="windmill-button px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none">
                                                                             {$ban.demo_link}
                                                                         </button>
                                                                     </li>
                                                                     <li class="relative px-2 py-2">
                                                                         <button
-                                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                            class="windmill-button px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none">
                                                                             {$ban.addcomment}
                                                                         </button>
                                                                     </li>
@@ -204,7 +204,7 @@
                                                                         {if $groupban}
                                                                             <li class="relative px-2 py-2">
                                                                                 <button
-                                                                                    class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                    class="windmill-button px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none">
                                                                                     {$ban.groups_link}
                                                                                 </button>
                                                                             </li>
@@ -212,7 +212,7 @@
                                                                         {if $friendsban}
                                                                             <li class="relative px-2 py-2">
                                                                                 <button
-                                                                                    class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                    class="windmill-button px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none">
                                                                                     {$ban.friend_ban_link}
                                                                                 </button>
                                                                             </li>
@@ -221,7 +221,7 @@
                                                                     {if ($ban.view_edit && !$ban.unbanned)}
                                                                         <li class="relative px-2 py-2">
                                                                             <button
-                                                                                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                class="windmill-button px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none">
                                                                                 {$ban.edit_link}
                                                                             </button>
                                                                         </li>
@@ -230,7 +230,7 @@
                                                                     {if ($ban.unbanned == false && $ban.view_unban)}
                                                                         <li class="relative px-2 py-2">
                                                                             <button
-                                                                                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                class="windmill-button px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none">
                                                                                 {$ban.unban_link}
                                                                             </button>
                                                                         </li>
@@ -238,7 +238,7 @@
                                                                     {if $ban.view_delete}
                                                                         <li class="relative px-2 py-2">
                                                                             <button
-                                                                                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                                class="windmill-button px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none">
                                                                                 {$ban.delete_link}
                                                                             </button>
                                                                         </li>
@@ -254,7 +254,7 @@
                                                             <ul>
                                                                 <li>
                                                                     <button
-                                                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                                                        class="windmill-button px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none">
                                                                         {$ban.demo_link}
                                                                     </button>
                                                                 </li>

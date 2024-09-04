@@ -6,22 +6,21 @@
   <title>{$title}</title>
   <link rel="Shortcut Icon" href="themes/{$theme}/assets/images/favicon.ico">
 
+  <!-- Start of custom colour options -->
+  <!-- Ensure only one of the following css files are active  -->
+  <!-- Comment out all the others -->  
+  <!-- <link href="themes/{$theme}/assets/css/windmill-purple.css" rel="stylesheet" type="text/css"> -->
+  <!--  <link href="themes/{$theme}/assets/css/windmill-custom.css" rel="stylesheet" type="text/css"> -->
+  <link href="themes/{$theme}/assets/css/windmill-dark-red.css" rel="stylesheet" type="text/css">
+  <!-- End of Custom colours -->
+
   <!-- SB++ default JS -->
   <script src="./scripts/mootools.js"></script>
   <script src="./scripts/contextMenoo.js"></script>
   <script src="./scripts/fontawesome-all.min.js"></script>
   <script src="./scripts/sourcebans.js"></script>
-
-
-  <!-- Start of custom colour options -->
-  <!-- Ensure only one of the following css files are active  -->
-  <!-- Comment out all the others -->  
-  <link href="themes/{$theme}/assets/css/windmill-purple.css" rel="stylesheet" type="text/css">
-  <!--  <link href="themes/{$theme}/assets/css/windmill-custom.css" rel="stylesheet" type="text/css"> -->
-  <!-- End of Custom colours -->
-
-
-  <!-- Required non-Tailwind CSS -->
+ 
+   <!-- Required non-Tailwind CSS -->
   <link href="themes/{$theme}/assets/css/sbpp-windmill-dashboard.css" rel="stylesheet" type="text/css">
 
   <!-- Windmill's default JS and CSS -->
