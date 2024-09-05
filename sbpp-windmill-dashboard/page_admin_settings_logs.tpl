@@ -37,12 +37,12 @@
                         <td class="px-4 py-3">{$log.date_str}</td>
                     </tr>
                     <tr>
-                        <td colspan="7" align="center">
+                        <td colspan="7">
                             <div class="opener">
                                 <table class="w-full whitespace-no-wrap">
                                     <tr
                                         class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
-                                        <td height="16" align="left" class="listtable_top" colspan="3">
+                                        <td height="16" class="listtable_top" colspan="3">
                                             <b>Event Details</b>
                                         </td>
                                     </tr>
