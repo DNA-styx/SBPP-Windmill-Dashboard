@@ -155,7 +155,7 @@
                                                 <td class="px-4">Player</td>
                                                 <td class="px-4">
                                                     {if empty($ban.player)}
-                                                        <i>no nickname present</font></i>
+                                                        <i>no nickname present</i>
                                                     {else}
                                                         {$ban.player|escape:'html'|smarty_stripslashes}
                                                     {/if}
@@ -403,7 +403,7 @@
                                                                             {if !empty($commenta.comname)}
                                                                                 <b>{$commenta.comname|escape:'html'}</b>
                                                                             {else}
-                                                                                <i>Admin deleted</font></i>
+                                                                                <i>Admin deleted</i>
                                                                             {/if}
                                                                         </td>
                                                                         <td align="right">
