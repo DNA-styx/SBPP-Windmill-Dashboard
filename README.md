@@ -78,13 +78,13 @@ SourceBans++ Theme built using the default v1.8.0 theme with Windmill Dashboard 
 ### Prerequisites
 
 * Working Sourcebans++ install 1.7.0 or higher, 1.8.0 recommended https://sbpp.github.io/
-* FTP or cpanel access to upload files to your web server
+* FTP or cpanel access to upload files to the web server running Sourcebans++
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Known issues
 
-* If text does not display on any pages not themed, switch to the light theme to make it visable and open an issue.
+* If text does not display on any pages not themed, click the sun icon theme switcher top right to make it visable and open an issue.
 
 See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a list of known issues and the todo list.
 
