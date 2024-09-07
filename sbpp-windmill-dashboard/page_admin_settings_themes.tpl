@@ -2,62 +2,24 @@
 <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
     <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
         <div class="w-full">
-            <div id="current-theme-holder mb-8">
 
-                <p class="font-bold text-gray-700 dark:text-gray-400">Selected Theme: {$theme_name}</p>
+            <div class="current-theme-holder mx-auto mt-11 w-80 transform overflow-hidden">
 
-                <table>
-                    <tr>
-                        <td>
+                <div class="object-cover transform scale-150" id="current-theme-screenshot">{$theme_screenshot}</div>
 
-                            <div id="current-theme-screenshot">
-                                {$theme_screenshot}
-                            </div>
-                        </td>
-                        <td>
-                            <div id="current-theme-details">
-                                <table>
-                                    <tr>
-                                        <td class="font-bold text-gray-700 dark:text-gray-400">Theme Author:</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div id="theme.auth" class="text-gray-700 dark:text-gray-400">
-                                                {$theme_author}</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="font-bold text-gray-700 dark:text-gray-400">Theme Version:</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div id="theme.vers" class="text-gray-700 dark:text-gray-400">
-                                                {$theme_version}</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="font-bold text-gray-700 dark:text-gray-400">Theme Link:</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div id="theme.link" class="text-gray-700 dark:text-gray-400">
-                                                <a href="{$theme_link}" target="_new">{$theme_link}
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="right">
-                                            <div id="theme.apply"></div>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-
-                        </td>
-                    </tr>
-                </table>
-
+                <div id="current-theme-details" class="p-4 text-gray-700 dark:text-gray-400">
+                    <h2 class="mb-2 text-lg font-semibold text-gray-700 dark:text-gray-400">Selected Theme:
+                        {$theme_name}</h2>
+                    <p>
+                        <span class="font-semibold">Theme Author:</span> <span id="theme.auth">{$theme_author}</span>
+                    </p>
+                    <p>
+                        <span class="font-semibold">Theme Version:</span> <span id="theme.vers">{$theme_version}</span>
+                    </p>
+                    <p>
+                        <span class="font-semibold">Theme Link:</span> <span id="theme.link"><a href="{$theme_link}">{$theme_link}</a></span>
+                    </p>
+                </div>
             </div>
 
             <p class="font-bold text-gray-700 dark:text-gray-400">Available Themes</p>
@@ -73,6 +35,7 @@
                     {/foreach}
                 </ul>
             </div>
+            <p><span id="theme.apply"></span></p>
         </div>
     </div>
 </div>
