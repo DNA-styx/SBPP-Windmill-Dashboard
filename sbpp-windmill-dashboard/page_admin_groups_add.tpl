@@ -14,9 +14,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Type the name of the new group you want to create.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="name.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="name.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Group Type</span>
@@ -32,9 +32,9 @@
                     This defines the type of group you are about to create. This helps identify and catagorize the groups
                     list.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="type.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="type.msg" class="badentry"></span>
+                </div>
 
                 <table>
                     <tr
