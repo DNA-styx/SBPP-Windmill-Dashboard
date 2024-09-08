@@ -21,23 +21,13 @@
           {foreach from=$mod_list item="mod" name="gaben"}
             <!-- start row -->
             <tr id="mid_{$mod.mid}" class="text-gray-700 dark:text-gray-400">
-              <td class="px-4 py-3 text-sm">
-                {$mod.name|smarty_htmlspecialchars}
-              </td>
-              <td class="px-4 py-3 text-sm">
-                {$mod.modfolder|smarty_htmlspecialchars}
-              </td>
-              <td class="px-4 py-3">
-                <img src="images/games/{$mod.icon}">
-              </td>
-              <td class="px-4 py-3 text-sm">
-                {$mod.steam_universe|smarty_htmlspecialchars}
-              </td>
+              <td class="px-4 py-3 text-sm">{$mod.name|smarty_htmlspecialchars}</td>
+              <td class="px-4 py-3 text-sm">{$mod.modfolder|smarty_htmlspecialchars}</td>
+              <td class="px-4 py-3"><img src="images/games/{$mod.icon}"></td>
+              <td class="px-4 py-3 text-sm">{$mod.steam_universe|smarty_htmlspecialchars}</td>
               {if $permission_editmods || $permission_deletemods}
                 <td class="px-4 py-3">
-                  <div class="flex items-center space-x-4 text-s">
-                    {if $permission_editmods}
-                      <button
+                  <div class="flex items-center space-x-4 text-s">{if $permission_editmods}<button
                         class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
                         aria-label="Edit" onclick="location.href='index.php?p=admin&c=mods&o=edit&id={$mod.mid}';">
                         <i class="fas fa-pencil-alt"></i>
