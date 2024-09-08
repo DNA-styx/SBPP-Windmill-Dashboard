@@ -35,9 +35,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Define the shortest length a password can be.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="minpasslength.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="minpasslength.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Date format</span>
@@ -99,9 +99,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Set the title for the dashboard introduction.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="dash.intro.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="dash.intro.msg" class="badentry"></span>
+                </div>
 
                 <label class="block mt-4 text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Intro Text</span>
