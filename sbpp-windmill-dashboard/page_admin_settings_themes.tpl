@@ -22,21 +22,23 @@
                 </div>
             </div>
 
+            <div class="p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:text-gray-300 dark:border-gray-700 dark:bg-gray-700">
             <p class="font-bold text-gray-700 dark:text-gray-400">Available Themes</p>
-            <span class="mb-4 text-gray-700 dark:text-gray-400">
-                Click a theme below to see details about it.
-            </span>
+            <span class="mb-4 text-gray-700 dark:text-gray-400">Click a theme below to see details about it.</span>
 
             <div id="theme-list">
                 <ul>
                     {foreach from=$theme_list item=theme}
-                        <li class="text-gray-700 dark:text-gray-400">- <a href="javascript:void(0);"
-                                onclick="javascript:xajax_SelTheme('{$theme.dir}');">{$theme.name}</a></li>
+                        <li class="flex"><a href="javascript:void(0);"
+                                class="inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md text-gray-700 dark:text-gray-400 hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200" 
+                                onclick="javascript:xajax_SelTheme('{$theme.dir}');">{$theme.name}</a>
+                        </li>
                     {/foreach}
                 </ul>
             </div>
             <p id="theme.apply"></p>
         </div>
+            </div>
     </div>
 </div>
 <!-- End Themes Page -->
