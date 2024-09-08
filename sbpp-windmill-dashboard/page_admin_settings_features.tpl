@@ -38,9 +38,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Check this box, if you want to enable banning of whole steam community groups.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="enable_groupbanning.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="enable_groupbanning.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Enable Friends Banning</span>
@@ -50,9 +50,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Check this box, if you want to enable banning all steam community friends of a player.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="enable_friendsbanning.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="enable_friendsbanning.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Enable Admin Rehashing</span>
@@ -62,9 +62,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Check this box, if you want to enable the admin rehashing everytime an admin/group has been changed.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="enable_adminrehashing.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="enable_adminrehashing.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Enable Normal Login</span>
@@ -74,9 +74,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Check this box, if you want to enable the Normal login option on the login form.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="enable_steamlogin.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="enable_steamlogin.msg" class="badentry"></span>
+                </div>
 
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Make Comments Visable to Public</span>
@@ -86,9 +86,9 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">
                     Check this box, if you want to make admin comments on bans viewable by everyone.
                 </span>
-                <span class="text-xs text-red-600 dark:text-red-400">
-                    <div id="enable_publiccomments.msg" class="badentry"></div>
-                </span>
+                <div class="text-xs text-red-600 dark:text-red-400">
+                    <span id="enable_publiccomments.msg" class="badentry"></span>
+                </div>
 
                 {sb_button text="Save Changes" id="fsettings" submit=true class="ok w-full block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" }
 
