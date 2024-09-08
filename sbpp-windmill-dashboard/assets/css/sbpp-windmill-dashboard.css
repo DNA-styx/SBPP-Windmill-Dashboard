@@ -127,10 +127,10 @@ div.contextmenu .separator {
 hr {
     border: 1px solid #ddd;
 }
-*/
+
 
 /** ==== Admin Pages? ====**/ 
-
+/*
 #admin-page-menu > a {
     display: block;
 }
@@ -142,12 +142,12 @@ hr {
 .tabcontent:first-of-type {
     display: block;
 }
-
+*/
 /* Scroll bar */
 body {
     scrollbar-color: #4b5563 #1f2937;
   }
-/* Stop content moving when there is scrollbar */
+/* Stop content moving when there is scrollbar
 main {
     scrollbar-gutter: stable;
 }
