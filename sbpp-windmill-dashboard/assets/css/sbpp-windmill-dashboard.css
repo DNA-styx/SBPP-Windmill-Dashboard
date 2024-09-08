@@ -129,8 +129,8 @@ hr {
 }
 
 
-/** ==== Admin Pages? ====**/ 
-/*
+/** ==== Admin Parent Tabs  ====**/ 
+
 #admin-page-menu > a {
     display: block;
 }
@@ -142,7 +142,7 @@ hr {
 .tabcontent:first-of-type {
     display: block;
 }
-*/
+
 /* Scroll bar */
 body {
     scrollbar-color: #4b5563 #1f2937;
@@ -152,7 +152,7 @@ main {
     scrollbar-gutter: stable;
 }
 
-/** ==================== Admin Tabs ==================== **/
+/** ==================== Admin Child Tabs ==================== **/
 /** Credit: https://codepen.io/ekscentrysytet/pen/QbNdEB **/
   .tabinator input {
     display: none;
