@@ -8,11 +8,11 @@
         <tr>
             <td>
                 <div class="panel">
-                    <table width="100%" cellpadding="0" class="listtable" cellspacing="0">
+                    <table width="800px" cellpadding="0" class="listtable" cellspacing="0">
                         <tr>
                             <td class="listtable_1" width="8%" align="center"><input id="admin_" name="search_type" type="radio" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
                             <td class="text-gray-700 dark:text-gray-400" width="26%">Admin</td>
-                            <td class="listtable_1" width="66%">
+                            <td class="listtable_1">
                                 <select id="admin" onmouseup="$('admin_').checked = true" class="select block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                                     {foreach from=$admin_list item="admin"}
                                     <option label="{$admin.user}" value="{$admin.aid}">{$admin.user}</option>
@@ -28,14 +28,14 @@
                         <tr>
                             <td align="center" class="listtable_1" ><input id="date_" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
                             <td class="text-gray-700 dark:text-gray-400">Date</td>
-                            <td class="flex items-center">
-                                <input type="text" id="day" value="DD" onmouseup="$('date_').checked = true" maxlength="2" style="width: 18px;" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"> .
-                                <input type="text" id="month" value="MM" onmouseup="$('date_').checked = true" maxlength="2" style="width: 18px;" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"> .
-                                <input type="text" id="year" value="YYYY" onmouseup="$('date_').checked = true" maxlength="4" style="width: 30px;" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
-                                &nbsp;<input type="text" id="fhour" value="00" onmouseup="$('date_').checked = true" maxlength="2" style="width: 16px;" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"> :
-                                <input type="text" id="fminute" value="00" onmouseup="$('date_').checked = true" maxlength="2" style="width: 16px;" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
-                                -&nbsp;<input type="text" id="thour" value="23" onmouseup="$('date_').checked = true" maxlength="2" style="width: 16px;" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"> :
-                                <input type="text" id="tminute" value="59" onmouseup="$('date_').checked = true" maxlength="2" style="width: 16px;" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
+                            <td class="flex items-center text-gray-700 dark:text-gray-400">
+                                <input type="text" id="day" value="DD" onmouseup="$('date_').checked = true" maxlength="2" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"> .
+                                <input type="text" id="month" value="MM" onmouseup="$('date_').checked = true" maxlength="2" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"> .
+                                <input type="text" id="year" value="YYYY" onmouseup="$('date_').checked = true" maxlength="4" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
+                                &nbsp;&nbsp;&nbsp;<input type="text" id="fhour" value="00" onmouseup="$('date_').checked = true" maxlength="2" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"> :
+                                <input type="text" id="fminute" value="00" onmouseup="$('date_').checked = true" maxlength="2" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
+                                -&nbsp;<input type="text" id="thour" value="23" onmouseup="$('date_').checked = true" maxlength="2" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"> :
+                                <input type="text" id="tminute" value="59" onmouseup="$('date_').checked = true" maxlength="2" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
                             </td>
                         </tr>
                         <tr>
