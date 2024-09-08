@@ -35,7 +35,7 @@
                     {/foreach}
                 </ul>
             </div>
-            <p><span id="theme.apply"></span></p>
+            <p id="theme.apply"></p>
         </div>
     </div>
 </div>
