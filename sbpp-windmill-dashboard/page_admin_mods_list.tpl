@@ -27,7 +27,7 @@
               <td class="px-4 py-3 text-sm">
                 {$mod.modfolder|smarty_htmlspecialchars}
               </td>
-              <td class="px-4 py-3 text-sm">
+              <td class="px-4 py-3">
                 <img src="images/games/{$mod.icon}">
               </td>
               <td class="px-4 py-3 text-sm">
@@ -62,7 +62,7 @@
       </table>
     </div>
     <div
-      class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
+      class="grid px-4 py-3 tracking-wide border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:bg-gray-800">
     </div>
   </div>
 {/if}
