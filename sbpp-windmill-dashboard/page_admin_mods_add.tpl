@@ -11,7 +11,7 @@
                         <input type="hidden" id="fromsub" value="">
                         <input type="text"
                             class="block mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                            TABINDEX=1 class="textbox" id="name" name="name">
+                            TABINDEX=1 id="name" name="name">
                         <div class="text-xs text-gray-600 dark:text-gray-400">
                             Type the name of the mod you are adding.
                         </div>
@@ -23,7 +23,7 @@
                         <div class="rowdesc text-gray-700 dark:text-gray-400">Mod Folder</div>
                         <input type="text"
                             class="block mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                            TABINDEX=2 class="textbox" id="folder" name="folder">
+                            TABINDEX=2 id="folder" name="folder">
                         <div class="text-xs text-gray-600 dark:text-gray-400">
                             Type the name of this mod's folder. For example, Counter-Strike: Source's mod folder is
                             'cstrike'.
@@ -36,7 +36,7 @@
                         <div class="rowdesc text-gray-700 dark:text-gray-400">Steam Universe Number</div>
                         <input type="text"
                             class="block mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                            TABINDEX=3 class="textbox" id="steam_universe" name="steam_universe" value="0">
+                            TABINDEX=3 id="steam_universe" name="steam_universe" value="0">
                         <div class="text-xs text-gray-600 dark:text-gray-400">
                             (STEAM_<b>X</b>:Y:Z) Some games display the steamid differently than others. Type the first<br>
                             number in the SteamID (<b>X</b>) depending on how it's rendered by this mod. (Default: 0).
