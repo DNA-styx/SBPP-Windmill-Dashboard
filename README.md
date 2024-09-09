@@ -122,7 +122,7 @@ Download and overwrite all files in the sbpp-windmill-dashboard folder on your w
   - [X] Basic theme applied 
   - [X] Usable on desktop 
   - [X] Usable on mobile
-- [ ] Beta release 
+- [X] Beta release 
 - [ ] Fully themed and old code replaced 
 - [ ] Remove all old/unused CSS, js and files
 - [ ] Code tidy up
