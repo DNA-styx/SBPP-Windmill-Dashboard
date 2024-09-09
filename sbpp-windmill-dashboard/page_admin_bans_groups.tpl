@@ -38,13 +38,11 @@
                             <span id="groupreason.msg" class="badentry"></span>
                         </div>
 
-                        <div>
-                            <span class="flex items-center">
-                                {sb_button text="Add Group Ban" onclick="ProcessGroupBan();" id="agban" submit=true class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
-                                &nbsp;
-                                {sb_button text="Back" onclick="history.go(-1)" id="aback" submit=false class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
-                            </span>
-                        </div>
+                        <span class="flex items-center">
+                            {sb_button text="Add Group Ban" onclick="ProcessGroupBan();" id="agban" submit=true class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
+                            &nbsp;
+                            {sb_button text="Back" onclick="history.go(-1)" id="aback" submit=false class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
+                        </span>
 
                     {else}
 
