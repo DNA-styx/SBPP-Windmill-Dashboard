@@ -23,9 +23,9 @@
                             <span class="text-xs text-gray-600 dark:text-gray-400">
                                 This is the name of the player that was banned.
                             </span>
-                            <span class="text-xs text-red-600 dark:text-red-400">
-                                <div id="name.msg" class="badentry"></div>
-                            </span>
+                            <div class="text-xs text-red-600 dark:text-red-400">
+                                <span id="name.msg" class="badentry"></span>
+                            </div>
 
                             <label class="block text-sm">
                                 <span class="text-gray-700 dark:text-gray-400">Ban Type</span>
@@ -48,9 +48,9 @@
                                 This is the Steam ID of the player that is banned. You may want to type a Community ID
                                 either.
                             </span>
-                            <span class="text-xs text-red-600 dark:text-red-400">
-                                <div id="steam.msg" class="badentry"></div>
-                            </span>
+                            <div class="text-xs text-red-600 dark:text-red-400">
+                                <span id="steam.msg" class="badentry"></span>
+                            </div>
 
                             <label class="block text-sm">
                                 <span class="text-gray-700 dark:text-gray-400">IP Address</span>
@@ -60,9 +60,9 @@
                             <span class="text-xs text-gray-600 dark:text-gray-400">
                                 Type the IP address of the person you want to ban.
                             </span>
-                            <span class="text-xs text-red-600 dark:text-red-400">
-                                <div id="ip.msg" class="badentry"></div>
-                            </span>
+                            <div class="text-xs text-red-600 dark:text-red-400">
+                                <span id="ip.msg" class="badentry"></span>
+                            </div>
 
                             <label class="block text-sm">
                                 <span class="text-gray-700 dark:text-gray-400">Ban Reason</span>
@@ -107,9 +107,9 @@
                             <span class="text-xs text-gray-600 dark:text-gray-400">
                                 Explain in detail, why this ban is being made.
                             </span>
-                            <span class="text-xs text-red-600 dark:text-red-400">
-                                <div id="reason.msg" class="badentry"></div>
-                            </span>
+                            <div class="text-xs text-red-600 dark:text-red-400">
+                                <span id="reason.msg" class="badentry"></span>
+                            </div>
 
                             <label class="block text-sm">
                                 <span class="text-gray-700 dark:text-gray-400">Ban Length</span>
@@ -157,9 +157,9 @@
                             <span class="text-xs text-gray-600 dark:text-gray-400">
                                 Select how long you want to ban this person for.
                             </span>
-                            <span class="text-xs text-red-600 dark:text-red-400">
-                                <div id="length.msg" class="badentry"></div>
-                            </span>
+                            <div class="text-xs text-red-600 dark:text-red-400">
+                                <span id="length.msg" class="badentry"></span>
+                            </div>
 
                             <label class="block text-sm">
                                 <span class="text-gray-700 dark:text-gray-400">Upload Demo</span>
@@ -168,9 +168,9 @@
                             <span class="text-xs text-gray-600 dark:text-gray-400">
                                 Click here to upload a demo with this ban submission.
                             </span>
-                            <span class="text-xs text-red-600 dark:text-red-400">
-                                <div id="demo.msg" style="color:#CC0000;">-{$ban_demo}-</div>
-                            </span>
+                            <div class="text-xs text-red-600 dark:text-red-400">
+                                <span id="demo.msg" style="color:#CC0000;">-{$ban_demo}-</span>
+                            </div>
 
                             <input type="hidden" name="did" id="did" value="" />
                             <input type="hidden" name="dname" id="dname" value="" />
