@@ -22,9 +22,9 @@
                         <span class="text-xs text-gray-600 dark:text-gray-400">
                             This is the nickname of the personthat is banned.
                         </span>
-                        <span class="text-xs text-red-600 dark:text-red-400">
-                            <div id="name.msg" class="badentry"></div>
-                        </span>
+                        <div class="text-xs text-red-600 dark:text-red-400">
+                            <span id="name.msg" class="badentry"></span>
+                        </div>
 
                         <label class="block text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Steam ID</span>
@@ -35,9 +35,9 @@
                             This is the Steam ID of the player that is banned. You may want to type a Community ID
                             either.
                         </span>
-                        <span class="text-xs text-red-600 dark:text-red-400">
-                            <div id="steam.msg" class="badentry"></div>
-                        </span>
+                        <div class="text-xs text-red-600 dark:text-red-400">
+                            <span id="steam.msg" class="badentry"></span>
+                        </div>
 
                         <label class="block text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Block Type</span>
@@ -72,9 +72,9 @@
                                 <textarea TABINDEX=4 cols="30" rows="5" id="txtReason" name="txtReason"
                                     class="submit-fields block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></textarea>
                             </div>
-                            <span class="text-xs text-red-600 dark:text-red-400">
-                                <div id="reason.msg" class="badentry"></div>
-                            </span>
+                            <div class="text-xs text-red-600 dark:text-red-400">
+                                <span id="reason.msg" class="badentry"></span>
+                            </div>
 
                             <label class="block text-sm">
                                 <span class="text-gray-700 dark:text-gray-400">Block Length</span>
@@ -122,9 +122,9 @@
                             <span class="text-xs text-gray-600 dark:text-gray-400">
                                 Select how long you want to block this person for.
                             </span>
-                            <span class="text-xs text-red-600 dark:text-red-400">
-                                <div id="length.msg" class="badentry"></div>
-                            </span>
+                            <div class="text-xs text-red-600 dark:text-red-400">
+                                <span id="length.msg" class="badentry"></span>
+                            </div>
 
                             <span class="flex items-center">
                                 <input type="hidden" name="did" id="did" value="" />
