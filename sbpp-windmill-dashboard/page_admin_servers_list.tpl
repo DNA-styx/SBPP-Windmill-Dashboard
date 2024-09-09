@@ -53,12 +53,23 @@
                         class="grid px-4 py-3 mb-8 rounded-b-lg tracking-wide text-gray-500 border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
                     </div>
                     {if $permission_addserver}
+                        <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                        <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Problems adding a server?</h4>    
+                            <div class="text-gray-600 dark:text-gray-400">
+                                To troubleshoot, add your server's details to the 
+                                <a class="font-semibold" href="sb_debug_connection.php">'sb_debug_connection.php'</a> 
+                                file found in the root of your installation. 
+                                Then <a class="font-semibold" href="sb_debug_connection.php">open the file</a> to view the results.   
+                            </div>
+                        </div>
+
                         <div class="px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                            <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">
+                        <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Upload Map Image</h4>
+                        <p class="mb-4 text-sm text-gray-600 dark:text-gray-400 md:w-1/2">
                                 {sb_button text="Upload Map Image" onclick="childWindow=open('pages/admin.uploadmapimg.php','upload','resizable=yes,width=350,height=350');" class="save block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="upload"}
                             </p>
-                            <div class="text-xs text-gray-600 dark:text-gray-400">
-                                Click here to upload a screenshot of a map. Use the mapname as filename.
+                            <div class="text-gray-600 dark:text-gray-400">
+                                Click here to select a screenshot of a map. Use the mapname as filename.
                             </div>
                         </div>
                         <div id="mapimg.msg" class="text-xs text-red-600 dark:text-red-400"></div>
