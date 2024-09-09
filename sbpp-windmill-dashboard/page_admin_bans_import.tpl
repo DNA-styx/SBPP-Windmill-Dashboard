@@ -16,9 +16,9 @@
                     <span class="text-xs text-gray-600 dark:text-gray-400">
                         Select the banned_users.cfg or banned_ip.cfg file to upload and add bans.
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="file.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="file.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Get Names?</span>
@@ -29,9 +29,9 @@
                         Check this box, if you want to get the names of the players from their steam community profile.
                         Just works with banned_users.cfg.
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="friendsname.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="friendsname.msg" class="badentry"></span>
+                    </div>
 
                     {sb_button text="Import Bans" id="iban" submit=true class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
 
