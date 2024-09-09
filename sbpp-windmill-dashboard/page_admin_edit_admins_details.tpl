@@ -28,9 +28,9 @@
                         This is the admin's 'STEAM' id. This must be set so that admins can use their admin rights
                         ingame.
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="steam.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="steam.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Admin Email</span>
@@ -41,9 +41,9 @@
                         Set the admins e-mail address. This will be used for sending out any automated messages from
                         the system, and for use when you forget your password.
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="email.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="email.msg" class="badentry"></span>
+                    </div>
 
                     {if $change_pass}
 
@@ -55,9 +55,9 @@
                     <span class="text-xs text-gray-600 dark:text-gray-400">
                         The password the admin will need to access the admin panel.
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="password.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="password.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Admin Password (confirm)</span>
@@ -67,9 +67,9 @@
                     <span class="text-xs text-gray-600 dark:text-gray-400">
                         Type the password again to confirm.
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="password2.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="password2.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block mt-4 text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Server Password</span>
@@ -87,19 +87,17 @@
                         (<a href="http://wiki.alliedmods.net/Adding_Admins_%28SourceMod%29#Passwords"
                             title="SourceMod Password Info" target="_blank">More</a>)
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="a_serverpass.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="a_serverpass.msg" class="badentry"></span>
+                    </div>
 
                     {/if}
 
-                    <div>
-                        <span class="flex items-center">
-                            {sb_button text="Save Changes" id="editmod" submit=true class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
-                            &nbsp;&nbsp;
-                            {sb_button text="Cancel" onclick="document.location='index.php?p=admin&c=admins'" id="back" submit=false class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
-                        </span>
-                    </div>
+                    <span class="flex items-center">
+                        {sb_button text="Save Changes" id="editmod" submit=true class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
+                        &nbsp;&nbsp;
+                        {sb_button text="Cancel" onclick="document.location='index.php?p=admin&c=admins'" id="back" submit=false class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
+                    </span>
 
                 </div>
             </div>
