@@ -20,9 +20,9 @@
       <span class="text-xs text-gray-600 dark:text-gray-400">
         Type the subject of the email.
       </span>
-      <span class="text-xs text-red-600 dark:text-red-400">
-        <div id="subject.msg" class="badentry"></div>
-      </span>
+      <div class="text-xs text-red-600 dark:text-red-400">
+        <span id="subject.msg" class="badentry"></span>
+      </div>
 
       <label class="block text-sm">
         <span class="text-gray-700 dark:text-gray-400">Message</span>
@@ -32,9 +32,9 @@
       <span class="text-xs text-gray-600 dark:text-gray-400">
         Type your message here.
       </span>
-      <span class="text-xs text-red-600 dark:text-red-400">
-        <div id="message.msg" class="badentry"></div>
-      </span>
+      <div class="text-xs text-red-600 dark:text-red-400">
+        <span id="message.msg" class="badentry"></span>
+      </div>
 
       <span class="flex items-center">
         {sb_button text="Send Email" onclick="$email_js" id="aemail" submit=false class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
