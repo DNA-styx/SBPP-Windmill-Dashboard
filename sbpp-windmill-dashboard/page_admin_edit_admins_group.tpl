@@ -6,7 +6,6 @@
                 <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
                     <div class="w-full">
 
-                        <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Admin Groups</h4>
                         <p class="text-gray-600 dark:text-gray-400">
                             Choose the groups that you want <b>{$group_admin_name}</b> to appear in.
                         </p>
@@ -30,9 +29,9 @@
                         <span class="text-xs text-gray-600 dark:text-gray-400">
                             Choose the group you want this admin to appear in for web permissions
                         </span>
-                        <span class="text-xs text-red-600 dark:text-red-400">
-                            <div id="wgroup.msg" class="badentry"></div>
-                        </span>
+                        <div class="text-xs text-red-600 dark:text-red-400">
+                            <span id="wgroup.msg" class="badentry"></span>
+                        </div>
 
                         <label class="block text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Server Admin Group</span>
@@ -52,9 +51,9 @@
                         <span class="text-xs text-gray-600 dark:text-gray-400">
                             Choose the group you want this admin to appear in for server admin permissions
                         </span>
-                        <span class="text-xs text-red-600 dark:text-red-400">
-                            <div id="sgroup.msg" class="badentry"></div>
-                        </span>
+                        <div class="text-xs text-red-600 dark:text-red-400">
+                            <span id="sgroup.msg" class="badentry"></span>
+                        </div>
 
                         <span class="flex items-center">
                             {sb_button text="Save Changes" id="agroups" submit=true class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
