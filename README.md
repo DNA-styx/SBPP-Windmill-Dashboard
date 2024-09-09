@@ -29,7 +29,13 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/screenshots/Screenshot_Desktop_Dashboard_Dark.png" >
 </p>
-SourceBans++ Theme built using the default v1.8.0 theme with Windmill Dashboard CSS applied on top. Dark and light theme switcher. Responsive design. Custom colours.
+SourceBans++ Theme built using the default v1.8.0 theme with Windmill Dashboard CSS applied on top. 
+
+Features:
+* Dark and light theme switcher.
+* Responsive design works well on small screens.
+* Custom colours.
+* Links menu.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,9 +90,9 @@ SourceBans++ Theme built using the default v1.8.0 theme with Windmill Dashboard 
 
 ### Known issues
 
-* If text does not display on any pages not themed, click the sun icon theme switcher top right to make it visable and open an issue.
+* If text does not display on a page, click the sun icon theme switcher top right to make it visable and [open an issue](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues).
 
-See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for a list of known issues and the todo list.
+See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues) for known issues and feature requests.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
