@@ -22,9 +22,9 @@
                         <span class="text-xs text-gray-600 dark:text-gray-400">
                             Type the link to a steam community group. e.g. http://steamcommunity.com/groups/interwavestudios
                         </span>
-                        <span class="text-xs text-red-600 dark:text-red-400">
-                            <div id="groupurl.msg" class="badentry"></div>
-                        </span>
+                        <div class="text-xs text-red-600 dark:text-red-400">
+                            <span id="groupurl.msg" class="badentry"></span>
+                        </div>
 
                         <label class="block mt-4 text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Group Ban Reason</span>
@@ -34,16 +34,16 @@
                         <span class="text-xs text-gray-600 dark:text-gray-400">
                             Type the reason why you are going to ban this steam community group.
                         </span>
-                        <span class="text-xs text-red-600 dark:text-red-400">
-                            <div id="groupreason.msg" class="badentry"></div>
-                        </span>
+                        <div class="text-xs text-red-600 dark:text-red-400">
+                            <span id="groupreason.msg" class="badentry"></span>
+                        </div>
 
                         <div>
-                            <label class="flex items-center">
-                                {sb_button text="Add Group Ban" onclick="ProcessGroupBan();" id="agban" submit=false class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
+                            <span class="flex items-center">
+                                {sb_button text="Add Group Ban" onclick="ProcessGroupBan();" id="agban" submit=true class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
                                 &nbsp;
-                                {sb_button text="Back" onclick="history.go(-1)" id="aback" class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
-                            </label>
+                                {sb_button text="Back" onclick="history.go(-1)" id="aback" submit=false class="cancel block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"}
+                            </span>
                         </div>
 
                     {else}
@@ -73,9 +73,9 @@
                             <span class="text-xs text-gray-600 dark:text-gray-400">
                                 Type the reason why you are going to ban this steam community group.
                             </span>
-                            <span class="text-xs text-red-600 dark:text-red-400">
-                                <div id="groupreason.msg" class="badentry"></div>
-                            </span>
+                            <div class="text-xs text-red-600 dark:text-red-400">
+                                <span id="groupreason.msg" class="badentry"></span>
+                            </div>
                             <input type="button" onclick="CheckGroupBan();" name="gban" id="gban" onmouseover="ButtonOver('gban');"
                                 onmouseout="ButtonOver('gban');" value="Add Group Ban"
                                 class="btn ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
