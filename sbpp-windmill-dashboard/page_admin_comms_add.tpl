@@ -23,9 +23,9 @@
         <span class="text-xs text-gray-600 dark:text-gray-400">
           Type the nickname of the person that you are banning.
         </span>
-        <span class="text-xs text-red-600 dark:text-red-400">
-          <div id="nick.msg" class="badentry"></div>
-        </span>
+        <div class="text-xs text-red-600 dark:text-red-400">
+          <span id="nick.msg" class="badentry"></span>
+        </div>
 
         <label class="block text-sm">
           <span class="text-gray-700 dark:text-gray-400">Steam ID / Community ID</span>
@@ -36,9 +36,9 @@
         <span class="text-xs text-gray-600 dark:text-gray-400">
           The Steam ID or Community ID of the person to ban.
         </span>
-        <span class="text-xs text-red-600 dark:text-red-400">
-          <div id="steam.msg" class="badentry"></div>
-        </span>
+        <div class="text-xs text-red-600 dark:text-red-400">
+          <span id="steam.msg" class="badentry"></span>
+        </div>
 
         <label class="block text-sm">
           <span class="text-gray-700 dark:text-gray-400">Block Type</span>
@@ -79,9 +79,9 @@
         <span class="text-xs text-gray-600 dark:text-gray-400">
           Explain in detail, why this block is being made.
         </span>
-        <span class="text-xs text-red-600 dark:text-red-400">
-          <div id="reason.msg" class="badentry"></div>
-        </span>
+        <div class="text-xs text-red-600 dark:text-red-400">
+          <span id="reason.msg" class="badentry"></span>
+        </div>
 
         <label class="block text-sm">
           <span class="text-gray-700 dark:text-gray-400">Block Length</span>
@@ -129,9 +129,9 @@
         <span class="text-xs text-gray-600 dark:text-gray-400">
           Select how long you want to block this person for.
         </span>
-        <span class="text-xs text-red-600 dark:text-red-400">
-          <div id="length.msg" class="badentry"></div>
-        </span>
+        <div class="text-xs text-red-600 dark:text-red-400">
+          <span id="length.msg" class="badentry"></span>
+        </div>
 
         {sb_button text="Add block" onclick="ProcessBan();" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="aban" submit=false}
 
