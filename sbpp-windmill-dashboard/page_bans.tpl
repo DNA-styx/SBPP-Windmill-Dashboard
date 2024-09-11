@@ -480,11 +480,7 @@
             </span>
         </div>
         <span>
-        {if $view_bans}
-            Web server time: {$smarty.now|date_format:'%d-%b %H:%M'}
-        {else}
-            &nbsp;
-        {/if}
+            {if $view_bans}Web server time: {$smarty.now|date_format:'%d-%b %H:%M'}{else}&nbsp;{/if}
         </span>
     </div>
 
