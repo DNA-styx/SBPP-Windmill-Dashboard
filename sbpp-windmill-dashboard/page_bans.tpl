@@ -380,7 +380,7 @@
                                                     {if $ban.banlog == ""}
                                                         <i>Never</i>
                                                     {else}
-                                                        {$ban.banlog}
+                                                        {$ban.banlog|truncate:30:'...':true:true}
                                                     {/if}
                                                 </td>
                                             </tr>
