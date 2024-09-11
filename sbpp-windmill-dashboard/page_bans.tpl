@@ -376,7 +376,7 @@
                                             </tr>
                                             <tr>
                                                 <td class="px-4">Blocked ({$ban.blockcount})</td>
-                                                <td class="px-4">
+                                                <td class="px-4" style="word-wrap:break-word">
                                                     {if $ban.banlog == ""}
                                                         <i>Never</i>
                                                     {else}
