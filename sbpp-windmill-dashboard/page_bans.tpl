@@ -378,7 +378,7 @@
                                                 <td class="px-4">Blocked ({$ban.blockcount})</td>
                                                 <td class="px-4">
                                                     {if $ban.banlog == ""}
-                                                        <i>never</i>
+                                                        <i>Never</i>
                                                     {else}
                                                         {$ban.banlog}
                                                     {/if}
