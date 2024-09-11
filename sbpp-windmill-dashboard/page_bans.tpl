@@ -317,7 +317,7 @@
                                                     <td class="px-4">Unban reason</td>
                                                     <td class="px-4">
                                                         {if $ban.ureason == ""}
-                                                            <i>no reason present</i>
+                                                            <i>No reason present</i>
                                                         {else}
                                                             {$ban.ureason}
                                                         {/if}
