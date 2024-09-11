@@ -274,7 +274,7 @@
                                                     {if empty($ban.steamid)}
                                                         <i>>No Steam3 ID present</i>
                                                     {else}
-                                                        <a href="http://steamcommunity.com/profiles/{$ban.steamid3}"
+                                                        <a href="https://steamcommunity.com/profiles/{$ban.steamid3}"
                                                             target="_blank">{$ban.steamid3}</a>
                                                     {/if}
                                                 </td>
@@ -286,7 +286,7 @@
                                                         {if empty($ban.steamid)}
                                                             <i>No Steam Community ID present</i>
                                                         {else}
-                                                            <a href="http://steamcommunity.com/profiles/{$ban.communityid}"
+                                                            <a href="https://steamcommunity.com/profiles/{$ban.communityid}"
                                                                 target="_blank">{$ban.communityid}</a>
                                                         {/if}
                                                     </td>
