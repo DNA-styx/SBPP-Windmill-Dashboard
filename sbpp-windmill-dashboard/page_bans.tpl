@@ -389,7 +389,7 @@
                                                     <td class="px-4">Comments</td>
                                                     <td class="px-4" colspan="2">
                                                         {if $ban.commentdata != "None"}
-                                                            <table width="100%" border="0">
+                                                            <table width="100%">
                                                                 {foreach from=$ban.commentdata item=commenta}
                                                                     {if $commenta.morecom}
                                                                         <tr>
