@@ -476,6 +476,8 @@
                 <a href="./exportbans.php?type=steam" title="Export Permanent SteamID Bans">Export Permanent SteamID
                     Bans</a>&nbsp;&nbsp;|&nbsp;
                 <a href="./exportbans.php?type=ip" title="Export Permanent IP Bans">Export Permanent IP Bans</a>
+            {else}
+                &nbsp;
             {/if}
             </span>
         </div>
