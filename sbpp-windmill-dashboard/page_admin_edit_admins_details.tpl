@@ -15,9 +15,9 @@
                         This is the username the admin will use to login-to their admin panel. Also this will
                         identify the admin on any bans they make.
                     </span>
-                    <span class="text-xs text-red-600 dark:text-red-400">
-                        <div id="adminname.msg" class="badentry"></div>
-                    </span>
+                    <div class="text-xs text-red-600 dark:text-red-400">
+                        <span id="adminname.msg" class="badentry"></span>
+                    </div>
 
                     <label class="block text-sm">
                         <span class="text-gray-700 dark:text-gray-400">Admin STEAM ID</span>
