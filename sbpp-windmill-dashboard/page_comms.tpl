@@ -60,9 +60,7 @@
     <div
         class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <div class="flex items-center text-gray-600 dark:text-gray-400">
-            <span>
-                {$ban_nav}
-            </span>
+            {$ban_nav}
         </div>
         <div class="flex items-center text-gray-600 dark:text-gray-400">
             <span>
@@ -100,9 +98,7 @@
                                 <td class="px-4 py-3">
                                     <div style="float:left;">
                                         {if empty($ban.player)}
-                                            <i>
-                                                <font color="#677882">no nickname present</font>
-                                            </i>
+                                            <i><font color="#677882">no nickname present</font></i>
                                         {else}
                                             {$ban.player|escape:'html'|smarty_stripslashes}
                                         {/if}
@@ -121,9 +117,7 @@
                                         {if !empty($ban.admin)}
                                             {$ban.admin|escape:'html'}
                                         {else}
-                                            <i>
-                                                <font color="#677882">Admin deleted</font>
-                                            </i>
+                                            <i><font color="#677882">Admin deleted</font></i>
                                         {/if}
                                     </td>
                                 {/if}
@@ -143,13 +137,11 @@
                                                     <b>Block Details</b>
                                                 </td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Player</td>
                                                 <td class="px-4">
                                                     {if empty($ban.player)}
-                                                        <i>
-                                                            <font color="#677882">no nickname present</font>
-                                                        </i>
+                                                        <i><font color="#677882">no nickname present</font></i>
                                                     {else}
                                                         {$ban.player|escape:'html'|smarty_stripslashes}
                                                     {/if}
@@ -206,54 +198,48 @@
                                                 {/if}
                                                 <!-- ###############[ End Admin Controls ]##################### -->
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Steam ID</td>
                                                 <td class="px-4">
                                                     {if empty($ban.steamid)}
-                                                        <i>
-                                                            <font color="#677882">No Steam ID present</font>
-                                                        </i>
+                                                        <i><font color="#677882">No Steam ID present</font></i>
                                                     {else}
                                                         {$ban.steamid}
                                                     {/if}
                                                 </td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Steam3 ID</td>
                                                 <td class="px-4">
                                                     {if empty($ban.steamid)}
-                                                        <i>
-                                                            <font color="#677882">No Steam3 ID present</font>
-                                                        </i>
+                                                        <i><font color="#677882">No Steam3 ID present</font></i>
                                                     {else}
                                                         <a href="http://steamcommunity.com/profiles/{$ban.steamid3}"
                                                             target="_blank">{$ban.steamid3}</a>
                                                     {/if}
                                                 </td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Steam Community</td>
                                                 <td class="px-4">
                                                     {if empty($ban.steamid)}
-                                                        <i>
-                                                            <font color="#677882">No Steam Community ID present</font>
-                                                        </i>
+                                                        <i><font color="#677882">No Steam Community ID present</font></i>
                                                     {else}
                                                         <a href="http://steamcommunity.com/profiles/{$ban.communityid}"
                                                             target="_blank">{$ban.communityid}</a>
                                                     {/if}
                                                 </td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Invoked on</td>
                                                 <td class="px-4">{$ban.ban_date}</td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Block length</td>
                                                 <td class="px-4">{$ban.banlength}</td>
                                             </tr>
                                             {if isset($ban.unbanned)}
-                                                <tr align="left">
+                                                <tr>
                                                     <td class="px-4">Unblock reason</td>
                                                     <td class="px-4">
                                                         {if !isset($ban.ureason) || $ban.ureason == ""}
@@ -265,7 +251,7 @@
                                                         {/if}
                                                     </td>
                                                 </tr>
-                                                <tr align="left">
+                                                <tr>
                                                     <td class="px-4">Unblocked by Admin</td>
                                                     <td class="px-4">
                                                         {if !empty($ban.removedby)}
@@ -278,7 +264,7 @@
                                                     </td>
                                                 </tr>
                                             {/if}
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Expires on</td>
                                                 <td class="px-4">
                                                     {if $ban.expires == "never"}
@@ -290,12 +276,12 @@
                                                     {/if}
                                                 </td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Reason</td>
                                                 <td class="px-4">{$ban.reason|escape:'html'}</td>
                                             </tr>
                                             {if !$hideadminname}
-                                                <tr align="left">
+                                                <tr>
                                                     <td class="px-4">Blocked by Admin</td>
                                                     <td class="px-4">
                                                         {if !empty($ban.admin)}
@@ -308,7 +294,7 @@
                                                     </td>
                                                 </tr>
                                             {/if}
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Blocked from</td>
                                                 <td class="px-4" {if $ban.server_id != 0}id="host_{$ban.ban_id}" {/if}>
                                                     {if $ban.server_id == 0}
@@ -318,7 +304,7 @@
                                                     {/if}
                                                 </td>
                                             </tr>
-                                            <tr align="left">
+                                            <tr>
                                                 <td class="px-4">Total Blocks</td>
                                                 <td class="px-4">{$ban.prevoff_link}</td>
                                             </tr>
@@ -327,7 +313,7 @@
                                                     <td class="px-4">Comments</td>
                                                     <td class="px-4" colspan="2">
                                                         {if $ban.commentdata != "None"}
-                                                            <table width="100%" border="0">
+                                                            <table width="100%">
                                                                 {foreach from=$ban.commentdata item=commenta}
                                                                     {if $commenta.morecom}
                                                                         <tr>
@@ -368,7 +354,8 @@
                                                                                     {if !empty($commenta.editname)}{$commenta.editname}
                                                                                     {else}<i>
                                                                                             <font color="#677882">Admin deleted</font>
-                                                                                    </i>{/if}</span>
+                                                                                        </i>
+                                                                                    {/if}</span>
                                                                             </td>
                                                                         </tr>
                                                                     {/if}
@@ -393,26 +380,22 @@
         </div>
 
 
-<div
-    class="flex items-center justify-between px-4 py-3 text-xs tracking-wide text-gray-500 border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
-    <div class="flex items-center">
-        <span>
-            SourceComms plugin &#038; integration to SourceBans made by <a class="font-semibold"
-                href="https://github.com/ppalex7" target="_blank">Alex</a>
-        </span>
-    </div>
-    <span>
-        {if $view_bans}
-            Web server time: {$smarty.now|date_format:'%d-%b %H:%M'}
-        {else}
-            &nbsp;
-        {/if}
-    </span>
-</div>
-
-
-
-
+        <div
+            class="flex items-center justify-between px-4 py-3 text-xs tracking-wide text-gray-500 border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
+            <div class="flex items-center">
+                <span>
+                    SourceComms plugin &#038; integration to SourceBans made by <a class="font-semibold"
+                        href="https://github.com/ppalex7" target="_blank">Alex</a>
+                </span>
+            </div>
+            <div>
+                {if $view_bans}
+                    Web server time: {$smarty.now|date_format:'%d-%b %H:%M'}
+                {else}
+                    &nbsp;
+                {/if}
+            </div>
+        </div>
 
     </div>
 

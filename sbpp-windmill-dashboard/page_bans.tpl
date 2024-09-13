@@ -61,9 +61,7 @@
     <div
         class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <div class="flex items-center text-gray-600 dark:text-gray-400">
-            <span>
-                {$ban_nav}
-            </span>
+            <span>{$ban_nav}</span>
         </div>
         <div class="flex items-center text-gray-600 dark:text-gray-400">
             <span>
@@ -122,9 +120,7 @@
                                         {/if}
                                     </div>
                                     {if $ban.demo_available}
-                                        <div style="float:right;">
-                                            <i class="fas fa-video fa-lg"></i>
-                                        </div>
+                                        <div style="float:right;"><i class="fas fa-video fa-lg"></i></div>
                                     {/if}
                                     {if $view_comments && $ban.commentdata != "None" && $ban.commentdata|@count > 0}
                                         <div style="float:right;">

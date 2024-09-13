@@ -24,11 +24,11 @@
                             <span class="mb-2 text-gray-700 dark:text-gray-400">
                                 With Overrides you can change the flags or permissions on any command, either globally, or
                                 for a specific group, without editing plugin source code.<br>
-                                Read about <a
-                                            href="http://wiki.alliedmods.net/Overriding_Command_Access_%28SourceMod%29"
-                                            title="Overriding Command Access (SourceMod)" class="font-semibold" target="_blank">overriding command
-                                            access</a></b> in the AlliedModders Wiki!<br><br>
-                                            Blanking out an overrides' name will delete it.<br><br>
+                                Read about <a href="http://wiki.alliedmods.net/Overriding_Command_Access_%28SourceMod%29"
+                                    title="Overriding Command Access (SourceMod)" class="font-semibold"
+                                    target="_blank">overriding command
+                                    access</a></b> in the AlliedModders Wiki!<br><br>
+                                Blanking out an overrides' name will delete it.<br><br>
                             </span>
 
                             <table class="w-full whitespace-no-wrap">
@@ -52,36 +52,33 @@
                                                 </select>
                                                 <input type="hidden" name="override_id[]" value="{$override.id}">
                                             </td>
-                                        <td class="px-4 py-3"><input name=" override_name[]"
-                                        value="{$override.name|smarty_htmlspecialchars}"></td>
-                                    <td class="px-4 py-3"><input name="override_flags[]"
-                                            value="{$override.flags|smarty_htmlspecialchars}"></td>
-                                </tr>
-                                {/foreach}
-                                <tr class="text-gray-700 dark:text-gray-400">
-                                    <td class="px-4 py-3">
-                                        <select name="new_override_type"
-                                            class="select block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
-                                            <option value="command">Command</option>
-                                            <option value="group">Group</option>
-                                        </select>
-                                    </td>
-                                    <td class="px-4 py-3"><input name="new_override_name"
-                                            class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
-                                    </td>
-                                    <td class="px-4 py-3"><input name="new_override_flags"
-                                            class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <br>
-                        <div>
+                                            <td class="px-4 py-3"><input name=" override_name[]"
+                                                    value="{$override.name|smarty_htmlspecialchars}"></td>
+                                            <td class="px-4 py-3"><input name="override_flags[]"
+                                                    value="{$override.flags|smarty_htmlspecialchars}"></td>
+                                        </tr>
+                                    {/foreach}
+                                    <tr class="text-gray-700 dark:text-gray-400">
+                                        <td class="px-4 py-3">
+                                            <select name="new_override_type"
+                                                class="select block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+                                                <option value="command">Command</option>
+                                                <option value="group">Group</option>
+                                            </select>
+                                        </td>
+                                        <td class="px-4 py-3"><input name="new_override_name"
+                                                class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
+                                        </td>
+                                        <td class="px-4 py-3"><input name="new_override_flags"
+                                                class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
                             <div>
                                 {sb_button text="Save" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="oversave" submit=true}
-                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

@@ -45,8 +45,8 @@
                                     class="submit-fields block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
                             </label>
                             <span class="text-xs text-gray-600 dark:text-gray-400">
-                                This is the Steam ID of the player that is banned. You may want to type a Community ID
-                                either.
+                                This is the Steam ID of the player that is banned. 
+                                You may want to type a Community ID either.
                             </span>
                             <div class="text-xs text-red-600 dark:text-red-400">
                                 <span id="steam.msg" class="badentry"></span>

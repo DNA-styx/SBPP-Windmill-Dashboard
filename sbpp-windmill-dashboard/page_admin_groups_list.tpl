@@ -7,7 +7,7 @@
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
 
-                <span class="text-gray-700 dark:text-gray-400">Click on a group to view its permissions.</span><br><br>
+            <h4 class="mb-4 font-semibold text-gray-600 dark:text-gray-300">Click on a group to view its permissions.</h4>
 
                 <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
                     <div class="w-full overflow-x-auto">
@@ -237,9 +237,9 @@
                                         <div class="opener">
                                             <table width="80%" cellspacing="0" cellpadding="0" class="listtable">
                                                 <tr class="text-gray-700 dark:text-gray-400">
-                                                    <td height="16" align="left" class="listtable_top" colspan="3"><b>Servers in
-                                                            this
-                                                            group</b></td>
+                                                    <td height="16" align="left" class="listtable_top" colspan="3">
+                                                        <b>Servers in this group</b>
+                                                    </td>
                                                 </tr>
                                                 <tr align="left" class="text-gray-700 dark:text-gray-400">
                                                     <td width="20%" height="16" class="listtable_1">Server Names</td>

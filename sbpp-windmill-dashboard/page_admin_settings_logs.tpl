@@ -20,7 +20,7 @@
         <table class="w-full whitespace-no-wrap">
             <thead>
                 <tr
-                    class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                    class="text-xs font-semibold tracking-wide text-left text-gray-500 border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                     <td class="px-4 py-3"><b>Type</b></td>
                     <td class="px-4 py-3"><b>Event</b></td>
                     <td class="px-4 py-3"><b>User</b></td>
@@ -30,7 +30,7 @@
             <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
                 {foreach from=$log_items item="log"}
                     <tr
-                        class="opener text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                        class="opener text-xs font-semibold tracking-wide text-left text-gray-500 border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                         <td class="px-4 py-3">{$log.type_img}</td>
                         <td class="px-4 py-3">{$log.title}</td>
                         <td class="px-4 py-3">{$log.user}</td>
@@ -41,29 +41,29 @@
                             <div class="opener">
                                 <table class="w-full whitespace-no-wrap">
                                     <tr
-                                        class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                                        class="text-xs font-semibold tracking-wide text-left text-gray-500 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                         <td height="16" class="listtable_top" colspan="3">
                                             <b>Event Details</b>
                                         </td>
                                     </tr>
                                     <tr
-                                        class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                                        class="text-xs font-semibold tracking-wide text-left text-gray-500 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                         <td width="20%" height="16" class="listtable_1">Details</td>
                                         <td height="16" class="listtable_1">{$log.message}</td>
                                     </tr>
                                     <tr
-                                        class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                                        class="text-xs font-semibold tracking-wide text-left text-gray-500 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                         <td width="20%" height="16" class="listtable_1">Parent Function</td>
                                         <td height="16" class="listtable_1">{$log.function}</td>
                                     </tr>
                                     <tr
-                                        class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                                        class="text-xs font-semibold tracking-wide text-left text-gray-500 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                         <td width="20%" height="16" class="listtable_1">Query String</td>
                                         <td height="16" class="listtable_1">
                                             {textformat wrap=62 wrap_cut=true}{$log.query}{/textformat}</td>
                                     </tr>
                                     <tr
-                                        class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                                        class="text-xs font-semibold tracking-wide text-left text-gray-500 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                         <td width="20%" height="16" class="listtable_1">IP</td>
                                         <td height="16" class="listtable_1">{$log.host}</td>
                                     </tr>
@@ -76,9 +76,7 @@
         </table>
         <div
             class="px-4 py-3 text-xs tracking-wide text-gray-500 border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
-            <span>
                 {$clear_logs}
-            </span>
         </div>
     </div>
 </div>

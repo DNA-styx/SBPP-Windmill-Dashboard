@@ -13,7 +13,7 @@
 
                         <label class="block text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Web Admin Group</span>
-                            <div align="left" id="wadmingroup">
+                            <div id="wadmingroup">
                                 <select name="wg" id="wg"
                                     class="select nputbox block mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                                     <option value="-1">No Group</option>
@@ -35,7 +35,7 @@
 
                         <label class="block text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Server Admin Group</span>
-                            <div align="left" id="wadmingroup">
+                            <div id="wadmingroup">
                                 <select name="wg" id="wg"
                                     class="select nputbox block mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                                     <option value="-1">No Group</option>

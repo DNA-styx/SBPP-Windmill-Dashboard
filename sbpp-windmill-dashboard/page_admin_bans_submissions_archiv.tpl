@@ -48,12 +48,12 @@
                     <div class="opener4" width="100%" align="center">
                         <table width="90%" cellspacing="0" cellpadding="0" class="listtable">
                             <tr>
-                                <td height="16" align="left" class="listtable_top" colspan="3">
+                                <td height="16" class="listtable_top" colspan="3">
                                     <b>Ban Details</b>
                                 </td>
                             </tr>
-                            <tr align="left">
-                                <td height="16" align="left" class="listtable_1" colspan="2">
+                            <tr>
+                                <td height="16" class="listtable_1" colspan="2">
                                     <b>Archived because {$sub.archive}</b>
                                 </td>
                                 <td width="30%" rowspan="11" class="listtable_2">
@@ -65,15 +65,15 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr align="left">
+                            <tr>
                                 <td width="20%" height="16" class="listtable_1">Player</td>
                                 <td height="16" class="listtable_1">{$sub.name}</td>
                             </tr>
-                            <tr align="left">
+                            <tr>
                                 <td width="20%" height="16" class="listtable_1">Submitted</td>
                                 <td height="16" class="listtable_1">{$sub.submitted}</td>
                             </tr>
-                            <tr align="left">
+                            <tr>
                                 <td width="20%" height="16" class="listtable_1">SteamID</td>
                                 <td height="16" class="listtable_1">
                                     {if $sub.SteamId == ""}
@@ -83,7 +83,7 @@
                                     {/if}
                                 </td>
                             </tr>
-                            <tr align="left">
+                            <tr>
                                 <td width="20%" height="16" class="listtable_1">IP</td>
                                 <td height="16" class="listtable_1">
                                     {if $sub.sip == ""}
@@ -93,19 +93,19 @@
                                     {/if}
                                 </td>
                             </tr>
-                            <tr align="left">
+                            <tr>
                                 <td width="20%" height="16" class="listtable_1">Reason</td>
                                 <td height="" class="listtable_1">{$sub.reason}</td>
                             </tr>
-                            <tr align="left">
+                            <tr>
                                 <td width="20%" height="16" class="listtable_1">Server</td>
                                 <td height="" class="listtable_1" id="suba{$sub.subid}">{if $sub.hostname == ""}<i>Retrieving Hostname</i>{else}{$sub.hostname}{/if}</td>
                             </tr>
-                            <tr align="left">
+                            <tr>
                                 <td width="20%" height="16" class="listtable_1">MOD</td>
                                 <td height="" class="listtable_1">{$sub.mod}</td>
                             </tr>
-                            <tr align="left">
+                            <tr>
                                 <td width="20%" height="16" class="listtable_1">Submitter Name</td>
                                 <td height="" class="listtable_1">
                                     {if $sub.subname == ""}
@@ -115,11 +115,11 @@
                                     {/if}
                                 </td>
                             </tr>
-                            <tr align="left">
+                            <tr>
                                 <td width="20%" height="16" class="listtable_1">Submitter IP</td>
                                 <td height="" class="listtable_1">{$sub.ip}</td>
                             </tr>
-                            <tr align="left">
+                            <tr>
                                 <td width="20%" height="16" class="listtable_1">Archived by</td>
                                 <td height="" class="listtable_1">
                                     {if !empty($sub.archivedby)}
@@ -129,7 +129,7 @@
                                     {/if}
                                 </td>
                             </tr>
-                            <tr align="left">
+                            <tr>
                                 <td width="20%" height="16" class="listtable_1">Comments</td>
                                 <td height="60" class="listtable_1" colspan="3">
                                     {if $sub.commentdata != "None"}
