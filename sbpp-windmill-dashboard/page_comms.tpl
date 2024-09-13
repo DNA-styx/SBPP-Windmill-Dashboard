@@ -60,7 +60,9 @@
     <div
         class="flex items-center justify-between p-4 mb-8 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <div class="flex items-center text-gray-600 dark:text-gray-400">
-            {$ban_nav}
+            <span>
+                {$ban_nav}
+            </span>
         </div>
         <div class="flex items-center text-gray-600 dark:text-gray-400">
             <span>
