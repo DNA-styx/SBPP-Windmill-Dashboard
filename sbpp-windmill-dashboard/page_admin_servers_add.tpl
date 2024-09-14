@@ -97,18 +97,16 @@
                         <span class="text-gray-700 dark:text-gray-400">Server Groups</span>
                         {foreach from=$grouplist item="group"}
                             <label class="flex items-center dark:text-gray-400">
+                                <span class="mt-2">{$group.name}</span>
                                 <input type="checkbox" value="{$group.gid}" id="g_{$group.gid}" name="groups[]"
                                     class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" />
-                                <span class="ml-2">{$group.name}</span>
+                                
                             </label>
                         {/foreach}
                     </label>
                     <div class="text-xs text-gray-600 dark:text-gray-400">
                         Choose the groups to add this server to. Server groups are used for adding admins to specific sets
                         of servers.
-                    </div>
-                    <div class="text-xs text-red-600 dark:text-red-400">
-                        <span id="loginPassword.msg" class="badentry"></span>
                     </div>
 
                     <div>
