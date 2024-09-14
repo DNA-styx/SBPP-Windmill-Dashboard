@@ -28,7 +28,7 @@
 </div>
 <script>
     {$query}
-
+{*
     {literal}
         window.addEvent('domready', function() {
 
@@ -50,7 +50,8 @@
             });
         });
     {/literal}
-</script>
+*}
+    </script>
 
 </body>
 
