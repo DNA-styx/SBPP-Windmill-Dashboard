@@ -25,9 +25,7 @@
                             class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
                             type="text" name="password" value="">
                     </div>
-                    <div id="loginSubmit">
-                        {sb_button text=Submit onclick="xajax_LostPassword($('email').value);" class="ok block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id=alogin submit=false}
-                    </div>
+                        {sb_button text=Submit onclick="xajax_LostPassword($('email').value);" class="windmill-button block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id=alogin submit=false}
                 </div>
             </div>
         </div>
