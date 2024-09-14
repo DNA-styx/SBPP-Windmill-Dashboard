@@ -142,4 +142,4 @@
 <script>
     xajax_CheckVersion();
 </script>
-<!-- Start admin page -->
+<!-- end admin page -->

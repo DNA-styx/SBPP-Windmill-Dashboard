@@ -7,7 +7,7 @@
                 <table id="group.details">
                     <tr>
                         <td>
-                            <div align="left">
+                            <div>
                                 <div class="rowdesc text-gray-700 dark:text-gray-400">Mod Name</div>
                                 <input type="hidden" id="icon_hid" name="icon_hid" value="{$mod_icon}">
                                 <input type="text" TABINDEX=1 id="name" name="name" value="{$name}"
@@ -36,7 +36,7 @@
                     <tr>
                         <td>
                             <div class="rowdesc text-gray-700 dark:text-gray-400">Steam Universe Number</div>
-                            <div align="left">
+                            <div>
                                 <input type="text" TABINDEX=3 id="steam_universe" name="steam_universe"
                                     value="{$steam_universe}"
                                     class="block mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
@@ -51,7 +51,7 @@
                     <tr>
                         <td>
                             <div class="rowdesc text-gray-700 dark:text-gray-400">Enabled</div>
-                            <div align="left">
+                            <div>
                                 <input type="checkbox" TABINDEX=4 id="enabled" name="enabled" value="1"
                                     class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                             </div>
@@ -63,7 +63,7 @@
                     <tr>
                         <td>
                             <div class="rowdesc text-gray-700 dark:text-gray-400">Upload Icon</div>
-                            <div align="left">
+                            <div>
                                 {sb_button text="Upload MOD Icon" onclick="childWindow=open('pages/admin.uploadicon.php','upload','resizable=yes,width=350,height=350');" class="save ok block px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" id="upload" submit=false}
                             </div>
                             <div id="icon.msg" class="badentry text-xs text-red-600 dark:text-red-400"
