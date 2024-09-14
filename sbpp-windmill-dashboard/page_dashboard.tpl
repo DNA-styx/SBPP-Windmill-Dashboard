@@ -1,3 +1,4 @@
+<!-- start  dashboard -->
 <!-- Start Dashboard Text -->
 {if $dashboard_text}
   <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">{$dashboard_title}</h4>
@@ -119,9 +120,7 @@
             </td>
             <td class="px-4 py-3 text-sm">
               {if empty($player.short_name)}
-                <i>
-                  <font color="#677882">no nickname present</font>
-                </i>
+                <i><font color="#677882">no nickname present</font></i>
               {else}
                 {$player.short_name|escape:'html'}
               {/if}
@@ -170,9 +169,7 @@
             </td>
             <td class="px-4 py-3 text-sm">
               {if empty($player.short_name)}
-                <i>
-                  <font color="#677882">no nickname present</font>
-                </i>
+                <i><font color="#677882">no nickname present</font></i>
               {else}
                 {$player.short_name|escape:'html'}
               {/if}
@@ -229,3 +226,4 @@
   </div>
 </div>
 <!-- end Blocked Players Table -->
+<!-- end dashboard -->
