@@ -8,9 +8,9 @@
         <tr>
             <td>
                 <div class="panel">
-                    <table width="800px" cellpadding="0" class="listtable" cellspacing="0">
+                    <table width="800px" cellpadding="0" cellspacing="0">
                         <tr>
-                            <td class="listtable_1" width="8%" align="center"><input id="admin_" name="search_type" type="radio" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+                            <td width="8%" align="center"><input id="admin_" name="search_type" type="radio" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
                             <td class="text-gray-700 dark:text-gray-400" width="26%">Admin</td>
                             <td class="listtable_1">
                                 <select id="admin" onmouseup="$('admin_').checked = true" class="select block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
@@ -21,12 +21,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="listtable_1" align="center"><input id="message_" name="search_type" type="radio" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+                            <td align="center"><input id="message_" name="search_type" type="radio" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
                             <td class="text-gray-700 dark:text-gray-400">Message</td>
                             <td class="listtable_1"><input type="text" id="message" value="" onmouseup="$('message_').checked = true" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"></td>
                         </tr>
                         <tr>
-                            <td align="center" class="listtable_1" ><input id="date_" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+                            <td align="center"><input id="date_" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
                             <td class="text-gray-700 dark:text-gray-400">Date</td>
                             <td class="flex items-center text-gray-700 dark:text-gray-400">
                                 <input type="text" id="day" value="DD" onmouseup="$('date_').checked = true" maxlength="2" class="textbox block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"> .
@@ -39,9 +39,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" class="listtable_1" ><input id="type_" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
+                            <td align="center"><input id="type_" type="radio" name="search_type" value="radiobutton" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"></td>
                             <td class="text-gray-700 dark:text-gray-400">Type</td>
-                            <td class="listtable_1" >
+                            <td>
                                 <select id="type" onmouseup="$('type_').checked = true" class="select block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                                     <option label="Message" value="m">Message</option>
                                     <option label="Warning" value="w">Warning</option>
