@@ -136,7 +136,9 @@
             {/if}
             <span id='versionmsg'>Please Wait...</span><br>
             <a href="https://www.smarty.net/" target=_blank class="font-semibold">Smarty: v{$smarty.version}</a><br>
-        </p>
+            <a href="https://mootools.net/" target=_blank class="font-semibold">Mootools: v<script>document.write(MooTools.version);</script></a>
+        
+            </p>
     </div>
 </div>
 <script>
