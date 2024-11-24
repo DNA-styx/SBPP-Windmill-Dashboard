@@ -17,7 +17,7 @@
   <!-- SB++ default JS -->
   <script src="./scripts/mootools.js"></script>
   <script src="./scripts/contextMenoo.js"></script>
-  <script src="./scripts/fontawesome-all.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.0/css/all.css">
   <script src="./scripts/sourcebans.js"></script>
  
    <!-- Required non-Tailwind CSS -->
