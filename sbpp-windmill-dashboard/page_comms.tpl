@@ -280,7 +280,7 @@
                                             </tr>
                                             <tr>
                                                 <td class="px-4">Reason</td>
-                                                <td class="px-4">{$ban.reason|escape:'html'}</td>
+                                                <td class="px-4" style="text-wrap: auto;">{$ban.reason|escape:'html'|truncate:300:"...":true}</td>
                                             </tr>
                                             {if !$hideadminname}
                                                 <tr>
