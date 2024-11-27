@@ -12,7 +12,7 @@
 <h3 align="center">SourceBans++ Windmill Dashboard Theme</h3>
 
   <p align="center">
-    Responsive SourceBans++ 1.8.0 Theme
+    Responsive SourceBans++ 1.8.x Theme
     <br />
     <br />
     <a href="https://sourcebans.dnagames.site/">View Live Demo</a>
@@ -83,7 +83,7 @@ Features:
 
 ### Prerequisites
 
-* Working Sourcebans++ install 1.7.0 or higher, 1.8.0 recommended https://sbpp.github.io/
+* Working Sourcebans++ install 1.8.0 or higher, 1.8.1 recommended https://sbpp.github.io/
 * FTP or cpanel access to upload files to the web server running Sourcebans++
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
