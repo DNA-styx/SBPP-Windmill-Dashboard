@@ -342,7 +342,7 @@
                                             </tr>
                                             <tr>
                                                 <td class="px-4">Reason</td>
-                                                <td class="px-4">{$ban.reason|escape:'html'}</td>
+                                                <td class="px-4" style="text-wrap: auto;">{$ban.reason|escape:'html'|truncate:300:"...":true}</td>
                                             </tr>
                                             {if !$hideadminname}
                                                 <tr>
@@ -372,11 +372,11 @@
                                             </tr>
                                             <tr>
                                                 <td class="px-4">Blocked ({$ban.blockcount})</td>
-                                                <td class="px-4" style="word-wrap:break-word">
+                                                <td class="px-4" style="text-wrap: auto;">
                                                     {if $ban.banlog == ""}
                                                         <i>Never</i>
                                                     {else}
-                                                        {$ban.banlog|truncate:30:'...':true:true}
+                                                        {$ban.banlog}
                                                     {/if}
                                                 </td>
                                             </tr>
