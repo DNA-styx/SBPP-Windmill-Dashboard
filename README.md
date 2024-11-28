@@ -8,6 +8,14 @@
   <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard">
     <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/sbpp-windmill-dashboard-logo.png" alt="Sourcebans++ Windmill Dashboard Theme Logo" width="390" height="149">
   </a>
+  <br>
+  <a href="https://github.com/DNA-styx/SBPP-Windmill-Dashboard/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/DNA-styx/SBPP-Windmill-Dashboard"></a>
+  <img src="https://img.shields.io/github/downloads/DNA-styx/SBPP-Windmill-Dashboard/total">
+  <a href="https://github.com/DNA-styx/SBPP-Windmill-Dashboard/issues"><img src="https://img.shields.io/github/issues/DNA-styx/SBPP-Windmill-Dashboard"></a>
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/DNA-styx/SBPP-Windmill-Dashboard">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/DNA-styx/SBPP-Windmill-Dashboard">
+
+
 
 <h3 align="center">SourceBans++ Windmill Dashboard Theme</h3>
 
