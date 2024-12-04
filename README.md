@@ -89,14 +89,14 @@ Features:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-### Prerequisites
+## Prerequisites
 
 * Working Sourcebans++ install 1.8.0 or higher, 1.8.1 recommended https://sbpp.github.io/
 * FTP or cpanel access to upload files to the web server running Sourcebans++
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Known issues
+## Known issues
 
 * If text does not display on a page, click the sun icon theme switcher top right to make it visable and [open an issue](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues).
 
@@ -105,7 +105,7 @@ See the [open issues](https://github.com/DNA-styx/sbpp-windmill-dashboard/issues
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-### Installation
+## Installation
 
 1. Download the [latest release](https://github.com/DNA-styx/SBPP-Windmill-Dashboard/releases) - Recomended for stability
    
