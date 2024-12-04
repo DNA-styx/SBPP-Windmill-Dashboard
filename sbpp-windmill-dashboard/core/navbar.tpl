@@ -166,8 +166,9 @@
                         </form>
                     </div>
 
-                    <!-- Theme toggler -->
                     <ul class="flex items-center flex-shrink-0 space-x-6">
+
+                    <!-- Theme toggler -->
                         <li class="flex">
                             <button
                                 class="rounded-md focus:outline-none text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
@@ -225,6 +226,7 @@
                         </li>
 
                     </ul>
+ 
                 </div>
             </header>
             <!--             </div>  this is a missing div, but it breaks stuff -->
