@@ -8,6 +8,14 @@
   <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard">
     <img src="https://raw.githubusercontent.com/DNA-styx/SBPP-Windmill-Dashboard/main/assets/sbpp-windmill-dashboard-logo.png" alt="Sourcebans++ Windmill Dashboard Theme Logo" width="390" height="149">
   </a>
+  <br>
+  <a href="https://github.com/DNA-styx/SBPP-Windmill-Dashboard/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/DNA-styx/SBPP-Windmill-Dashboard"></a>
+  <img src="https://img.shields.io/github/downloads/DNA-styx/SBPP-Windmill-Dashboard/total">
+  <a href="https://github.com/DNA-styx/SBPP-Windmill-Dashboard/issues"><img src="https://img.shields.io/github/issues/DNA-styx/SBPP-Windmill-Dashboard"></a>
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/DNA-styx/SBPP-Windmill-Dashboard">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/DNA-styx/SBPP-Windmill-Dashboard">
+
+
 
 <h3 align="center">SourceBans++ Windmill Dashboard Theme</h3>
 
@@ -15,7 +23,7 @@
     Responsive SourceBans++ 1.8.x Theme
     <br />
     <br />
-    <a href="https://sourcebans.dnagames.site/">View Live Demo</a>
+    <a href="https://sbpp.dnagames.site/">View Live Demo</a>
     ·
     <a href="https://github.com/DNA-styx/sbpp-windmill-dashboard/issues/new">Report a Bug</a>
     ·
@@ -169,8 +177,6 @@ Don't forget to give the project a star! Thanks again!
 
 * Sourcebans++ forum on AlliedMods https://forums.alliedmods.net/forumdisplay.php?f=152
 * Sourcebans++ Discord https://discord.gg/4Bhj6NU
-* Sourcebans++ on Docker https://github.com/crinis/sourcebans-docker
-* Recommended Sourcebans++ web hosts https://github.com/sbpp/hosts
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
