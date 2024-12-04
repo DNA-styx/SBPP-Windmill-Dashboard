@@ -168,6 +168,9 @@
 
                     <ul class="flex items-center flex-shrink-0 space-x-6">
 
+                    {include file="themes/{$theme}/assets/navbar_links.conf" scope="parent"}
+
+
                         <!-- Links menu -->
                         <li class="relative">
                             <button
@@ -182,24 +185,39 @@
                                     @click.away="closeNotificationsMenu" @keydown.escape="closeNotificationsMenu"
                                     class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:text-gray-300 dark:border-gray-700 dark:bg-gray-700"
                                     aria-label="submenu">
+
+                                {foreach from=$link_array item=link_item}
                                     <li class="flex">
                                         <a class="inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                                            href="#">
-                                            Link 1
+                                            href="{$link_item.URL}">
+                                            {$link_item.name}
                                         </a>
                                     </li>
+                                {/foreach}
+                                {if $isAdmin}
                                     <li class="flex">
                                         <a class="inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                                            href="#">
-                                            Link 2
+                                            href="index.php?p=admin">
+                                            Admin Panel
                                         </a>
                                     </li>
+                                {/if}
+                                {if $login}
                                     <li class="flex">
                                         <a class="inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                                            href="#">
-                                            Link 3
+                                            href="index.php?p=logout">
+                                            Logout
                                         </a>
                                     </li>
+                                {else}
+                                    <li class="flex">
+                                        <a class="inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                                            href="index.php?p=login">
+                                            Login
+                                        </a>
+                                    </li>
+                                {/if}
+
                                 </ul>
                             </template>
                         </li>
