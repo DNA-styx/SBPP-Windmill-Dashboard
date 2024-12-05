@@ -6,6 +6,7 @@ on:
       - main
     paths-ignore:
       - 'sbpp-windmill-dashboard/assets/theme_version.txt'
+      - 'sbpp-windmill-dashboard/version.json'
       - '.github/**'
       - 'assets/**'
       - '**.md'
