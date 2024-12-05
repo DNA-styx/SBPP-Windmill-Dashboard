@@ -28,3 +28,12 @@ jobs:
           prefix: '** '
           suffix: ' **'
           commit_message: 'Theme version updated to 0.3.'
+      - name: Increment value 2
+        uses: yoichiro/gh-action-increment-value@main
+        with:
+          target_directory: 'sbpp-windmill-dashboard'
+          target_file: 'version.json'
+          prefix: '"git": "'
+          suffix: '",'
+          commit_message: 'Theme version updated to 0.3.'
+  
