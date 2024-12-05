@@ -34,7 +34,7 @@ jobs:
         with:
           target_directory: 'sbpp-windmill-dashboard'
           target_file: 'version.json'
-          prefix: '"git": "'
-          suffix: '",'
+          prefix: 'git": "'
+          suffix: '"'
           commit_message: 'Theme version updated to 0.3.'
   
