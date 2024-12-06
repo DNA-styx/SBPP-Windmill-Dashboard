@@ -3,12 +3,8 @@
 <!-- Start footer bar -->
 
 {include file="themes/{$theme}/version.json" assign="jsonContent"}
-
-{assign var="theme_gitNumber" value=$jsonContent|regex_replace:'/.*"git":\s*"(\d{1,5})".*/s':'$1'}
 {assign var="theme_versionNumber" value=$jsonContent|regex_replace:'/.*"version":\s*"([^"]+)".*/s':'$1'}
-
-{*The Git number is: {$theme_gitNumber}<br>*}
-{*The Version number is: {$theme_versionNumber}*}
+{assign var="theme_gitNumber" value=$jsonContent|regex_replace:'/.*"git":\s*"(\d{1,5})".*/s':'$1'}
 
 <div
     class="flex items-center justify-between p-4 mb-4 text-sm px-4 py-3 bg-white rounded-lg shadow-md dark:bg-gray-800 text-gray-600 dark:text-gray-400">
@@ -21,7 +17,7 @@
     <div class="flex items-center">
         <span align="right">
             <a class="font-semibold" href="https://github.com/DNA-styx/sbpp-windmill-dashboard" target="_blank">Theme
-                ({include file='\assets\theme_version.txt' assign=theme_version}{$theme_version|regex_replace:'/[\s*]/':''})</a>
+                ({$theme_versionNumber} Git: {$theme_gitNumber})</a>
                 based on <a class="font-semibold" href="https://github.com/estevanmaito/windmill-dashboard"
                 target="_blank">Windmill</a> with code from <a class="font-semibold" href="https://sbpp.github.io/"
                 target="_blank">SourceBans++</a>
