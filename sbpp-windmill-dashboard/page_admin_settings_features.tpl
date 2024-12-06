@@ -32,7 +32,7 @@
                     {else}
                         <input type="checkbox" name="enable_groupbanning" id="enable_groupbanning" disabled
                             class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
-                        <br />You haven't set a valid steamapi key in the config
+                        <br /><span class="text-xs text-red-600 dark:text-red-400">You haven't set a valid steamapi key in the config</span>
                     {/if}
                 </label>
                 <span class="text-xs text-gray-600 dark:text-gray-400">
