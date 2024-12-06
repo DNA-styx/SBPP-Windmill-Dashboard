@@ -168,8 +168,7 @@
 
                     <ul class="flex items-center flex-shrink-0 space-x-6">
 
-                    {include file="themes/{$theme}/assets/navbar_links.conf" scope="parent"}
-
+                       {include file="themes/{$theme}/assets/navbar_links.conf" scope="parent"}
 
                         <!-- Links menu -->
                         <li class="relative">
