@@ -7,7 +7,7 @@
       <table class="w-full">
         <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
           <tr class="text-gray-700 dark:text-gray-400">
-            <td class="px-4 py-3">{$dashboard_text}</td>
+            <td class="px-4 py-3"><!--start dashboard text -->{$dashboard_text}<!--end dashboard text --></td>
           </tr>
         </tbody>
       </table>
