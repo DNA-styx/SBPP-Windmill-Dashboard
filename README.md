@@ -115,6 +115,8 @@ or Download all files from repository (Code -> Download zip) - For latest featur
 4. Go your Sourcebans website. Log in as admin and go to Admin Panel -> Settings -> **Themes**;
 5. Select theme **Sourceban Windmill Dashboard** and click apply;
 
+Recommend using 26x26px mod images and 24px high flags from here: https://flagpedia.net/download/images
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
