@@ -240,7 +240,7 @@
                                                 <td class="px-4">Block length</td>
                                                 <td class="px-4">{$ban.banlength}</td>
                                             </tr>
-                                            {if isset($ban.unbanned)}
+                                            {if isset($ban.unbanned) && ($ban.unbanned == true)}
                                                 <tr>
                                                     <td class="px-4">Unblock reason</td>
                                                     <td class="px-4">
