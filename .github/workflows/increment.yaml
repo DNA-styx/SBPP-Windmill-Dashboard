@@ -42,5 +42,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add sbpp-windmill-dashboard/version.json
-          git commit -m "Increment git value to ${{ env.new_git_value }}"
+          git commit -m "🐳 chore:Inc git value to ${{ env.new_git_value }}"
           git push
