@@ -214,7 +214,11 @@
               {$player.date}
             </td>
             <td class="px-4 py-3 text-sm">
-              {$player.short_name|escape:'html'}
+              {if empty($player.short_name)}
+                <i><font color="#677882">no nickname present</font></i>
+              {else}
+                <span>{$player.short_name|escape:'html'}</span>
+              {/if}
             </td>
           </tr>
         {/foreach}
