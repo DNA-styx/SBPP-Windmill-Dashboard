@@ -66,7 +66,7 @@ transition-duration: 150ms; " type="submit">
 		</button>
 
 	</form>
-	<script type="text/javascript" src="../scripts/fontawesome-all.min.js"></script>
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.0/css/all.css">
 </body>
 
 </html>
