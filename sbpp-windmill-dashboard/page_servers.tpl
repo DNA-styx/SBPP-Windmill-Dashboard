@@ -21,7 +21,7 @@
             <td class="px-4 py-3"><img height="26px" width="26px" src="images/games/{$server.icon}"></td>
             <td class="px-4 py-3 text-sm" id="os_{$server.sid}"></td>
             <td class="px-4 py-3 text-sm" id="vac_{$server.sid}"></td>
-            <td class="px-4 py-3 text-sm" id="host_{$server.sid}"><i>Querying Server Data...</i></td>
+            <td class="px-4 py-3 text-sm" style="text-wrap: auto;" id="host_{$server.sid}"><i>Querying Server Data...</i></td>
             <td class="px-4 py-3 text-sm" id="players_{$server.sid}">N/A</td>
             <td class="px-4 py-3 text-sm" id="map_{$server.sid}">N/A</td>
             <td class="hidden md:block px-4 py-3 text-sm">
