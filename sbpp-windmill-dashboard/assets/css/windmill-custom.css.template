@@ -2,7 +2,7 @@
 
 /*  Rename this file to windmill-custom.css
     ,update it with your custom colors
-    and uncomment it out in header.tpl      */
+    and uncomment it out in core/header.tpl      */
 
 .windmill-title-bar {
     color: #EDE9FE; 
