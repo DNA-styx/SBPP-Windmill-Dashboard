@@ -170,6 +170,7 @@ Don't forget to give the project a star! Thanks again!
 * [Estevanmaito's Windmill Dashboard](https://github.com/estevanmaito/windmill-dashboard) for the underlying css design code
 * [sourcebans-web-theme-fluent](https://github.com/Rushaway/sourcebans-web-theme-fluent) for some design choices
 * [ekscentrysytet](https://codepen.io/ekscentrysytet/pen/QbNdEB) for admin tabs
+* [GTX Gaming](https://www.gtxgaming.co.uk/clientarea/aff.php?aff=3879) UK based test server (aff link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
