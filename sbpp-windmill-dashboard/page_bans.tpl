@@ -412,7 +412,7 @@
                                                                         {/if}
                                                                     </tr>
                                                                     <tr>
-                                                                        <td colspan='3'>{$commenta.commenttxt}</td>
+                                                                        <td colspan='3' style="text-wrap: auto;">{$commenta.commenttxt}</td>
                                                                     </tr>
                                                                     {if !empty($commenta.edittime)}
                                                                         <tr>
