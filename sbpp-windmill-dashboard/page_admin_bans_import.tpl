@@ -14,7 +14,7 @@
                         <input type="file" TABINDEX=1 class="file" id="importFile" name="importFile">
                     </label>
                     <span class="text-xs text-gray-600 dark:text-gray-400">
-                        Select the banned_users.cfg or banned_ip.cfg file to upload and add bans.
+                        Select the banned_user.cfg or banned_ip.cfg file to upload and add bans.
                     </span>
                     <div class="text-xs text-red-600 dark:text-red-400">
                         <span id="file.msg" class="badentry"></span>
@@ -26,8 +26,8 @@
                             class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                     </label>
                     <span class="text-xs text-gray-600 dark:text-gray-400">
-                        Check this box, if you want to get the names of the players from their steam community profile.
-                        Just works with banned_users.cfg.
+                        Check this box if you want to get player names via their Steam Community profiles
+                         (only works with banned_user.cfg)
                     </span>
                     <div class="text-xs text-red-600 dark:text-red-400">
                         <span id="friendsname.msg" class="badentry"></span>
