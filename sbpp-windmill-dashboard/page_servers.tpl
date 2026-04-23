@@ -1,7 +1,7 @@
 <!-- Start server.tpl -->
 <div id="mainwrapper" class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
   <div class="w-full overflow-x-auto">
-    <table class="w-full whitespace-no-wrap">
+    <table class="w-full whitespace-nowrap">
       <thead>
         <tr
           class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
@@ -21,7 +21,7 @@
             <td class="px-4 py-3"><img height="26px" width="26px" src="images/games/{$server.icon}"></td>
             <td class="px-4 py-3 text-sm" id="os_{$server.sid}"></td>
             <td class="px-4 py-3 text-sm" id="vac_{$server.sid}"></td>
-            <td class="px-4 py-3 text-sm" style="text-wrap: auto;" id="host_{$server.sid}"><i>Querying Server Data...</i></td>
+            <td class="px-4 py-3 text-sm" style="white-space: nowrap;" id="host_{$server.sid}"><i>Querying Server Data...</i></td>
             <td class="px-4 py-3 text-sm" id="players_{$server.sid}">N/A</td>
             <td class="px-4 py-3 text-sm" id="map_{$server.sid}">N/A</td>
             <td class="hidden md:block px-4 py-3 text-sm">
@@ -40,10 +40,10 @@
                   <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
                     <div id="serverwindow_{$server.sid}">
                       <div id="sinfo_{$server.sid}">
-                        <table class="w-full whitespace-no-wrap">
+                        <table class="w-full whitespace-nowrap">
                           <tr>
                             <td class="">
-                              <table class="w-full whitespace-no-wrap" id="playerlist_{$server.sid}"
+                              <table class="w-full whitespace-nowrap" id="playerlist_{$server.sid}"
                                 name="playerlist_{$server.sid}">
                               </table>
                             </td>
