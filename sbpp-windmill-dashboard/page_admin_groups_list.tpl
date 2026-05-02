@@ -16,8 +16,7 @@
                         <table width="100%" cellpadding="0" cellspacing="0" class="w-full whitespace-no-wrap">
                             <tr class="text-gray-700 dark:text-gray-400">
                                 <td colspan="4">
-                                    <table width="100%" cellpadding="0" cellspacing="0" class="front-module-header"
-                                        class="listtable">
+                                    <table width="100%" cellpadding="0" cellspacing="0" class="front-module-header listtable">
                                         <tr>
                                             <td align="left">Web Admin Groups</td>
                                             <td align="right">Total: {$web_group_count}</td>
@@ -99,8 +98,7 @@
                         <table width="100%" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td colspan="4">
-                                    <table width="100%" cellpadding="0" cellspacing="0" class="front-module-header"
-                                        class="listtable">
+                                    <table width="100%" cellpadding="0" cellspacing="0" class="front-module-header listtable">
                                         <tr class="text-gray-700 dark:text-gray-400">
                                             <td align="left">Server Admin Groups</td>
                                             <td align="right">Total: {$server_admin_group_count}</td>
