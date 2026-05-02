@@ -4,7 +4,7 @@
         <div class="w-full">
             <div id="lostpassword">
                 <div id="login-content">
-                    <div id="msg-red msg-blue" style="display:none;">
+                    <div id="msg-red" style="display:none;">
                         <i class="fas fa-times fa-2x"></i>
                         <b>Error</b>
                         <br>
