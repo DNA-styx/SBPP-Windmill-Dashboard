@@ -67,7 +67,7 @@
                         type="password" onkeyup="checkYourAcctPass();" id="pass1" value="" name="pass1" />
                 </label>
                 <span class="text-xs text-gray-600 dark:text-gray-400">
-                    Type your new password here. <i>Min Length: -{$min_pass_len}- charecters</i>.
+                    Type your new password here. <i>Min Length: -{$min_pass_len}- characters</i>.
                 </span>
                 <div class="text-xs text-red-600 dark:text-red-400">
                     <span id="pass1.msg" class="badentry"></span>
@@ -105,7 +105,7 @@
                     You will need to specify this password in the game server before you can use your admin rights.
                     Click <a class="font-semibold"
                         href="http://wiki.alliedmods.net/Adding_Admins_%28SourceMod%29#Passwords"
-                        title="SourceMod Password Info" target="_blank">here</a> for more infos.
+                        title="SourceMod Password Info" target="_blank">here</a> for more info.
                 </p>
                 <br>
 
@@ -116,7 +116,7 @@
                         id="scurrent" name="scurrent">
                 </label>
                 <span class="text-xs text-gray-600 dark:text-gray-400">
-                    We need to know your current password to verify its you.
+                    We need to know your current password to verify it's you.
                 </span>
                 <div class="text-xs text-red-600 dark:text-red-400">
                     <span id="scurrent.msg" class="badentry"></span>
@@ -170,7 +170,7 @@
     </div>
 
 
-    <!-- div ID 3 is the forth 'panel' to be shown -->
+    <!-- div ID 3 is the fourth 'panel' to be shown -->
     <div class="tabcontent px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" id="Change Email">
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
@@ -246,7 +246,7 @@
             if($('pass1').value.length < -{$min_pass_len}-)
             {
                 $('pass1.msg').setStyle('display', 'block');
-                $('pass1.msg').setHTML('Your password must be atleast -{$min_pass_len}- letters long');
+                $('pass1.msg').setHTML('Your password must be at least -{$min_pass_len}- letters long');
                 err++;
             } else {
                 $('pass1.msg').setStyle('display', 'none');
